@@ -242,3 +242,6 @@ Fixed
 
 3.0.11 (2024-09-13)
 - Fix logo visibility
+
+3.0.12 (2024-10-01)
+- Fix maintenance mode cache issue

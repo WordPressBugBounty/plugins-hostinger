@@ -32,8 +32,8 @@ class ComingSoon {
 	 */
 	public function coming_soon(): void {
 		// Do not cache coming soon page.
-		if ( has_action( 'litespeed_purge_all' ) && ! defined( 'HOSTINGER_DONOTCACHEPAGE' ) ) {
-			define( 'HOSTINGER_DONOTCACHEPAGE', true );
+		if ( has_action( 'litespeed_purge_all' ) && ! defined( 'DONOTCACHEPAGE' ) ) {
+			define( 'DONOTCACHEPAGE', true );
 		}
 
 		if ( ! $this->can_bypass_coming_soon() ) {
