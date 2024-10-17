@@ -112,7 +112,7 @@ class Menus
         add_menu_page(
             __('Hostinger', 'hostinger-wp-menu-package'),
             __('Hostinger', 'hostinger-wp-menu-package'),
-            'manage_options',
+            'edit_posts',
             self::MENU_SLUG,
             [$this, 'render'],
             $icon,

@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc
 Requires at least: 5.5
 Tested up to: 6.5
 Requires PHP: 8.0
-Stable tag: 3.0.12
+Stable tag: 3.0.14
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -385,3 +385,9 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 3.0.12 (2024-10-01)
 - Fix maintenance mode cache issue
+
+3.0.13 (2024-10-09)
+- Fix `force www` row not being shown when user is not eligible to adjust it
+
+3.0.14 (2024-10-11)
+- Add tutorial link

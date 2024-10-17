@@ -54,7 +54,7 @@ const emit = defineEmits<Emits>();
             >
 
             <Toggle
-              v-else-if="item.isToggleDisplayed"
+              v-else-if="item.toggleValue !== undefined"
               class="h-pl-16"
               :model-value="Boolean(item.toggleValue)"
               :bind="false"

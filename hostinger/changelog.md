@@ -245,3 +245,9 @@ Fixed
 
 3.0.12 (2024-10-01)
 - Fix maintenance mode cache issue
+
+3.0.13 (2024-10-09)
+- Fix `force www` row not being shown when user is not eligible to adjust it
+
+3.0.14 (2024-10-11)
+- Add tutorial link

@@ -2,7 +2,7 @@ export type SectionItem = {
   id: string;
   title: string;
   description: string;
-  isToggleDisplayed?: boolean;
+  isVisible?: boolean;
   toggleValue?: boolean;
   sideButton?: {
     text: string;

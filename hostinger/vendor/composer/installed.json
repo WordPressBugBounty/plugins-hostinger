@@ -47,12 +47,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:hostinger/hostinger-wp-menu-manager.git",
-                "reference": "766ab6448cfc411e4a58e6dac0399d8280efd4e8"
+                "reference": "91e21010dfc8dec2b4f8c2d61da16739f6c03eb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/766ab6448cfc411e4a58e6dac0399d8280efd4e8",
-                "reference": "766ab6448cfc411e4a58e6dac0399d8280efd4e8",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/91e21010dfc8dec2b4f8c2d61da16739f6c03eb3",
+                "reference": "91e21010dfc8dec2b4f8c2d61da16739f6c03eb3",
                 "shasum": ""
             },
             "require": {
@@ -63,7 +63,7 @@
                 "squizlabs/php_codesniffer": "^3.0",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2024-09-10T11:12:45+00:00",
+            "time": "2024-10-09T07:01:45+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",

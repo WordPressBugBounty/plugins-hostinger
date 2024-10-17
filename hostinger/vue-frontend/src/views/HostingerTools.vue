@@ -30,7 +30,7 @@ const maintenanceSection = computed(() => [
     id: "maintenance-mode",
     title: translate("hostinger_tools_maintenance_mode"),
     description: translate("hostinger_tools_disable_public_access"),
-    isToggleDisplayed: true,
+    isVisible: true,
     toggleValue: settingsData.value?.maintenanceMode,
   },
   {
@@ -65,7 +65,7 @@ const securitySection = computed(() => [
     id: "disable-xml-rpc",
     title: translate("hostinger_tools_disable_xml_rpc"),
     description: translate("hostinger_tools_xml_rpc_description"),
-    isToggleDisplayed: true,
+    isVisible: true,
     toggleValue: settingsData.value?.disableXmlRpc,
   },
 ]);
@@ -76,7 +76,7 @@ const redirectsSection = computed(() => {
       id: "force-https",
       title: translate("hostinger_tools_force_https"),
       description: translate("hostinger_tools_force_https_description"),
-      isToggleDisplayed: true,
+      isVisible: true,
       toggleValue: settingsData.value?.forceHttps,
     },
   ];
@@ -87,11 +87,11 @@ const redirectsSection = computed(() => {
     description: !settingsData.value?.isEligibleWwwRedirect
       ? translate("hostinger_tools_force_www_description_not_available")
       : translate("hostinger_tools_force_www_description"),
-    isToggleDisplayed: !!settingsData.value?.isEligibleWwwRedirect,
+    isVisible: !!settingsData.value?.isEligibleWwwRedirect,
     toggleValue: settingsData.value?.forceWww,
   });
 
-  return sections;
+  return sections.filter((section) => section.isVisible);
 });
 
 const { openModal } = useModal();

@@ -1,8 +1,11 @@
 <script lang="ts" setup>
 import PluginSplitNotice from "@/components/PluginSplitNotice.vue";
+import { HeaderButton } from "@/types";
+import Button from "@/components/Button/Button.vue";
 
 type Props = {
-  title: any;
+  title?: string;
+  headerButton?: HeaderButton;
 };
 
 const props = defineProps<Props>();
@@ -11,9 +14,21 @@ const props = defineProps<Props>();
 <template>
   <div class="wrapper">
     <div class="wrapper__content">
-      <PluginSplitNotice></PluginSplitNotice>
-      <h1 class="text-title-3">{{ props.title }}</h1>
-
+      <PluginSplitNotice class="h-mb-20" />
+      <div class="wrapper__header">
+        <h1 v-if="props.title" class="text-heading-1">{{ props.title }}</h1>
+        <Button
+          class="wrapper__button"
+          v-if="headerButton"
+          @click="headerButton?.onClick"
+          :to="headerButton?.href"
+          size="small"
+          variant="outline"
+          :target="headerButton.href ? '_blank' : undefined"
+          icon-append="icon-launch"
+          >{{ headerButton.text }}</Button
+        >
+      </div>
       <slot />
     </div>
   </div>
@@ -32,6 +47,18 @@ const props = defineProps<Props>();
   @media (max-width: 768px) {
     padding-right: 10px;
     padding-left: 0px;
+  }
+
+
+  &__header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__button {
+    background-color: var(--white);
   }
 
   &__content {

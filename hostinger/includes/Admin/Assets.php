@@ -110,7 +110,8 @@ class Assets {
                 'plugin_split_notice'      => $this->helper->should_plugin_split_notice_shown() ? 1 : 0,
                 'hts_close_plugin_split_nonce'      => wp_create_nonce( 'hts_close_plugin_split' ),
 				'translations'  => array(
-					'routes_hostinger_tools'              => __( 'Hostinger Tools', 'hostinger' ),
+					'routes_tools'              => __( 'Tools', 'hostinger' ),
+					'hostinger_tools_open_guide' => __( 'Open guide', 'hostinger' ),
 					'hostinger_tools_disable_public_access' => __( 'Disable public access to the site (WordPress admins will still be able to access)', 'hostinger' ),
 					'hostinger_tools_skip_link_maintenance_mode' => __( 'Skip-link that bypasses the maintenance mode', 'hostinger' ),
 					'hostinger_tools_reset_link'          => __( 'Reset link', 'hostinger' ),
