@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:hostinger/hostinger-wp-helper.git",
-                "reference": "a5baff98a65c570146e4f2f0193136efbf75b54b"
+                "reference": "983f181383f5e43f1162b6817dfaec6722cf91ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/a5baff98a65c570146e4f2f0193136efbf75b54b",
-                "reference": "a5baff98a65c570146e4f2f0193136efbf75b54b",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/983f181383f5e43f1162b6817dfaec6722cf91ef",
+                "reference": "983f181383f5e43f1162b6817dfaec6722cf91ef",
                 "shasum": ""
             },
             "require": {
@@ -23,7 +23,7 @@
                 "phpunit/phpunit": "^9.6",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2024-09-12T06:33:41+00:00",
+            "time": "2024-10-22T07:37:05+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",

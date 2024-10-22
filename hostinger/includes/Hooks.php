@@ -8,12 +8,15 @@ use Hostinger\WpHelper\Utils;
 defined( 'ABSPATH' ) || exit;
 
 class Hooks {
-	public function __construct() {
-		// XMLRpc / Force SSL
-		add_filter( 'xmlrpc_enabled', array( $this, 'check_xmlrpc_enabled' ) );
-		add_filter( 'wp_headers', array( $this, 'check_pingback' ) );
-		add_filter( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
-	}
+    public function __construct() {
+        // XMLRpc / Force SSL
+        add_filter( 'xmlrpc_enabled', array( $this, 'check_xmlrpc_enabled' ) );
+        add_filter( 'wp_headers', array( $this, 'check_pingback' ) );
+        add_filter( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
+
+        add_action( 'update_option_woocommerce_coming_soon', array( $this, 'litespeed_flush_cache' ) );
+        add_action( 'update_option_woocommerce_store_pages_only', array( $this, 'litespeed_flush_cache' ) );
+    }
 
 	/**
 	 * @return void
@@ -88,4 +91,8 @@ class Hooks {
 
 		return true;
 	}
+
+    public function litespeed_flush_cache(): void {
+        Utils::flushLitespeedCache();
+    }
 }

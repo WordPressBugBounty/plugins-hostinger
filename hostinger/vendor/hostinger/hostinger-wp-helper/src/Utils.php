@@ -145,54 +145,56 @@ class Utils {
 		return false;
 	}
 
-	// Get Hpanel domain URL
-	public function getHpanelDomainUrl(): string {
-		$parsed_url = parse_url(get_site_url());
-		$host = $parsed_url['host'];
-		$path = isset($parsed_url['path']) ? trim($parsed_url['path'], '/') : '';
+	// Get hPanel domain URL
+    public function getHpanelDomainUrl() : string {
+        $parsed_url = parse_url( get_site_url() );
+        $host       = $parsed_url['host'];
+        $directory  = __DIR__;
 
-		// Remove 'www.' if it exists
-		if (strpos($host, 'www.') === 0) {
-			$host = substr($host, 4);
-		}
+        // Remove 'www.' if it exists in the host
+        if ( strpos( $host, 'www.' ) === 0 ) {
+            $host = substr( $host, 4 );
+        }
 
-		// Function to check if the domain is a preview domain
-		if ($this->isPreviewDomain()) {
-			// Handle preview domain logic
-			$host_parts = explode('.', $host);
-			$base_domain = str_replace('-', '.', $host_parts[0]);
-			return self::HPANEL_DOMAIN_URL . "$base_domain" . '.' . end($host_parts);
-		}
+        // Parse the host into parts
+        $host_parts   = explode( '.', $host );
+        $is_subdomain = count( $host_parts ) > 2;
 
-		// Identify whether it is a subdomain or not
-		$host_parts = explode('.', $host);
-		$is_subdomain = count($host_parts) > 2;
+        // Helper to get the base domain (last two parts)
+        $base_domain = implode( '.', array_slice( $host_parts, -2 ) );
 
-		// Construct the base domain and full domain
-		if ($is_subdomain) {
-			$base_domain = implode('.', array_slice($host_parts, -2));
-			$full_domain = $host;
-		} else {
-			$base_domain = $host;
-			$full_domain = $host;
-		}
+        // System folders to ignore
+        $system_folders = [ 'wp-content', 'plugins', 'themes', 'uploads' ];
 
-		// Adjust for free subdomains which have a specific pattern (like hostingersite.com)
-		$free_subdomain_pattern = self::HOSTINGER_SITE;
-		if (substr($host, -strlen($free_subdomain_pattern)) === $free_subdomain_pattern) {
-			$base_domain = $full_domain;
-		}
+        // Detect if there is a subdirectory immediately after 'public_html'
+        $subdirectory_name = '';
+        if ( preg_match( '/\/public_html\/([^\/]+)\//', $directory, $matches ) && ! in_array( $matches[1], $system_folders ) ) {
+            $subdirectory_name = $matches[1];
+        }
 
-		// Construct the URL
-		$url = self::HPANEL_DOMAIN_URL . "$base_domain/wordpress/dashboard/$full_domain";
+        // Handle preview domains
+        if ( $this->isPreviewDomain() ) {
+            $host_parts  = explode( '.', $host );
+            $base_domain = str_replace( '-', '.', $host_parts[0] );
 
-		// Append subdirectory if it exists
-		if ($path) {
-			$url .= "/$path";
-		}
+            return self::HPANEL_DOMAIN_URL . "$base_domain." . end( $host_parts );
+        }
 
-		return $url;
-	}
+        // Handle subdomain with a directory structure
+        if ( $subdirectory_name !== '' ) {
+            $full_domain = "$subdirectory_name.$base_domain";
+
+            return self::HPANEL_DOMAIN_URL . "$base_domain/wordpress/dashboard/$full_domain";
+        }
+
+        // Handle top-level subdomain (no subdirectory structure)
+        if ( $is_subdomain ) {
+            return self::HPANEL_DOMAIN_URL . "$host";
+        }
+
+        // Default to handling top-level domains (without subdomains)
+        return self::HPANEL_DOMAIN_URL . "$host";
+    }
 
 	// Check transient eligibility
 	public function checkTransientEligibility( $transient_request_key, $cache_time = 3600 ): bool {
@@ -237,5 +239,10 @@ class Utils {
 		}
 	}
 
+    public static function flushLitespeedCache(): void {
+        if ( has_action( 'litespeed_purge_all' ) ) {
+            do_action( 'litespeed_purge_all' );
+        }
+    }
 
 }

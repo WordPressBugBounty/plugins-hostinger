@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc
 Requires at least: 5.5
 Tested up to: 6.5
 Requires PHP: 8.0
-Stable tag: 3.0.14
+Stable tag: 3.0.15
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -391,3 +391,6 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 3.0.14 (2024-10-11)
 - Add tutorial link
+
+3.0.15 (2024-10-18)
+- Woocommerce coming soon mode cache flush

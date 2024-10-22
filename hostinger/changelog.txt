@@ -257,3 +257,6 @@ Fixed
 
 3.0.14 (2024-10-11)
 - Add tutorial link
+
+3.0.15 (2024-10-18)
+- Woocommerce coming soon mode cache flush
