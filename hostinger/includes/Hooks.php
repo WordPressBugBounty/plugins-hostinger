@@ -93,6 +93,8 @@ class Hooks {
 	}
 
     public function litespeed_flush_cache(): void {
-        Utils::flushLitespeedCache();
+        if ( has_action( 'litespeed_purge_all' ) ) {
+            do_action( 'litespeed_purge_all' );
+        }
     }
 }

@@ -254,3 +254,6 @@ Fixed
 
 3.0.15 (2024-10-18)
 - Woocommerce coming soon mode cache flush
+
+3.0.16 (2024-10-22)
+- Fix cache litespeed cleaning
