@@ -71,10 +71,6 @@ class Maintenance {
 			WP_CLI::error( 'Arguments cannot be empty. Use 0 or 1' );
 		}
 
-		if ( has_action( 'litespeed_purge_all' ) ) {
-			do_action( 'litespeed_purge_all' );
-		}
-
 		$plugin_settings = new PluginSettings();
 		$plugin_options  = $plugin_settings->get_plugin_settings();
 
@@ -92,6 +88,10 @@ class Maintenance {
 		}
 
 		$plugin_settings->save_plugin_settings( $plugin_options );
+
+        if ( has_action( 'litespeed_purge_all' ) ) {
+            do_action( 'litespeed_purge_all' );
+        }
 	}
 
 	/**

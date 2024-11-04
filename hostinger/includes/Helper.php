@@ -5,23 +5,48 @@ namespace Hostinger;
 defined( 'ABSPATH' ) || exit;
 
 class Helper {
-	public const HOSTINGER_FREE_SUBDOMAIN_URL = 'hostingersite.com';
-	public const HOSTINGER_PAGE               = '/wp-admin/admin.php?page=hostinger';
-	public const CLIENT_WOO_COMPLETED_ACTIONS = 'woocommerce_task_list_tracked_completed_tasks';
-	private const PROMOTIONAL_LINKS           = array(
-		'fr_FR' => 'https://www.hostinger.fr/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
-		'es_ES' => 'https://www.hostinger.es/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
-		'ar'    => 'https://www.hostinger.ae/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
-		'zh_CN' => 'https://www.hostinger.com.hk/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
-		'id_ID' => 'https://www.hostinger.co.id/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
-		'lt_LT' => 'https://www.hostinger.lt/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
-		'pt_PT' => 'https://www.hostinger.pt/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
-		'uk'    => 'https://www.hostinger.com.ua/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
-		'tr_TR' => 'https://www.hostinger.com.tr/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
-		'en_US' => 'https://www.hostinger.com/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
-	);
-
-	private const HPANEL_DOMAIN_URL = 'https://hpanel.hostinger.com/websites/';
+    const HOSTINGER_LOCALES = [
+        'lt_LT' => 'hostinger.lt',
+        'uk_UA' => 'hostinger.com.ua',
+        'id_ID' => 'hostinger.co.id',
+        'en_US' => 'hostinger.com',
+        'es_ES' => 'hostinger.es',
+        'es_AR' => 'hostinger.com.ar',
+        'es_MX' => 'hostinger.mx',
+        'es_CO' => 'hostinger.co',
+        'pt_BR' => 'hostinger.com.br',
+        'ro_RO' => 'hostinger.ro',
+        'fr_FR' => 'hostinger.fr',
+        'it_IT' => 'hostinger.it',
+        'pl_PL' => 'hostinger.pl',
+        'en_PH' => 'hostinger.ph',
+        'ar_AE' => 'hostinger.ae',
+        'ms_MY' => 'hostinger.my',
+        'ko_KR' => 'hostinger.kr',
+        'vi_VN' => 'hostinger.vn',
+        'th_TH' => 'hostinger.in.th',
+        'tr_TR' => 'hostinger.web.tr',
+        'pt_PT' => 'hostinger.pt',
+        'de_DE' => 'hostinger.de',
+        'en_IN' => 'hostinger.in',
+        'ja_JP' => 'hostinger.jp',
+        'nl_NL' => 'hostinger.nl',
+        'en_GB' => 'hostinger.co.uk',
+        'el_GR' => 'hostinger.gr',
+        'cs_CZ' => 'hostinger.cz',
+        'hu_HU' => 'hostinger.hu',
+        'sv_SE' => 'hostinger.se',
+        'da_DK' => 'hostinger.dk',
+        'fi_FI' => 'hostinger.fi',
+        'sk_SK' => 'hostinger.sk',
+        'no_NO' => 'hostinger.no',
+        'hr_HR' => 'hostinger.hr',
+        'zh_HK' => 'hostinger.com.hk',
+        'he_IL' => 'hostinger.co.il',
+        'lv_LV' => 'hostinger.lv',
+        'et_EE' => 'hostinger.ee',
+        'ur_PK' => 'hostinger.pk',
+    ];
 
 	/**
 	 *
@@ -87,6 +112,17 @@ class Helper {
         }
 
         return true;
+    }
+
+    public function get_hostinger_plugin_url() : string {
+        $websiteLocale  = get_locale() ?? 'en_US';
+        $resellerLocale = get_option( 'hostinger_reseller', '' );
+        $baseDomain     = $resellerLocale ? : ( self::HOSTINGER_LOCALES[$websiteLocale] ?? 'hostinger.com' );
+
+        $pluginUrl = rtrim( $baseDomain, '/' ) . '/';
+        $pluginUrl .= str_replace( ABSPATH, '', HOSTINGER_ABSPATH );
+
+        return $pluginUrl;
     }
 }
 

@@ -102,9 +102,9 @@ export async function asyncCall<T>(
  * @returns The URL of the asset.
  */
 export const getAssetSource = (path: string) => {
-  const { pluginUrl } = useGeneralStoreData();
+  const { assetUrl } = useGeneralStoreData();
   // @ts-ignore
-  return `${pluginUrl}vue-frontend/src/assets/${path}`;
+  return `${assetUrl}vue-frontend/src/assets/${path}`;
 };
 
 /**

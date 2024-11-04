@@ -9,7 +9,7 @@ interface Props {
 withDefaults(defineProps<Props>(), {
   title: hst_affiliate_data.translations.nothing_found,
   subtitle: hst_affiliate_data.translations.try_other_results,
-  imageSrc: hst_affiliate_data.plugin_url + 'assets/img/no-search-results.svg',
+  imageSrc: hst_affiliate_data.asset_url + 'assets/img/no-search-results.svg',
   hasImage: true
 });
 </script>

@@ -257,3 +257,7 @@ Fixed
 
 3.0.16 (2024-10-22)
 - Fix cache litespeed cleaning
+
+3.0.17 (2024-10-24)
+- Updated plugin url by locale
+- Remove flush cache duplicates

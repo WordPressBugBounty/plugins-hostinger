@@ -105,7 +105,8 @@ class Assets {
 			array(
 				'home_url'      => home_url(),
 				'site_url'      => get_site_url(),
-				'plugin_url'    => HOSTINGER_PLUGIN_URL,
+                'plugin_url'       => $this->helper->get_hostinger_plugin_url(),
+                'asset_url'      => HOSTINGER_PLUGIN_URL,
                 'hplatform'      => !empty( $_SERVER['H_PLATFORM'] ) ? 1 : 0,
                 'plugin_split_notice'      => $this->helper->should_plugin_split_notice_shown() ? 1 : 0,
                 'hts_close_plugin_split_nonce'      => wp_create_nonce( 'hts_close_plugin_split' ),

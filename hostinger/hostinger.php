@@ -3,7 +3,7 @@
  * Plugin Name: Hostinger Tools
  * Plugin URI: https://hostinger.com
  * Description: Hostinger WordPress plugin.
- * Version: 3.0.16
+ * Version: 3.0.17
  * Requires at least: 5.5
  * Requires PHP: 8.0
  * Author: Hostinger
@@ -24,7 +24,7 @@ use Hostinger\WpMenuManager\Manager;
 defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'HOSTINGER_VERSION' ) ) {
-	define( 'HOSTINGER_VERSION', '3.0.16' );
+	define( 'HOSTINGER_VERSION', '3.0.17' );
 }
 
 if ( ! defined( 'HOSTINGER_ABSPATH' ) ) {
@@ -81,11 +81,11 @@ if ( ! version_compare( phpversion(), HOSTINGER_PLUGIN_MINIMUM_PHP_VERSION, '>='
 			<div class="notice notice-error is-dismissible hts-theme-settings">
 				<p>
 					<?php /* translators: %s: PHP version */ ?>
-					<strong><?php echo esc_html__( 'Attention:', 'hostinger' ); ?></strong> <?php printf( esc_html__( 'The Hostinger plugin requires minimum PHP version of <b>%s</b>.', 'hostinger' ), esc_html( HOSTINGER_PLUGIN_MINIMUM_PHP_VERSION ) ); ?>
+					<strong><?php echo esc_html__( 'Attention:', 'hostinger' ); ?></strong> <?php printf( wp_kses( 'The Hostinger plugin requires minimum PHP version of <b>%s</b>.', 'hostinger' ), esc_html( HOSTINGER_PLUGIN_MINIMUM_PHP_VERSION ) ); ?>
 				</p>
 				<p>
 					<?php /* translators: %s: PHP version */ ?>
-					<?php printf( esc_html__( 'You are running <b>%s</b> PHP version.', 'hostinger' ), esc_html( phpversion() ) ); ?>
+					<?php printf( wp_kses( 'You are running <b>%s</b> PHP version.', 'hostinger' ), esc_html( phpversion() ) ); ?>
 				</p>
 			</div>
 			<?php

@@ -60,11 +60,7 @@ class PluginSettings {
 		$existing_settings = $this->get_plugin_settings();
 
 		$update = update_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, $plugin_options->to_array(), false );
-		// @codeCoverageIgnoreStart
-		if ( has_action( 'litespeed_purge_all' ) ) {
-			do_action( 'litespeed_purge_all' );
-		}
-		// @codeCoverageIgnoreEnd
+
 		return ! empty( $update ) ? $plugin_options : $existing_settings;
 	}
 }

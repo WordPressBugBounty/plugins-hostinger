@@ -17,6 +17,7 @@ export type HostingerToolsData = {
   homeUrl: string;
   siteUrl: string;
   pluginUrl: string;
+  assetUrl: string;
   translations: { [key: string]: string };
   restBaseUrl: string;
   nonce: string;
