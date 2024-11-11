@@ -10,7 +10,6 @@ use Hostinger\Admin\Assets as AdminAssets;
 use Hostinger\Admin\Hooks as AdminHooks;
 use Hostinger\Admin\Menu as AdminMenu;
 use Hostinger\Admin\Redirects as AdminRedirects;
-use Hostinger\Preview\Assets as PreviewAssets;
 use Hostinger\WpHelper\Utils;
 
 defined( 'ABSPATH' ) || exit;
@@ -63,7 +62,6 @@ class Bootstrap {
 	}
 
 	private function load_public_dependencies(): void {
-		new PreviewAssets();
 		new Hooks();
 
 		$plugin_settings = new PluginSettings();

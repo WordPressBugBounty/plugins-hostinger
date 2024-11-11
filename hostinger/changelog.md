@@ -260,4 +260,7 @@ Fixed
 
 3.0.17 (2024-10-24)
 - Updated plugin url by locale
+
+3.0.18 (2024-11-08)
+- Remove unused assets
 - Remove flush cache duplicates

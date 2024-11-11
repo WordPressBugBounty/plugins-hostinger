@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc
 Requires at least: 5.5
 Tested up to: 6.5
 Requires PHP: 8.0
-Stable tag: 3.0.17
+Stable tag: 3.0.18
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -400,4 +400,7 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 3.0.17 (2024-10-24)
 - Updated plugin url by locale
+
+3.0.18 (2024-11-08)
+- Remove unused assets
 - Remove flush cache duplicates

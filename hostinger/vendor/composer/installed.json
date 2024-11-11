@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:hostinger/hostinger-wp-helper.git",
-                "reference": "983f181383f5e43f1162b6817dfaec6722cf91ef"
+                "reference": "8a80e9218f3bbc55c68b0892206021ac99daff8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/983f181383f5e43f1162b6817dfaec6722cf91ef",
-                "reference": "983f181383f5e43f1162b6817dfaec6722cf91ef",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/8a80e9218f3bbc55c68b0892206021ac99daff8a",
+                "reference": "8a80e9218f3bbc55c68b0892206021ac99daff8a",
                 "shasum": ""
             },
             "require": {
@@ -23,7 +23,7 @@
                 "phpunit/phpunit": "^9.6",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2024-10-22T07:37:05+00:00",
+            "time": "2024-11-06T07:54:12+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
@@ -47,12 +47,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:hostinger/hostinger-wp-menu-manager.git",
-                "reference": "91e21010dfc8dec2b4f8c2d61da16739f6c03eb3"
+                "reference": "52ee2695700ea78e3ed8572e3a6600d108404668"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/91e21010dfc8dec2b4f8c2d61da16739f6c03eb3",
-                "reference": "91e21010dfc8dec2b4f8c2d61da16739f6c03eb3",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/52ee2695700ea78e3ed8572e3a6600d108404668",
+                "reference": "52ee2695700ea78e3ed8572e3a6600d108404668",
                 "shasum": ""
             },
             "require": {
@@ -63,7 +63,7 @@
                 "squizlabs/php_codesniffer": "^3.0",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2024-10-09T07:01:45+00:00",
+            "time": "2024-11-06T07:54:14+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
