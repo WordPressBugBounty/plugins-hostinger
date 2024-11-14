@@ -264,3 +264,6 @@ Fixed
 3.0.18 (2024-11-08)
 - Remove unused assets
 - Remove flush cache duplicates
+
+3.0.19 (2024-11-13)
+- Dismiss plugin split notice after close

@@ -97,7 +97,7 @@ class Helper {
 	}
 
     public function should_plugin_split_notice_shown() {
-        $plugin_split_notice_hidden = get_transient( 'hts_plugin_split_notice_hidden' );
+        $plugin_split_notice_hidden = get_option( 'hts_plugin_split_notice_hidden', false );
 
         if ( $plugin_split_notice_hidden !== false ) {
             return false;

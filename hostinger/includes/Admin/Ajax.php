@@ -30,6 +30,6 @@ class Ajax {
 			wp_send_json_error( 'Invalid nonce' );
 		}
 		// @codeCoverageIgnoreEnd
-		set_transient( self::HIDE_PLUGIN_SPLIT_NOTICE, true, self::TWO_DAYS );
+		update_option( self::HIDE_PLUGIN_SPLIT_NOTICE, true );
 	}
 }
