@@ -6,7 +6,7 @@
 		"php": ">=8.0",
 		"ext-json": "*"
     },
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"autoload": {
 		"psr-4": {
 			"Hostinger\\WpHelper\\": "src/",

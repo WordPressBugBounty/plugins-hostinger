@@ -1,6 +1,8 @@
 {
   "main": "webpack.mix.js",
   "scripts": {
+    "auth:gcp": "gcloud auth application-default login",
+    "auth:gca": "npx google-artifactregistry-auth",
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",

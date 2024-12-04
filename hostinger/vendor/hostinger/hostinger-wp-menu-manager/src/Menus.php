@@ -45,6 +45,10 @@ class Menus
      */
     public function modifyAdminBar(WP_Admin_Bar $bar): void
     {
+        if (!is_user_logged_in()){
+            return;
+        }
+
         $menu_items = apply_filters('hostinger_admin_menu_bar_items', []);
 
         if (!empty($menu_items)) {

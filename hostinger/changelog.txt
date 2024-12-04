@@ -273,3 +273,6 @@ Fixed
 
 3.0.19 (2024-11-13)
 - Dismiss plugin split notice after close
+
+3.0.20 (2024-12-03)
+- Updated packages
