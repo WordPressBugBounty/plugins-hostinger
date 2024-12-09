@@ -270,3 +270,6 @@ Fixed
 
 3.0.20 (2024-12-03)
 - Updated packages
+
+3.0.21 (2024-12-09)
+- Added recommended PHP version

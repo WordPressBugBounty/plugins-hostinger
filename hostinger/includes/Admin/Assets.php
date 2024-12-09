@@ -153,6 +153,7 @@ class Assets {
 				'nonce'         => wp_create_nonce( 'wp_rest' ),
 				'wp_version'    => $wp_version,
 				'php_version'   => phpversion(),
+				'recommended_php_version'   => $this->helper->get_recommended_php_version(),
 			)
 		);
 	}
