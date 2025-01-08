@@ -216,10 +216,6 @@ const goToPreviewWebsite = () => {
 
 <template>
   <div v-if="settingsData">
-    <OverheadButton
-      :text="translate('hostinger_tools_preview_my_website')"
-      :action="goToPreviewWebsite"
-    />
     <div class="hostinger-tools__tool-version-cards">
       <ToolVersionCard
         :is-loading="isPageLoading"

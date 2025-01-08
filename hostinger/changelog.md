@@ -273,3 +273,6 @@ Fixed
 
 3.0.21 (2024-12-09)
 - Added recommended PHP version
+
+3.0.22 (2025-01-08)
+- Added preview website link in navbar
