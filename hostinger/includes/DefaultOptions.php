@@ -13,11 +13,28 @@ class DefaultOptions {
 	 */
 	public function add_options(): void {
 		$this->install_bypass_code();
+		$this->disable_authentication_password();
 
 		foreach ( $this->options() as $key => $option ) {
 			update_option( $key, $option );
 		}
 	}
+
+    public function disable_authentication_password(): void {
+        global $wpdb;
+
+        // Check if any application passwords exist
+        $existing_passwords = (int)$wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM {$wpdb->usermeta} WHERE meta_key = %s", '_application_passwords' ) );
+
+        if ( $existing_passwords === 0 ) {
+            $options = array(
+                'disable_authentication_password' => true,
+            );
+
+            $plugin_options = new PluginOptions( $options );
+            update_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, $plugin_options->to_array(), false );
+        }
+    }
 
 	/**
 	 * @return void
@@ -42,9 +59,9 @@ class DefaultOptions {
 	 */
 	private function options(): array {
 		$options = array(
-			'optin_monster_api_activation_redirect_disabled' => 'true',
-			'wpforms_activation_redirect' => 'true',
-			'aioseo_activation_redirect'  => 'false',
+            'optin_monster_api_activation_redirect_disabled' => 'true',
+            'wpforms_activation_redirect'                    => 'true',
+            'aioseo_activation_redirect'                     => 'false',
 		);
 
 		if ( Helper::is_plugin_active( 'astra-sites' ) ) {

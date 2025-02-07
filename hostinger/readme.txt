@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc
 Requires at least: 5.5
 Tested up to: 6.5
 Requires PHP: 8.0
-Stable tag: 3.0.22
+Stable tag: 3.0.23
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -23,6 +23,7 @@ Hostinger Tools is an all-in-one plugin designed to streamline essential tasks f
 
 # *Security*
 - Enable or disable XML-RPC requests to enhance your site's security.
+- Enable or disable Authorize application page to enhance your site's security.
 
 # *Redirects*
 - Force all URLs to use HTTPS for secure browsing.
@@ -416,3 +417,6 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 3.0.22 (2025-01-08)
 - Added preview website link in navbar
+
+3.0.23 (2025-02-07)
+- Added ability enable or disable Authorize application page

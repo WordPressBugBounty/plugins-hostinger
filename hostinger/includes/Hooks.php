@@ -11,6 +11,7 @@ class Hooks {
     public function __construct() {
         // XMLRpc / Force SSL
         add_filter( 'xmlrpc_enabled', array( $this, 'check_xmlrpc_enabled' ) );
+        add_filter( 'wp_is_application_passwords_available', array( $this, 'check_authentication_password_enabled' ) );
         add_filter( 'wp_headers', array( $this, 'check_pingback' ) );
         add_filter( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
 
@@ -91,6 +92,20 @@ class Hooks {
 
 		return true;
 	}
+
+    /**
+     * @return bool
+     */
+    public function check_authentication_password_enabled(): bool {
+        $plugin_settings = new PluginSettings();
+        $settings        = $plugin_settings->get_plugin_settings();
+
+        if ( $settings->get_disable_authentication_password() ) {
+            return false;
+        }
+
+        return true;
+    }
 
     public function litespeed_flush_cache(): void {
         if ( has_action( 'litespeed_purge_all' ) ) {

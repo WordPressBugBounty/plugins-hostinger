@@ -61,13 +61,20 @@ const maintenanceSection = computed(() => [
 ]);
 
 const securitySection = computed(() => [
-  {
-    id: "disable-xml-rpc",
-    title: translate("hostinger_tools_disable_xml_rpc"),
-    description: translate("hostinger_tools_xml_rpc_description"),
-    isVisible: true,
-    toggleValue: settingsData.value?.disableXmlRpc,
-  },
+    {
+        id: "disable-xml-rpc",
+        title: translate("hostinger_tools_disable_xml_rpc"),
+        description: translate("hostinger_tools_xml_rpc_description"),
+        isVisible: true,
+        toggleValue: settingsData.value?.disableXmlRpc,
+    },
+    {
+        id: "disable-authentication-password",
+        title: translate("hostinger_tools_disable_authentication_password"),
+        description: translate("hostinger_tools_authentication_password_description"),
+        isVisible: true,
+        toggleValue: settingsData.value?.disableAuthenticationPassword,
+    },
 ]);
 
 const redirectsSection = computed(() => {

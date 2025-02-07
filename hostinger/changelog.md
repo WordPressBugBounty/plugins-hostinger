@@ -276,3 +276,6 @@ Fixed
 
 3.0.22 (2025-01-08)
 - Added preview website link in navbar
+
+3.0.23 (2025-02-07)
+- Added ability enable or disable Authorize application page

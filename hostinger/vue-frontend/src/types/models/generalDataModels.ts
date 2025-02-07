@@ -4,6 +4,7 @@ export type ToggleableSettingsData = {
   maintenanceMode: boolean;
   forceWww: boolean;
   isEligibleWwwRedirect: boolean;
+  disableAuthenticationPassword: boolean;
 };
 
 export type NonToggleableSettingsData = {
