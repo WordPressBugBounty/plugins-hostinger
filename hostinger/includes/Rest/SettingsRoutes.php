@@ -8,7 +8,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 use Hostinger\Admin\Options\PluginOptions;
 use Hostinger\Admin\PluginSettings;
-use Hostinger\DefaultOptions;
 use Hostinger\Helper;
 
 /**
@@ -49,10 +48,13 @@ class SettingsRoutes {
 			'is_eligible_www_redirect' => $this->is_eligible_www_redirect(),
 		);
 
+        $hostinger_plugin_settings = get_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, [] );
+
 		// If it is not set for some reason then set it.
 		if ( empty( $this->plugin_settings->get_plugin_settings()->get_bypass_code() ) ) {
-			$options = new DefaultOptions();
-			$options->install_bypass_code();
+            if ( empty( $hostinger_plugin_settings['bypass_code'] ) ) {
+                $hostinger_plugin_settings['bypass_code'] = Helper::generate_bypass_code( 16 );
+            }
 		}
 
 		$plugin_settings = $this->plugin_settings->get_plugin_settings()->to_array();

@@ -288,3 +288,6 @@ Fixed
 
 3.0.26 (2025-02-10)
 - Fixed settings update
+
+3.0.27 (2025-02-11)
+- Fixed bypass code regeneration
