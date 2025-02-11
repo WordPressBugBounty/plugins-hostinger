@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc
 Requires at least: 5.5
 Tested up to: 6.5
 Requires PHP: 8.0
-Stable tag: 3.0.23
+Stable tag: 3.0.26
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -420,3 +420,12 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 3.0.23 (2025-02-07)
 - Added ability enable or disable Authorize application page
+
+3.0.24 (2025-02-10)
+- Fixed bypass input field visibility
+
+3.0.25 (2025-02-10)
+- Added new translations
+
+3.0.26 (2025-02-10)
+- Fixed settings update

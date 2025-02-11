@@ -285,3 +285,12 @@ Fixed
 
 3.0.23 (2025-02-07)
 - Added ability enable or disable Authorize application page
+
+3.0.24 (2025-02-10)
+- Fixed bypass input field visibility
+
+3.0.25 (2025-02-10)
+- Added new translations
+
+3.0.26 (2025-02-10)
+- Fixed settings update

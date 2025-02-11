@@ -11,48 +11,34 @@ class DefaultOptions {
 	/**
 	 * @return void
 	 */
-	public function add_options(): void {
-		$this->install_bypass_code();
-		$this->disable_authentication_password();
+    public function add_options(): void {
+        $this->configure_security_settings();
 
-		foreach ( $this->options() as $key => $option ) {
-			update_option( $key, $option );
-		}
-	}
-
-    public function disable_authentication_password(): void {
-        global $wpdb;
-
-        // Check if any application passwords exist
-        $existing_passwords = (int)$wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM {$wpdb->usermeta} WHERE meta_key = %s", '_application_passwords' ) );
-
-        if ( $existing_passwords === 0 ) {
-            $options = array(
-                'disable_authentication_password' => true,
-            );
-
-            $plugin_options = new PluginOptions( $options );
-            update_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, $plugin_options->to_array(), false );
+        foreach ( $this->options() as $key => $option ) {
+            update_option( $key, $option );
         }
     }
 
-	/**
-	 * @return void
-	 */
-	public function install_bypass_code(): void {
-		// Generate initial bypass code when plugin is first installed.
-		$hostinger_plugin_settings = get_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, false );
+    public function configure_security_settings(): void {
+        $hostinger_plugin_settings = get_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, [] );
+        global $wpdb;
 
-		if ( $hostinger_plugin_settings === false ) {
-			$options = array(
-				'bypass_code' => Helper::generate_bypass_code( 16 ),
-			);
+        // Check and set bypass code
+        if ( empty( $hostinger_plugin_settings['bypass_code'] ) ) {
+            $hostinger_plugin_settings['bypass_code'] = Helper::generate_bypass_code( 16 );
+        }
 
-			$plugin_options = new PluginOptions( $options );
+        // Check and disable authentication password
+        $existing_passwords = (int)$wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM {$wpdb->usermeta} WHERE meta_key = %s", '_application_passwords' ) );
 
-			update_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, $plugin_options->to_array(), false );
-		}
-	}
+        if ( $existing_passwords === 0 ) {
+            $hostinger_plugin_settings['disable_authentication_password'] = true;
+        }
+
+        // Update settings
+        $plugin_options = new PluginOptions( $hostinger_plugin_settings );
+        update_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, $plugin_options->to_array(), false );
+    }
 
 	/**
 	 * @return string[]
