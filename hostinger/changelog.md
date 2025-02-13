@@ -1,5 +1,6 @@
 Changelog
 =========
+
 1.2.0 (2023-03-22)
 - Updated How To videos
 - Added Lithuanian language translations
@@ -291,3 +292,6 @@ Fixed
 
 3.0.27 (2025-02-11)
 - Fixed bypass code regeneration
+
+3.0.28 (2024-02-12)
+- Added correct reseller link to PHP update
