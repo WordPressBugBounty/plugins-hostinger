@@ -8,47 +8,53 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-04-30T07:45:18+00:00\n"
-"PO-Revision-Date: 2024-05-14 11:00+0000\n"
+"PO-Revision-Date: 2025-02-21 06:18+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger-wp-menu-package\n"
 "Language: tr_TR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.6.7; wp-6.4.4"
 
-#: Menus.php:211
+#: src/Menus.php:224
 #, fuzzy
 msgid "Action Required:"
 msgstr "Yapılması Gerekenler:"
 
-#: Menus.php:228
+#: src/Menus.php:241
 #, fuzzy
 msgid "Affected plugins:"
 msgstr "Etkilenen eklentiler:"
 
-#: Menus.php:208
+#: src/Menus.php:221
 #, fuzzy
 msgid "Attention! Outdated Plugins Detected"
 msgstr "Dikkat! Güncel Olmayan Eklentiler Tespit Edildi"
 
-#: templates/menu.php:83
-msgid "Go to hPanel"
-msgstr "HPanel'e git"
+#: src/templates/menu.php:80
+#, fuzzy
+msgid "Go to Hostinger"
+msgstr "Hostinger'a git"
 
-#: Menus.php:58 Menus.php:104 Menus.php:105
+#: src/Menus.php:63 src/Menus.php:117 src/Menus.php:118
 msgid "Hostinger"
 msgstr "Hostinger"
 
-#: Menus.php:220
+#: src/Menus.php:233
 #, fuzzy
 msgid "Outdated plugins:"
 msgstr "Eski eklentiler:"
 
-#: Menus.php:237
+#: src/templates/menu.php:73
+#, fuzzy
+msgid "Preview website"
+msgstr "Önizleme web sitesi"
+
+#: src/Menus.php:250
 #, fuzzy
 msgid "Update plugins"
 msgstr "Eklentileri güncelleyin"
 
-#: Menus.php:211
+#: src/Menus.php:224
 #, fuzzy
 msgid ""
 "Your website has some outdated plugins that might prevent new features from "

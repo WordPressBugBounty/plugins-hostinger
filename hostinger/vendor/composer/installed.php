@@ -3,7 +3,7 @@
         'name' => 'hostinger/hostinger',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '046bbbd56990fd3261c3de2c89421d801eec6633',
+        'reference' => 'f56fd76362f27436a593a9cbe6cd1f0fbac62ee5',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'hostinger/hostinger' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '046bbbd56990fd3261c3de2c89421d801eec6633',
+            'reference' => 'f56fd76362f27436a593a9cbe6cd1f0fbac62ee5',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -33,7 +33,7 @@
         'hostinger/hostinger-wp-menu-manager' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '13ec41032a861dd8e7f388d99e1113e8dc982d6c',
+            'reference' => '7523fafcaae8159e0f1dc3137e418a4f899e1808',
             'type' => 'library',
             'install_path' => __DIR__ . '/../hostinger/hostinger-wp-menu-manager',
             'aliases' => array(

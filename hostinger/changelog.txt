@@ -301,3 +301,6 @@ Fixed
 
 3.0.28 (2024-02-12)
 - Added correct reseller link to PHP update
+
+3.0.29 (2024-02-21)
+- Update packages

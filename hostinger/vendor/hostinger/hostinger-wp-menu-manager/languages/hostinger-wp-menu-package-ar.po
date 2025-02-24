@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-04-30T07:45:18+00:00\n"
-"PO-Revision-Date: 2024-05-14 10:59+0000\n"
+"PO-Revision-Date: 2025-02-21 05:58+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger-wp-menu-package\n"
 "Language: ar\n"
@@ -16,42 +16,47 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100 >= 11 && n%100<=99 ? 4 : 5;\n"
 "X-Loco-Version: 2.6.7; wp-6.4.4"
 
-#: Menus.php:211
+#: src/Menus.php:224
 #, fuzzy
 msgid "Action Required:"
 msgstr "الإجراء المطلوب:"
 
-#: Menus.php:228
+#: src/Menus.php:241
 #, fuzzy
 msgid "Affected plugins:"
 msgstr "الإضافات المتأثرة:"
 
-#: Menus.php:208
+#: src/Menus.php:221
 #, fuzzy
 msgid "Attention! Outdated Plugins Detected"
 msgstr "تنبيه! تم اكتشاف ملحقات قديمة"
 
-#: templates/menu.php:83
+#: src/templates/menu.php:80
 #, fuzzy
-msgid "Go to hPanel"
-msgstr "انتقل إلى hPanel"
+msgid "Go to Hostinger"
+msgstr "انتقل إلى هوستنجر"
 
-#: Menus.php:58 Menus.php:104 Menus.php:105
+#: src/Menus.php:63 src/Menus.php:117 src/Menus.php:118
 #, fuzzy
 msgid "Hostinger"
 msgstr "هوستنجر"
 
-#: Menus.php:220
+#: src/Menus.php:233
 #, fuzzy
 msgid "Outdated plugins:"
 msgstr "الإضافات القديمة:"
 
-#: Menus.php:237
+#: src/templates/menu.php:73
+#, fuzzy
+msgid "Preview website"
+msgstr "معاينة الموقع الإلكتروني"
+
+#: src/Menus.php:250
 #, fuzzy
 msgid "Update plugins"
 msgstr "تحديث المكونات الإضافية"
 
-#: Menus.php:211
+#: src/Menus.php:224
 #, fuzzy
 msgid ""
 "Your website has some outdated plugins that might prevent new features from "
