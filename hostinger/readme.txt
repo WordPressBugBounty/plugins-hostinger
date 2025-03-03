@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc
 Requires at least: 5.5
 Tested up to: 6.5
 Requires PHP: 8.0
-Stable tag: 3.0.29
+Stable tag: 3.0.31
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -353,88 +353,124 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 - Moved Onboarding steps and Learning section to separate plugin Hostinger Easy Onboarding
 
 3.0.1 (2024-06-06)
+
 - Added skeleton loader for UI
 - Removed hPanel links from admin bar menu
 
 3.0.2 (2024-06-19)
+
 - Updated menu package
 
 3.0.3 (2024-07-02)
+
 - Added tests
 
 3.0.4 (2024-07-09)
+
 - Vendor autoload fix
 
 3.0.5 (2024-07-24)
+
 - PHP version card change
 - Translations
 
 3.0.6 (2024-07-30)
+
 - Added cli commands descriptions
 
 3.0.8 (2024-08-27)
+
 - Updated recommended PHP version
 
 3.0.9 (2024-08-04)
+
 - Added conditional check for maintenance class CLI
 
 3.0.10 (2024-09-11)
+
 - Update packages
 
 3.0.11 (2024-09-13)
+
 - Fix logo visibility
 
 3.0.12 (2024-10-01)
+
 - Fix maintenance mode cache issue
 
 3.0.13 (2024-10-09)
+
 - Fix `force www` row not being shown when user is not eligible to adjust it
 
 3.0.14 (2024-10-11)
+
 - Add tutorial link
 
 3.0.15 (2024-10-18)
+
 - Woocommerce coming soon mode cache flush
 
 3.0.16 (2024-10-22)
+
 - Fix cache litespeed cleaning
 
 3.0.17 (2024-10-24)
+
 - Updated plugin url by locale
 
 3.0.18 (2024-11-08)
+
 - Remove unused assets
 - Remove flush cache duplicates
 
 3.0.19 (2024-11-13)
+
 - Dismiss plugin split notice after close
 
 3.0.20 (2024-12-03)
+
 - Updated packages
 
 3.0.21 (2024-12-09)
+
 - Added recommended PHP version
 
 3.0.22 (2025-01-08)
+
 - Added preview website link in navbar
 
 3.0.23 (2025-02-07)
+
 - Added ability enable or disable Authorize application page
 
 3.0.24 (2025-02-10)
+
 - Fixed bypass input field visibility
 
 3.0.25 (2025-02-10)
+
 - Added new translations
 
 3.0.26 (2025-02-10)
+
 - Fixed settings update
 
 3.0.27 (2025-02-11)
+
 - Fixed bypass code regeneration
 
-3.0.28 (2024-02-12)
+3.0.28 (2025-02-12)
+
 - Added correct reseller link to PHP update
 
-3.0.29 (2024-02-21)
+3.0.29 (2025-02-21)
+
 - Update packages
+
+3.0.30 (2025-02-24)
+
+- Enhanced WordPress application security settings
+
+3.0.31 (2025-02-27)
+
+- Fixed assets load issue

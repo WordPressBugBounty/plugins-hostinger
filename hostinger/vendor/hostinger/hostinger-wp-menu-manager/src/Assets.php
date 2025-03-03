@@ -38,6 +38,14 @@ class Assets
      */
     public function enqueueAdminAssets(): void
     {
+        $composerJsonPath = __DIR__ . '/../composer.json';
+        $version = '1.0.0';
+
+        if (file_exists($composerJsonPath)) {
+            $composerConfig = json_decode(file_get_contents($composerJsonPath), true);
+            $version = $composerConfig['version'] ?? $version;
+        }
+
         if ($this->isHostingerMenuPage()) {
             wp_enqueue_script(
                 'hostinger_menu_scripts',
@@ -45,7 +53,7 @@ class Assets
                 [
                     'jquery',
                 ],
-                '1.1.4',
+                $version,
                 false
             );
 
@@ -54,7 +62,7 @@ class Assets
                 $this->manager->getPluginInfo()
                 . '/vendor/hostinger/hostinger-wp-menu-manager/assets/css/style.min.css',
                 [],
-                '1.1.4'
+                $version,
             );
 
             //Hide notices and badges in Hostinger menu pages.

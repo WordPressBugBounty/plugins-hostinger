@@ -21,23 +21,28 @@ class DefaultOptions {
 
     public function configure_security_settings(): void {
         $hostinger_plugin_settings = get_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, [] );
-        global $wpdb;
 
         // Check and set bypass code
         if ( empty( $hostinger_plugin_settings['bypass_code'] ) ) {
             $hostinger_plugin_settings['bypass_code'] = Helper::generate_bypass_code( 16 );
         }
 
-        // Check and disable authentication password
+        $hostinger_plugin_settings = $this->check_authentication_password( $hostinger_plugin_settings );
+
+        $plugin_options = new PluginOptions( $hostinger_plugin_settings );
+        update_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, $plugin_options->to_array(), false );
+    }
+
+    public function check_authentication_password( array $settings ): array {
+        global $wpdb;
+
         $existing_passwords = (int)$wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM {$wpdb->usermeta} WHERE meta_key = %s", '_application_passwords' ) );
 
         if ( $existing_passwords === 0 ) {
-            $hostinger_plugin_settings['disable_authentication_password'] = true;
+            $settings['disable_authentication_password'] = true;
         }
 
-        // Update settings
-        $plugin_options = new PluginOptions( $hostinger_plugin_settings );
-        update_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, $plugin_options->to_array(), false );
+        return $settings;
     }
 
 	/**

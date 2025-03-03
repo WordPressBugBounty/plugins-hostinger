@@ -9,7 +9,7 @@
   "description": "Package for managing Hostinger WordPress menus and pages.",
   "license": "proprietary",
   "type": "library",
-  "version": "1.2.12",
+  "version": "1.2.13",
   "require": {
     "hostinger/hostinger-wp-helper": "*"
   },

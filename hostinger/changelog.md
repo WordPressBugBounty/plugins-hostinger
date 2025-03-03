@@ -293,8 +293,14 @@ Fixed
 3.0.27 (2025-02-11)
 - Fixed bypass code regeneration
 
-3.0.28 (2024-02-12)
+3.0.28 (2025-02-12)
 - Added correct reseller link to PHP update
 
-3.0.29 (2024-02-21)
+3.0.29 (2025-02-21)
 - Update packages
+
+3.0.30 (2025-02-24)
+-  Enhanced WordPress application security settings
+
+3.0.31 (2025-02-27)
+- Fixed assets load issue
