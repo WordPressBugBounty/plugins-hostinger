@@ -1,9 +1,9 @@
 === Hostinger Tools ===
 Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc
 Requires at least: 5.5
-Tested up to: 6.5
+Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 3.0.31
+Stable tag: 3.0.32
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -125,7 +125,7 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 1.6.3 (2023-07-11)
 
-- Add AI asistant
+- Add AI assistant
 
 1.6.4 (2023-08-08)
 
@@ -142,7 +142,7 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 1.6.7 (2023-09-08)
 
 - Bugfixes
-- Redirect all users from hpanel
+- Redirect all users from hPanel
 - Text changes
 
 1.7.0 (2023-09-08)
@@ -155,7 +155,7 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 1.7.2 (2023-09-22)
 
-- Hide notices in hostinger page
+- Hide notices in Hostinger page
 
 1.8.0 (2023-09-27)
 
@@ -184,10 +184,12 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 - Text corrections
 
 1.8.6 (2023-10-23)
+
 - Translations
 
 1.8.7 (2023-10-30)
-- Add woocommerce onboarding survey
+
+- Add WooCommerce onboarding survey
 
 1.8.8 (2023-11-13)
 
@@ -221,7 +223,7 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 1.9.5 (2023-11-27)
 
-- Hide notices in hostinger page
+- Hide notices in Hostinger page
 - Remove surveys
 
 1.9.6 (2023-12-01)
@@ -238,15 +240,19 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 - Version mismatch fix
 
 1.9.9 (2023-12-18)
+
 - Fixed assets load on subfolder installations
 
 2.0.0 (2024-01-10)
+
 - Increased minimal WordPress version
 
 2.0.1 (2024-01-16)
+
 - Added onboarding step for affiliate plugin
 
 2.0.2 (2024-01-19)
+
 - Updated internal services
 
 2.0.3 (2024-01-19)
@@ -299,6 +305,7 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 - Refactored codebase
 
 2.1.4 (2024-03-14)
+
 - Removed vendors
 
 2.1.5 (2024-03-16)
@@ -313,7 +320,7 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 - Improved internal services
 - Added links to hPanel in admin bar
-- Fixed hpanel redirect to subdomain
+- Fixed hPanel redirect to subdomain
 
 2.1.8 (2024-03-29)
 
@@ -376,7 +383,7 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 3.0.6 (2024-07-30)
 
-- Added cli commands descriptions
+- Added CLI commands descriptions
 
 3.0.8 (2024-08-27)
 
@@ -408,15 +415,15 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 3.0.15 (2024-10-18)
 
-- Woocommerce coming soon mode cache flush
+- WooCommerce coming soon mode cache flush
 
 3.0.16 (2024-10-22)
 
-- Fix cache litespeed cleaning
+- Fix cache LiteSpeed cleaning
 
 3.0.17 (2024-10-24)
 
-- Updated plugin url by locale
+- Updated plugin URL by locale
 
 3.0.18 (2024-11-08)
 
@@ -441,7 +448,7 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 3.0.23 (2025-02-07)
 
-- Added ability enable or disable Authorize application page
+- Added ability to enable or disable Authorize application page
 
 3.0.24 (2025-02-10)
 
@@ -459,18 +466,22 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 - Fixed bypass code regeneration
 
-3.0.28 (2025-02-12)
+3.0.28 (2024-02-12)
 
 - Added correct reseller link to PHP update
 
-3.0.29 (2025-02-21)
+3.0.29 (2024-02-21)
 
 - Update packages
 
-3.0.30 (2025-02-24)
+3.0.30 (2024-02-24)
 
 - Enhanced WordPress application security settings
 
-3.0.31 (2025-02-27)
+3.0.31 (2024-02-24)
 
 - Fixed assets load issue
+
+3.0.32 (2024-031-04)
+
+- Updated compatibility
