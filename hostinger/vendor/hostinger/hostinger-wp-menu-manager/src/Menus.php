@@ -246,7 +246,7 @@ class Menus
                 ?>
             </ul>
             <p>
-                <a href="/wp-admin/update-core.php" class="button-primary">
+                <a href="<?php echo esc_url(admin_url('update-core.php')); ?>" class="button-primary">
                     <?php echo __('Update plugins', 'hostinger-wp-menu-package') ?>
                 </a>
             </p>

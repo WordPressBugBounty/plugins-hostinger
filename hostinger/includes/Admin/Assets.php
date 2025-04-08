@@ -28,9 +28,10 @@ class Assets {
 	public function __construct() {
 		$this->helper = new Helper();
 		$this->utils  = new Utils();
+        $admin_path = parse_url(admin_url(), PHP_URL_PATH);
 
 		// Load assets only on Hostinger admin pages.
-		if ( $this->utils->isThisPage( 'wp-admin/admin.php?page=' . Menu::MENU_SLUG ) || $this->utils->isThisPage( 'wp-admin/admin.php?page=' . Menus::MENU_SLUG ) ) {
+		if ( $this->utils->isThisPage( $admin_path . 'admin.php?page=' . Menu::MENU_SLUG ) || $this->utils->isThisPage( $admin_path . 'admin.php?page=' . Menus::MENU_SLUG ) ) {
 			add_action( 'admin_enqueue_scripts', array( $this, 'admin_styles' ) );
 			add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
 		}
