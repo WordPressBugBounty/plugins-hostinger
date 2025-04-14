@@ -8,13 +8,13 @@ import { toTitleCase } from "@/utils/helpers";
 import { kebabToCamel } from "@/utils/services/snakeCamelService";
 
 interface Props {
-  dimensions?: `${number}px`;
+  dimensions?: number;
   color?: Color;
   name: IconUnion;
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  dimensions: `24px`,
+  dimensions: 24,
   color: "white",
 });
 
@@ -47,8 +47,8 @@ const selectedIcon = computed(() => {
   transition: 0.3s ease transform;
   fill: currentColor;
   color: v-bind(iconColor);
-  width: v-bind(dimensions);
-  height: v-bind(dimensions);
-  min-width: v-bind(dimensions);
+  width: v-bind("dimensions + 'px'");
+  height: v-bind("dimensions + 'px'");
+  min-width: v-bind("dimensions + 'px'");
 }
 </style>

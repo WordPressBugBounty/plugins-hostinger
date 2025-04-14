@@ -11,8 +11,6 @@ export const useGeneralStoreData = defineStore(
       snakeToCamelObj(hostinger_tools_data)
     );
 
-    console.log("toolsData", toolsData);
-
     return {
       ...toolsData.value,
     };

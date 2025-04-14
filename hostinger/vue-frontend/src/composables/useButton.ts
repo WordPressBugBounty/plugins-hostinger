@@ -77,7 +77,7 @@ export const useButton = (props: IButtonPropsMandatory) => {
   }));
 
   return {
-    style,
+    style: style.value,
     tag,
     configuration,
   };

@@ -405,3 +405,6 @@ Changelog
 
 3.0.33 (2024-04-04)
 - Remove hardcoded references
+
+3.0.34 (2024-04-10)
+- Add preview and site edit buttons

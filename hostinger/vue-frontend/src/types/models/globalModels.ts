@@ -37,3 +37,15 @@ export type HeaderButton = {
   href: string;
   onClick?: () => void;
 };
+
+export type PreviewSiteButton = {
+    text: string;
+    href: string;
+    onClick?: () => void;
+};
+
+export type EditSiteButton = {
+    text: string;
+    href: string;
+    onClick?: () => void;
+};

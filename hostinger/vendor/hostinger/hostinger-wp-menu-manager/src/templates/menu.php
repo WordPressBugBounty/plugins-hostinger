@@ -67,13 +67,6 @@ $submenus = self::getMenuSubpages();
             $api_token = Utils::getApiToken();
             ?>
             <div class="hsr-navbar-buttons">
-                <?php if (get_site_url()) { ?>
-                    <div class="hts-preview-website">
-                        <a href="<?php echo esc_url(get_site_url()); ?>" target="_blank" rel="noopener">
-                            <?php echo esc_html__('Preview website', 'hostinger-wp-menu-package'); ?>
-                        </a>
-                    </div>
-                <?php } ?>
                 <?php if (!empty($api_token)) { ?>
                     <div class="hts-hpanel">
                         <a href="<?php echo esc_url($utils->getHpanelDomainUrl()); ?>" target="_blank" rel="noopener">

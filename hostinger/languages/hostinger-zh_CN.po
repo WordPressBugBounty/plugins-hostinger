@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:27+0000\n"
-"PO-Revision-Date: 2025-02-07 13:18+0000\n"
+"PO-Revision-Date: 2025-04-10 16:05+0000\n"
 "Last-Translator: Zhou Yu\n"
 "Language-Team: Chinese (China)\n"
 "Language: zh_CN\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.10; wp-6.4.5\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2\n"
 "X-Domain: hostinger"
 
-#: includes/Admin/Assets.php:145
+#: includes/Admin/Assets.php:146
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -34,18 +34,18 @@ msgstr "发生未知错误。请重试或联系客户支持。"
 msgid "Attention:"
 msgstr "请注意： "
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:142
 msgid "Bypass link"
 msgstr ""
 "旁路链接\n"
 "\n"
 "\n"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:150
 msgid "Bypass link reset"
 msgstr "重置旁路链路"
 
-#: includes/Admin/Assets.php:147 includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
 msgid "Cancel"
 msgstr "取消"
 
@@ -53,39 +53,43 @@ msgstr "取消"
 msgid "Coming Soon"
 msgstr "即将推出"
 
-#: includes/Admin/Assets.php:121
-#, fuzzy
+#: includes/Admin/Assets.php:122
 msgid "Disable application passwords"
-msgstr "禁用应用程序密码"
+msgstr "禁用应用程序密码 "
 
-#: includes/Admin/Assets.php:116
+#: includes/Admin/Assets.php:117
 msgid ""
 "Disable public access to the site (WordPress admins will still be able to "
 "access)"
 msgstr "禁止公众访问网站（WordPress 管理员仍可访问）"
 
-#: includes/Admin/Assets.php:119
+#: includes/Admin/Assets.php:120
 msgid "Disable XML-RPC"
 msgstr "禁用 XML-RPC"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:147
 msgid "Disclaimer"
 msgstr "免责声明"
 
-#: includes/Admin/Assets.php:135
+#: includes/Admin/Assets.php:116
+#, fuzzy
+msgid "Edit site"
+msgstr "编辑网站"
+
+#: includes/Admin/Assets.php:136
 msgid "For improved security, ensure you use the latest version of WordPress"
 msgstr "为提高安全性，请确保使用最新版本的 WordPress"
 
-#: includes/Admin/Assets.php:124
+#: includes/Admin/Assets.php:125
 #| msgid "Force HTTPs"
 msgid "Force HTTPS"
 msgstr "强制 HTTP "
 
-#: includes/Admin/Assets.php:126
+#: includes/Admin/Assets.php:127
 msgid "Force WWW"
 msgstr "强制 WWW"
 
-#: includes/Admin/Assets.php:144 includes/Admin/Hooks.php:55
+#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "明白 "
 
@@ -94,20 +98,20 @@ msgstr "明白 "
 msgid "Hostinger"
 msgstr "Hostinger"
 
-#: includes/Admin/Hooks.php:53
+#: includes/Admin/Hooks.php:55
 msgid "Hostinger Easy Onboarding"
 msgstr "Hostinger Easy Onboarding"
 
-#: includes/Admin/Hooks.php:49
+#: includes/Admin/Hooks.php:51
 msgid "Hostinger plugin updates"
 msgstr "Hostinger 插件更新 "
 
 #. Plugin Name of the plugin
-#: hostinger.php includes/Admin/Hooks.php:52
+#: hostinger.php includes/Admin/Hooks.php:54
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:144
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -129,19 +133,19 @@ msgstr "https://hostinger.com"
 msgid "https://www.hostinger.com"
 msgstr "https://www.hostinger.com"
 
-#: includes/Admin/Assets.php:134
+#: includes/Admin/Assets.php:135
 msgid "is recommended"
 msgstr "建议使用"
 
-#: includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:154
 msgid "Link has been reset"
 msgstr "已重置链接"
 
-#: includes/Admin/Assets.php:136
+#: includes/Admin/Assets.php:137
 msgid "Maintenance"
 msgstr "维护 "
 
-#: includes/Admin/Assets.php:140
+#: includes/Admin/Assets.php:141
 msgid "Maintenance mode"
 msgstr "维护模式 "
 
@@ -149,7 +153,7 @@ msgstr "维护模式 "
 msgid "New WordPress website is being built and will be published soon"
 msgstr "新的WordPress网站正在建设中，将很快发布"
 
-#: includes/Admin/Hooks.php:52
+#: includes/Admin/Hooks.php:54
 msgid "offers a toolkit for easier site maintenance."
 msgstr "提供了一个工具包，使网站维护更加轻松。 "
 
@@ -161,24 +165,28 @@ msgstr ""
 "在 <a href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
 "post\" target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>上"
 
-#: includes/Admin/Assets.php:115
-#, fuzzy
+#: includes/Admin/Assets.php:114
 msgid "Open guide"
-msgstr "开放指南"
+msgstr "开放指南 "
 
-#: includes/Admin/Assets.php:129
+#: includes/Admin/Assets.php:130
 msgid "PHP version"
 msgstr "PHP 版本 "
 
-#: includes/Admin/Assets.php:137
+#: includes/Admin/Assets.php:138
 msgid "Preview my website"
 msgstr "预览我的网站"
 
-#: includes/Admin/Assets.php:148
+#: includes/Admin/Assets.php:115
+#, fuzzy
+msgid "Preview site"
+msgstr "预览网站"
+
+#: includes/Admin/Assets.php:149
 msgid "Proceed anyway"
 msgstr "无论如何都要继续 "
 
-#: includes/Admin/Hooks.php:53
+#: includes/Admin/Hooks.php:55
 msgid ""
 "provides guidance and learning resources for beginners to get started with "
 "building a site using WordPress."
@@ -188,45 +196,45 @@ msgstr "为初学者提供指导和学习资源，帮助他们开始使用WordPr
 msgid "Rate this plugin"
 msgstr "评价此插件"
 
-#: includes/Admin/Assets.php:139
+#: includes/Admin/Assets.php:140
 msgid "Redirects"
 msgstr "重定向 "
 
-#: includes/Admin/Assets.php:125
+#: includes/Admin/Assets.php:126
 msgid "Redirects all HTTP URLs to HTTPS sites"
 msgstr "将所有 HTTP URL 重定向到 HTTPS 网站 "
 
-#: includes/Admin/Assets.php:127
+#: includes/Admin/Assets.php:128
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "将所有 WWW URL 重定向到非 WWW URL "
 
-#: includes/Admin/Assets.php:118 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
 msgid "Reset link"
 msgstr "重置链接 "
 
-#: includes/Admin/Assets.php:132
+#: includes/Admin/Assets.php:133
 msgid "Running the latest version"
 msgstr "运行最新版本 "
 
-#: includes/Admin/Assets.php:138
+#: includes/Admin/Assets.php:139
 msgid "Security"
 msgstr "安全 "
 
-#: includes/Admin/Assets.php:117
+#: includes/Admin/Assets.php:118
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "跳过维护模式的Skip-link"
 
-#: includes/Admin/Hooks.php:50
+#: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Hostinger 插件已被拆分为两个不同的插件： "
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:151
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
 msgstr "这将使当前生成的链接失效。此操作无法撤销，是否继续该操作？"
 
-#: includes/Admin/Assets.php:114 includes/Admin/Menu.php:22
+#: includes/Admin/Assets.php:113 includes/Admin/Menu.php:22
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "工具 "
@@ -235,11 +243,11 @@ msgstr "工具 "
 msgid "Unknown error code."
 msgstr "未知错误代码。"
 
-#: includes/Admin/Assets.php:133
+#: includes/Admin/Assets.php:134
 msgid "Update to"
 msgstr "更新为 "
 
-#: includes/Admin/Assets.php:131
+#: includes/Admin/Assets.php:132
 msgid "Various updates and fixes available in the newest version."
 msgstr "最新版本中提供了各种更新和修复。 "
 
@@ -250,31 +258,30 @@ msgid ""
 "persists, kindly contact our support team for assistance."
 msgstr "给您带来不便，我们深表歉意。人工智能内容生成过程遇到服务器错误。请稍后重试，如果问题仍然存在，请联系我们的客户支持团队寻求帮助。"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:143
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
 msgstr "我们将Hostinger插件分成了两个单独的插件：Hostinger Tools和Hostinger Easy Onboarding。"
 
-#: includes/Admin/Assets.php:122
-#, fuzzy
+#: includes/Admin/Assets.php:123
 msgid ""
 "WordPress application passwords allow users to authenticate API requests "
 "without using their main login credentials, allowing for third-party "
 "integrations."
-msgstr "WordPress 应用程序密码允许用户在不使用主登录凭证的情况下验证 API 请求，从而实现第三方集成。"
+msgstr "WordPress 应用程序密码允许用户在不使用主登录凭证的情况下验证 API 请求，从而实现第三方集成。 "
 
-#: includes/Admin/Assets.php:130
+#: includes/Admin/Assets.php:131
 msgid "WordPress version"
 msgstr "WordPress 版本 "
 
-#: includes/Admin/Assets.php:128
+#: includes/Admin/Assets.php:129
 msgid ""
 "WWW and non-WWW domain records are not pointing to the same host. Redirect "
 "not possible."
 msgstr "WWW 和非 WWW 域名记录未指向同一主机。无法重定向。 "
 
-#: includes/Admin/Assets.php:120
+#: includes/Admin/Assets.php:121
 msgid ""
 "XML-RPC allows apps to connect to your WordPress site, but might expose your "
 "site's security. Disable this feature if you don't need it"

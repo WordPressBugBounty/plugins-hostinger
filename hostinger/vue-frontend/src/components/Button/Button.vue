@@ -43,8 +43,9 @@ const { style, tag } = useButton(props);
       class="button-v2__icon"
       :name="iconPrepend"
       :color="style.icon.color"
-      :size="style.icon.size"
+      :dimensions="style.icon.size"
     />
+
     <div class="button-v2__loader">
       <CircleLoader
         v-show="isLoading"
@@ -64,7 +65,7 @@ const { style, tag } = useButton(props);
       class="button-v2__icon"
       :name="iconAppend"
       :color="style.icon.color"
-      :size="style.icon.size"
+      :dimensions="style.icon.size"
     />
   </Component>
 </template>

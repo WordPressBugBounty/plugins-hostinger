@@ -48,6 +48,8 @@ class Helper {
         'ur_PK' => 'hostinger.pk',
     ];
 
+    public const HOMEPAGE_DISPLAY = 'page';
+
 	/**
 	 *
 	 * Check if plugin is active
@@ -167,6 +169,23 @@ class Helper {
         // For versions below 4.9
         return '5.6';
     }
-}
 
-$hostinger_helper = new Helper();
+    public function get_edit_site_url(): string {
+        if ( wp_is_block_theme() ) {
+            return '';
+        }
+
+        $show_on_front = get_option( 'show_on_front' );
+        $front_page_id = get_option( 'page_on_front' );
+
+
+        if ( $show_on_front === self::HOMEPAGE_DISPLAY && $front_page_id ) {
+            return add_query_arg( [
+                    'post'   => $front_page_id,
+                    'action' => 'edit',
+                ], admin_url( 'post.php' ) );
+        }
+
+        return '';
+    }
+}
