@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc
 Requires at least: 5.5
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 3.0.34
+Stable tag: 3.0.35
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -493,3 +493,7 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 3.0.34 (2024-04-10)
 
 - Add preview and site edit buttons
+
+3.0.35 (2024-04-28)
+
+- Add edit site button support for block themes

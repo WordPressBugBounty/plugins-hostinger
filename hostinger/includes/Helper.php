@@ -172,18 +172,19 @@ class Helper {
 
     public function get_edit_site_url(): string {
         if ( wp_is_block_theme() ) {
-            return '';
+            return add_query_arg( [
+                'canvas' => 'edit',
+            ], admin_url( 'site-editor.php' ) );
         }
 
         $show_on_front = get_option( 'show_on_front' );
         $front_page_id = get_option( 'page_on_front' );
 
-
         if ( $show_on_front === self::HOMEPAGE_DISPLAY && $front_page_id ) {
             return add_query_arg( [
-                    'post'   => $front_page_id,
-                    'action' => 'edit',
-                ], admin_url( 'post.php' ) );
+                'post'   => $front_page_id,
+                'action' => 'edit',
+            ], admin_url( 'post.php' ) );
         }
 
         return '';
