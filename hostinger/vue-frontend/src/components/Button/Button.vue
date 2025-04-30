@@ -86,7 +86,7 @@ const { style, tag } = useButton(props);
   position: relative;
   transition: background-color 0.1s ease-in-out;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   font-weight: 700;
   width: fit-content;

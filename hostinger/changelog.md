@@ -411,3 +411,6 @@ Changelog
 
 3.0.35 (2024-04-28)
 - Add edit site button support for block themes
+
+3.0.36 (2024-04-29)
+- Style corrections
