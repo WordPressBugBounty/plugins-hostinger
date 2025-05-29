@@ -5,6 +5,7 @@ export type ToggleableSettingsData = {
   forceWww: boolean;
   isEligibleWwwRedirect: boolean;
   disableAuthenticationPassword: boolean;
+  enableLlmsTxt: boolean;
 };
 
 export type NonToggleableSettingsData = {

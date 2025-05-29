@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 8.0
-Stable tag: 3.0.36
+Stable tag: 3.0.37
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -501,3 +501,10 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 3.0.36 (2024-04-29)
 
 - Style corrections
+
+3.0.37 (2024-05-12)
+
+- Remove unused assets
+- Fixed Jetpack autoloader issue
+- Added LLMS.txt generation functionality
+- Added few new Spanish locales (es_AR, es_CO, es_MX)

@@ -14,6 +14,8 @@ use Hostinger\Helper;
  * Class for handling Settings Rest API
  */
 class SettingsRoutes {
+
+
 	/**
 	 * @var PluginSettings plugin settings.
 	 */
@@ -48,13 +50,13 @@ class SettingsRoutes {
 			'is_eligible_www_redirect' => $this->is_eligible_www_redirect(),
 		);
 
-        $hostinger_plugin_settings = get_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, [] );
+		$hostinger_plugin_settings = get_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, array() );
 
 		// If it is not set for some reason then set it.
 		if ( empty( $this->plugin_settings->get_plugin_settings()->get_bypass_code() ) ) {
-            if ( empty( $hostinger_plugin_settings['bypass_code'] ) ) {
-                $hostinger_plugin_settings['bypass_code'] = Helper::generate_bypass_code( 16 );
-            }
+			if ( empty( $hostinger_plugin_settings['bypass_code'] ) ) {
+				$hostinger_plugin_settings['bypass_code'] = Helper::generate_bypass_code( 16 );
+			}
 		}
 
 		$plugin_settings = $this->plugin_settings->get_plugin_settings()->to_array();
@@ -118,6 +120,10 @@ class SettingsRoutes {
 				$new_settings[ $field_key ] = ! empty( $parameters[ $field_key ] );
 			} else {
 				$new_settings[ $field_key ] = $field_value;
+			}
+
+			if ( $this->has_changed( $field_key, $new_settings[ $field_key ] ) ) {
+				do_action( "hostinger_tools_setting_{$field_key}_update", $new_settings[ $field_key ] );
 			}
 		}
 
@@ -273,6 +279,20 @@ class SettingsRoutes {
 		}
 
 		return '';
+	}
+
+	/**
+	 * Check if the field has changed.
+	 */
+	private function has_changed( string $field, mixed $new_value ): bool {
+		$settings = $this->plugin_settings->get_plugin_settings();
+		$settings = $settings->to_array();
+
+		if ( ! array_key_exists( $field, $settings ) ) {
+			return false;
+		}
+
+		return $new_value !== $settings[ $field ];
 	}
 
 	/**

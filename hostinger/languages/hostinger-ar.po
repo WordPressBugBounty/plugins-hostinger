@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:19+0000\n"
-"PO-Revision-Date: 2025-04-10 16:05+0000\n"
-"Last-Translator: Mohamed Doukkali\n"
+"PO-Revision-Date: 2025-05-28 06:44+0000\n"
+"Last-Translator: Maher Souilah\n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
@@ -13,10 +13,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.10; wp-6.4.5\n"
+"X-Loco-Version: 2.7.2; wp-6.8\n"
 "X-Domain: hostinger"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr " قد يؤدي تشغيل XML-RPC إلى جعل موقعك أقل أمانًا. هل تريد حقا المتابعة؟"
@@ -24,6 +24,11 @@ msgstr " قد يؤدي تشغيل XML-RPC إلى جعل موقعك أقل أما
 #: includes/Errors.php:16
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "المعذرة، لقد فشلت المحاولة. حاول مرة أخرى أو اتصل بالدعم."
+
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "تفضيلات الذكاء الاصطناعي"
 
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
@@ -34,15 +39,15 @@ msgstr "لقد حدث خطأ غير متوقّع. حاول مرة أخرى أو 
 msgid "Attention:"
 msgstr "انتباه:"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "رابط الوصلة الفرعية"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "إعادة تعيين الوصلة الفرعية"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "إلغاء"
 
@@ -51,7 +56,6 @@ msgid "Coming Soon"
 msgstr "قريباً"
 
 #: includes/Admin/Assets.php:122
-#, fuzzy
 msgid "Disable application passwords"
 msgstr "تعطيل كلمات مرور التطبيقات"
 
@@ -67,12 +71,11 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "تعطيل XML-RPC"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "إخلاء المسؤولية"
 
 #: includes/Admin/Assets.php:116
-#, fuzzy
 msgid "Edit site"
 msgstr "تحرير الموقع"
 
@@ -89,7 +92,7 @@ msgstr "فرض HTTPs"
 msgid "Force WWW"
 msgstr "فرض WWW"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "حصلت عليه"
 
@@ -111,7 +114,7 @@ msgstr "تحديثات المكوّن الإضافي Hostinger"
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -139,7 +142,16 @@ msgstr "https://www.hostinger.com"
 msgid "is recommended"
 msgstr "يوصى به"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr ""
+"اسمح لنماذج اللغات الكبيرة (LLMs) باكتشاف موقعك على WordPress وتفسيره "
+"والتفاعل معه."
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "تمت إعادة تعيين الرابط"
 
@@ -147,7 +159,7 @@ msgstr "تمت إعادة تعيين الرابط"
 msgid "Maintenance"
 msgstr "الصيانة"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "وضع الصيانة"
 
@@ -173,7 +185,6 @@ msgstr ""
 "post\" target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
 
 #: includes/Admin/Assets.php:114
-#, fuzzy
 msgid "Open guide"
 msgstr "الدليل المفتوح"
 
@@ -186,11 +197,10 @@ msgid "Preview my website"
 msgstr "معاينة موقعي الإلكتروني"
 
 #: includes/Admin/Assets.php:115
-#, fuzzy
 msgid "Preview site"
 msgstr "معاينة الموقع"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "تابع على أي حال"
 
@@ -217,7 +227,7 @@ msgstr "إعادة توجيه جميع عناوين URL الخاصة بـ HTTP �
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "إعادة توجيه جميع عناوين URL الخاصة بـ WWW إلى عناوين غير WWW"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "إعادة تعيين الرابط"
 
@@ -237,7 +247,7 @@ msgstr "تخطي الرابط الذي يتجاوز وضع الصيانة"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "تم تقسيم إضافة Hostinger إلى إضافتين مختلفتين:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -249,6 +259,11 @@ msgstr ""
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "الأدوات"
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "تشغيل LLMs.txt"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -272,7 +287,7 @@ msgstr ""
 "مستوى الخادم. يرجى المحاولة مرة أخرى لاحقًا، وإذا استمرت المشكلة، فيرجى "
 "الاتصال بفريق الدعم للحصول على المساعدة."
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
@@ -281,15 +296,13 @@ msgstr ""
 "Easy Onboarding"
 
 #: includes/Admin/Assets.php:123
-#, fuzzy
 msgid ""
 "WordPress application passwords allow users to authenticate API requests "
 "without using their main login credentials, allowing for third-party "
 "integrations."
 msgstr ""
-"تسمح كلمات مرور تطبيق ووردبريس للمستخدمين بمصادقة طلبات واجهة برمجة "
-"التطبيقات دون استخدام بيانات اعتماد تسجيل الدخول الرئيسية، مما يسمح بالتكامل "
-"مع الجهات الخارجية."
+"تسمح كلمات مرور تطبيق ووردبريس للمستخدمين بمصادقة طلبات API دون استخدام "
+"بيانات اعتماد تسجيل الدخول الرئيسية، مما يسمح بالتكامل مع الجهات الخارجية."
 
 #: includes/Admin/Assets.php:131
 msgid "WordPress version"

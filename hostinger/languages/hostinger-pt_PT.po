@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:27+0000\n"
-"PO-Revision-Date: 2025-04-10 16:11+0000\n"
+"PO-Revision-Date: 2025-05-28 06:47+0000\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese (Portugal)\n"
 "Language: pt_PT\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2\n"
+"X-Loco-Version: 2.7.2; wp-6.8\n"
 "X-Domain: hostinger"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -26,6 +26,11 @@ msgid "Action Failed. Try again or contact support. Apologies."
 msgstr ""
 "A ação falhou. Tente novamente ou contacte o apoio. As nossas desculpas."
 
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "Preferências de IA"
+
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
 msgstr "Ocorreu um erro inesperado. Tente novamente ou contacte o apoio."
@@ -35,15 +40,15 @@ msgstr "Ocorreu um erro inesperado. Tente novamente ou contacte o apoio."
 msgid "Attention:"
 msgstr "Atenção:"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "Link de bypass"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "Repor link do bypass"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -67,14 +72,13 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "Desativar XML-RPC"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "Declaração de exoneração de responsabilidade"
 
 #: includes/Admin/Assets.php:116
-#, fuzzy
 msgid "Edit site"
-msgstr "Editar sítio"
+msgstr "Editar site"
 
 #: includes/Admin/Assets.php:136
 msgid "For improved security, ensure you use the latest version of WordPress"
@@ -91,7 +95,7 @@ msgstr "Forçar HTTPs"
 msgid "Force WWW"
 msgstr "Forçar WWW"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "Percebi"
 
@@ -113,7 +117,7 @@ msgstr "Atualizações de plugin Hostinger"
 msgid "Hostinger Tools"
 msgstr "Ferramentas Hostinger"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -142,7 +146,16 @@ msgstr "https://www.hostinger.pt"
 msgid "is recommended"
 msgstr "é recomendado"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr ""
+"Deixe que os modelos de linguagem de grande dimensão (LLM) descubram, "
+"interpretem e interajam com o seu sítio Web WordPress."
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "O link for reposto"
 
@@ -150,7 +163,7 @@ msgstr "O link for reposto"
 msgid "Maintenance"
 msgstr "Manutenção"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "Modo de manutenção"
 
@@ -187,11 +200,10 @@ msgid "Preview my website"
 msgstr "Pré-visualizar o meu site"
 
 #: includes/Admin/Assets.php:115
-#, fuzzy
 msgid "Preview site"
-msgstr "Site de pré-visualização"
+msgstr "Pré-visualizar site"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "Continuar mesmo assim"
 
@@ -219,7 +231,7 @@ msgstr "Redireciona todos os URLs HTTP para sites HTTPS"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "Redireciona todos os URLs WWW para URLs não-WWW"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "Repor o link"
 
@@ -239,7 +251,7 @@ msgstr "Skip-link que contorna o modo de manutenção"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "O plugin Hostinger foi dividido em dois plugins diferentes:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -251,6 +263,11 @@ msgstr ""
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "Ferramentas"
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "Ativar LLMs.txt"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -274,7 +291,7 @@ msgstr ""
 "encontrou um erro no servidor. Tente novamente mais tarde e, se o problema "
 "persistir, contacte a nossa equipa de apoio para obter assistência."
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"

@@ -11,14 +11,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-03-20T07:03:00+00:00\n"
-"PO-Revision-Date: 2025-04-10 16:09+0000\n"
+"PO-Revision-Date: 2025-05-28 06:45+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: hi_IN\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2"
+"X-Loco-Version: 2.7.2; wp-6.8.1"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -31,6 +31,10 @@ msgstr ""
 "क्षमा करें, यह क्रिया विफल रही। कृपया दोबारा प्रयास करें या सपोर्ट से संपर्क "
 "करें।"
 
+#: includes/Admin/Assets.php:141
+msgid "AI Preferences"
+msgstr ""
+
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
 msgstr ""
@@ -42,15 +46,15 @@ msgstr ""
 msgid "Attention:"
 msgstr "कृपया ध्यान दें:"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "बायपास लिंक"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "बायपास लिंक रीसेट"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "रद्द करें"
 
@@ -73,13 +77,13 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "XML-RPC अक्षम करें"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "डिस्क्लेमर"
 
 #: includes/Admin/Assets.php:116
 msgid "Edit site"
-msgstr ""
+msgstr "एडिट साइट"
 
 #: includes/Admin/Assets.php:136
 msgid "For improved security, ensure you use the latest version of WordPress"
@@ -94,7 +98,7 @@ msgstr "HTTPs को बाध्य करें"
 msgid "Force WWW"
 msgstr "WWW को बाध्य करें"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "समझ गए"
 
@@ -116,7 +120,7 @@ msgstr "Hostinger प्लगइन अपडेट्स"
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -145,7 +149,13 @@ msgstr "https://www.hostinger.in"
 msgid "is recommended"
 msgstr "सुझाया गया है"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr ""
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "लिंक रीसेट की जा चुकी है"
 
@@ -153,9 +163,9 @@ msgstr "लिंक रीसेट की जा चुकी है"
 msgid "Maintenance"
 msgstr "रखरखाव"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
-msgstr "रखरखाव मोड"
+msgstr "मेंटेनेंस मोड"
 
 #: includes/Views/ComingSoon.php:27
 msgid "New WordPress website is being built and will be published soon"
@@ -187,9 +197,9 @@ msgstr "मेरी वेबसाइट का प्रीव्यू द�
 
 #: includes/Admin/Assets.php:115
 msgid "Preview site"
-msgstr ""
+msgstr "साइट का प्रीव्यू देखें"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "आगे बढ़ें"
 
@@ -217,7 +227,7 @@ msgstr "सभी HTTP URLs को HTTPS साइट्स पर रीडा�
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "सभी WWW URLs को गैर-WWW URLs पर रीडायरेक्ट करता है"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "लिंक रीसेट करें"
 
@@ -231,13 +241,13 @@ msgstr "सुरक्षा"
 
 #: includes/Admin/Assets.php:118
 msgid "Skip-link that bypasses the maintenance mode"
-msgstr "स्किप-लिंक जो रखरखाव मोड को बायपास करती है"
+msgstr "स्किप-लिंक जो मेंटेनेंस मोड को बायपास करती है"
 
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Hostinger प्लगइन को दो अलग-अलग प्लगइन्स में बांटा गया है:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -249,6 +259,10 @@ msgstr ""
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "टूल्स"
+
+#: includes/Admin/Assets.php:142
+msgid "Turn on LLMs.txt"
+msgstr ""
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -272,7 +286,7 @@ msgstr ""
 "है। कृपया थोड़ी देर बाद दोबारा प्रयास करें। और यदि समस्या बनी रहती है, तो "
 "हमारी सहायता टीम से संपर्क करें।"
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"

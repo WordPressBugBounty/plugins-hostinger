@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-04-10 16:09+0000\n"
+"PO-Revision-Date: 2025-05-28 06:46+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,9 +10,13 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "Language: id_ID\n"
 "Project-Id-Version: Plugins - Hostinger Tools - Stable (latest release)\n"
-"Language-Team: Indonesian"
+"Language-Team: Indonesian\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-14 03:22+0000\n"
+"Last-Translator: \n"
+"X-Loco-Version: 2.7.2; wp-6.8"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -21,6 +25,11 @@ msgstr ""
 #: includes/Errors.php:16
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "Maaf, terjadi kesalahan. Silakan coba lagi atau hubungi tim support."
+
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "Preferensi AI"
 
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
@@ -31,15 +40,15 @@ msgstr "Maaf, terjadi kesalahan. Silakan coba lagi atau hubungi tim support."
 msgid "Attention:"
 msgstr "Perhatian"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "Bypass link"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "Lewati reset link"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "Batalkan"
 
@@ -62,12 +71,11 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "Nonaktifkan XML-RPC"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "Penting"
 
 #: includes/Admin/Assets.php:116
-#, fuzzy
 msgid "Edit site"
 msgstr "Edit situs"
 
@@ -85,7 +93,7 @@ msgstr "Force HTTPS"
 msgid "Force WWW"
 msgstr "Force WWW"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "Oke"
 
@@ -107,7 +115,7 @@ msgstr "Update plugin Hostinger"
 msgid "Hostinger Tools"
 msgstr "Tool Hostinger"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -136,7 +144,16 @@ msgstr "https://www.hostinger.com"
 msgid "is recommended"
 msgstr "disarankan"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr ""
+"Biarkan Large Language Model (LLM) menemukan, menafsirkan, dan berinteraksi "
+"dengan situs WordPress Anda."
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "Link telah direset"
 
@@ -144,7 +161,7 @@ msgstr "Link telah direset"
 msgid "Maintenance"
 msgstr "Maintenance"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "Mode maintenance"
 
@@ -167,7 +184,7 @@ msgstr ""
 
 #: includes/Admin/Assets.php:114
 msgid "Open guide"
-msgstr "Buka panduan"
+msgstr "Lihat panduan"
 
 #: includes/Admin/Assets.php:130
 msgid "PHP version"
@@ -175,14 +192,13 @@ msgstr "Versi PHP"
 
 #: includes/Admin/Assets.php:138
 msgid "Preview my website"
-msgstr "Pratinjau website"
+msgstr "Lihat situs saya"
 
 #: includes/Admin/Assets.php:115
-#, fuzzy
 msgid "Preview site"
-msgstr "Situs pratinjau"
+msgstr "Lihat situs"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "Tetap lanjutkan"
 
@@ -210,7 +226,7 @@ msgstr "Alihkan semua HTTP URL ke situs HTTPS"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "Alihkan semua WWW URL ke URL non WWW"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "Reset link"
 
@@ -230,7 +246,7 @@ msgstr "Skip-link untuk melewati mode maintenance"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Plugin Hostinger dibagi menjadi dua plugin berbeda:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -242,6 +258,11 @@ msgstr ""
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "Tool"
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "Aktifkan LLMs.txt"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -265,7 +286,7 @@ msgstr ""
 "ketidaknyamanan ini. Silakan coba lagi nanti atau hubungi tim support kami "
 "untuk mendapatkan bantuan."
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"

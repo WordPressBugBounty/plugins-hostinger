@@ -10,14 +10,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-04-10 16:09+0000\n"
+"PO-Revision-Date: 2025-05-28 06:45+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: he_IL\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2"
+"X-Loco-Version: 2.7.2; wp-6.8"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -26,6 +26,11 @@ msgstr ""
 #: includes/Errors.php:16
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "הפעולה נכשלה. נסו שנית או צרו קשר עם התמיכה. סליחה."
+
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "העדפות AI"
 
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
@@ -36,15 +41,15 @@ msgstr "אירעה שגיאה בלתי-צפויה. אנא נסו שנית או �
 msgid "Attention:"
 msgstr "שימו לב:"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "קישור מעקף"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "איפוס קישור מעקף"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -66,13 +71,13 @@ msgstr "השבתת גישה ציבורית לאתר (למנהלי WordPress עד
 msgid "Disable XML-RPC"
 msgstr "השבתת XML-RPC"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "גילוי נאות"
 
 #: includes/Admin/Assets.php:116
 msgid "Edit site"
-msgstr ""
+msgstr "ערוך אתר"
 
 #: includes/Admin/Assets.php:136
 msgid "For improved security, ensure you use the latest version of WordPress"
@@ -86,7 +91,7 @@ msgstr "כפה HTTPS"
 msgid "Force WWW"
 msgstr "כפה WWW"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "הבנתי"
 
@@ -108,7 +113,7 @@ msgstr "עדכוני תוספים של Hostinger"
 msgid "Hostinger Tools"
 msgstr "כלי Hostinger"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -136,7 +141,15 @@ msgstr "https://www.hostinger.co.il"
 msgid "is recommended"
 msgstr "מומלץ"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr ""
+"תנו למודלים לשוניים גדולים (LLM) לגלות, לפרש ולתקשר עם אתר הוורדפרס שלכם."
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "הקישור אופס"
 
@@ -144,7 +157,7 @@ msgstr "הקישור אופס"
 msgid "Maintenance"
 msgstr "תחזוקה"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "מצב תחזוקה"
 
@@ -178,9 +191,9 @@ msgstr "הצג תצוגה-מקדימה לאתר שלי"
 
 #: includes/Admin/Assets.php:115
 msgid "Preview site"
-msgstr ""
+msgstr "תצוגה מקדימה לאתר"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "המשך בכל מקרה"
 
@@ -207,7 +220,7 @@ msgstr "מפנה מחדש את כל ה-URL של HTTP לכאלה של HTTPS"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "מפנה מחדש את כל ה-URL של WWW לכאלה שאינם WWW"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "קישור לאיפוס"
 
@@ -227,7 +240,7 @@ msgstr "קישור-דילוג שעוקף את מצב התחזוקה"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "התוסף של Hostinger פוצל לשני תוספים נפרדים:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -239,6 +252,11 @@ msgstr ""
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "כלים"
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "הפעל את LLMs.txt"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -262,7 +280,7 @@ msgstr ""
 "שנית מאוחר יותר, ואם הבעיה נמשכת, צרו קשר עם צוות התמיכה שלנו ונשמח לעזור "
 "לכם."
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"

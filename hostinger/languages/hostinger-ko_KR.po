@@ -10,14 +10,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-04-10 16:09+0000\n"
+"PO-Revision-Date: 2025-05-28 06:46+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: ko_KR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2"
+"X-Loco-Version: 2.7.2; wp-6.8.1"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr " XML-RPC를 켜면 사이트의 보안이 약해질 수 있습니다. 계속 진행하시겠습니까?"
@@ -25,6 +25,11 @@ msgstr " XML-RPC를 켜면 사이트의 보안이 약해질 수 있습니다. �
 #: includes/Errors.php:16
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "작업이 실패했습니다. 다시 시도하거나 지원팀에 문의하세요. 죄송합니다."
+
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "AI 기본 설정"
 
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
@@ -35,15 +40,15 @@ msgstr "예기치 않은 오류가 발생했습니다. 다시 시도하거나 �
 msgid "Attention:"
 msgstr "주의:"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "바이패스 링크"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "링크 재설정 우회"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "취소"
 
@@ -65,12 +70,11 @@ msgstr "사이트에 대한 공개 액세스를 비활성화합니다(워드프�
 msgid "Disable XML-RPC"
 msgstr "XML-RPC 비활성화"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "고지 사항"
 
 #: includes/Admin/Assets.php:116
-#, fuzzy
 msgid "Edit site"
 msgstr "사이트 편집"
 
@@ -86,7 +90,7 @@ msgstr "HTTPS 강제 적용"
 msgid "Force WWW"
 msgstr "WWW 강제 적용"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "알겠습니다"
 
@@ -108,7 +112,7 @@ msgstr "호스팅어 플러그인 업데이트"
 msgid "Hostinger Tools"
 msgstr "호스팅어 도구"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -134,7 +138,14 @@ msgstr "https://www.hostinger.com"
 msgid "is recommended"
 msgstr "추천됨"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr "대규모 언어 모델(LLM)이 워드프레스 사이트를 검색하고 해석하며 상호 작용할 수 있도록 하세요."
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "링크가 재설정되었습니다"
 
@@ -142,7 +153,7 @@ msgstr "링크가 재설정되었습니다"
 msgid "Maintenance"
 msgstr "유지 보수"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "유지 보수 모드"
 
@@ -175,11 +186,10 @@ msgid "Preview my website"
 msgstr "내 웹사이트 미리보기"
 
 #: includes/Admin/Assets.php:115
-#, fuzzy
 msgid "Preview site"
 msgstr "사이트 미리보기"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "계속 진행하기"
 
@@ -205,7 +215,7 @@ msgstr "모든 HTTP URL을 HTTPS 사이트로 리디렉션합니다"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "모든 WWW URL을 비WWW URL로 리디렉션합니다"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "링크 재설정"
 
@@ -219,13 +229,13 @@ msgstr "보안"
 
 #: includes/Admin/Assets.php:118
 msgid "Skip-link that bypasses the maintenance mode"
-msgstr "유지 관리 모드를 우회하는 스킵 링크"
+msgstr "유지 관리 모드 우회용 스킵 링크"
 
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "호스팅어 플러그인은 두 개의 다른 플러그인으로 분리되었습니다:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -235,6 +245,11 @@ msgstr "그러면 현재 사용 중인 생성된 링크가 무효화됩니다. �
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "도구"
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "LLMs.txt 켜기"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -257,7 +272,7 @@ msgstr ""
 "불편을 드려 죄송합니다. AI 콘텐츠 생성 과정에서 서버 오류가 발생했습니다. 나중에 다시 시도해 보시고 문제가 지속되면 지원팀에 "
 "문의하여 도움을 받으세요."
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"

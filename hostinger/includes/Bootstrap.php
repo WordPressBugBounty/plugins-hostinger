@@ -15,6 +15,7 @@ use Hostinger\WpHelper\Utils;
 defined( 'ABSPATH' ) || exit;
 
 class Bootstrap {
+
 	protected Loader $loader;
 
 	public function __construct() {
@@ -65,6 +66,8 @@ class Bootstrap {
 		new Hooks();
 
 		$plugin_settings = new PluginSettings();
+
+		new LlmsTxtGenerator( $plugin_settings );
 
 		$settings_routes = new SettingsRoutes( $plugin_settings );
 		$routes          = new Routes( $settings_routes );

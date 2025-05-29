@@ -10,14 +10,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-04-10 16:09+0000\n"
+"PO-Revision-Date: 2025-05-28 06:46+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Loco-Version: 2.6.14; wp-6.7.1"
+"X-Loco-Version: 2.7.2; wp-6.8"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr "XML-RPCを有効化すると、サイトの安全性に影響が出る可能性があります。続行しますか？"
@@ -25,6 +25,11 @@ msgstr "XML-RPCを有効化すると、サイトの安全性に影響が出る�
 #: includes/Errors.php:16
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "アクションに失敗しました。再試行するか、サポートにお問い合わせください。"
+
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "AIプリファレンス"
 
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
@@ -35,15 +40,15 @@ msgstr "予期しないエラーが発生しました。再試行するか、サ
 msgid "Attention:"
 msgstr "注："
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "バイパスリンク"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "バイパスリンクのリセット"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "キャンセル"
 
@@ -52,7 +57,6 @@ msgid "Coming Soon"
 msgstr "近日公開"
 
 #: includes/Admin/Assets.php:122
-#, fuzzy
 msgid "Disable application passwords"
 msgstr "アプリケーションのパスワードを無効にする"
 
@@ -66,17 +70,15 @@ msgstr "サイトへの一般公開のアクセスを無効にする（WordPress
 msgid "Disable XML-RPC"
 msgstr "XML-RPCの無効化"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "免責事項"
 
 #: includes/Admin/Assets.php:116
-#, fuzzy
 msgid "Edit site"
-msgstr "サイト編集"
+msgstr "サイトを編集"
 
 #: includes/Admin/Assets.php:136
-#, fuzzy
 msgid "For improved security, ensure you use the latest version of WordPress"
 msgstr "セキュリティ向上のため、WordPressの最新バージョンを使用してください。"
 
@@ -88,8 +90,7 @@ msgstr "HTTPSの強制"
 msgid "Force WWW"
 msgstr "WWWの強制"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
-#, fuzzy
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "了解"
 
@@ -111,21 +112,19 @@ msgstr "Hostingerプラグインの更新"
 msgid "Hostinger Tools"
 msgstr "Hostingerツール"
 
-#: includes/Admin/Assets.php:144
-#, fuzzy
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
 "website."
 msgstr ""
-"Hostinger Toolsは、サイト管理を簡素化する新しいツールを提供します。また、Hostinger Easy "
-"Onboardingは、ウェブサイト構築のステップをガイドします。"
+"Hostinger Toolsでは、サイト管理をよりシンプルにする新しいツールをご利用いただけます。また、Hostinger Easy "
+"Onboardingは、Webサイトの構築手順を順を追って案内します。"
 
 #. Description of the plugin
 #: hostinger.php
-#, fuzzy
 msgid "Hostinger WordPress plugin."
-msgstr "Hostinger WordPressプラグイン。"
+msgstr "Hostinger WordPressプラグイン"
 
 #. Plugin URI of the plugin
 #: hostinger.php
@@ -138,11 +137,17 @@ msgid "https://www.hostinger.com"
 msgstr "https://www.hostinger.com"
 
 #: includes/Admin/Assets.php:135
-#, fuzzy
 msgid "is recommended"
-msgstr "をお勧めします。"
+msgstr "-"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr "大規模言語モデル(LLM)があなたのWordPressサイトを発見し、解釈し、対話します。"
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "リンクがリセットされました"
 
@@ -150,19 +155,17 @@ msgstr "リンクがリセットされました"
 msgid "Maintenance"
 msgstr "メンテナンス"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "メンテナンスモード"
 
 #: includes/Views/ComingSoon.php:27
-#, fuzzy
 msgid "New WordPress website is being built and will be published soon"
-msgstr "新しいWordPressウェブサイトを構築中、近日公開予定"
+msgstr "新しいWordPressサイトの構築中です。まもなく公開されます。"
 
 #: includes/Admin/Hooks.php:54
-#, fuzzy
 msgid "offers a toolkit for easier site maintenance."
-msgstr "は、サイトのメンテナンスを容易にするツールキットを提供する。"
+msgstr "は、サイトのメンテナンスを簡略化するツールキットを提供します。"
 
 #: includes/Admin/Views/Partials/RateUs.php:38
 msgid ""
@@ -173,34 +176,30 @@ msgstr ""
 "post\" target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
 
 #: includes/Admin/Assets.php:114
-#, fuzzy
 msgid "Open guide"
-msgstr "オープンガイド"
+msgstr "ガイドを開く"
 
 #: includes/Admin/Assets.php:130
 msgid "PHP version"
 msgstr "PHPバージョン"
 
 #: includes/Admin/Assets.php:138
-#, fuzzy
 msgid "Preview my website"
-msgstr "私のウェブサイトをプレビューする"
+msgstr "-"
 
 #: includes/Admin/Assets.php:115
-#, fuzzy
 msgid "Preview site"
-msgstr "プレビューサイト"
+msgstr "サイトをプレビュー"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "続行する"
 
 #: includes/Admin/Hooks.php:55
-#, fuzzy
 msgid ""
 "provides guidance and learning resources for beginners to get started with "
 "building a site using WordPress."
-msgstr "は、初心者がWordPressを使ってサイト構築を始めるためのガイダンスと学習リソースを提供しています。"
+msgstr "は、WordPressを使用sいてサイトを構築を始めるための初心者向けのガイダンスと学習リソースを提供します。"
 
 #: includes/Admin/Views/Partials/RateUs.php:2
 msgid "Rate this plugin"
@@ -218,7 +217,7 @@ msgstr "すべてのHTTPのURLをHTTPSサイトにリダイレクトします。
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "すべてのWWWのURLをWWW以外のURLにリダイレクトします。"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "リンクをリセット"
 
@@ -235,11 +234,10 @@ msgid "Skip-link that bypasses the maintenance mode"
 msgstr "メンテナンスモードを回避するスキップリンク"
 
 #: includes/Admin/Hooks.php:52
-#, fuzzy
 msgid "The Hostinger plugin has been split into two different plugins:"
-msgstr "Hostingerプラグインは2つの異なるプラグインに分割されました："
+msgstr "Hostingerプラグインは以下の2つのプラグインに分割されました："
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -250,10 +248,14 @@ msgstr "現在使用中の生成リンクが無効になります。この操作
 msgid "Tools"
 msgstr "ツール"
 
-#: includes/Errors.php:38
+#: includes/Admin/Assets.php:142
 #, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "LLMをオンにする.txt"
+
+#: includes/Errors.php:38
 msgid "Unknown error code."
-msgstr "不明なエラーコード。"
+msgstr "不明なエラーコード"
 
 #: includes/Admin/Assets.php:134
 msgid "Update to"
@@ -264,40 +266,36 @@ msgid "Various updates and fixes available in the newest version."
 msgstr "最新バージョンにはさまざまな更新と修正が含まれています。"
 
 #: includes/Errors.php:22
-#, fuzzy
 msgid ""
 "We apologize for the inconvenience. The AI content generation process "
 "encountered a server error. Please try again later, and if the issue "
 "persists, kindly contact our support team for assistance."
 msgstr ""
-"ご迷惑をおかけして申し訳ありません。AIコンテンツ生成プロセスでサーバーエラーが発生しました。問題が解決しない場合は、サポートチームまでお問い合わせください。"
+"ご不便をおかけして申し訳ございません。AIコンテンツ生成プロセス中にサーバーエラーが発生しました。後ほど再度お試しいただき、問題が解決しない場合は、サポートチームにご連絡いただけますようお願い申し上げます。"
 
-#: includes/Admin/Assets.php:143
-#, fuzzy
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
-msgstr "HostingerプラグインをHostinger ToolsとHostinger Easy Onboardingの2つに分割します。"
+msgstr "HostingerプラグインはHostinger ToolsとHostinger Easy Onboardingの2つに分割されます"
 
 #: includes/Admin/Assets.php:123
-#, fuzzy
 msgid ""
 "WordPress application passwords allow users to authenticate API requests "
 "without using their main login credentials, allowing for third-party "
 "integrations."
 msgstr ""
-"WordPressのアプリケーションパスワードは、ユーザーがメインのログイン認証情報を使用せずにAPIリクエストを認証することを可能にし、サードパーティの統合を可能にします。"
+"WordPressのアプリケーションパスワードを使うと、ユーザーはメインのログイン情報を使用せずにAPIリクエストを認証でき、サードパーティのサービスとの連携が可能になります。"
 
 #: includes/Admin/Assets.php:131
 msgid "WordPress version"
 msgstr "WordPressバージョン"
 
 #: includes/Admin/Assets.php:129
-#, fuzzy
 msgid ""
 "WWW and non-WWW domain records are not pointing to the same host. Redirect "
 "not possible."
-msgstr "WWWドメインレコードと非WWWドメインレコードが同じホストを指していない。リダイレクトできない。"
+msgstr "WWWと非WWWのドメインレコードが同じホストを指していません。リダイレクトはできません。"
 
 #: includes/Admin/Assets.php:121
 msgid ""

@@ -2,47 +2,42 @@
 
 namespace Hostinger;
 
-use Hostinger\DefaultOptions;
-use Hostinger\Admin\Options\PluginOptions;
 use Hostinger\Admin\PluginSettings;
 use Hostinger\WpHelper\Utils;
 
 defined( 'ABSPATH' ) || exit;
 
 class Hooks {
-    public function __construct() {
-        // XMLRpc / Force SSL
-        add_filter( 'xmlrpc_enabled', array( $this, 'check_xmlrpc_enabled' ) );
-        add_filter( 'wp_is_application_passwords_available', array( $this, 'check_authentication_password_enabled' ) );
-        add_filter( 'wp_headers', array( $this, 'check_pingback' ) );
-        add_filter( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
+	public function __construct() {
+		// XMLRpc / Force SSL
+		add_filter( 'xmlrpc_enabled', array( $this, 'check_xmlrpc_enabled' ) );
+		add_filter( 'wp_is_application_passwords_available', array( $this, 'check_authentication_password_enabled' ) );
+		add_filter( 'wp_headers', array( $this, 'check_pingback' ) );
+		add_filter( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
 
-        add_action( 'update_option_woocommerce_coming_soon', array( $this, 'litespeed_flush_cache' ) );
-        add_action( 'update_option_woocommerce_store_pages_only', array( $this, 'litespeed_flush_cache' ) );
-        add_action( 'upgrader_process_complete', array( $this, 'disable_auth_passwords_on_update' ), 10, 2 );
-    }
+		add_action( 'update_option_woocommerce_coming_soon', array( $this, 'litespeed_flush_cache' ) );
+		add_action( 'update_option_woocommerce_store_pages_only', array( $this, 'litespeed_flush_cache' ) );
+		add_action( 'upgrader_process_complete', array( $this, 'disable_auth_passwords_on_update' ), 10, 2 );
+	}
 
-    public function disable_auth_passwords_on_update( \WP_Upgrader $upgrader_object, array $options ): void {
-        if ( $options['action'] !== 'update' || $options['type'] !== 'plugin' || empty( $options['plugins'] ) ) {
-            return;
-        }
+	public function disable_auth_passwords_on_update( \WP_Upgrader $upgrader_object, array $options ): void {
+		if ( $options['action'] !== 'update' || $options['type'] !== 'plugin' || empty( $options['plugins'] ) ) {
+			return;
+		}
 
-        if ( ! in_array( 'hostinger/hostinger.php', $options['plugins'], true ) ) {
-            return;
-        }
+		if ( ! in_array( 'hostinger/hostinger.php', $options['plugins'], true ) ) {
+			return;
+		}
 
-        $settings = get_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, [] );
+		$settings = get_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, array() );
 
-        if ( ! empty( $settings['disable_authentication_password'] ) ) {
-            return;
-        }
+		if ( ! empty( $settings['disable_authentication_password'] ) ) {
+			return;
+		}
 
-        $default_options  = new DefaultOptions();
-        $updated_settings = $default_options->check_authentication_password( $settings );
-
-        $plugin_options = new PluginOptions( $updated_settings );
-        update_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, $plugin_options->to_array(), false );
-    }
+		$options = new DefaultOptions();
+		$options->configure_authentication_password();
+	}
 
 	/**
 	 * @return void
@@ -89,7 +84,7 @@ class Hooks {
 	}
 
 	/**
-	 * @param  mixed $headers
+	 * @param mixed $headers
 	 *
 	 * @return mixed
 	 */
@@ -118,23 +113,23 @@ class Hooks {
 		return true;
 	}
 
-    /**
-     * @return bool
-     */
-    public function check_authentication_password_enabled(): bool {
-        $plugin_settings = new PluginSettings();
-        $settings        = $plugin_settings->get_plugin_settings();
+	/**
+	 * @return bool
+	 */
+	public function check_authentication_password_enabled(): bool {
+		$plugin_settings = new PluginSettings();
+		$settings        = $plugin_settings->get_plugin_settings();
 
-        if ( $settings->get_disable_authentication_password() ) {
-            return false;
-        }
+		if ( $settings->get_disable_authentication_password() ) {
+			return false;
+		}
 
-        return true;
-    }
+		return true;
+	}
 
-    public function litespeed_flush_cache(): void {
-        if ( has_action( 'litespeed_purge_all' ) ) {
-            do_action( 'litespeed_purge_all' );
-        }
-    }
+	public function litespeed_flush_cache(): void {
+		if ( has_action( 'litespeed_purge_all' ) ) {
+			do_action( 'litespeed_purge_all' );
+		}
+	}
 }

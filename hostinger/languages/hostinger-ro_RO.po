@@ -10,15 +10,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-04-10 16:11+0000\n"
+"PO-Revision-Date: 2025-05-28 06:47+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: ro_RO\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 :(((n%100>19)||(( n%100==0)&&(n!"
 "=0)))? 2 : 1));\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2"
+"X-Loco-Version: 2.7.2; wp-6.8"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -31,6 +31,11 @@ msgstr ""
 "Acțiunea a eșuat. Încearcă din nou sau contactează echipa de asistență. Ne "
 "pare rău."
 
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "Preferințe AI"
+
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
 msgstr ""
@@ -42,15 +47,15 @@ msgstr ""
 msgid "Attention:"
 msgstr "Atenție:"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "Link de bypass"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "Resetează link-ul de bypass"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "Anulează"
 
@@ -74,14 +79,13 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "Dezactivează XML-RPC"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "Avertizare"
 
 #: includes/Admin/Assets.php:116
-#, fuzzy
 msgid "Edit site"
-msgstr "Editați site-ul"
+msgstr "Editează site-ul"
 
 #: includes/Admin/Assets.php:136
 msgid "For improved security, ensure you use the latest version of WordPress"
@@ -97,7 +101,7 @@ msgstr "Forțează HTTPS"
 msgid "Force WWW"
 msgstr "Forțează WWW"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "Am înțeles"
 
@@ -119,7 +123,7 @@ msgstr "Actualizări plugin-uri Hostinger"
 msgid "Hostinger Tools"
 msgstr "Instrumente Hostinger"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -147,7 +151,16 @@ msgstr "https://www.hostinger.com/ro"
 msgid "is recommended"
 msgstr "este recomandat"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr ""
+"Permiteți modelelor lingvistice mari (LLM) să descopere, să interpreteze și "
+"să interacționeze cu site-ul dvs. WordPress."
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "Link-ul a fost resetat"
 
@@ -155,7 +168,7 @@ msgstr "Link-ul a fost resetat"
 msgid "Maintenance"
 msgstr "Întreținere"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "Mod Întreținere"
 
@@ -187,11 +200,10 @@ msgid "Preview my website"
 msgstr "Previzualizează site-ul"
 
 #: includes/Admin/Assets.php:115
-#, fuzzy
 msgid "Preview site"
 msgstr "Previzualizare site"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "Continuă oricum"
 
@@ -219,7 +231,7 @@ msgstr "Redirecționează toate URL-urile HTTP către site-uri HTTPS"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "Redirecționează toate URL-urile WWW către site-uri non-WWW"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "Resetează link-ul"
 
@@ -239,7 +251,7 @@ msgstr "Link de bypass care ocolește modul Întreținere."
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Plugin-ul Hostinger a fost împărțit în două plugin-uri diferite:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -251,6 +263,11 @@ msgstr ""
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "Instrumente"
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "Porniți LLMs.txt"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -275,7 +292,7 @@ msgstr ""
 "târziu și, dacă problema persistă, te rugăm să contactezi echipa de "
 "asistență."
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"

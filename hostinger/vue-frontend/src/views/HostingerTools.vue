@@ -100,6 +100,16 @@ const redirectsSection = computed(() => {
   return sections.filter((section) => section.isVisible);
 });
 
+const llmsSection = computed(() => [
+  {
+    id: "enable-llms-txt",
+    title: translate("hostinger_tools_enable_llms_txt"),
+    description: translate("hostinger_tools_llms_txt_description"),
+    isVisible: true,
+    toggleValue: settingsData.value?.enableLlmsTxt,
+  },
+]);
+
 const { openModal } = useModal();
 
 const isWordPressUpdateDisplayed = computed(() => {
@@ -257,6 +267,12 @@ const onUpdateSettings = (value: boolean, item: SectionItem) => {
         @save-section="onSaveSection"
         :title="translate('hostinger_tools_redirects')"
         :section-items="redirectsSection"
+      />
+      <SectionCard
+        :is-loading="isPageLoading"
+        @save-section="onSaveSection"
+        :title="translate('hostinger_tools_llms')"
+        :section-items="llmsSection"
       />
     </div>
   </div>

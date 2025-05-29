@@ -10,4 +10,5 @@ return array(
     'Hostinger\\WpHelper\\' => array($vendorDir . '/hostinger/hostinger-wp-helper/src'),
     'Hostinger\\Tests\\' => array($vendorDir . '/hostinger/hostinger-wp-helper/tests/phpunit'),
     'Hostinger\\' => array($baseDir . '/includes'),
+    'Automattic\\Jetpack\\Autoloader\\' => array($vendorDir . '/automattic/jetpack-autoloader/src'),
 );

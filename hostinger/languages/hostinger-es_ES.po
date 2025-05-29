@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-04-10 16:11+0000\n"
+"PO-Revision-Date: 2025-05-28 06:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Plugins - Hostinger Tools - Stable (latest release)\n"
 "Language-Team: Spanish (Spain)"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -23,6 +23,11 @@ msgstr ""
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr ""
 "La acción ha fallado. Prueba de nuevo o contacta con soporte. Disculpas."
+
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "Preferencias de IA"
 
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
@@ -35,15 +40,15 @@ msgstr ""
 msgid "Attention:"
 msgstr "Atención:"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "Enlace de derivación"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "Restablecer enlace de derivación"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -67,12 +72,11 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "Desactivar XML-RPC"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "Descargo de responsabilidad"
 
 #: includes/Admin/Assets.php:116
-#, fuzzy
 msgid "Edit site"
 msgstr "Editar sitio"
 
@@ -90,7 +94,7 @@ msgstr "Forzar HTTPS"
 msgid "Force WWW"
 msgstr "Forzar WWW"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "Entendido"
 
@@ -112,7 +116,7 @@ msgstr "Actualizaciones del plugin Hostinger"
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -141,7 +145,16 @@ msgstr "https://www.hostinger.es"
 msgid "is recommended"
 msgstr "se recomienda"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr ""
+"Deje que los grandes modelos lingüísticos (LLM) descubran, interpreten e "
+"interactúen con su sitio de WordPress."
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "Se ha restablecido el enlace"
 
@@ -149,7 +162,7 @@ msgstr "Se ha restablecido el enlace"
 msgid "Maintenance"
 msgstr "Mantenimiento"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "Modo de mantenimiento"
 
@@ -183,11 +196,10 @@ msgid "Preview my website"
 msgstr "Previsualizar mi sitio web"
 
 #: includes/Admin/Assets.php:115
-#, fuzzy
 msgid "Preview site"
-msgstr "Vista previa"
+msgstr "Previsualizar el sitio"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "Continuar de todas formas"
 
@@ -215,7 +227,7 @@ msgstr "Redirige todas las URL HTTP a sitios HTTPS"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "Redirige todas las URL WWW a las no WWW"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "Restablecer enlace"
 
@@ -235,7 +247,7 @@ msgstr "Enlace de derivación que omite el modo de mantenimiento"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "El plugin Hostinger se ha dividido en dos plugins diferentes:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -247,6 +259,11 @@ msgstr ""
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "Herramientas"
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "Activar LLMs.txt"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -272,7 +289,7 @@ msgstr ""
 "nuevo más tarde, y si el problema continúa, contacta con el equipo de "
 "soporte para asistencia."
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"

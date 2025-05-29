@@ -10,14 +10,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-04-10 16:11+0000\n"
+"PO-Revision-Date: 2025-05-28 06:48+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Loco-Version: 2.6.11; wp-6.4.5"
+"X-Loco-Version: 2.7.2; wp-6.8"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -28,6 +28,11 @@ msgstr ""
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "การดำเนินการล้มเหลว โปรดลองอีกครั้งหรือติดต่อฝ่ายสนับสนุน"
 
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "การตั้งค่าความชอบของ AI"
+
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
 msgstr "เกิดข้อผิดพลาดที่ไม่คาดคิด โปรดลองอีกครั้งหรือติดต่อฝ่ายสนับสนุน"
@@ -37,15 +42,15 @@ msgstr "เกิดข้อผิดพลาดที่ไม่คาดค
 msgid "Attention:"
 msgstr "ข้อควรระวัง:"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "ลิงค์บายพาส"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "รีเซ็ตลิงค์บายพาส"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "ยกเลิก"
 
@@ -55,7 +60,7 @@ msgstr "เร็วๆ นี้"
 
 #: includes/Admin/Assets.php:122
 msgid "Disable application passwords"
-msgstr ""
+msgstr "ปิดใช้งานรหัสผ่านแอปพลิเคชัน"
 
 #: includes/Admin/Assets.php:117
 msgid ""
@@ -69,13 +74,13 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "ปิดการใช้งาน XML-RPC"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "การปฏิเสธความรับผิดชอบ"
 
 #: includes/Admin/Assets.php:116
 msgid "Edit site"
-msgstr ""
+msgstr "แก้ไขเว็บไซต์"
 
 #: includes/Admin/Assets.php:136
 msgid "For improved security, ensure you use the latest version of WordPress"
@@ -89,7 +94,7 @@ msgstr "บังคับใช้ HTTPS"
 msgid "Force WWW"
 msgstr "บังคับใช้ WWW"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "เข้าใจแล้ว"
 
@@ -111,7 +116,7 @@ msgstr "อัพเดตปลั๊กอิน Hostinger"
 msgid "Hostinger Tools"
 msgstr "เครื่องมือ Hostinger"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -140,7 +145,16 @@ msgstr "https://www.hostinger.com"
 msgid "is recommended"
 msgstr "ขอแนะนำ"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr ""
+"ให้โมเดลภาษาขนาดใหญ่ (LLMs) ค้นพบ, ตีความ และโต้ตอบกับเว็บไซต์ WordPress "
+"ของคุณ"
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "ลิงก์ถูกรีเซ็ตแล้ว"
 
@@ -148,7 +162,7 @@ msgstr "ลิงก์ถูกรีเซ็ตแล้ว"
 msgid "Maintenance"
 msgstr "การดูแลรักษา"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "โหมดการดูแลรักษา"
 
@@ -170,7 +184,7 @@ msgstr ""
 
 #: includes/Admin/Assets.php:114
 msgid "Open guide"
-msgstr ""
+msgstr "เปิดคู่มือ"
 
 #: includes/Admin/Assets.php:130
 msgid "PHP version"
@@ -182,9 +196,9 @@ msgstr "ดูตัวอย่างเว็บไซต์ของฉัน
 
 #: includes/Admin/Assets.php:115
 msgid "Preview site"
-msgstr ""
+msgstr "ดูตัวอย่างเว็บไซต์"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "ดำเนินการต่อ"
 
@@ -212,7 +226,7 @@ msgstr "เปลี่ยนเส้นทาง URL HTTP ทั้งหม�
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "เปลี่ยนเส้นทาง URL WWW ทั้งหมดไปยัง URL ที่ไม่ใช่ WWW"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "รีเซ็ตลิงค์"
 
@@ -232,7 +246,7 @@ msgstr "ข้ามลิงค์ที่เลี่ยงผ่านโห
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "ปลั๊กอิน Hostinger ถูกแบ่งออกเป็นสองปลั๊กอินที่แตกต่างกัน:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -244,6 +258,11 @@ msgstr ""
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "เครื่องมือ"
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "เปิดใช้งาน LLMs.txt"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -267,7 +286,7 @@ msgstr ""
 "พบข้อผิดพลาดของเซิร์ฟเวอร์ โปรดลองอีกครั้งในภายหลัง และหากยังคงเกิดปัญหาอยู่ "
 "โปรดติดต่อทีมสนับสนุนของเราเพื่อขอความช่วยเหลือ"
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
@@ -281,6 +300,9 @@ msgid ""
 "without using their main login credentials, allowing for third-party "
 "integrations."
 msgstr ""
+"รหัสผ่านแอปพลิเคชัน WordPress ช่วยให้ผู้ใช้สามารถตรวจสอบคำขอ API "
+"ได้โดยไม่ต้องใช้ข้อมูลรับรองการเข้าสู่ระบบหลัก "
+"ช่วยให้สามารถบูรณาการกับเครื่องมือบุคคลที่สามได้"
 
 #: includes/Admin/Assets.php:131
 msgid "WordPress version"

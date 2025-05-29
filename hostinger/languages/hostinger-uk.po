@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-04-10 16:12+0000\n"
+"PO-Revision-Date: 2025-05-28 06:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,9 +15,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 17:21+0000\n"
 "Last-Translator: Julia\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2"
+"X-Loco-Version: 2.7.2; wp-6.8"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -30,6 +30,11 @@ msgstr ""
 "Не вдалося виконати дію. Спробуйте ще раз або зверніться до команди "
 "підтримки."
 
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "Уподобання ШІ"
+
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
 msgstr ""
@@ -41,15 +46,15 @@ msgstr ""
 msgid "Attention:"
 msgstr "Увага:"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "Обхідне посилання"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "Скидання обхідного каналу"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -72,12 +77,11 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "Вимкнути XML-RPC"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "Відмова від відповідальності"
 
 #: includes/Admin/Assets.php:116
-#, fuzzy
 msgid "Edit site"
 msgstr "Редагувати сайт"
 
@@ -95,7 +99,7 @@ msgstr "Направити на HHTTPS"
 msgid "Force WWW"
 msgstr "Направити на WWW"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "Зрозуміло"
 
@@ -117,7 +121,7 @@ msgstr "Оновлення плагіна Hostinger"
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -145,7 +149,16 @@ msgstr "https://www.hostinger.com"
 msgid "is recommended"
 msgstr "рекомендується"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr ""
+"Дозвольте великим мовним моделям (LLM) виявляти, інтерпретувати та "
+"взаємодіяти з вашим сайтом WordPress."
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "З'єднання скинуто"
 
@@ -153,7 +166,7 @@ msgstr "З'єднання скинуто"
 msgid "Maintenance"
 msgstr "Техобслуговування"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "Режим техобслуговування"
 
@@ -190,7 +203,7 @@ msgstr "Попередня версія мого сайту"
 msgid "Preview site"
 msgstr "Попередній перегляд сайту"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "Продовжити"
 
@@ -218,7 +231,7 @@ msgstr "Перенаправляє всі HTTP URL-адреси на HTTPS-са�
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "Перенаправляє всі WWW URL-адреси на адреси без WWW"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "Скинути посилання"
 
@@ -238,7 +251,7 @@ msgstr "Перехід в обхід режиму технічного обсл�
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Плагін Hostinger розділено на два різних плагіни:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -250,6 +263,11 @@ msgstr ""
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "Інструменти"
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "Увімкніть LLMs.txt"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -273,7 +291,7 @@ msgstr ""
 "помилка сервера. Спробуйте пізніше або зверніться за допомогою до нашої "
 "команди підтримки, якщо проблема не зникне."
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"

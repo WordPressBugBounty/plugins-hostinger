@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:27+0000\n"
-"PO-Revision-Date: 2025-04-10 16:05+0000\n"
+"PO-Revision-Date: 2025-05-28 06:45+0000\n"
 "Last-Translator: Zhou Yu\n"
 "Language-Team: Chinese (China)\n"
 "Language: zh_CN\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2\n"
+"X-Loco-Version: 2.7.2; wp-6.8\n"
 "X-Domain: hostinger"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -24,6 +24,11 @@ msgstr ""
 #: includes/Errors.php:16
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "抱歉，操作失败。请重试或联系客户支持。"
+
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "人工智能首选项"
 
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
@@ -34,18 +39,18 @@ msgstr "发生未知错误。请重试或联系客户支持。"
 msgid "Attention:"
 msgstr "请注意： "
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr ""
 "旁路链接\n"
 "\n"
 "\n"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "重置旁路链路"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "取消"
 
@@ -67,14 +72,13 @@ msgstr "禁止公众访问网站（WordPress 管理员仍可访问）"
 msgid "Disable XML-RPC"
 msgstr "禁用 XML-RPC"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "免责声明"
 
 #: includes/Admin/Assets.php:116
-#, fuzzy
 msgid "Edit site"
-msgstr "编辑网站"
+msgstr "编辑网站 "
 
 #: includes/Admin/Assets.php:136
 msgid "For improved security, ensure you use the latest version of WordPress"
@@ -89,7 +93,7 @@ msgstr "强制 HTTP "
 msgid "Force WWW"
 msgstr "强制 WWW"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "明白 "
 
@@ -111,7 +115,7 @@ msgstr "Hostinger 插件更新 "
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -137,7 +141,14 @@ msgstr "https://www.hostinger.com"
 msgid "is recommended"
 msgstr "建议使用"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr "让大型语言模型 (LLM) 发现、解释您的 WordPress 网站并与之互动。"
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "已重置链接"
 
@@ -145,7 +156,7 @@ msgstr "已重置链接"
 msgid "Maintenance"
 msgstr "维护 "
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "维护模式 "
 
@@ -178,11 +189,10 @@ msgid "Preview my website"
 msgstr "预览我的网站"
 
 #: includes/Admin/Assets.php:115
-#, fuzzy
 msgid "Preview site"
-msgstr "预览网站"
+msgstr "预览网站 "
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "无论如何都要继续 "
 
@@ -208,7 +218,7 @@ msgstr "将所有 HTTP URL 重定向到 HTTPS 网站 "
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "将所有 WWW URL 重定向到非 WWW URL "
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "重置链接 "
 
@@ -228,7 +238,7 @@ msgstr "跳过维护模式的Skip-link"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Hostinger 插件已被拆分为两个不同的插件： "
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -238,6 +248,11 @@ msgstr "这将使当前生成的链接失效。此操作无法撤销，是否继
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "工具 "
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "打开 LLMs.txt"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -258,7 +273,7 @@ msgid ""
 "persists, kindly contact our support team for assistance."
 msgstr "给您带来不便，我们深表歉意。人工智能内容生成过程遇到服务器错误。请稍后重试，如果问题仍然存在，请联系我们的客户支持团队寻求帮助。"
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"

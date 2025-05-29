@@ -3,21 +3,21 @@ msgstr ""
 "Project-Id-Version: Hostinger 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hostinger-"
 "wordpress-plugin\n"
-"Last-Translator: Linas\n"
+"Last-Translator: \n"
 "Language-Team: Lithuanian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-03-02T12:10:37+00:00\n"
-"PO-Revision-Date: 2025-04-10 16:10+0000\n"
+"PO-Revision-Date: 2025-05-28 06:47+0000\n"
 "Language: lt_LT\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 "
 "&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2"
+"X-Loco-Version: 2.7.2; wp-6.8"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr " Įjungus XML-RPC, tavo svetainė gali būti mažiau saugi. Ar nori tęsti?"
@@ -25,27 +25,31 @@ msgstr " Įjungus XML-RPC, tavo svetainė gali būti mažiau saugi. Ar nori tęs
 #: includes/Errors.php:16
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr ""
-"Veiksmas nepavyko. Bandykite dar kartą arba susisiekite su palaikymu. "
-"Atsiprašome."
+"Veiksmas nepavyko. Bandyk dar kartą arba susisiek su palaikymu. Atsiprašome."
+
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "AI nuostatos"
 
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
-msgstr "Nenumatyta klaida. Bandykite dar kartą arba susisiekite su palaikymu."
+msgstr "Nenumatyta klaida. Bandyk dar kartą arba susisiek su pagalbos komanda."
 
 #. translators: %s: PHP version
 #: hostinger.php:84
 msgid "Attention:"
 msgstr "Dėmesio:"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "Apeiti nuorodą"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "Apeiti nuorodos atkūrimą"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "Atšaukti"
 
@@ -69,12 +73,11 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "Išjungti XML-RPC"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "Perspėjimas"
 
 #: includes/Admin/Assets.php:116
-#, fuzzy
 msgid "Edit site"
 msgstr "Redaguoti svetainę"
 
@@ -92,9 +95,9 @@ msgstr "Taikyti HTTPS"
 msgid "Force WWW"
 msgstr "Taikyti WWW"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
-msgstr "Turi"
+msgstr "Supratau"
 
 #. Author of the plugin
 #: hostinger.php
@@ -114,7 +117,7 @@ msgstr "Hostinger įskiepių atnaujinimai"
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -142,7 +145,16 @@ msgstr "https://www.hostinger.lt"
 msgid "is recommended"
 msgstr "rekomenduojama"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr ""
+"Tegul didieji kalbos modeliai (LLM) atranda, interpretuoja ir sąveikauja su "
+"jūsų \"WordPress\" svetaine."
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "Nuoroda nustatyta iš naujo"
 
@@ -150,7 +162,7 @@ msgstr "Nuoroda nustatyta iš naujo"
 msgid "Maintenance"
 msgstr "Priežiūra"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "Darbinis režimas"
 
@@ -188,11 +200,10 @@ msgid "Preview my website"
 msgstr "Peržiūrėti svetainę"
 
 #: includes/Admin/Assets.php:115
-#, fuzzy
 msgid "Preview site"
-msgstr "Peržiūros svetainė"
+msgstr "Peržiūrėti svetainę"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "Vis tiek tęsti"
 
@@ -206,7 +217,7 @@ msgstr ""
 
 #: includes/Admin/Views/Partials/RateUs.php:2
 msgid "Rate this plugin"
-msgstr "Įvertinkite šį įskiepį"
+msgstr "Įvertink šį įskiepį"
 
 #: includes/Admin/Assets.php:140
 msgid "Redirects"
@@ -220,7 +231,7 @@ msgstr "Peradresuoti visus HTTP URL į HTTPS svetaines"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "Peradresuoti visus WWW URL į ne WWW adresus"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "Atstatyti nuorodą"
 
@@ -240,7 +251,7 @@ msgstr "Praleisti nuorodą, kuri apeina priežiūros režimą"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Hostinger įskiepis buvo padalintas į du atskirus įskiepius:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -252,6 +263,11 @@ msgstr ""
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "Įrankiai"
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "Įjunkite LLMs.txt"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -272,10 +288,10 @@ msgid ""
 "persists, kindly contact our support team for assistance."
 msgstr ""
 "Atsiprašome už nepatogumus. DI turinio generavimo procesas susidūrė su "
-"serverio klaida. Bandykite dar kartą vėliau, o jei problema išlieka, "
-"maloniai prašome susisiekti su mūsų palaikymo komanda dėl pagalbos."
+"serverio klaida. Bandyk dar kartą vėliau, o jei problema išlieka, maloniai "
+"prašome susisiekti su mūsų palaikymo komanda dėl pagalbos."
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-04-10 16:08+0000\n"
+"PO-Revision-Date: 2025-05-28 06:45+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,20 +14,25 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 13:39+0000\n"
 "Last-Translator: \n"
-"X-Loco-Version: 2.7.1; wp-6.7.2"
+"X-Loco-Version: 2.7.2; wp-6.8.1"
 
-#: includes/Admin/Assets.php:146
+#: includes/Admin/Assets.php:149
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
-" Wenn du XML-RPC aktivierst, wird deine Website möglicherweise weniger "
-"sicher. Willst du fortfahren?"
+" Wenn Sie XML-RPC aktivieren, wird Ihre Website möglicherweise weniger "
+"sicher. Möchten Sie fortfahren?"
 
 #: includes/Errors.php:16
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr ""
 "Aktion fehlgeschlagen. Versuche es erneut oder kontaktiere den Support. "
 "Entschuldigung."
+
+#: includes/Admin/Assets.php:141
+#, fuzzy
+msgid "AI Preferences"
+msgstr "KI-Präferenzen"
 
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
@@ -40,15 +45,15 @@ msgstr ""
 msgid "Attention:"
 msgstr "Achtung:"
 
-#: includes/Admin/Assets.php:142
+#: includes/Admin/Assets.php:145
 msgid "Bypass link"
 msgstr "Link umgehen"
 
-#: includes/Admin/Assets.php:150
+#: includes/Admin/Assets.php:153
 msgid "Bypass link reset"
 msgstr "Link-Zurücksetzung umgehen"
 
-#: includes/Admin/Assets.php:148 includes/Admin/Assets.php:152
+#: includes/Admin/Assets.php:151 includes/Admin/Assets.php:155
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -65,19 +70,18 @@ msgid ""
 "Disable public access to the site (WordPress admins will still be able to "
 "access)"
 msgstr ""
-"Deaktiviere den öffentlichen Zugriff auf die Website (WordPress-"
-"Administratoren können weiterhin darauf zugreifen)"
+"Deaktivieren Sie den öffentlichen Zugriff auf die Website (WordPress-"
+"Administratoren können weiterhin darauf zugreifen)\n"
 
 #: includes/Admin/Assets.php:120
 msgid "Disable XML-RPC"
 msgstr "XML-RPC deaktivieren"
 
-#: includes/Admin/Assets.php:147
+#: includes/Admin/Assets.php:150
 msgid "Disclaimer"
 msgstr "Haftungsausschluss"
 
 #: includes/Admin/Assets.php:116
-#, fuzzy
 msgid "Edit site"
 msgstr "Seite bearbeiten"
 
@@ -95,7 +99,7 @@ msgstr "HTTPs erzwingen"
 msgid "Force WWW"
 msgstr "WWW erzwingen"
 
-#: includes/Admin/Assets.php:145 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:148 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "Verstanden"
 
@@ -117,15 +121,15 @@ msgstr "Hostinger-Plugin-Updates"
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:144
+#: includes/Admin/Assets.php:147
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
 "website."
 msgstr ""
-"Hostinger Tools bietet neue Tools, die die Verwaltung deiner Website "
-"vereinfachen. Und Hostinger Easy Onboarding führt dich durch die Schritte "
-"zur Erstellung einer Website."
+"Hostinger Tools bietet neue Tools, die die Verwaltung Ihrer Website "
+"vereinfachen. Und Hostinger Easy Onboarding führt Sie durch die Schritte zur "
+"Erstellung einer Website."
 
 #. Description of the plugin
 #: hostinger.php
@@ -146,7 +150,16 @@ msgstr "https://www.hostinger.com"
 msgid "is recommended"
 msgstr "wird empfohlen"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:143
+#, fuzzy
+msgid ""
+"Let Large Language Models (LLMs) discover, interpret and interact with your "
+"WordPress site."
+msgstr ""
+"Lass Large Language Models (LLMs) deine WordPress-Website entdecken, "
+"interpretieren und mit ihr interagieren."
+
+#: includes/Admin/Assets.php:157
 msgid "Link has been reset"
 msgstr "Der Link wurde zurückgesetzt"
 
@@ -154,7 +167,7 @@ msgstr "Der Link wurde zurückgesetzt"
 msgid "Maintenance"
 msgstr "Wartung"
 
-#: includes/Admin/Assets.php:141
+#: includes/Admin/Assets.php:144
 msgid "Maintenance mode"
 msgstr "Wartungsmodus"
 
@@ -188,11 +201,10 @@ msgid "Preview my website"
 msgstr "Vorschau meiner Website"
 
 #: includes/Admin/Assets.php:115
-#, fuzzy
 msgid "Preview site"
-msgstr "Vorschau Seite"
+msgstr "Vorschau-Seite"
 
-#: includes/Admin/Assets.php:149
+#: includes/Admin/Assets.php:152
 msgid "Proceed anyway"
 msgstr "Trotzdem fortfahren"
 
@@ -220,7 +232,7 @@ msgstr "Leitet alle HTTP-URLs auf HTTPS-Websites um"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "Leitet alle WWW-URLs auf Nicht-WWW-URLs um"
 
-#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:153
+#: includes/Admin/Assets.php:119 includes/Admin/Assets.php:156
 msgid "Reset link"
 msgstr "Link zurücksetzen"
 
@@ -240,18 +252,23 @@ msgstr "Skip-Link, der den Wartungsmodus umgeht"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Das Hostinger-Plugin wurde in zwei verschiedene Plugins aufgeteilt:"
 
-#: includes/Admin/Assets.php:151
+#: includes/Admin/Assets.php:154
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
 msgstr ""
 "Dadurch wird der aktuell erstellte Link ungültig. Diese Aktion kann nicht "
-"rückgängig gemacht werden. Bist du sicher, dass du fortfahren möchtest?"
+"rückgängig gemacht werden. Sind Sie sicher, dass Sie fortfahren möchten?"
 
 #: includes/Admin/Assets.php:113 includes/Admin/Menu.php:22
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
 msgid "Tools"
 msgstr "Werkzeuge"
+
+#: includes/Admin/Assets.php:142
+#, fuzzy
+msgid "Turn on LLMs.txt"
+msgstr "LLMs.txt einschalten"
 
 #: includes/Errors.php:38
 msgid "Unknown error code."
@@ -273,11 +290,11 @@ msgid ""
 "persists, kindly contact our support team for assistance."
 msgstr ""
 "Wir entschuldigen uns für die Unannehmlichkeiten. Bei der Generierung von KI-"
-"Inhalten ist ein Serverfehler aufgetreten. Bitte versuche es später noch "
-"einmal. Sollte das Problem weiterhin bestehen, wende dich bitte an unser "
-"Support-Team."
+"Inhalten ist ein Serverfehler aufgetreten. Bitte versuchen Sie es später "
+"noch einmal. Sollte das Problem weiterhin bestehen, wenden Sie sich bitte an "
+"unser Support-Team."
 
-#: includes/Admin/Assets.php:143
+#: includes/Admin/Assets.php:146
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
@@ -312,6 +329,6 @@ msgid ""
 "XML-RPC allows apps to connect to your WordPress site, but might expose your "
 "site's security. Disable this feature if you don't need it"
 msgstr ""
-"XML-RPC ermöglicht es Apps, sich mit deiner WordPress-Website zu verbinden, "
-"kann aber die Sicherheit deiner Website gefährden. Deaktiviere diese "
-"Funktion, wenn du sie nicht brauchst"
+"XML-RPC ermöglicht es Apps, sich mit Ihrer WordPress-Website zu verbinden, "
+"kann aber die Sicherheit Ihrer Website gefährden. Deaktivieren Sie diese "
+"Funktion, wenn Sie sie nicht brauchen"
