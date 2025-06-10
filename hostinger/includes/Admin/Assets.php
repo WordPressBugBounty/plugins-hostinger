@@ -131,6 +131,7 @@ class Assets {
                     'hostinger_tools_wordpress_version'                       => __( 'WordPress version', 'hostinger' ),
                     'hostinger_tools_php_version_description'                 => __( 'Various updates and fixes available in the newest version.', 'hostinger' ),
                     'hostinger_tools_running_latest_version'                  => __( 'Running the latest version', 'hostinger' ),
+                    'hostinger_tools_update'                                  => __( 'Update', 'hostinger' ),
                     'hostinger_tools_update_to'                               => __( 'Update to', 'hostinger' ),
                     'hostinger_tools_update_to_recommended'                   => __( 'is recommended', 'hostinger' ),
                     'hostinger_tools_update_to_wordpress_version_description' => __( 'For improved security, ensure you use the latest version of WordPress', 'hostinger' ),

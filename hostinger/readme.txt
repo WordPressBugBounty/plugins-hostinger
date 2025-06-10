@@ -508,3 +508,8 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 - Fixed Jetpack autoloader issue
 - Added LLMS.txt generation functionality
 - Added few new Spanish locales (es_AR, es_CO, es_MX)
+
+3.0.38 (2025-06-09)
+- Tweaks the UI for PHP and WordPress version under Tools
+- Fallback to Site URL when no Blog Title is set in LLMS.txt
+- Clear cache on settings change

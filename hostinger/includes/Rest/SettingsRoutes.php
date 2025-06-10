@@ -137,6 +137,10 @@ class SettingsRoutes {
 
 		$response->set_status( \WP_Http::OK );
 
+        if ( has_action( 'litespeed_purge_all' ) ) {
+            do_action( 'litespeed_purge_all' );
+        }
+
 		return $response;
 	}
 	/** PHPCS:enable */

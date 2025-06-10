@@ -1,15 +1,13 @@
 <script lang="ts" setup>
 import Card from "@/components/Card.vue";
-import Label from "@/components/Label.vue";
 import Button from "@/components/Button/Button.vue";
 import SkeletonLoader from "@/components/Loaders/SkeletonLoader.vue";
+import { translate } from "@/utils/helpers";
 
 type Props = {
   title: string;
-  description?: string;
   toolImageSrc: string;
   version?: string;
-  buttonShown?: boolean;
   actionButton?: {
     text: string;
     onClick?: () => void;
@@ -38,26 +36,39 @@ defineProps<Props>();
             :src="toolImageSrc"
             alt="Tool icon"
           />
-          <h3 class="h-m-0">
-            {{ title }}
-          </h3>
+          <div>
+            <h3 class="h-m-0">
+              {{ title }}
+            </h3>
+            <p class="text-body-2">{{ version }}</p>
+          </div>
         </div>
 
-        <Label v-if="version">{{ version }}</Label>
       </div>
     </template>
-    <p class="text-body-2">{{ description }}</p>
+
     <Button
-      class="h-mt-20"
-      iconAppend="icon-launch-light"
       @click="actionButton?.onClick"
-      v-if="buttonShown && actionButton?.text"
-      >{{ actionButton.text }}</Button
+      v-if="actionButton"
+      >{{ translate("hostinger_tools_update") }}</Button
     >
-    <p v-else
-       class="h-mt-20 text-bold-1"
-    >
-        {{ actionButton?.text }}
-    </p>
   </Card>
 </template>
+
+<style lang="scss" scoped>
+.tool-version-card {
+  gap: 0;
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  ::v-deep(.card__body) {
+    flex: 1;
+  }
+}
+
+</style>

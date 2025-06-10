@@ -144,7 +144,7 @@ class LlmsTxtGenerator {
 	}
 
 	protected function inject_title(): string {
-		$title = get_bloginfo( 'name' );
+		$title = get_bloginfo( 'name' ) ?  get_bloginfo( 'name' ) : site_url();
 		return "# $title\n\n";
 	}
 

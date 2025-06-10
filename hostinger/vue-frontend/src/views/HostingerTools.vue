@@ -138,25 +138,13 @@ const isHostingerPlatform = computed(() => {
     return parseInt(hostinger_tools_data.hplatform) > 0;
 });
 
-const phpVersionCardText = computed(() => {
-    if( !isHostingerPlatform.value ) {
-        return `${translate("hostinger_tools_update_to")} 8.2 ${translate("hostinger_tools_update_to_recommended")}`;
-    }
-
-    return `${translate("hostinger_tools_update_to")} 8.2`;
-});
 
 const phpVersionCard = computed(() => ({
   title: translate("hostinger_tools_php_version"),
-  description: isPhpUpdateDisplayed.value
-    ? translate("hostinger_tools_php_version_description")
-    : translate("hostinger_tools_running_latest_version"),
   toolImageSrc: getAssetSource("images/icons/icon-php.svg"),
   version: settingsData.value?.phpVersion,
-  buttonShown: isHostingerPlatform.value,
-  actionButton: isPhpUpdateDisplayed.value
+  actionButton: isHostingerPlatform.value && isPhpUpdateDisplayed.value
     ? {
-        text: phpVersionCardText.value,
         onClick: () => {
           window.open(
             `https://auth.${resellerLocale.value}/login?r=/section/php-configuration/domain/${location.host}`,
@@ -178,15 +166,10 @@ const resellerLocale = computed(() => {
 
 const wordPressVersionCard = computed(() => ({
   title: translate("hostinger_tools_wordpress_version"),
-  description: isWordPressUpdateDisplayed.value
-    ? translate("hostinger_tools_update_to_wordpress_version_description")
-    : translate("hostinger_tools_running_latest_version"),
   toolImageSrc: getAssetSource("images/icons/icon-wordpress-light.svg"),
   version: settingsData.value?.currentWpVersion,
-  buttonShown: true,
   actionButton: isWordPressUpdateDisplayed.value
     ? {
-        text: `${translate("hostinger_tools_update_to")} ${settingsData.value?.newestWpVersion}`,
         onClick: () => {
           window.location.href = WORDPRESS_UPDATE_LINK; // redirects to wp update page in wp admin
         },
