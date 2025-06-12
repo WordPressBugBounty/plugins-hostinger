@@ -2,14 +2,17 @@
 import Card from "@/components/Card.vue";
 import Toggle from "@/components/Toggle.vue";
 import CopyField from "@/components/CopyField.vue";
-import { SectionItem } from "@/types";
+import {SectionHeaderButton, SectionItem} from "@/types";
 import Button from "@/components/Button/Button.vue";
 import SkeletonLoader from "@/components/Loaders/SkeletonLoader.vue";
+import Notice from "@/components/Notice.vue";
 
 type Props = {
   title: string;
   isLoading?: boolean;
   sectionItems: SectionItem[];
+  headerButtons?: SectionHeaderButton[];
+  warning?: string
 };
 
 type Emits = {
@@ -32,7 +35,29 @@ const emit = defineEmits<Emits>();
         rounded
       />
     </Card>
-    <Card v-else :header="props.title">
+    <Card v-else>
+      <template #header>
+        <div class="w-100">
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <h2 class="h-m-0">{{ props.title }}</h2>
+            <div
+                v-if="headerButtons?.length > 0"
+                class="d-flex align-items-center"
+            >
+              <Button
+                  size="small"
+                  v-for="button in headerButtons"
+                  :key="button.id"
+                  :to="button.to"
+                  :variant="button.variant"
+                  :target="button.to ? '_blank' : undefined"
+                  :icon-append="button.to ? 'icon-launch' : undefined"
+              >{{ button.text }}</Button>
+            </div>
+          </div>
+          <Notice :text="warning" v-if="warning" />
+        </div>
+      </template>
       <div
         class="home-section__section-item"
         v-for="item in sectionItems"

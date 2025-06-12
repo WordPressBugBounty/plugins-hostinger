@@ -425,3 +425,10 @@ Changelog
 - Tweaks the UI for PHP and WordPress version under Tools
 - Fallback to Site URL when no Blog Title is set in LLMS.txt
 - Clear cache on settings change
+
+3.0.39 (2025-06-12)
+- Updated logic to detect 3rd Party LLMs files
+- Updated UI and Copy for LLMS section
+- Add support for WooCommerce products in LLMS.txt
+- Added check for main plugin class to prevent class not found issues
+- Update readme.txt tags

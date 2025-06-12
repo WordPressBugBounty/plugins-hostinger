@@ -3,6 +3,7 @@
 namespace Hostinger\Admin;
 
 use Hostinger\Admin\Menu;
+use Hostinger\LlmsTxtGenerator\LlmsTxtFileHelper;
 use Hostinger\WpMenuManager\Menus;
 use Hostinger\Helper;
 use Hostinger\WpHelper\Utils;
@@ -21,11 +22,17 @@ class Assets {
 	private Helper $helper;
 
 	/**
+	 * @var LlmsTxtFileHelper
+	 */
+	private LlmsTxtFileHelper $llms_txt_file_helper;
+
+	/**
 	 * @var Utils
 	 */
 	private Utils $utils;
 
 	public function __construct() {
+		$this->llms_txt_file_helper = new LlmsTxtFileHelper();
 		$this->helper = new Helper();
 		$this->utils  = new Utils();
         $admin_path = parse_url(admin_url(), PHP_URL_PATH);
@@ -109,6 +116,8 @@ class Assets {
                 'plugin_split_notice'          => $this->helper->should_plugin_split_notice_shown() ? 1 : 0,
                 'hts_close_plugin_split_nonce' => wp_create_nonce( 'hts_close_plugin_split' ),
                 'edit_site_url'                => $this->helper->get_edit_site_url(),
+                'llmstxt_file_url'             => $this->llms_txt_file_helper->get_llmstxt_file_url(),
+                'llmstxt_file_user_generated'  => $this->llms_txt_file_helper->is_user_generated_file(),
                 'translations'                 => array(
                     'routes_tools'                                        => __( 'Tools', 'hostinger' ),
                     'hostinger_tools_open_guide'                          => __( 'Open guide', 'hostinger' ),
@@ -139,9 +148,17 @@ class Assets {
                     'hostinger_tools_preview_my_website'                      => __( 'Preview my website', 'hostinger' ),
                     'hostinger_tools_security'                                => __( 'Security', 'hostinger' ),
                     'hostinger_tools_redirects'                               => __( 'Redirects', 'hostinger' ),
-                    'hostinger_tools_llms'                                    => __( 'AI Preferences', 'hostinger' ),
-                    'hostinger_tools_enable_llms_txt'                         => __( 'Turn on LLMs.txt', 'hostinger' ),
-                    'hostinger_tools_llms_txt_description'                    => __( 'Let Large Language Models (LLMs) discover, interpret and interact with your WordPress site.', 'hostinger' ),
+                    'hostinger_tools_llms'                                    => __( 'LLM Optimization', 'hostinger' ),
+                    'hostinger_tools_enable_llms_txt'                         => __( 'Create LLMs.txt file', 'hostinger' ),
+                    'hostinger_tools_llms_txt_description'                    => __( 'Let AI explore, understand, and interact with your WordPress site', 'hostinger' ),
+                    'hostinger_tools_llms_txt_learn_more'                     => __( 'Learn more', 'hostinger' ),
+                    'hostinger_tools_llms_txt_check_validity'                 => __( 'Check validity', 'hostinger' ),
+                    'hostinger_tools_llms_txt_llmstxt'                        => __( 'LLMS.txt', 'hostinger' ),
+                    'hostinger_tools_llms_txt_external_file_found'            => __( 'An external LLMs.txt file was found. Switching on the toggle will replace it with a new one.', 'hostinger' ),
+                    'hostinger_tools_llms_txt_modal_title'                    => __( 'Create new LLMs.txt file?', 'hostinger' ),
+                    'hostinger_tools_llms_txt_modal_description'              => __( 'This will replace the existing LLMs.txt file with a new one by Hostinger Tools. The original file can’t be restored.', 'hostinger' ),
+                    'hostinger_tools_llms_txt_modal_cancel'                   => __( 'Cancel', 'hostinger' ),
+                    'hostinger_tools_llms_txt_modal_create_file'              => __( 'Create file', 'hostinger' ),
                     'hostinger_tools_maintenance_mode'                        => __( 'Maintenance mode', 'hostinger' ),
                     'hostinger_tools_bypass_link'                             => __( 'Bypass link', 'hostinger' ),
                     'hostinger_tools_split_title'                             => __( 'We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger Easy Onboarding', 'hostinger' ),

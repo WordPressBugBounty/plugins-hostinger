@@ -18,7 +18,7 @@ const { fetchSettingsData, updateSettingsData, regenerateByPassCode } =
   useSettingsStore();
 
 const { settingsData } = storeToRefs(useSettingsStore());
-const { siteUrl } = useGeneralStoreData();
+const { siteUrl, llmstxtFileUrl, llmstxtFileUserGenerated } = useGeneralStoreData();
 
 const WORDPRESS_UPDATE_LINK = getBaseUrl(location.href) + "update-core.php";
 
@@ -109,6 +109,21 @@ const llmsSection = computed(() => [
     toggleValue: settingsData.value?.enableLlmsTxt,
   },
 ]);
+
+const llmsSectionHeaderButtons = computed(() => settingsData.value?.enableLlmsTxt ? [
+  {
+    id: 'hostinger_tools_llms_txt_llmstxt',
+    text: translate("hostinger_tools_llms_txt_llmstxt"),
+    to: llmstxtFileUrl,
+    variant: 'text'
+  },
+  {
+    id: 'hostinger_tools_llms_txt_check_validity',
+    text: translate("hostinger_tools_llms_txt_check_validity"),
+    to: `https://llmstxtvalidator.org/?url=${llmstxtFileUrl}`,
+    variant: 'outline'
+  }
+] : [] );
 
 const { openModal } = useModal();
 
@@ -201,6 +216,27 @@ const onSaveSection = (value: boolean, item: SectionItem) => {
   onUpdateSettings(value, item);
 };
 
+const onSaveLLmsSection = (isEnabled: boolean, item: SectionItem) => {
+
+  if ( llmstxtFileUserGenerated && isEnabled ) {
+    openModal(
+        ModalName.EnableLlmsTxtModal,
+        {
+          data: {
+            onConfirm: () => {
+              onUpdateSettings(isEnabled, item);
+            },
+          },
+        },
+        { isLG: true }
+    );
+
+    return;
+  }
+
+  onUpdateSettings(isEnabled, item);
+};
+
 const onUpdateSettings = (value: boolean, item: SectionItem) => {
   if (!settingsData.value) return;
 
@@ -253,9 +289,11 @@ const onUpdateSettings = (value: boolean, item: SectionItem) => {
       />
       <SectionCard
         :is-loading="isPageLoading"
-        @save-section="onSaveSection"
+        @save-section="onSaveLLmsSection"
         :title="translate('hostinger_tools_llms')"
         :section-items="llmsSection"
+        :header-buttons="llmsSectionHeaderButtons"
+        :warning="llmstxtFileUserGenerated ? translate('hostinger_tools_llms_txt_external_file_found') : ''"
       />
     </div>
   </div>

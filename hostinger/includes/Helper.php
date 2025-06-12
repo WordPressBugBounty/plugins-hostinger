@@ -2,6 +2,9 @@
 
 namespace Hostinger;
 
+
+use Hostinger\LlmsTxtGenerator\LlmsTxtFileHelper;
+
 defined( 'ABSPATH' ) || exit;
 
 class Helper {
@@ -189,4 +192,5 @@ class Helper {
 
         return '';
     }
+
 }

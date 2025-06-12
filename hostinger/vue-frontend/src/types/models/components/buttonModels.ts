@@ -45,3 +45,11 @@ export interface IButtonPropsMandatory extends IButtonProps {
   variant: ButtonVariant;
   color: ButtonColor;
 }
+
+export interface SectionHeaderButton {
+  id: string;
+  text: string;
+  to?: string;
+  variant?: ButtonVariant;
+  onClick?: () => void;
+}

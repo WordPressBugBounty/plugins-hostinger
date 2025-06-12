@@ -1,9 +1,9 @@
 === Hostinger Tools ===
-Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc
+Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc, llms
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 8.0
-Stable tag: 3.0.37
+Stable tag: 3.0.39
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -28,6 +28,12 @@ Hostinger Tools is an all-in-one plugin designed to streamline essential tasks f
 # *Redirects*
 - Force all URLs to use HTTPS for secure browsing.
 - Force all URLs to use WWW to ensure consistency in site access.
+
+# *LLMs.txt Generation*
+- Automatically generate a structured LLMs.txt file in Markdown format.
+- Include website title, description, posts, pages, and products (if WooCommerce is active).
+- Keep the file updated when content changes or new content is published.
+- Help AI-powered tools better understand and interact with your website content.
 
 Hostinger Tools is the new version of the previous Hostinger plugin, offering an updated and enhanced experience.
 The Onboarding assistant and the Learning section previously included in this plugin were moved to the separate plugin Hostinger Easy Onboarding.
@@ -513,3 +519,10 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 - Tweaks the UI for PHP and WordPress version under Tools
 - Fallback to Site URL when no Blog Title is set in LLMS.txt
 - Clear cache on settings change
+
+3.0.39 (2025-06-12)
+- Updated logic to detect 3rd Party LLMs files
+- Updated UI and Copy for LLMS section
+- Add support for WooCommerce products in LLMS.txt
+- Added check for main plugin class to prevent class not found issues
+- Update readme.txt tags

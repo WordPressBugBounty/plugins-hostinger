@@ -4,6 +4,7 @@ namespace Hostinger;
 
 use Hostinger\Admin\Ajax as AdminAjax;
 use Hostinger\Admin\PluginSettings;
+use Hostinger\LlmsTxtGenerator\LlmsTxtFileHelper;
 use Hostinger\Rest\Routes;
 use Hostinger\Rest\SettingsRoutes;
 use Hostinger\Admin\Assets as AdminAssets;
@@ -11,6 +12,7 @@ use Hostinger\Admin\Hooks as AdminHooks;
 use Hostinger\Admin\Menu as AdminMenu;
 use Hostinger\Admin\Redirects as AdminRedirects;
 use Hostinger\WpHelper\Utils;
+use Hostinger\LlmsTxtGenerator\LlmsTxtGenerator;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -67,7 +69,7 @@ class Bootstrap {
 
 		$plugin_settings = new PluginSettings();
 
-		new LlmsTxtGenerator( $plugin_settings );
+		new LlmsTxtGenerator( $plugin_settings, new LlmsTxtFileHelper() );
 
 		$settings_routes = new SettingsRoutes( $plugin_settings );
 		$routes          = new Routes( $settings_routes );

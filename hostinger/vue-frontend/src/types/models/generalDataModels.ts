@@ -26,6 +26,8 @@ export type HostingerToolsData = {
   nonce: string;
   wpVersion: string;
   phpVersion: string;
+  llmstxtFileUrl: string
+  llmstxtFileUserGenerated: boolean
 };
 
 export type SettingsData = NonToggleableSettingsData & ToggleableSettingsData;
