@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc, llms
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 8.0
-Stable tag: 3.0.39
+Stable tag: 3.0.40
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -516,13 +516,20 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 - Added few new Spanish locales (es_AR, es_CO, es_MX)
 
 3.0.38 (2025-06-09)
+
 - Tweaks the UI for PHP and WordPress version under Tools
 - Fallback to Site URL when no Blog Title is set in LLMS.txt
 - Clear cache on settings change
 
 3.0.39 (2025-06-12)
+
 - Updated logic to detect 3rd Party LLMs files
 - Updated UI and Copy for LLMS section
 - Add support for WooCommerce products in LLMS.txt
 - Added check for main plugin class to prevent class not found issues
 - Update readme.txt tags
+
+3.0.40 (2025-06-17)
+- Added latest translations
+- Provide visual feedback to user when changing settings
+- Fixed www urls rewrite

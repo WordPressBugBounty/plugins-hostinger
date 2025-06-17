@@ -18,61 +18,61 @@ defined( 'ABSPATH' ) || exit;
 
 class Bootstrap {
 
-	protected Loader $loader;
+    protected Loader $loader;
 
-	public function __construct() {
-		$this->loader = new Loader();
-	}
+    public function __construct() {
+        $this->loader = new Loader();
+    }
 
-	public function run(): void {
-		$this->load_dependencies();
-		$this->set_locale();
-		$this->loader->run();
-	}
+    public function run(): void {
+        $this->load_dependencies();
+        $this->set_locale();
+        $this->loader->run();
+    }
 
-	private function load_dependencies(): void {
-		$this->load_public_dependencies();
+    private function load_dependencies(): void {
+        $this->load_public_dependencies();
 
-		if ( is_admin() ) {
-			$this->load_admin_dependencies();
-		}
+        if ( is_admin() ) {
+            $this->load_admin_dependencies();
+        }
 
-		if ( defined( 'WP_CLI' ) && WP_CLI ) {
-			new Cli();
-		}
+        if ( defined( 'WP_CLI' ) && WP_CLI ) {
+            new Cli();
+        }
 
-		$plugin_settings = new PluginSettings();
-		$plugin_options  = $plugin_settings->get_plugin_settings();
+        $plugin_settings = new PluginSettings();
+        $plugin_options  = $plugin_settings->get_plugin_settings();
 
-		if ( $plugin_options->get_maintenance_mode() ) {
-			require_once HOSTINGER_ABSPATH . 'includes/ComingSoon.php';
-		}
-	}
+        if ( $plugin_options->get_maintenance_mode() ) {
+            require_once HOSTINGER_ABSPATH . 'includes/ComingSoon.php';
+        }
+    }
 
-	private function set_locale() {
-		$plugin_i18n = new I18n();
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
-	}
+    private function set_locale() {
+        $plugin_i18n = new I18n();
+        $this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
+    }
 
-	private function load_admin_dependencies(): void {
-		$utils = new Utils();
-		new AdminAssets();
-		new AdminHooks( $utils );
-		new AdminMenu();
-		new AdminRedirects();
-		new AdminRedirects();
-		new AdminAjax();
-	}
+    private function load_admin_dependencies(): void {
+        $utils = new Utils();
+        new AdminAssets();
+        new AdminHooks( $utils );
+        new AdminMenu();
+        new AdminRedirects();
+        new AdminRedirects();
+        new AdminAjax();
+    }
 
-	private function load_public_dependencies(): void {
-		new Hooks();
+    private function load_public_dependencies(): void {
+        new Hooks();
 
-		$plugin_settings = new PluginSettings();
+        $plugin_settings = new PluginSettings();
 
-		new LlmsTxtGenerator( $plugin_settings, new LlmsTxtFileHelper() );
+        new LlmsTxtGenerator( $plugin_settings, new LlmsTxtFileHelper() );
 
-		$settings_routes = new SettingsRoutes( $plugin_settings );
-		$routes          = new Routes( $settings_routes );
-		$routes->init();
-	}
+        $settings_routes = new SettingsRoutes( $plugin_settings );
+        $routes          = new Routes( $settings_routes );
+        $routes->init();
+    }
 }

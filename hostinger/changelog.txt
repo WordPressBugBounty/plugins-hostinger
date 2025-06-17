@@ -432,3 +432,8 @@ Changelog
 - Add support for WooCommerce products in LLMS.txt
 - Added check for main plugin class to prevent class not found issues
 - Update readme.txt tags
+
+3.0.40 (2025-06-17)
+- Added latest translations
+- Provide visual feedback to user when changing settings 
+- Fixed www urls rewrite

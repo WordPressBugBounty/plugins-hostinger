@@ -41,7 +41,10 @@ export const useSettingsStore = defineStore(
     const updateSettingsData = async (settings: SettingsData) => {
       const [data, err] = await generalDataRepo.postSettings(settings);
 
-      if (err) return;
+      if (err) {
+		  toast.error(translate("hostinger_tools_settings_error"));
+		  return;
+	  }
 
       const tempSettingsData = settingsData.value;
 
@@ -52,7 +55,10 @@ export const useSettingsStore = defineStore(
         newestWpVersion: tempSettingsData?.newestWpVersion || "",
         isEligibleWwwRedirect: tempSettingsData?.isEligibleWwwRedirect || false,
       };
-    };
+
+	  toast.success(translate("hostinger_tools_settings_updated"));
+	};
+
     return {
       fetchSettingsData,
       updateSettingsData,
