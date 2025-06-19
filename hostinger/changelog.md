@@ -437,3 +437,6 @@ Changelog
 - Added latest translations
 - Provide visual feedback to user when changing settings 
 - Fixed www urls rewrite
+
+3.0.41 (2025-06-19)
+- Update translations for ES, MX and CO

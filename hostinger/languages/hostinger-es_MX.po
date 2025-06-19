@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-17 10:16+0000\n"
+"PO-Revision-Date: 2025-06-19 09:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Plugins - Hostinger Tools - Stable (latest release)\n"
 "Language-Team: Spanish (Mexico)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-31 17:20+0000\n"
+"POT-Creation-Date: 2025-05-31 17:17+0000\n"
 "Last-Translator: \n"
 "X-Loco-Version: 2.8.0; wp-6.8.1; php-8.0.30"
 
@@ -29,7 +29,6 @@ msgstr ""
 "La acción ha fallado. Prueba de nuevo o contacta con soporte. Disculpas."
 
 #: includes/Admin/Assets.php:160
-#, fuzzy
 msgid ""
 "An external LLMs.txt file was found. Switching on the toggle will replace it "
 "with a new one."

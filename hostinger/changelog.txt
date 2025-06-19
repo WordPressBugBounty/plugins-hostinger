@@ -435,5 +435,8 @@ Changelog
 
 3.0.40 (2025-06-17)
 - Added latest translations
-- Provide visual feedback to user when changing settings 
+- Provide visual feedback to user when changing settings
 - Fixed www urls rewrite
+
+3.0.41 (2025-06-19)
+- Update translations for ES, MX and CO

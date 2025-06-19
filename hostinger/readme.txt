@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc, llms
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 8.0
-Stable tag: 3.0.40
+Stable tag: 3.0.41
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -533,3 +533,6 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 - Added latest translations
 - Provide visual feedback to user when changing settings
 - Fixed www urls rewrite
+
+3.0.41 (2025-06-19)
+- Update translations for ES, MX and CO
