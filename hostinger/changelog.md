@@ -440,3 +440,6 @@ Changelog
 
 3.0.41 (2025-06-19)
 - Update translations for ES, MX and CO
+
+3.0.42 (2025-07-03)
+- Menu translations 

@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-autoloader.git",
-                "reference": "33caed2a97299f8ccb23fbba86512ad8b52cb3e0"
+                "reference": "d202767bf7a3286851762977d7ba4389437ffcc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/33caed2a97299f8ccb23fbba86512ad8b52cb3e0",
-                "reference": "33caed2a97299f8ccb23fbba86512ad8b52cb3e0",
+                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/d202767bf7a3286851762977d7ba4389437ffcc5",
+                "reference": "d202767bf7a3286851762977d7ba4389437ffcc5",
                 "shasum": ""
             },
             "require": {
@@ -25,7 +25,7 @@
                 "composer/composer": "^2.2",
                 "yoast/phpunit-polyfills": "^4.0.0"
             },
-            "time": "2025-04-28T20:33:15+00:00",
+            "time": "2025-06-24T13:28:47+00:00",
             "default-branch": true,
             "type": "composer-plugin",
             "extra": {
@@ -110,17 +110,17 @@
         },
         {
             "name": "hostinger/hostinger-wp-menu-manager",
-            "version": "1.2.16",
-            "version_normalized": "1.2.16.0",
+            "version": "1.2.18",
+            "version_normalized": "1.2.18.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:hostinger/hostinger-wp-menu-manager.git",
-                "reference": "8c2f86b995721cfdd6af381819008cff3bf71dd0"
+                "reference": "4ee666c147d91cc1311d9ac33a50d290e91df21d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/8c2f86b995721cfdd6af381819008cff3bf71dd0",
-                "reference": "8c2f86b995721cfdd6af381819008cff3bf71dd0",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/4ee666c147d91cc1311d9ac33a50d290e91df21d",
+                "reference": "4ee666c147d91cc1311d9ac33a50d290e91df21d",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
                 "squizlabs/php_codesniffer": "^3.0",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2025-05-16T11:36:23+00:00",
+            "time": "2025-07-03T08:11:22+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -149,7 +149,7 @@
             ],
             "description": "Package for managing Hostinger WordPress menus and pages.",
             "support": {
-                "source": "https://github.com/hostinger/hostinger-wp-menu-manager/tree/1.2.16",
+                "source": "https://github.com/hostinger/hostinger-wp-menu-manager/tree/1.2.18",
                 "issues": "https://github.com/hostinger/hostinger-wp-menu-manager/issues"
             },
             "install-path": "../hostinger/hostinger-wp-menu-manager"

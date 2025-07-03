@@ -8,57 +8,61 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-04-30T07:45:18+00:00\n"
-"PO-Revision-Date: 2025-02-21 06:16+0000\n"
+"PO-Revision-Date: 2025-07-03 08:04+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger-wp-menu-package\n"
 "Language: id_ID\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Loco-Version: 2.6.7; wp-6.4.4"
+"X-Loco-Version: 2.7.2; wp-6.8"
 
 #: src/Menus.php:224
-#, fuzzy
 msgid "Action Required:"
 msgstr "Tindakan yang diperlukan:"
 
 #: src/Menus.php:241
-#, fuzzy
 msgid "Affected plugins:"
-msgstr "Plugin yang terpengaruh:"
+msgstr "Plugin yang terdampak:"
 
 #: src/Menus.php:221
-#, fuzzy
 msgid "Attention! Outdated Plugins Detected"
-msgstr "Perhatian! Plugin Kedaluwarsa Terdeteksi"
+msgstr "Perhatian! Update Plugin Anda"
 
-#: src/templates/menu.php:80
+#: src/templates/menu.php:73
 #, fuzzy
-msgid "Go to Hostinger"
-msgstr "Pergi ke Hostinger"
+msgid "Go to hPanel"
+msgstr "Buka hPanel"
 
 #: src/Menus.php:63 src/Menus.php:117 src/Menus.php:118
 msgid "Hostinger"
 msgstr "Hostinger"
 
-#: src/Menus.php:233
+#. Name of the plugin
 #, fuzzy
-msgid "Outdated plugins:"
-msgstr "Plugin yang sudah ketinggalan zaman:"
+msgid "Hostinger WordPress Menu management package"
+msgstr "Paket manajemen menu WordPress Hostinger"
 
-#: src/templates/menu.php:73
+#. URI of the plugin
 #, fuzzy
-msgid "Preview website"
-msgstr "Pratinjau situs web"
+msgid "https://hostinger.com"
+msgstr "https://hostinger.com"
+
+#. Description of the plugin
+#, fuzzy
+msgid "Menu management package."
+msgstr "Paket manajemen menu."
+
+#: src/Menus.php:233
+msgid "Outdated plugins:"
+msgstr "Plugin usang:"
 
 #: src/Menus.php:250
-#, fuzzy
 msgid "Update plugins"
-msgstr "Perbarui plugin"
+msgstr "Update plugin"
 
 #: src/Menus.php:224
-#, fuzzy
 msgid ""
 "Your website has some outdated plugins that might prevent new features from "
 "working properly."
 msgstr ""
-"Situs web Anda memiliki beberapa plugin usang yang mungkin menghalangi fitur-"
-"fitur baru untuk bekerja dengan baik."
+"Website Anda memiliki beberapa plugin usang yang menyebabkan fitur-fitur "
+"baru tidak dapat berfungsi dengan baik."

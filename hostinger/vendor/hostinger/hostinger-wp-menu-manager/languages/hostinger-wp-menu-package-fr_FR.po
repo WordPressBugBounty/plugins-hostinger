@@ -8,57 +8,61 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-04-30T07:45:18+00:00\n"
-"PO-Revision-Date: 2025-02-21 06:15+0000\n"
+"PO-Revision-Date: 2025-07-03 08:04+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger-wp-menu-package\n"
 "Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Loco-Version: 2.6.7; wp-6.4.4"
+"X-Loco-Version: 2.7.1; wp-6.7.2"
 
 #: src/Menus.php:224
-#, fuzzy
 msgid "Action Required:"
-msgstr "Action requise :"
+msgstr "Action requise :"
 
 #: src/Menus.php:241
-#, fuzzy
 msgid "Affected plugins:"
-msgstr "Plugins concernés :"
+msgstr "Extensions concernées :"
 
 #: src/Menus.php:221
-#, fuzzy
 msgid "Attention! Outdated Plugins Detected"
-msgstr "Attention ! Plugins obsolètes détectés"
+msgstr "Attention ! Des extensions obsolètes ont été détectées"
 
-#: src/templates/menu.php:80
+#: src/templates/menu.php:73
 #, fuzzy
-msgid "Go to Hostinger"
-msgstr "Aller à Hostinger"
+msgid "Go to hPanel"
+msgstr "Aller dans le hPanel"
 
 #: src/Menus.php:63 src/Menus.php:117 src/Menus.php:118
 msgid "Hostinger"
 msgstr "Hostinger"
 
-#: src/Menus.php:233
+#. Name of the plugin
 #, fuzzy
-msgid "Outdated plugins:"
-msgstr "Plugins obsolètes :"
+msgid "Hostinger WordPress Menu management package"
+msgstr "Hostinger WordPress Menu management package"
 
-#: src/templates/menu.php:73
+#. URI of the plugin
 #, fuzzy
-msgid "Preview website"
-msgstr "Site de prévisualisation"
+msgid "https://hostinger.com"
+msgstr "https://hostinger.com"
+
+#. Description of the plugin
+#, fuzzy
+msgid "Menu management package."
+msgstr "Paquet de gestion des menus."
+
+#: src/Menus.php:233
+msgid "Outdated plugins:"
+msgstr "Extensions obsolètes :"
 
 #: src/Menus.php:250
-#, fuzzy
 msgid "Update plugins"
-msgstr "Mise à jour des plugins"
+msgstr "Mettre à jour les extensions"
 
 #: src/Menus.php:224
-#, fuzzy
 msgid ""
 "Your website has some outdated plugins that might prevent new features from "
 "working properly."
 msgstr ""
-"Votre site web contient des plugins obsolètes qui peuvent empêcher les "
-"nouvelles fonctionnalités de fonctionner correctement."
+"Votre site contient des extensions obsolètes qui pourraient empêcher le bon "
+"fonctionnement des nouvelles fonctionnalités."

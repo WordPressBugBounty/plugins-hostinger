@@ -8,55 +8,59 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-04-30T07:45:18+00:00\n"
-"PO-Revision-Date: 2025-02-21 06:14+0000\n"
+"PO-Revision-Date: 2025-07-03 08:03+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger-wp-menu-package\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Loco-Version: 2.6.7; wp-6.4.4"
+"X-Loco-Version: 2.7.1; wp-6.7.2"
 
 #: src/Menus.php:224
-#, fuzzy
 msgid "Action Required:"
-msgstr "需要采取的行动："
+msgstr "需要执行以下操作："
 
 #: src/Menus.php:241
-#, fuzzy
 msgid "Affected plugins:"
-msgstr "受影响的插件："
+msgstr "已受影响的插件："
 
 #: src/Menus.php:221
-#, fuzzy
 msgid "Attention! Outdated Plugins Detected"
-msgstr "请注意！检测到过期插件"
+msgstr "请注意！检测到过期插件 "
 
-#: src/templates/menu.php:80
+#: src/templates/menu.php:73
 #, fuzzy
-msgid "Go to Hostinger"
-msgstr "前往 Hostinger"
+msgid "Go to hPanel"
+msgstr "转到 hPanel"
 
 #: src/Menus.php:63 src/Menus.php:117 src/Menus.php:118
 msgid "Hostinger"
 msgstr "Hostinger"
 
-#: src/Menus.php:233
+#. Name of the plugin
 #, fuzzy
-msgid "Outdated plugins:"
-msgstr "过时的插件："
+msgid "Hostinger WordPress Menu management package"
+msgstr "Hostinger WordPress菜单管理套餐"
 
-#: src/templates/menu.php:73
+#. URI of the plugin
 #, fuzzy
-msgid "Preview website"
-msgstr "网站预览"
+msgid "https://hostinger.com"
+msgstr "https://hostinger.com"
+
+#. Description of the plugin
+#, fuzzy
+msgid "Menu management package."
+msgstr "菜单管理软件包。"
+
+#: src/Menus.php:233
+msgid "Outdated plugins:"
+msgstr "已过期的插件："
 
 #: src/Menus.php:250
-#, fuzzy
 msgid "Update plugins"
-msgstr "更新插件"
+msgstr "更新插件 "
 
 #: src/Menus.php:224
-#, fuzzy
 msgid ""
 "Your website has some outdated plugins that might prevent new features from "
 "working properly."
-msgstr "您的网站有一些过时的插件，可能会妨碍新功能的正常运行。"
+msgstr "您的网站存在一些过期插件，可能会妨碍新功能的正常运行。"
