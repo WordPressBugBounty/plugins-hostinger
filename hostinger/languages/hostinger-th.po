@@ -10,14 +10,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-06-17 10:16+0000\n"
+"PO-Revision-Date: 2025-07-22 10:47+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Loco-Version: 2.8.0; wp-6.8.1; php-8.0.30"
 
-#: includes/Admin/Assets.php:170
+#: includes/Admin/Assets.php:172
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -28,7 +28,7 @@ msgstr ""
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "การดำเนินการล้มเหลว โปรดลองอีกครั้งหรือติดต่อฝ่ายสนับสนุน"
 
-#: includes/Admin/Assets.php:160
+#: includes/Admin/Assets.php:162
 #, fuzzy
 msgid ""
 "An external LLMs.txt file was found. Switching on the toggle will replace it "
@@ -39,25 +39,25 @@ msgstr "พบไฟล์ LLMs.txt ภายนอก การเปิดส�
 msgid "An unexpected error occurred. Please try again or contact support."
 msgstr "เกิดข้อผิดพลาดที่ไม่คาดคิด โปรดลองอีกครั้งหรือติดต่อฝ่ายสนับสนุน"
 
-#. translators: %s: PHP version
+#. %s: PHP version
 #: hostinger.php:84
 msgid "Attention:"
 msgstr "ข้อควรระวัง:"
 
-#: includes/Admin/Assets.php:166
+#: includes/Admin/Assets.php:168
 msgid "Bypass link"
 msgstr "ลิงค์บายพาส"
 
-#: includes/Admin/Assets.php:174
+#: includes/Admin/Assets.php:176
 msgid "Bypass link reset"
 msgstr "รีเซ็ตลิงค์บายพาส"
 
-#: includes/Admin/Assets.php:163 includes/Admin/Assets.php:172
-#: includes/Admin/Assets.php:176
+#: includes/Admin/Assets.php:165 includes/Admin/Assets.php:174
+#: includes/Admin/Assets.php:178
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: includes/Admin/Assets.php:158
+#: includes/Admin/Assets.php:160
 #, fuzzy
 msgid "Check validity"
 msgstr "ตรวจสอบความถูกต้อง"
@@ -66,7 +66,7 @@ msgstr "ตรวจสอบความถูกต้อง"
 msgid "Coming Soon"
 msgstr "เร็วๆ นี้"
 
-#: includes/Admin/Assets.php:164
+#: includes/Admin/Assets.php:166
 #, fuzzy
 msgid "Create file"
 msgstr "สร้างไฟล์"
@@ -76,7 +76,7 @@ msgstr "สร้างไฟล์"
 msgid "Create LLMs.txt file"
 msgstr "สร้างไฟล์ LLMs.txt"
 
-#: includes/Admin/Assets.php:161
+#: includes/Admin/Assets.php:163
 #, fuzzy
 msgid "Create new LLMs.txt file?"
 msgstr "สร้างไฟล์ LLMs.txt ใหม่?"
@@ -97,7 +97,7 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "ปิดการใช้งาน XML-RPC"
 
-#: includes/Admin/Assets.php:171
+#: includes/Admin/Assets.php:173
 msgid "Disclaimer"
 msgstr "การปฏิเสธความรับผิดชอบ"
 
@@ -117,12 +117,11 @@ msgstr "บังคับใช้ HTTPS"
 msgid "Force WWW"
 msgstr "บังคับใช้ WWW"
 
-#: includes/Admin/Assets.php:169 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:171 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "เข้าใจแล้ว"
 
 #. Author of the plugin
-#: hostinger.php
 msgid "Hostinger"
 msgstr "Hostinger"
 
@@ -134,12 +133,12 @@ msgstr "Hostinger Easy Onboarding"
 msgid "Hostinger plugin updates"
 msgstr "อัพเดตปลั๊กอิน Hostinger"
 
-#. Plugin Name of the plugin
-#: hostinger.php includes/Admin/Hooks.php:54
+#. Name of the plugin
+#: includes/Admin/Hooks.php:54
 msgid "Hostinger Tools"
 msgstr "เครื่องมือ Hostinger"
 
-#: includes/Admin/Assets.php:168
+#: includes/Admin/Assets.php:170
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -150,17 +149,14 @@ msgstr ""
 "จะคอยแนะนำคุณตลอดขั้นตอนการสร้างเว็บไซต์"
 
 #. Description of the plugin
-#: hostinger.php
 msgid "Hostinger WordPress plugin."
 msgstr "ปลั๊กอิน Hostinger WordPress"
 
-#. Plugin URI of the plugin
-#: hostinger.php
+#. URI of the plugin
 msgid "https://hostinger.com"
 msgstr "https://hostinger.com"
 
 #. Author URI of the plugin
-#: hostinger.php
 msgid "https://www.hostinger.com"
 msgstr "https://www.hostinger.com"
 
@@ -168,12 +164,12 @@ msgstr "https://www.hostinger.com"
 msgid "is recommended"
 msgstr "ขอแนะนำ"
 
-#: includes/Admin/Assets.php:180
+#: includes/Admin/Assets.php:182
 #, fuzzy
 msgid "It was an error updating your settings"
 msgstr "เกิดข้อผิดพลาดในการอัปเดตการตั้งค่าของคุณ"
 
-#: includes/Admin/Assets.php:157
+#: includes/Admin/Assets.php:159
 #, fuzzy
 msgid "Learn more"
 msgstr "เรียนรู้เพิ่มเติม"
@@ -183,7 +179,7 @@ msgstr "เรียนรู้เพิ่มเติม"
 msgid "Let AI explore, understand, and interact with your WordPress site"
 msgstr "ให้ AI สำรวจ ทำความเข้าใจ และโต้ตอบกับเว็บไซต์ WordPress ของคุณ"
 
-#: includes/Admin/Assets.php:178
+#: includes/Admin/Assets.php:180
 msgid "Link has been reset"
 msgstr "ลิงก์ถูกรีเซ็ตแล้ว"
 
@@ -192,7 +188,7 @@ msgstr "ลิงก์ถูกรีเซ็ตแล้ว"
 msgid "LLM Optimization"
 msgstr "การเพิ่มประสิทธิภาพ LLM"
 
-#: includes/Admin/Assets.php:159
+#: includes/Admin/Assets.php:161
 #, fuzzy
 msgid "LLMS.txt"
 msgstr "LLMS.txt"
@@ -201,9 +197,18 @@ msgstr "LLMS.txt"
 msgid "Maintenance"
 msgstr "การดูแลรักษา"
 
-#: includes/Admin/Assets.php:165
+#: includes/Admin/Assets.php:167
 msgid "Maintenance mode"
 msgstr "โหมดการดูแลรักษา"
+
+#: includes/Admin/Assets.php:158
+#, fuzzy
+msgid ""
+"Make your website easier for AI tools to understand. Website content updates "
+"will be tracked to keep the AI discovery service up to date."
+msgstr ""
+"ทำให้เว็บไซต์ของคุณง่ายขึ้นสำหรับเครื่องมือ AI ในการเข้าใจ "
+"การอัปเดตเนื้อหาเว็บไซต์จะถูกติดตามเพื่อให้บริการค้นหา AI ทันสมัยอยู่เสมอ"
 
 #: includes/Views/ComingSoon.php:27
 msgid "New WordPress website is being built and will be published soon"
@@ -237,7 +242,7 @@ msgstr "ดูตัวอย่างเว็บไซต์ของฉัน
 msgid "Preview site"
 msgstr "ดูตัวอย่างเว็บไซต์"
 
-#: includes/Admin/Assets.php:173
+#: includes/Admin/Assets.php:175
 msgid "Proceed anyway"
 msgstr "ดำเนินการต่อ"
 
@@ -265,7 +270,7 @@ msgstr "เปลี่ยนเส้นทาง URL HTTP ทั้งหม�
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "เปลี่ยนเส้นทาง URL WWW ทั้งหมดไปยัง URL ที่ไม่ใช่ WWW"
 
-#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:177
+#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:179
 msgid "Reset link"
 msgstr "รีเซ็ตลิงค์"
 
@@ -285,7 +290,7 @@ msgstr "ข้ามลิงค์ที่เลี่ยงผ่านโห
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "ปลั๊กอิน Hostinger ถูกแบ่งออกเป็นสองปลั๊กอินที่แตกต่างกัน:"
 
-#: includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:177
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -293,7 +298,7 @@ msgstr ""
 "การกระทำนี้จะทำให้ลิงก์ที่สร้างขึ้นในปัจจุบันใช้งานไม่ได้ "
 "การดำเนินการนี้ไม่สามารถยกเลิกได้ คุณแน่ใจหรือไม่ว่าต้องการดำเนินการต่อ"
 
-#: includes/Admin/Assets.php:162
+#: includes/Admin/Assets.php:164
 #, fuzzy
 msgid ""
 "This will replace the existing LLMs.txt file with a new one by Hostinger "
@@ -334,7 +339,12 @@ msgstr ""
 "พบข้อผิดพลาดของเซิร์ฟเวอร์ โปรดลองอีกครั้งในภายหลัง และหากยังคงเกิดปัญหาอยู่ "
 "โปรดติดต่อทีมสนับสนุนของเราเพื่อขอความช่วยเหลือ"
 
-#: includes/Admin/Assets.php:167
+#: includes/Admin/Assets.php:157
+#, fuzzy
+msgid "Web 2 Agent"
+msgstr "เว็บ 2 เอเจนต์"
+
+#: includes/Admin/Assets.php:169
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
@@ -373,7 +383,7 @@ msgstr ""
 "แต่ระบบอาจเปิดเผยความปลอดภัยของไซต์ของคุณได้ "
 "ปิดใช้งานฟีเจอร์นี้หากคุณไม่ต้องการ"
 
-#: includes/Admin/Assets.php:179
+#: includes/Admin/Assets.php:181
 #, fuzzy
 msgid "Your settings have been updated"
 msgstr "การตั้งค่าของคุณได้รับการอัปเดตแล้ว"

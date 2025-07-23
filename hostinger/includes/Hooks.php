@@ -3,6 +3,8 @@
 namespace Hostinger;
 
 use Hostinger\Admin\PluginSettings;
+use Hostinger\Admin\Jobs\NotifyMcpJob;
+use Hostinger\Mcp\EventHandlerFactory;
 use Hostinger\WpHelper\Utils;
 
 defined( 'ABSPATH' ) || exit;
@@ -13,10 +15,45 @@ class Hooks {
         add_filter( 'wp_is_application_passwords_available', array( $this, 'check_authentication_password_enabled' ) );
         add_filter( 'wp_headers', array( $this, 'check_pingback' ) );
         add_filter( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
-
         add_action( 'update_option_woocommerce_coming_soon', array( $this, 'litespeed_flush_cache' ) );
         add_action( 'update_option_woocommerce_store_pages_only', array( $this, 'litespeed_flush_cache' ) );
         add_action( 'upgrader_process_complete', array( $this, 'disable_auth_passwords_on_update' ), 10, 2 );
+        add_action( 'transition_post_status', array( $this, 'handle_transition_post_status' ), 10, 3 );
+        add_action( 'updated_option', array( $this, 'handle_updated_option' ), 10, 3 );
+    }
+
+    public function handle_transition_post_status( string $new_status, string $old_status, \WP_Post $post ): void {
+        if ( $new_status === 'publish' || $old_status === 'publish' ) {
+            do_action(
+                NotifyMcpJob::JOB_NAME,
+                array(
+                    'event'   => EventHandlerFactory::MCP_EVENT_PAGE_UPDATED,
+                    'post_id' => $post->ID,
+                )
+            );
+        }
+    }
+
+    public function handle_updated_option( string $option, mixed $old_value, mixed $value ): void {
+        if ( $option === 'cron' || $this->is_transient( $option ) ) {
+            return;
+        }
+
+        if ( $old_value !== $value ) {
+            do_action( NotifyMcpJob::JOB_NAME, array( 'event' => EventHandlerFactory::MCP_EVENT_UPDATED ) );
+        }
+
+        if ( $option === HOSTINGER_PLUGIN_SETTINGS_OPTION && isset( $value['optin_mcp'] ) && isset( $old_value['optin_mcp'] ) ) {
+            if ( $old_value['optin_mcp'] !== $value['optin_mcp'] ) {
+                do_action(
+                    NotifyMcpJob::JOB_NAME,
+                    array(
+                        'event' => EventHandlerFactory::MCP_EVENT_OPTIN_TOGGLED,
+                        'value' => $value['optin_mcp'],
+                    )
+                );
+            }
+        }
     }
 
     public function disable_auth_passwords_on_update( \WP_Upgrader $upgrader_object, array $options ): void {
@@ -130,5 +167,9 @@ class Hooks {
         if ( has_action( 'litespeed_purge_all' ) ) {
             do_action( 'litespeed_purge_all' );
         }
+    }
+
+    private function is_transient( $option ): bool {
+        return str_contains( $option, '_transient' );
     }
 }

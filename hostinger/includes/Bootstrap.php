@@ -4,6 +4,8 @@ namespace Hostinger;
 
 use Hostinger\Admin\Ajax as AdminAjax;
 use Hostinger\Admin\PluginSettings;
+use Hostinger\Admin\Jobs\JobInitializer;
+use Hostinger\Admin\Proxy;
 use Hostinger\LlmsTxtGenerator\LlmsTxtFileHelper;
 use Hostinger\Rest\Routes;
 use Hostinger\Rest\SettingsRoutes;
@@ -11,6 +13,8 @@ use Hostinger\Admin\Assets as AdminAssets;
 use Hostinger\Admin\Hooks as AdminHooks;
 use Hostinger\Admin\Menu as AdminMenu;
 use Hostinger\Admin\Redirects as AdminRedirects;
+use Hostinger\WpHelper\Config;
+use Hostinger\WpHelper\Requests\Client;
 use Hostinger\WpHelper\Utils;
 use Hostinger\LlmsTxtGenerator\LlmsTxtGenerator;
 
@@ -19,9 +23,13 @@ defined( 'ABSPATH' ) || exit;
 class Bootstrap {
 
     protected Loader $loader;
+    protected Utils $utils;
+    protected Config $config;
 
     public function __construct() {
         $this->loader = new Loader();
+        $this->utils  = new Utils();
+        $this->config = new Config();
     }
 
     public function run(): void {
@@ -55,9 +63,8 @@ class Bootstrap {
     }
 
     private function load_admin_dependencies(): void {
-        $utils = new Utils();
         new AdminAssets();
-        new AdminHooks( $utils );
+        new AdminHooks( $this->utils );
         new AdminMenu();
         new AdminRedirects();
         new AdminRedirects();
@@ -65,6 +72,16 @@ class Bootstrap {
     }
 
     private function load_public_dependencies(): void {
+
+        $client = new Client(
+            'https://wh-wordpress-proxy-api.hostinger.io',
+            array(
+                Config::TOKEN_HEADER  => $this->utils->getApiToken(),
+                Config::DOMAIN_HEADER => $this->utils->getHostInfo(),
+            )
+        );
+
+        new JobInitializer( new Proxy( $client, $this->utils ) );
         new Hooks();
 
         $plugin_settings = new PluginSettings();

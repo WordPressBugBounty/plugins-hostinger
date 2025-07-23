@@ -443,3 +443,11 @@ Changelog
 
 3.0.42 (2025-07-03)
 - Menu translations 
+
+3.0.43 (2025-07-22)
+- Add Web2MCP feature
+- Fix Settings state on failure
+- Bump dependencies version
+
+3.0.44 (2025-07-23)
+- Update translations

@@ -3,7 +3,7 @@
  * Plugin Name: Hostinger Tools
  * Plugin URI: https://hostinger.com
  * Description: Hostinger WordPress plugin.
- * Version: 3.0.42
+ * Version: 3.0.44
  * Requires at least: 5.5
  * Requires PHP: 8.0
  * Author: Hostinger
@@ -24,7 +24,7 @@ use Hostinger\WpMenuManager\Manager;
 defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'HOSTINGER_VERSION' ) ) {
-    define( 'HOSTINGER_VERSION', '3.0.42' );
+    define( 'HOSTINGER_VERSION', '3.0.44' );
 }
 
 if ( ! defined( 'HOSTINGER_ABSPATH' ) ) {
@@ -101,6 +101,12 @@ if ( file_exists( $vendor_file ) ) {
     require_once $vendor_file;
 } else {
     return;
+}
+
+// Action Scheduler should be loaded before plugins_loaded hook.
+$action_scheduler = __DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'woocommerce' . DIRECTORY_SEPARATOR . 'action-scheduler' . DIRECTORY_SEPARATOR . 'action-scheduler.php';
+if ( file_exists( $action_scheduler ) ) {
+    require_once $action_scheduler;
 }
 
 /**

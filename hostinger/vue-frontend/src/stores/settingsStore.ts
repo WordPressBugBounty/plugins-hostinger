@@ -30,20 +30,20 @@ export const useSettingsStore = defineStore(
       const tempSettingsData = settingsData.value;
 
       settingsData.value = {
-        ...data,
-        currentWpVersion: tempSettingsData?.currentWpVersion || "",
-        phpVersion: tempSettingsData?.phpVersion || "",
-        newestWpVersion: tempSettingsData?.newestWpVersion || "",
-        isEligibleWwwRedirect: tempSettingsData?.isEligibleWwwRedirect || false,
-      };
+		  ...data,
+		  currentWpVersion: tempSettingsData?.currentWpVersion || "",
+		  phpVersion: tempSettingsData?.phpVersion || "",
+		  newestWpVersion: tempSettingsData?.newestWpVersion || "",
+		  isEligibleWwwRedirect: tempSettingsData?.isEligibleWwwRedirect || false
+	  };
     };
 
-    const updateSettingsData = async (settings: SettingsData) => {
+    const updateSettingsData = async (settings: SettingsData): Promise<boolean> => {
       const [data, err] = await generalDataRepo.postSettings(settings);
 
       if (err) {
 		  toast.error(translate("hostinger_tools_settings_error"));
-		  return;
+		  return false;
 	  }
 
       const tempSettingsData = settingsData.value;
@@ -53,10 +53,11 @@ export const useSettingsStore = defineStore(
         currentWpVersion: tempSettingsData?.currentWpVersion || "",
         phpVersion: tempSettingsData?.phpVersion || "",
         newestWpVersion: tempSettingsData?.newestWpVersion || "",
-        isEligibleWwwRedirect: tempSettingsData?.isEligibleWwwRedirect || false,
-      };
+        isEligibleWwwRedirect: tempSettingsData?.isEligibleWwwRedirect || false
+	  };
 
 	  toast.success(translate("hostinger_tools_settings_updated"));
+	  return true;
 	};
 
     return {

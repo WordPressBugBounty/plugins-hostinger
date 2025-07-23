@@ -19,7 +19,7 @@ type Emits = {
   "save-section": [value: boolean, item: SectionItem];
 };
 
-const props = defineProps<Props>();
+const props = defineProps<Props & { optinMcpLink?: string }>();
 const emit = defineEmits<Emits>();
 </script>
 
@@ -66,9 +66,14 @@ const emit = defineEmits<Emits>();
         <div class="d-flex flex-direction-column">
           <div class="d-flex align-items-center justify-content-between w-100">
             <div class="d-flex flex-column">
-              <h3 class="h-m-0" item.title>{{ item.title }}</h3>
+              <h3 class="h-m-0">{{ item.title }}</h3>
               <p class="h-m-0 text-body-2">
                 {{ item.description }}
+                <template v-if="item.id === 'optin-mcp' && optinMcpLink">
+                  <a :href="optinMcpLink" target="_blank" rel="noopener" class="text-link-2 additional-link">
+                    Learn more
+                  </a>
+                </template>
               </p>
             </div>
             <Button
@@ -107,6 +112,10 @@ const emit = defineEmits<Emits>();
       border-bottom: none;
       padding-bottom: 0;
     }
+
+	.additional-link {
+		text-decoration: none!important;
+	}
   }
 }
 </style>

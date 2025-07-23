@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:18+0000\n"
-"PO-Revision-Date: 2025-06-17 10:12+0000\n"
+"PO-Revision-Date: 2025-07-22 10:46+0000\n"
 "Last-Translator: \n"
 "Language-Team: French (France)\n"
 "Language: fr_FR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Loco-Version: 2.8.0; wp-6.8.1; php-8.0.30\n"
 "X-Domain: hostinger"
 
-#: includes/Admin/Assets.php:170
+#: includes/Admin/Assets.php:172
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "Action échouée. Réessayez ou contactez le support. Toutes nos excuses."
 
-#: includes/Admin/Assets.php:160
+#: includes/Admin/Assets.php:162
 #, fuzzy
 msgid ""
 "An external LLMs.txt file was found. Switching on the toggle will replace it "
@@ -41,25 +41,25 @@ msgstr ""
 "Une erreur inattendue s’est produite. Veuillez réessayer ou contacter "
 "l’assistance."
 
-#. translators: %s: PHP version
+#. %s: PHP version
 #: hostinger.php:84
 msgid "Attention:"
 msgstr "Attention :"
 
-#: includes/Admin/Assets.php:166
+#: includes/Admin/Assets.php:168
 msgid "Bypass link"
 msgstr "Lien de dérivation"
 
-#: includes/Admin/Assets.php:174
+#: includes/Admin/Assets.php:176
 msgid "Bypass link reset"
 msgstr "Réinitialisation du lien de dérivation"
 
-#: includes/Admin/Assets.php:163 includes/Admin/Assets.php:172
-#: includes/Admin/Assets.php:176
+#: includes/Admin/Assets.php:165 includes/Admin/Assets.php:174
+#: includes/Admin/Assets.php:178
 msgid "Cancel"
 msgstr "Annuler"
 
-#: includes/Admin/Assets.php:158
+#: includes/Admin/Assets.php:160
 #, fuzzy
 msgid "Check validity"
 msgstr "Vérifier la validité"
@@ -68,7 +68,7 @@ msgstr "Vérifier la validité"
 msgid "Coming Soon"
 msgstr "Prochainement"
 
-#: includes/Admin/Assets.php:164
+#: includes/Admin/Assets.php:166
 #, fuzzy
 msgid "Create file"
 msgstr "Créer un fichier"
@@ -78,7 +78,7 @@ msgstr "Créer un fichier"
 msgid "Create LLMs.txt file"
 msgstr "Créer un fichier LLMs.txt"
 
-#: includes/Admin/Assets.php:161
+#: includes/Admin/Assets.php:163
 #, fuzzy
 msgid "Create new LLMs.txt file?"
 msgstr "Créer un nouveau fichier LLMs.txt ?"
@@ -99,7 +99,7 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "Désactiver XML-RPC"
 
-#: includes/Admin/Assets.php:171
+#: includes/Admin/Assets.php:173
 msgid "Disclaimer"
 msgstr "Clause de non-responsabilité"
 
@@ -122,12 +122,11 @@ msgstr "Forcer HTTPS"
 msgid "Force WWW"
 msgstr "Forcer WWW"
 
-#: includes/Admin/Assets.php:169 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:171 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "J'ai compris"
 
 #. Author of the plugin
-#: hostinger.php
 msgid "Hostinger"
 msgstr "Hostinger"
 
@@ -139,12 +138,12 @@ msgstr "Démarrage facile Hostinger"
 msgid "Hostinger plugin updates"
 msgstr "Mises à jour de l'extension Hostinger"
 
-#. Plugin Name of the plugin
-#: hostinger.php includes/Admin/Hooks.php:54
+#. Name of the plugin
+#: includes/Admin/Hooks.php:54
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:168
+#: includes/Admin/Assets.php:170
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -155,18 +154,15 @@ msgstr ""
 "de la création d’un site web."
 
 #. Description of the plugin
-#: hostinger.php
 msgid "Hostinger WordPress plugin."
 msgstr ""
 "Extension WordPress Hostinger.\n"
 
-#. Plugin URI of the plugin
-#: hostinger.php
+#. URI of the plugin
 msgid "https://hostinger.com"
 msgstr "https://hostinger.fr"
 
 #. Author URI of the plugin
-#: hostinger.php
 msgid "https://www.hostinger.com"
 msgstr "https://www.hostinger.fr"
 
@@ -174,12 +170,12 @@ msgstr "https://www.hostinger.fr"
 msgid "is recommended"
 msgstr "est recommandé"
 
-#: includes/Admin/Assets.php:180
+#: includes/Admin/Assets.php:182
 #, fuzzy
 msgid "It was an error updating your settings"
 msgstr "Il s'agit d'une erreur de mise à jour de vos paramètres"
 
-#: includes/Admin/Assets.php:157
+#: includes/Admin/Assets.php:159
 #, fuzzy
 msgid "Learn more"
 msgstr "En savoir plus"
@@ -190,7 +186,7 @@ msgid "Let AI explore, understand, and interact with your WordPress site"
 msgstr ""
 "Laissez l'IA explorer, comprendre et interagir avec votre site WordPress"
 
-#: includes/Admin/Assets.php:178
+#: includes/Admin/Assets.php:180
 msgid "Link has been reset"
 msgstr "Le lien a été réinitialisé"
 
@@ -199,7 +195,7 @@ msgstr "Le lien a été réinitialisé"
 msgid "LLM Optimization"
 msgstr "Optimisation LLM"
 
-#: includes/Admin/Assets.php:159
+#: includes/Admin/Assets.php:161
 #, fuzzy
 msgid "LLMS.txt"
 msgstr "LLMS.txt"
@@ -208,9 +204,19 @@ msgstr "LLMS.txt"
 msgid "Maintenance"
 msgstr "Maintenance"
 
-#: includes/Admin/Assets.php:165
+#: includes/Admin/Assets.php:167
 msgid "Maintenance mode"
 msgstr "Mode maintenance"
+
+#: includes/Admin/Assets.php:158
+#, fuzzy
+msgid ""
+"Make your website easier for AI tools to understand. Website content updates "
+"will be tracked to keep the AI discovery service up to date."
+msgstr ""
+"Facilitez la compréhension de votre site web par les outils d'IA. Les mises "
+"à jour du contenu du site web seront suivies afin de maintenir le service de "
+"découverte de l'IA à jour."
 
 #: includes/Views/ComingSoon.php:27
 msgid "New WordPress website is being built and will be published soon"
@@ -253,7 +259,7 @@ msgstr "Prévisualiser mon site"
 msgid "Preview site"
 msgstr "Prévisualiser le site"
 
-#: includes/Admin/Assets.php:173
+#: includes/Admin/Assets.php:175
 msgid "Proceed anyway"
 msgstr "Procéder quand même"
 
@@ -281,7 +287,7 @@ msgstr "Redirection de toutes les URL HTTP vers des sites HTTPS"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "Redirection de tous les URL WWW vers des URL non WWW"
 
-#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:177
+#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:179
 msgid "Reset link"
 msgstr "Réinitialiser le lien"
 
@@ -301,7 +307,7 @@ msgstr "Lien de saut qui permet de contourner le mode de maintenance "
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "L'extension Hostinger a été divisée en deux extensions différentes :"
 
-#: includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:177
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -309,7 +315,7 @@ msgstr ""
 "Cette action invalidera le lien actuellement généré et utilisé. Cette action "
 "ne peut être annulée. Êtes-vous sûr de vouloir continuer ?"
 
-#: includes/Admin/Assets.php:162
+#: includes/Admin/Assets.php:164
 #, fuzzy
 msgid ""
 "This will replace the existing LLMs.txt file with a new one by Hostinger "
@@ -353,7 +359,12 @@ msgstr ""
 "plus tard, et si le problème persiste, veuillez contacter notre équipe de "
 "support pour plus d'assistance."
 
-#: includes/Admin/Assets.php:167
+#: includes/Admin/Assets.php:157
+#, fuzzy
+msgid "Web 2 Agent"
+msgstr "Web 2 Agent"
+
+#: includes/Admin/Assets.php:169
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
@@ -392,7 +403,7 @@ msgstr ""
 "peut compromettre la sécurité de votre site. Désactivez cette fonctionnalité "
 "si vous n'en avez pas besoin "
 
-#: includes/Admin/Assets.php:179
+#: includes/Admin/Assets.php:181
 #, fuzzy
 msgid "Your settings have been updated"
 msgstr "Vos paramètres ont été mis à jour"

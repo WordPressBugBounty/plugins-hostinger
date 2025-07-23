@@ -11,6 +11,7 @@ class Assets
      * @var Manager
      */
     private Manager $manager;
+    private string $assetsPath;
 
     /**
      * @return void
@@ -21,6 +22,7 @@ class Assets
             add_action('admin_enqueue_scripts', [$this, 'enqueueAdminAssets']);
             add_action('admin_head', [$this, 'addMenuHidingCss']);
         }
+        $this->assetsPath = '/vendor/hostinger/hostinger-wp-menu-manager/assets';
     }
 
     /**
@@ -36,46 +38,48 @@ class Assets
     /**
      * @return void
      */
-    public function enqueueAdminAssets(): void
-    {
-        $composerJsonPath = __DIR__ . '/../composer.json';
-        $version = '1.0.0';
+    public function enqueueAdminAssets(): void {
+        $defaultVersion = '1.0.0';
 
-        if (file_exists($composerJsonPath)) {
-            $composerConfig = json_decode(file_get_contents($composerJsonPath), true);
-            $version = $composerConfig['version'] ?? $version;
-        }
+        if ( $this->isHostingerMenuPage() ) {
+            $pluginInfo   = $this->manager->getPluginInfo();
+            $jsScriptPath = __DIR__ . '/../assets/js/menus.min.js';
+            $cssStylePath = __DIR__ . '/../assets/css/style.min.css';
 
-        if ($this->isHostingerMenuPage()) {
-            wp_enqueue_script(
-                'hostinger_menu_scripts',
-                $this->manager->getPluginInfo() . '/vendor/hostinger/hostinger-wp-menu-manager/assets/js/menus.min.js',
-                [
-                    'jquery',
-                ],
-                $version,
+            $jsVersion = $defaultVersion;
+            if (file_exists($jsScriptPath)) {
+                $jsVersion = filemtime($jsScriptPath) ?: $jsVersion;
+            }
+
+            wp_enqueue_script( 'hostinger_menu_scripts',
+                $pluginInfo . $this->assetsPath . '/js/menus.min.js',
+                [ 'jquery' ],
+                $jsVersion,
                 false
             );
 
-            wp_enqueue_style(
-                'hostinger_menu_styles',
-                $this->manager->getPluginInfo()
-                . '/vendor/hostinger/hostinger-wp-menu-manager/assets/css/style.min.css',
+            $cssVersion = $defaultVersion;
+            if (file_exists($cssStylePath)) {
+                $cssVersion = filemtime($cssStylePath) ?: $cssVersion;
+            }
+
+            wp_enqueue_style( 'hostinger_menu_styles',
+                $pluginInfo . $this->assetsPath . '/css/style.min.css',
                 [],
-                $version,
+                $cssVersion
             );
 
-            //Hide notices and badges in Hostinger menu pages.
+            // Hide notices and badges in Hostinger menu pages.
             $hide_notices = '.notice { display: none !important; } .hostinger-notice { display: block !important; }';
-            wp_add_inline_style('hostinger_menu_styles', $hide_notices);
+            wp_add_inline_style( 'hostinger_menu_styles', $hide_notices );
 
-            if (Utils::isPluginActive('wpforms')) {
+            if ( Utils::isPluginActive( 'wpforms' ) ) {
                 $hide_wp_forms_counter = '.wp-admin #wpadminbar .wpforms-menu-notification-counter { display: none !important; }';
-                wp_add_inline_style('hostinger_menu_styles', $hide_wp_forms_counter);
+                wp_add_inline_style( 'hostinger_menu_styles', $hide_wp_forms_counter );
             }
-            if (Utils::isPluginActive('googleanalytics')) {
+            if ( Utils::isPluginActive( 'googleanalytics' ) ) {
                 $hide_monsterinsights_notification = '.wp-admin .monsterinsights-menu-notification-indicator { display: none !important; }';
-                wp_add_inline_style('hostinger_menu_styles', $hide_monsterinsights_notification);
+                wp_add_inline_style( 'hostinger_menu_styles', $hide_monsterinsights_notification );
             }
         }
     }

@@ -10,14 +10,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-06-17 10:13+0000\n"
+"PO-Revision-Date: 2025-07-22 10:47+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: ko_KR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Loco-Version: 2.8.0; wp-6.8.1; php-8.0.30"
 
-#: includes/Admin/Assets.php:170
+#: includes/Admin/Assets.php:172
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr " XML-RPC를 켜면 사이트의 보안이 약해질 수 있습니다. 계속 진행하시겠습니까?"
@@ -26,7 +26,7 @@ msgstr " XML-RPC를 켜면 사이트의 보안이 약해질 수 있습니다. �
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "작업이 실패했습니다. 다시 시도하거나 지원팀에 문의하세요. 죄송합니다."
 
-#: includes/Admin/Assets.php:160
+#: includes/Admin/Assets.php:162
 #, fuzzy
 msgid ""
 "An external LLMs.txt file was found. Switching on the toggle will replace it "
@@ -37,25 +37,25 @@ msgstr "외부 LLMs.txt 파일이 발견되었습니다. 토글을 켜면 새 �
 msgid "An unexpected error occurred. Please try again or contact support."
 msgstr "예기치 않은 오류가 발생했습니다. 다시 시도하거나 지원팀에 문의하세요."
 
-#. translators: %s: PHP version
+#. %s: PHP version
 #: hostinger.php:84
 msgid "Attention:"
 msgstr "주의:"
 
-#: includes/Admin/Assets.php:166
+#: includes/Admin/Assets.php:168
 msgid "Bypass link"
 msgstr "바이패스 링크"
 
-#: includes/Admin/Assets.php:174
+#: includes/Admin/Assets.php:176
 msgid "Bypass link reset"
 msgstr "링크 재설정 우회"
 
-#: includes/Admin/Assets.php:163 includes/Admin/Assets.php:172
-#: includes/Admin/Assets.php:176
+#: includes/Admin/Assets.php:165 includes/Admin/Assets.php:174
+#: includes/Admin/Assets.php:178
 msgid "Cancel"
 msgstr "취소"
 
-#: includes/Admin/Assets.php:158
+#: includes/Admin/Assets.php:160
 #, fuzzy
 msgid "Check validity"
 msgstr "유효성 확인"
@@ -64,7 +64,7 @@ msgstr "유효성 확인"
 msgid "Coming Soon"
 msgstr "곧 출시 예정"
 
-#: includes/Admin/Assets.php:164
+#: includes/Admin/Assets.php:166
 #, fuzzy
 msgid "Create file"
 msgstr "파일 만들기"
@@ -74,7 +74,7 @@ msgstr "파일 만들기"
 msgid "Create LLMs.txt file"
 msgstr "LLMs.txt 파일 생성"
 
-#: includes/Admin/Assets.php:161
+#: includes/Admin/Assets.php:163
 #, fuzzy
 msgid "Create new LLMs.txt file?"
 msgstr "LLMs.txt 파일을 새로 생성하시겠습니까?"
@@ -93,7 +93,7 @@ msgstr "사이트에 대한 공개 액세스를 비활성화합니다(워드프�
 msgid "Disable XML-RPC"
 msgstr "XML-RPC 비활성화"
 
-#: includes/Admin/Assets.php:171
+#: includes/Admin/Assets.php:173
 msgid "Disclaimer"
 msgstr "고지 사항"
 
@@ -113,12 +113,11 @@ msgstr "HTTPS 강제 적용"
 msgid "Force WWW"
 msgstr "WWW 강제 적용"
 
-#: includes/Admin/Assets.php:169 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:171 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "알겠습니다"
 
 #. Author of the plugin
-#: hostinger.php
 msgid "Hostinger"
 msgstr "호스팅어"
 
@@ -130,12 +129,12 @@ msgstr "호스팅어 간편 온보딩"
 msgid "Hostinger plugin updates"
 msgstr "호스팅어 플러그인 업데이트"
 
-#. Plugin Name of the plugin
-#: hostinger.php includes/Admin/Hooks.php:54
+#. Name of the plugin
+#: includes/Admin/Hooks.php:54
 msgid "Hostinger Tools"
 msgstr "호스팅어 도구"
 
-#: includes/Admin/Assets.php:168
+#: includes/Admin/Assets.php:170
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -143,17 +142,14 @@ msgid ""
 msgstr "호스팅어 도구는 사이트 관리를 간소화하는 유용한 도구를 제공합니다. 호스팅어 간편 온보딩은 웹사이트 구축 단계를 안내합니다."
 
 #. Description of the plugin
-#: hostinger.php
 msgid "Hostinger WordPress plugin."
 msgstr "호스팅어 워드프레스 플러그인."
 
-#. Plugin URI of the plugin
-#: hostinger.php
+#. URI of the plugin
 msgid "https://hostinger.com"
 msgstr "https://hostinger.com"
 
 #. Author URI of the plugin
-#: hostinger.php
 msgid "https://www.hostinger.com"
 msgstr "https://www.hostinger.com"
 
@@ -161,12 +157,12 @@ msgstr "https://www.hostinger.com"
 msgid "is recommended"
 msgstr "추천됨"
 
-#: includes/Admin/Assets.php:180
+#: includes/Admin/Assets.php:182
 #, fuzzy
 msgid "It was an error updating your settings"
 msgstr "설정을 업데이트하는 동안 오류가 발생했습니다"
 
-#: includes/Admin/Assets.php:157
+#: includes/Admin/Assets.php:159
 #, fuzzy
 msgid "Learn more"
 msgstr "자세히 알아보기"
@@ -176,7 +172,7 @@ msgstr "자세히 알아보기"
 msgid "Let AI explore, understand, and interact with your WordPress site"
 msgstr "인공지능이 워드프레스 사이트를 탐색하고 이해하고 상호 작용하게 하세요"
 
-#: includes/Admin/Assets.php:178
+#: includes/Admin/Assets.php:180
 msgid "Link has been reset"
 msgstr "링크가 재설정되었습니다"
 
@@ -185,7 +181,7 @@ msgstr "링크가 재설정되었습니다"
 msgid "LLM Optimization"
 msgstr "LLM 최적화"
 
-#: includes/Admin/Assets.php:159
+#: includes/Admin/Assets.php:161
 #, fuzzy
 msgid "LLMS.txt"
 msgstr "LLMS.txt"
@@ -194,9 +190,18 @@ msgstr "LLMS.txt"
 msgid "Maintenance"
 msgstr "유지 보수"
 
-#: includes/Admin/Assets.php:165
+#: includes/Admin/Assets.php:167
 msgid "Maintenance mode"
 msgstr "유지 보수 모드"
+
+#: includes/Admin/Assets.php:158
+#, fuzzy
+msgid ""
+"Make your website easier for AI tools to understand. Website content updates "
+"will be tracked to keep the AI discovery service up to date."
+msgstr ""
+"AI 도구가 웹사이트를 더 쉽게 이해할 수 있도록 만드세요. 웹사이트 콘텐츠 업데이트가 추적되어 AI 검색 서비스를 최신 상태로 "
+"유지합니다."
 
 #: includes/Views/ComingSoon.php:27
 msgid "New WordPress website is being built and will be published soon"
@@ -230,7 +235,7 @@ msgstr "내 웹사이트 미리보기"
 msgid "Preview site"
 msgstr "사이트 미리보기"
 
-#: includes/Admin/Assets.php:173
+#: includes/Admin/Assets.php:175
 msgid "Proceed anyway"
 msgstr "계속 진행하기"
 
@@ -256,7 +261,7 @@ msgstr "모든 HTTP URL을 HTTPS 사이트로 리디렉션합니다"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "모든 WWW URL을 비WWW URL로 리디렉션합니다"
 
-#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:177
+#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:179
 msgid "Reset link"
 msgstr "링크 재설정"
 
@@ -276,13 +281,13 @@ msgstr "유지 관리 모드 우회용 스킵 링크"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "호스팅어 플러그인은 두 개의 다른 플러그인으로 분리되었습니다:"
 
-#: includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:177
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
 msgstr "그러면 현재 사용 중인 생성된 링크가 무효화됩니다. 이 작업은 취소할 수 없습니다. 계속 진행하시겠습니까?"
 
-#: includes/Admin/Assets.php:162
+#: includes/Admin/Assets.php:164
 #, fuzzy
 msgid ""
 "This will replace the existing LLMs.txt file with a new one by Hostinger "
@@ -320,7 +325,12 @@ msgstr ""
 "불편을 드려 죄송합니다. AI 콘텐츠 생성 과정에서 서버 오류가 발생했습니다. 나중에 다시 시도해 보시고 문제가 지속되면 지원팀에 "
 "문의하여 도움을 받으세요."
 
-#: includes/Admin/Assets.php:167
+#: includes/Admin/Assets.php:157
+#, fuzzy
+msgid "Web 2 Agent"
+msgstr "웹 2.0 에이전트"
+
+#: includes/Admin/Assets.php:169
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
@@ -353,7 +363,7 @@ msgstr ""
 "XML-RPC를 사용하면 앱이 워드프레스 사이트에 연결할 수 있지만 사이트의 보안이 노출될 수 있습니다. 필요하지 않은 경우 이 기능을 "
 "비활성화하세요"
 
-#: includes/Admin/Assets.php:179
+#: includes/Admin/Assets.php:181
 #, fuzzy
 msgid "Your settings have been updated"
 msgstr "설정이 업데이트되었습니다"

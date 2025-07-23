@@ -24,6 +24,9 @@ const WORDPRESS_UPDATE_LINK = getBaseUrl(location.href) + "update-core.php";
 
 const isPageLoading = ref(false);
 
+const HOSTINGER_FREE_DOMAINS = /hostingersite\.com|hostinger\.dev/;
+
+
 const maintenanceSection = computed(() => [
   {
     id: "maintenance-mode",
@@ -101,13 +104,20 @@ const redirectsSection = computed(() => {
 });
 
 const llmsSection = computed(() => [
-  {
-    id: "enable-llms-txt",
-    title: translate("hostinger_tools_enable_llms_txt"),
-    description: translate("hostinger_tools_llms_txt_description"),
-    isVisible: true,
-    toggleValue: settingsData.value?.enableLlmsTxt,
-  },
+	{
+		id: "enable-llms-txt",
+		title: translate("hostinger_tools_enable_llms_txt"),
+		description: translate("hostinger_tools_llms_txt_description"),
+		isVisible: true,
+		toggleValue: settingsData.value?.enableLlmsTxt,
+	},
+	{
+		id: "optin-mcp",
+		title: translate("hostinger_tools_optin_mcp"),
+		description: translate("hostinger_tools_optin_mcp_description"),
+		isVisible: isHostingerPlatform.value && ! isFreeDomain.value,
+		toggleValue: settingsData.value?.optinMcp,
+	},
 ]);
 
 const llmsSectionHeaderButtons = computed(() => settingsData.value?.enableLlmsTxt ? [
@@ -151,6 +161,10 @@ const isPhpUpdateDisplayed = computed(() => {
 
 const isHostingerPlatform = computed(() => {
     return parseInt(hostinger_tools_data.hplatform) > 0;
+});
+
+const isFreeDomain = computed(() => {
+	return HOSTINGER_FREE_DOMAINS.test(String(siteUrl));
 });
 
 
@@ -237,14 +251,21 @@ const onSaveLLmsSection = (isEnabled: boolean, item: SectionItem) => {
   onUpdateSettings(isEnabled, item);
 };
 
-const onUpdateSettings = (value: boolean, item: SectionItem) => {
+const onUpdateSettings = async (value: boolean, item: SectionItem) => {
   if (!settingsData.value) return;
 
   const id = kebabToCamel(item.id) as keyof ToggleableSettingsData;
 
-  settingsData.value[id] = value;
+  const updatedSettings = {
+    ...settingsData.value,
+    [id]: value,
+  };
 
-  updateSettingsData(settingsData.value);
+  const success = await updateSettingsData(updatedSettings);
+
+  if (success && settingsData.value) {
+    settingsData.value[id] = value;
+  }
 };
 
 
@@ -291,9 +312,10 @@ const onUpdateSettings = (value: boolean, item: SectionItem) => {
         :is-loading="isPageLoading"
         @save-section="onSaveLLmsSection"
         :title="translate('hostinger_tools_llms')"
-        :section-items="llmsSection"
+        :section-items="llmsSection.filter((section) => section.isVisible)"
         :header-buttons="llmsSectionHeaderButtons"
         :warning="llmstxtFileUserGenerated ? translate('hostinger_tools_llms_txt_external_file_found') : ''"
+        optin-mcp-link="https://support.hostinger.com/en/articles/11729400-ai-agent-access-smart-ai-discovery"
       />
     </div>
   </div>

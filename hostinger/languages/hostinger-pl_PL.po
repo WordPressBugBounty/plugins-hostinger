@@ -1,43 +1,37 @@
-# Copyright (C) 2024 Hostinger
-# This file is distributed under the GPL v3.
+# Translation of Plugins - Hostinger Tools - Stable (latest release) in Polish
+# This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Hostinger Tools 3.0.6\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hostinger\n"
-"Last-Translator: \n"
-"Language-Team: Polish\n"
+"PO-Revision-Date: 2025-07-22 10:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-06-17 10:14+0000\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 "
+"&& (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Domain: hostinger\n"
 "Language: pl_PL\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
-"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
-"X-Loco-Version: 2.8.0; wp-6.8.1; php-8.0.30"
+"Project-Id-Version: Plugins - Hostinger Tools - Stable (latest release)\n"
+"Language-Team: Polish"
 
-#: includes/Admin/Assets.php:170
+#: includes/Admin/Assets.php:172
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
-"Włączenie XML-RPC może sprawić, że Twoja strona będzie mniej bezpieczna. Czy "
-"chcesz kontynuować?"
+" Włączenie XML-RPC może sprawić, że Twoja witryna będzie mniej bezpieczna. "
+"Czy chcesz kontynuować?"
 
 #: includes/Errors.php:16
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr ""
-" Przepraszamy. Akcja nie powiodła się. Spróbuj ponownie lub skontaktuj się z "
-"pomocą techniczną."
+"Akcja nie powiodła się. Spróbuj ponownie lub skontaktuj się z pomocą "
+"techniczną. Przepraszamy."
 
-#: includes/Admin/Assets.php:160
-#, fuzzy
+#: includes/Admin/Assets.php:162
 msgid ""
 "An external LLMs.txt file was found. Switching on the toggle will replace it "
 "with a new one."
 msgstr ""
-"Znaleziono zewnętrzny plik LLMs.txt. Włączenie przełącznika spowoduje "
+"Wykryto zewnętrzny plik LLMs.txt. Przełączenie tej opcji spowoduje "
 "zastąpienie go nowym."
 
 #: includes/Errors.php:19
@@ -46,45 +40,41 @@ msgstr ""
 "Wystąpił nieoczekiwany błąd. Spróbuj ponownie lub skontaktuj się z pomocą "
 "techniczną."
 
-#. translators: %s: PHP version
+#. %s: PHP version
 #: hostinger.php:84
 msgid "Attention:"
 msgstr "Uwaga:"
 
-#: includes/Admin/Assets.php:166
+#: includes/Admin/Assets.php:168
 msgid "Bypass link"
 msgstr "Obejście łącza"
 
-#: includes/Admin/Assets.php:174
-msgid "Bypass link reset"
-msgstr "Resetowanie obejścia łącza"
-
-#: includes/Admin/Assets.php:163 includes/Admin/Assets.php:172
 #: includes/Admin/Assets.php:176
+msgid "Bypass link reset"
+msgstr "Omiń resetowanie łącza"
+
+#: includes/Admin/Assets.php:165 includes/Admin/Assets.php:174
+#: includes/Admin/Assets.php:178
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: includes/Admin/Assets.php:158
-#, fuzzy
+#: includes/Admin/Assets.php:160
 msgid "Check validity"
-msgstr "Sprawdź ważność"
+msgstr "Sprawdź poprawność"
 
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "Już wkrótce"
 
-#: includes/Admin/Assets.php:164
-#, fuzzy
+#: includes/Admin/Assets.php:166
 msgid "Create file"
 msgstr "Utwórz plik"
 
 #: includes/Admin/Assets.php:155
-#, fuzzy
 msgid "Create LLMs.txt file"
 msgstr "Utwórz plik LLMs.txt"
 
-#: includes/Admin/Assets.php:161
-#, fuzzy
+#: includes/Admin/Assets.php:163
 msgid "Create new LLMs.txt file?"
 msgstr "Utworzyć nowy plik LLMs.txt?"
 
@@ -97,114 +87,105 @@ msgid ""
 "Disable public access to the site (WordPress admins will still be able to "
 "access)"
 msgstr ""
-"Wyłącz publiczny dostęp do strony (administratorzy WordPress nadal będą "
+"Wyłącz publiczny dostęp do witryny (administratorzy WordPressa nadal będą "
 "mogli uzyskać do niej dostęp)"
 
 #: includes/Admin/Assets.php:132
 msgid "Disable XML-RPC"
 msgstr "Wyłącz XML-RPC"
 
-#: includes/Admin/Assets.php:171
+#: includes/Admin/Assets.php:173
 msgid "Disclaimer"
 msgstr "Zastrzeżenie"
 
 #: includes/Admin/Assets.php:128
 msgid "Edit site"
-msgstr "Edytuj stronę"
+msgstr "Edytuj witrynę"
 
 #: includes/Admin/Assets.php:149
 msgid "For improved security, ensure you use the latest version of WordPress"
 msgstr ""
 "Aby zwiększyć bezpieczeństwo, upewnij się, że używasz najnowszej wersji "
-"WordPress"
+"WordPressa"
 
 #: includes/Admin/Assets.php:137
 msgid "Force HTTPS"
-msgstr "Wymuś HTTPS"
+msgstr "Wymuszaj HTTPS"
 
 #: includes/Admin/Assets.php:139
 msgid "Force WWW"
 msgstr "Wymuś WWW"
 
-#: includes/Admin/Assets.php:169 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:171 includes/Admin/Hooks.php:57
 msgid "Got it"
-msgstr "Rozumiem"
+msgstr "Zrozumiałem"
 
 #. Author of the plugin
-#: hostinger.php
 msgid "Hostinger"
 msgstr "Hostinger"
 
 #: includes/Admin/Hooks.php:55
 msgid "Hostinger Easy Onboarding"
-msgstr "Hostinger Easy Onboarding"
+msgstr "Łatwe wdrażanie Hostinger"
 
 #: includes/Admin/Hooks.php:51
 msgid "Hostinger plugin updates"
-msgstr "Aktualizacje wtyczek Hostinger"
+msgstr "Aktualizacje wtyczki Hostinger"
 
-#. Plugin Name of the plugin
-#: hostinger.php includes/Admin/Hooks.php:54
+#. Name of the plugin
+#: includes/Admin/Hooks.php:54
 msgid "Hostinger Tools"
 msgstr "Narzędzia Hostinger"
 
-#: includes/Admin/Assets.php:168
+#: includes/Admin/Assets.php:170
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
 "website."
 msgstr ""
-"Narzędzia Hostinger zaoferuje nowe narzędzia, które uproszczą zarządzanie "
-"Twoją stroną. A Hostinger Easy Onboarding poprowadzi Cię przez kroki "
-"tworzenia strony."
+"Narzędzia Hostinger zaoferują nowe narzędzia, które uproszczą zarządzanie "
+"Twoją witryną. A Łatwe wdrażanie Hostinger poprowadzi Cię przez kroki "
+"tworzenia witryny."
 
 #. Description of the plugin
-#: hostinger.php
 msgid "Hostinger WordPress plugin."
 msgstr "Wtyczka Hostinger WordPress."
 
-#. Plugin URI of the plugin
-#: hostinger.php
+#. URI of the plugin
 msgid "https://hostinger.com"
-msgstr "https://hostinger.pl"
+msgstr "https://hostinger.com"
 
 #. Author URI of the plugin
-#: hostinger.php
 msgid "https://www.hostinger.com"
-msgstr "https://www.hostinger.pl"
+msgstr "https://www.hostinger.com"
 
 #: includes/Admin/Assets.php:148
 msgid "is recommended"
-msgstr "zaleca się"
+msgstr "jest zalecane"
 
-#: includes/Admin/Assets.php:180
-#, fuzzy
+#: includes/Admin/Assets.php:182
 msgid "It was an error updating your settings"
-msgstr "Wystąpił błąd podczas aktualizacji ustawień"
+msgstr "Błąd aktualizacji ustawień"
 
-#: includes/Admin/Assets.php:157
-#, fuzzy
+#: includes/Admin/Assets.php:159
 msgid "Learn more"
 msgstr "Dowiedz się więcej"
 
 #: includes/Admin/Assets.php:156
-#, fuzzy
 msgid "Let AI explore, understand, and interact with your WordPress site"
 msgstr ""
-"Pozwól sztucznej inteligencji eksplorować, rozumieć i wchodzić w interakcje "
-"z Twoją witryną WordPress"
+"Pozwól AI eksplorować, rozumieć i wchodzić w interakcje z Twoją witryną "
+"WordPress"
 
-#: includes/Admin/Assets.php:178
+#: includes/Admin/Assets.php:180
 msgid "Link has been reset"
-msgstr "Link został zresetowany"
+msgstr "Odnośnik został zresetowany"
 
 #: includes/Admin/Assets.php:154
-#, fuzzy
 msgid "LLM Optimization"
 msgstr "Optymalizacja LLM"
 
-#: includes/Admin/Assets.php:159
-#, fuzzy
+#: includes/Admin/Assets.php:161
 msgid "LLMS.txt"
 msgstr "LLMS.txt"
 
@@ -212,19 +193,29 @@ msgstr "LLMS.txt"
 msgid "Maintenance"
 msgstr "Konserwacja"
 
-#: includes/Admin/Assets.php:165
+#: includes/Admin/Assets.php:167
 msgid "Maintenance mode"
 msgstr "Tryb konserwacji"
+
+#: includes/Admin/Assets.php:158
+#, fuzzy
+msgid ""
+"Make your website easier for AI tools to understand. Website content updates "
+"will be tracked to keep the AI discovery service up to date."
+msgstr ""
+"Spraw, by Twoja witryna była łatwiejsza do zrozumienia dla narzędzi AI. "
+"Aktualizacje zawartości witryny będą śledzone w celu zapewnienia aktualności "
+"usługi wykrywania sztucznej inteligencji."
 
 #: includes/Views/ComingSoon.php:27
 msgid "New WordPress website is being built and will be published soon"
 msgstr ""
-"Nowa strona internetowa WordPress jest w procesie tworzenia i wkrótce "
-"zostanie opublikowana"
+"Nowa witryna internetowa WordPress jest tworzona i wkrótce zostanie "
+"opublikowana"
 
 #: includes/Admin/Hooks.php:54
 msgid "offers a toolkit for easier site maintenance."
-msgstr "oferuje zestaw narzędzi ułatwiających konserwację strony."
+msgstr "oferuje zestaw narzędzi ułatwiających konserwację witryny."
 
 #: includes/Admin/Views/Partials/RateUs.php:38
 msgid ""
@@ -244,13 +235,13 @@ msgstr "Wersja PHP"
 
 #: includes/Admin/Assets.php:151
 msgid "Preview my website"
-msgstr "Podgląd mojej strony"
+msgstr "Podgląd mojej witryny internetowej"
 
 #: includes/Admin/Assets.php:127
 msgid "Preview site"
-msgstr "Podgląd strony"
+msgstr "Podgląd witryny"
 
-#: includes/Admin/Assets.php:173
+#: includes/Admin/Assets.php:175
 msgid "Proceed anyway"
 msgstr "Kontynuuj mimo wszystko"
 
@@ -260,7 +251,7 @@ msgid ""
 "building a site using WordPress."
 msgstr ""
 "zawiera wskazówki i materiały edukacyjne dla początkujących, którzy chcą "
-"rozpocząć tworzenie strony za pomocą WordPress."
+"rozpocząć tworzenie witryny za pomocą WordPressa."
 
 #: includes/Admin/Views/Partials/RateUs.php:2
 msgid "Rate this plugin"
@@ -272,16 +263,15 @@ msgstr "Przekierowania"
 
 #: includes/Admin/Assets.php:138
 msgid "Redirects all HTTP URLs to HTTPS sites"
-msgstr "Przekierowuje wszystkie adresy URL HTTP do stron HTTPS"
+msgstr "Przekierowuje wszystkie adresy URL HTTP do witryn HTTPS"
 
 #: includes/Admin/Assets.php:140
 msgid "Redirects all WWW URLs to non-WWW ones"
-msgstr ""
-"Przekierowuje wszystkie adresy URL WWW na adresy niebędące adresami WWW"
+msgstr "Przekierowuje wszystkie adresy URL WWW na adresy nie-WWW"
 
-#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:177
+#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:179
 msgid "Reset link"
-msgstr "Zresetuj łącze"
+msgstr "Zresetuj odnośnik"
 
 #: includes/Admin/Assets.php:145
 msgid "Running the latest version"
@@ -289,33 +279,31 @@ msgstr "Uruchamianie najnowszej wersji"
 
 #: includes/Admin/Assets.php:152
 msgid "Security"
-msgstr "Bezpieczeństwo"
+msgstr "Zabezpieczenia"
 
 #: includes/Admin/Assets.php:130
 msgid "Skip-link that bypasses the maintenance mode"
-msgstr "Link pomijający tryb konserwacji"
+msgstr "Odnośnik pomijający tryb konserwacji"
 
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Wtyczka Hostinger została podzielona na dwie różne wtyczki:"
 
-#: includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:177
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
 msgstr ""
-"To unieważni aktualnie wygenerowany link w użyciu. Tej czynności nie można "
-"cofnąć, czy na pewno chcesz kontynuować?"
+"To unieważni aktualnie wygenerowany odnośnik w użyciu. Tej czynności nie "
+"można cofnąć, czy na pewno chcesz kontynuować?"
 
-#: includes/Admin/Assets.php:162
-#, fuzzy
+#: includes/Admin/Assets.php:164
 msgid ""
 "This will replace the existing LLMs.txt file with a new one by Hostinger "
 "Tools. The original file can’t be restored."
 msgstr ""
-"Spowoduje to zastąpienie istniejącego pliku LLMs.txt nowym plikiem "
-"utworzonym przez Hostinger Tools. Oryginalny plik nie może zostać "
-"przywrócony."
+"Aktualny plik LLMs.txt zostanie zastąpiony nowym plikiem wygenerowanym przez "
+"Hostinger Tools. Przywrócenie oryginalnego pliku nie będzie możliwe."
 
 #: includes/Admin/Assets.php:125 includes/Admin/Menu.php:22
 #: includes/Admin/Menu.php:31 includes/Admin/Menu.php:32
@@ -327,9 +315,8 @@ msgid "Unknown error code."
 msgstr "Nieznany kod błędu."
 
 #: includes/Admin/Assets.php:146
-#, fuzzy
 msgid "Update"
-msgstr "Aktualizacja"
+msgstr "Uaktualnij"
 
 #: includes/Admin/Assets.php:147
 msgid "Update to"
@@ -349,13 +336,18 @@ msgstr ""
 "serwera. Spróbuj ponownie później, a jeśli problem będzie się powtarzał, "
 "skontaktuj się z naszym zespołem wsparcia, aby uzyskać pomoc."
 
-#: includes/Admin/Assets.php:167
+#: includes/Admin/Assets.php:157
+#, fuzzy
+msgid "Web 2 Agent"
+msgstr "Web 2 Agent"
+
+#: includes/Admin/Assets.php:169
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
 msgstr ""
-"Dzielimy wtyczkę Hostinger na dwie: Narzędzia Hostinger i Hostinger Easy "
-"Onboarding"
+"Dzielimy wtyczkę Hostinger na dwie: Narzędzia Hostinger i Łatwe wdrażanie "
+"Hostinger"
 
 #: includes/Admin/Assets.php:135
 msgid ""
@@ -363,20 +355,20 @@ msgid ""
 "without using their main login credentials, allowing for third-party "
 "integrations."
 msgstr ""
-"Hasła aplikacji WordPress umożliwiają użytkownikom uwierzytelnianie żądań "
-"API bez korzystania z ich głównych danych logowania, umożliwiając integrację "
-"z innymi firmami."
+"Hasła aplikacji WordPress pozwalają użytkownikom uwierzytelniać żądania API "
+"bez konieczności korzystania z głównych danych logowania, co umożliwia "
+"integrację z rozwiązaniami stron trzecich."
 
 #: includes/Admin/Assets.php:143
 msgid "WordPress version"
-msgstr "Wersja WordPress"
+msgstr "Wersja WordPressa"
 
 #: includes/Admin/Assets.php:141
 msgid ""
 "WWW and non-WWW domain records are not pointing to the same host. Redirect "
 "not possible."
 msgstr ""
-"Rekordy domen WWW i non-WWW nie wskazują na tego samego hosta. "
+"Rekordy domen WWW i nie-WWW nie wskazują na tego samego hosta. "
 "Przekierowanie nie jest możliwe."
 
 #: includes/Admin/Assets.php:133
@@ -384,11 +376,10 @@ msgid ""
 "XML-RPC allows apps to connect to your WordPress site, but might expose your "
 "site's security. Disable this feature if you don't need it"
 msgstr ""
-"XML-RPC pozwala aplikacjom na łączenie się z Twoją stroną WordPress, ale "
-"może narazić bezpieczeństwo Twojej strony. Wyłącz tę funkcję, jeśli jej nie "
+"XML-RPC pozwala aplikacjom na łączenie się z Twoją witryną WordPress, ale "
+"może narazić bezpieczeństwo Twojej witryny. Wyłącz tę funkcję, jeśli jej nie "
 "potrzebujesz"
 
-#: includes/Admin/Assets.php:179
-#, fuzzy
+#: includes/Admin/Assets.php:181
 msgid "Your settings have been updated"
-msgstr "Ustawienia zostały zaktualizowane"
+msgstr "Twoje ustawienia zostały zaktualizowane"

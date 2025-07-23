@@ -10,14 +10,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-06-17 10:14+0000\n"
+"PO-Revision-Date: 2025-07-22 10:46+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: he_IL\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.8.0; wp-6.8.1; php-8.0.30"
 
-#: includes/Admin/Assets.php:170
+#: includes/Admin/Assets.php:172
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "הפעולה נכשלה. נסו שנית או צרו קשר עם התמיכה. סליחה."
 
-#: includes/Admin/Assets.php:160
+#: includes/Admin/Assets.php:162
 #, fuzzy
 msgid ""
 "An external LLMs.txt file was found. Switching on the toggle will replace it "
@@ -38,25 +38,25 @@ msgstr "נמצא קובץ LLMs.txt חיצוני. הפעלת המתג תחליף 
 msgid "An unexpected error occurred. Please try again or contact support."
 msgstr "אירעה שגיאה בלתי-צפויה. אנא נסו שנית או צרו קשר עם התמיכה."
 
-#. translators: %s: PHP version
+#. %s: PHP version
 #: hostinger.php:84
 msgid "Attention:"
 msgstr "שימו לב:"
 
-#: includes/Admin/Assets.php:166
+#: includes/Admin/Assets.php:168
 msgid "Bypass link"
 msgstr "קישור מעקף"
 
-#: includes/Admin/Assets.php:174
+#: includes/Admin/Assets.php:176
 msgid "Bypass link reset"
 msgstr "איפוס קישור מעקף"
 
-#: includes/Admin/Assets.php:163 includes/Admin/Assets.php:172
-#: includes/Admin/Assets.php:176
+#: includes/Admin/Assets.php:165 includes/Admin/Assets.php:174
+#: includes/Admin/Assets.php:178
 msgid "Cancel"
 msgstr "ביטול"
 
-#: includes/Admin/Assets.php:158
+#: includes/Admin/Assets.php:160
 #, fuzzy
 msgid "Check validity"
 msgstr "בדוק תוקף"
@@ -65,7 +65,7 @@ msgstr "בדוק תוקף"
 msgid "Coming Soon"
 msgstr "בקרוב"
 
-#: includes/Admin/Assets.php:164
+#: includes/Admin/Assets.php:166
 #, fuzzy
 msgid "Create file"
 msgstr "צור קובץ"
@@ -75,7 +75,7 @@ msgstr "צור קובץ"
 msgid "Create LLMs.txt file"
 msgstr "צור קובץ LLMs.txt"
 
-#: includes/Admin/Assets.php:161
+#: includes/Admin/Assets.php:163
 #, fuzzy
 msgid "Create new LLMs.txt file?"
 msgstr "ליצור קובץ LLMs.txt חדש?"
@@ -94,7 +94,7 @@ msgstr "השבתת גישה ציבורית לאתר (למנהלי WordPress עד
 msgid "Disable XML-RPC"
 msgstr "השבתת XML-RPC"
 
-#: includes/Admin/Assets.php:171
+#: includes/Admin/Assets.php:173
 msgid "Disclaimer"
 msgstr "גילוי נאות"
 
@@ -114,12 +114,11 @@ msgstr "כפה HTTPS"
 msgid "Force WWW"
 msgstr "כפה WWW"
 
-#: includes/Admin/Assets.php:169 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:171 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "הבנתי"
 
 #. Author of the plugin
-#: hostinger.php
 msgid "Hostinger"
 msgstr "Hostinger"
 
@@ -131,12 +130,12 @@ msgstr "הדרכה קלה של Hostinger"
 msgid "Hostinger plugin updates"
 msgstr "עדכוני תוספים של Hostinger"
 
-#. Plugin Name of the plugin
-#: hostinger.php includes/Admin/Hooks.php:54
+#. Name of the plugin
+#: includes/Admin/Hooks.php:54
 msgid "Hostinger Tools"
 msgstr "כלי Hostinger"
 
-#: includes/Admin/Assets.php:168
+#: includes/Admin/Assets.php:170
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -146,17 +145,14 @@ msgstr ""
 "וההדרכה הקלה של Hostinger תדריך אתכם בצעדים של בניית אתר."
 
 #. Description of the plugin
-#: hostinger.php
 msgid "Hostinger WordPress plugin."
 msgstr "תוסף WordPress של Hostinger."
 
-#. Plugin URI of the plugin
-#: hostinger.php
+#. URI of the plugin
 msgid "https://hostinger.com"
 msgstr "https://hostinger.co.il"
 
 #. Author URI of the plugin
-#: hostinger.php
 msgid "https://www.hostinger.com"
 msgstr "https://www.hostinger.co.il"
 
@@ -164,12 +160,12 @@ msgstr "https://www.hostinger.co.il"
 msgid "is recommended"
 msgstr "מומלץ"
 
-#: includes/Admin/Assets.php:180
+#: includes/Admin/Assets.php:182
 #, fuzzy
 msgid "It was an error updating your settings"
 msgstr "אירעה שגיאה בעת עדכון ההגדרות שלך"
 
-#: includes/Admin/Assets.php:157
+#: includes/Admin/Assets.php:159
 #, fuzzy
 msgid "Learn more"
 msgstr "למידע נוסף"
@@ -179,7 +175,7 @@ msgstr "למידע נוסף"
 msgid "Let AI explore, understand, and interact with your WordPress site"
 msgstr "תן ל-AI לחקור, להבין ולתקשר עם אתר הוורדפרס שלך"
 
-#: includes/Admin/Assets.php:178
+#: includes/Admin/Assets.php:180
 msgid "Link has been reset"
 msgstr "הקישור אופס"
 
@@ -188,7 +184,7 @@ msgstr "הקישור אופס"
 msgid "LLM Optimization"
 msgstr "אופטימיזציה LLM"
 
-#: includes/Admin/Assets.php:159
+#: includes/Admin/Assets.php:161
 #, fuzzy
 msgid "LLMS.txt"
 msgstr "LLMS.txt"
@@ -197,9 +193,18 @@ msgstr "LLMS.txt"
 msgid "Maintenance"
 msgstr "תחזוקה"
 
-#: includes/Admin/Assets.php:165
+#: includes/Admin/Assets.php:167
 msgid "Maintenance mode"
 msgstr "מצב תחזוקה"
+
+#: includes/Admin/Assets.php:158
+#, fuzzy
+msgid ""
+"Make your website easier for AI tools to understand. Website content updates "
+"will be tracked to keep the AI discovery service up to date."
+msgstr ""
+"הפוך את האתר שלך לקל יותר להבנה עבור כלי AI. עדכוני תוכן האתר יועקבו כדי "
+"לשמור על שירות גילוי ה-AI מעודכן."
 
 #: includes/Views/ComingSoon.php:27
 msgid "New WordPress website is being built and will be published soon"
@@ -233,7 +238,7 @@ msgstr "הצג תצוגה-מקדימה לאתר שלי"
 msgid "Preview site"
 msgstr "תצוגה מקדימה לאתר"
 
-#: includes/Admin/Assets.php:173
+#: includes/Admin/Assets.php:175
 msgid "Proceed anyway"
 msgstr "המשך בכל מקרה"
 
@@ -260,7 +265,7 @@ msgstr "מפנה מחדש את כל ה-URL של HTTP לכאלה של HTTPS"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "מפנה מחדש את כל ה-URL של WWW לכאלה שאינם WWW"
 
-#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:177
+#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:179
 msgid "Reset link"
 msgstr "קישור לאיפוס"
 
@@ -280,7 +285,7 @@ msgstr "קישור-דילוג שעוקף את מצב התחזוקה"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "התוסף של Hostinger פוצל לשני תוספים נפרדים:"
 
-#: includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:177
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -288,7 +293,7 @@ msgstr ""
 "הקישור בשימוש נוכחי יאבד את תוקפו. לא ניתן לבטל את פעולה זו, האם אתם בטוחים "
 "שברצונכם להמשיך?"
 
-#: includes/Admin/Assets.php:162
+#: includes/Admin/Assets.php:164
 #, fuzzy
 msgid ""
 "This will replace the existing LLMs.txt file with a new one by Hostinger "
@@ -329,7 +334,12 @@ msgstr ""
 "שנית מאוחר יותר, ואם הבעיה נמשכת, צרו קשר עם צוות התמיכה שלנו ונשמח לעזור "
 "לכם."
 
-#: includes/Admin/Assets.php:167
+#: includes/Admin/Assets.php:157
+#, fuzzy
+msgid "Web 2 Agent"
+msgstr "סוכן Web 2"
+
+#: includes/Admin/Assets.php:169
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
@@ -365,7 +375,7 @@ msgstr ""
 "XML-RPC מאפשר ליישומים להתחבר לאתר ה-WordPress שלכם, אבל עלול לחשוף את אבטחת "
 "האתר שלכם. השביתו את הפיצ'ר הזה אם אינכם זקוקים לו"
 
-#: includes/Admin/Assets.php:179
+#: includes/Admin/Assets.php:181
 #, fuzzy
 msgid "Your settings have been updated"
 msgstr "ההגדרות שלך עודכנו"

@@ -45,6 +45,11 @@ class PluginOptions {
     private bool $enable_llms_txt = false;
 
     /**
+     * @var bool
+     */
+    private bool $optin_mcp = false;
+
+    /**
      * @param array $settings plugin settings array.
      */
     public function __construct( array $settings = array() ) {
@@ -55,6 +60,7 @@ class PluginOptions {
         $this->force_www                       = ! empty( $settings['force_www'] );
         $this->disable_authentication_password = ! empty( $settings['disable_authentication_password'] );
         $this->enable_llms_txt                 = ! empty( $settings['enable_llms_txt'] );
+        $this->optin_mcp                       = ! empty( $settings['optin_mcp'] );
     }
 
     /**
@@ -157,8 +163,12 @@ class PluginOptions {
         return $this->enable_llms_txt;
     }
 
-    public function set_enable_llms_txt( bool $enable_llms_txt ): void {
-        $this->enable_llms_txt = $enable_llms_txt;
+    public function get_optin_mcp(): bool {
+        return $this->optin_mcp;
+    }
+
+    public function set_optin_mcp( bool $optin_mcp ): void {
+        $this->optin_mcp = $optin_mcp;
     }
 
     /**
@@ -173,6 +183,7 @@ class PluginOptions {
             'force_www'                       => $this->get_force_www(),
             'disable_authentication_password' => $this->get_disable_authentication_password(),
             'enable_llms_txt'                 => $this->get_enable_llms_txt(),
+            'optin_mcp'                       => $this->get_optin_mcp(),
         );
     }
 }
