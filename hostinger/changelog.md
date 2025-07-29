@@ -451,3 +451,6 @@ Changelog
 
 3.0.44 (2025-07-23)
 - Update translations
+
+3.0.45 (2025-07-28)
+- Update WP helper package

@@ -3,7 +3,7 @@
         'name' => 'hostinger/hostinger',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'cde5bdf37315bec4a29b7d9d5dea552f840e3b95',
+        'reference' => 'e5b5ae78d925fb4d6bfcfee6564786f22aab8183',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'automattic/jetpack-autoloader' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => 'd202767bf7a3286851762977d7ba4389437ffcc5',
+            'reference' => '6d9a767b2cb658ab0d9a9c9a8bddf67d6f90da11',
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../automattic/jetpack-autoloader',
             'aliases' => array(
@@ -24,16 +24,16 @@
         'hostinger/hostinger' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'cde5bdf37315bec4a29b7d9d5dea552f840e3b95',
+            'reference' => 'e5b5ae78d925fb4d6bfcfee6564786f22aab8183',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'hostinger/hostinger-wp-helper' => array(
-            'pretty_version' => '1.0.10',
-            'version' => '1.0.10.0',
-            'reference' => '156a764738a8d694e9f76d1073988a291293b215',
+            'pretty_version' => '1.0.12',
+            'version' => '1.0.12.0',
+            'reference' => 'f943461ffdd9df60c84e4d808ff1dd967dfa790d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../hostinger/hostinger-wp-helper',
             'aliases' => array(),

@@ -96,7 +96,8 @@ class Utils {
 		$host     = $_SERVER['HTTP_HOST'] ?? '';
 		$site_url = get_site_url();
 		$site_url = preg_replace( '#^https?://#', '', $site_url );
-
+		$site_url = preg_replace( '/^www\./', '', $site_url );
+		
 		if ( ! empty( $site_url ) && ! empty( $host ) && strpos( $site_url, $host ) === 0 ) {
 			if ( $site_url === $host ) {
 				return $host;

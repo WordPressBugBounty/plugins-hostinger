@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-autoloader.git",
-                "reference": "d202767bf7a3286851762977d7ba4389437ffcc5"
+                "reference": "6d9a767b2cb658ab0d9a9c9a8bddf67d6f90da11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/d202767bf7a3286851762977d7ba4389437ffcc5",
-                "reference": "d202767bf7a3286851762977d7ba4389437ffcc5",
+                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/6d9a767b2cb658ab0d9a9c9a8bddf67d6f90da11",
+                "reference": "6d9a767b2cb658ab0d9a9c9a8bddf67d6f90da11",
                 "shasum": ""
             },
             "require": {
@@ -25,7 +25,7 @@
                 "composer/composer": "^2.2",
                 "yoast/phpunit-polyfills": "^4.0.0"
             },
-            "time": "2025-06-24T13:28:47+00:00",
+            "time": "2025-07-28T21:14:38+00:00",
             "default-branch": true,
             "type": "composer-plugin",
             "extra": {
@@ -71,17 +71,17 @@
         },
         {
             "name": "hostinger/hostinger-wp-helper",
-            "version": "1.0.10",
-            "version_normalized": "1.0.10.0",
+            "version": "1.0.12",
+            "version_normalized": "1.0.12.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:hostinger/hostinger-wp-helper.git",
-                "reference": "156a764738a8d694e9f76d1073988a291293b215"
+                "reference": "f943461ffdd9df60c84e4d808ff1dd967dfa790d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/156a764738a8d694e9f76d1073988a291293b215",
-                "reference": "156a764738a8d694e9f76d1073988a291293b215",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/f943461ffdd9df60c84e4d808ff1dd967dfa790d",
+                "reference": "f943461ffdd9df60c84e4d808ff1dd967dfa790d",
                 "shasum": ""
             },
             "require": {
@@ -92,7 +92,7 @@
                 "phpunit/phpunit": "^9.6",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2025-04-30T06:58:13+00:00",
+            "time": "2025-07-28T09:51:26+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -103,7 +103,7 @@
             },
             "description": "A PHP package with core functions for Hostinger WordPress plugins.",
             "support": {
-                "source": "https://github.com/hostinger/hostinger-wp-helper/tree/1.0.10",
+                "source": "https://github.com/hostinger/hostinger-wp-helper/tree/1.0.12",
                 "issues": "https://github.com/hostinger/hostinger-wp-helper/issues"
             },
             "install-path": "../hostinger/hostinger-wp-helper"
