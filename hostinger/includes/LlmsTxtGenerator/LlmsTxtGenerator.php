@@ -179,6 +179,6 @@ class LlmsTxtGenerator {
     }
 
     protected function prepare_excerpt( \WP_Post $item ): string {
-        return html_entity_decode( wp_trim_excerpt( $item->post_excerpt, $item ) );
+        return str_replace( array( "\r", "\n" ), ' ', strip_tags( wp_trim_excerpt( $item->post_excerpt, $item ) ) );
     }
 }
