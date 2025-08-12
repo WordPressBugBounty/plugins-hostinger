@@ -457,3 +457,7 @@ Changelog
 
 3.0.46 (2025-08-05)
 - Fixed empty lines in llms.txt
+
+3.0.47 (2025-08-08)
+- Add MCP choice
+- Updated translations

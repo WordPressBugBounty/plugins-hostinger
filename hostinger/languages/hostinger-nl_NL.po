@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-07-22 10:46+0000\n"
+"PO-Revision-Date: 2025-08-08 10:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Plugins - Hostinger Tools - Stable (latest release)\n"
 "Language-Team: Dutch"
 
-#: includes/Admin/Assets.php:172
+#: includes/Admin/Assets.php:173
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -25,7 +25,17 @@ msgstr ""
 "Actie mislukt. Probeer het opnieuw of neem contact op met ondersteuning. "
 "Excuses."
 
-#: includes/Admin/Assets.php:162
+#: includes/Admin/Assets.php:154
+#, fuzzy
+msgid "AI Tools"
+msgstr "AI-tools"
+
+#: includes/Admin/Assets.php:184
+#, fuzzy
+msgid "Allow Kodee to manage your site"
+msgstr "Laat Kodee je site beheren"
+
+#: includes/Admin/Assets.php:163
 msgid ""
 "An external LLMs.txt file was found. Switching on the toggle will replace it "
 "with a new one."
@@ -39,25 +49,25 @@ msgstr ""
 "Er is een onverwachte fout opgetreden. Probeer het opnieuw of neem contact "
 "op met ondersteuning."
 
-#. %s: PHP version
+#. translators: %s: PHP version
 #: hostinger.php:84
 msgid "Attention:"
 msgstr "Attentie:"
 
-#: includes/Admin/Assets.php:168
+#: includes/Admin/Assets.php:169
 msgid "Bypass link"
 msgstr "Link omzeilen"
 
-#: includes/Admin/Assets.php:176
+#: includes/Admin/Assets.php:177
 msgid "Bypass link reset"
 msgstr "Link omzeilen reset"
 
-#: includes/Admin/Assets.php:165 includes/Admin/Assets.php:174
-#: includes/Admin/Assets.php:178
+#: includes/Admin/Assets.php:166 includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:179
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: includes/Admin/Assets.php:160
+#: includes/Admin/Assets.php:161
 msgid "Check validity"
 msgstr "Geldigheid controleren"
 
@@ -65,15 +75,15 @@ msgstr "Geldigheid controleren"
 msgid "Coming Soon"
 msgstr "Komt binnenkort"
 
-#: includes/Admin/Assets.php:166
+#: includes/Admin/Assets.php:167
 msgid "Create file"
 msgstr "Bestand maken"
 
-#: includes/Admin/Assets.php:155
+#: includes/Admin/Assets.php:156
 msgid "Create LLMs.txt file"
 msgstr "LLMs.txt bestand maken"
 
-#: includes/Admin/Assets.php:163
+#: includes/Admin/Assets.php:164
 msgid "Create new LLMs.txt file?"
 msgstr "Nieuw LLMs.txt bestand maken?"
 
@@ -93,7 +103,7 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "XML-RPC uitschakelen"
 
-#: includes/Admin/Assets.php:173
+#: includes/Admin/Assets.php:174
 msgid "Disclaimer"
 msgstr "Disclaimer"
 
@@ -115,11 +125,12 @@ msgstr "Forceer HTTPS"
 msgid "Force WWW"
 msgstr "Forceer WWW"
 
-#: includes/Admin/Assets.php:171 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:172 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "Ik snap het"
 
 #. Author of the plugin
+#: hostinger.php
 msgid "Hostinger"
 msgstr "Hostinger"
 
@@ -131,12 +142,12 @@ msgstr "Hostinger eenvoudige onboarding"
 msgid "Hostinger plugin updates"
 msgstr "Hostinger plugin updates"
 
-#. Name of the plugin
-#: includes/Admin/Hooks.php:54
+#. Plugin Name of the plugin
+#: hostinger.php includes/Admin/Hooks.php:54
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:170
+#: includes/Admin/Assets.php:171
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -147,14 +158,17 @@ msgstr ""
 "stappen van het bouwen van een site."
 
 #. Description of the plugin
+#: hostinger.php
 msgid "Hostinger WordPress plugin."
 msgstr "Hostinger WordPress plugin."
 
-#. URI of the plugin
+#. Plugin URI of the plugin
+#: hostinger.php
 msgid "https://hostinger.com"
 msgstr "https://hostinger.com"
 
 #. Author URI of the plugin
+#: hostinger.php
 msgid "https://www.hostinger.com"
 msgstr "https://www.hostinger.com"
 
@@ -162,27 +176,38 @@ msgstr "https://www.hostinger.com"
 msgid "is recommended"
 msgstr "wordt aanbevolen"
 
-#: includes/Admin/Assets.php:182
+#: includes/Admin/Assets.php:183
 msgid "It was an error updating your settings"
 msgstr "Het was een fout bij het updaten van je instellingen"
 
-#: includes/Admin/Assets.php:159
+#: includes/Admin/Assets.php:160
 msgid "Learn more"
 msgstr "Lees verder"
 
-#: includes/Admin/Assets.php:156
+#: includes/Admin/Assets.php:157
 msgid "Let AI explore, understand, and interact with your WordPress site"
 msgstr "Laat AI je WordPress site verkennen, begrijpen en ermee communiceren"
 
-#: includes/Admin/Assets.php:180
+#: includes/Admin/Assets.php:185
+#, fuzzy
+msgid ""
+"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"actions like creating pages or updating settings. We will install and pre-"
+"configure the WordPress MCP plugin for you."
+msgstr ""
+"Laat Kodee je site namens jou beheren. Hierdoor kan Kodee acties uitvoeren "
+"zoals pagina's aanmaken of instellingen bijwerken. We installeren en "
+"configureren de WordPress MCP plugin voor je."
+
+#: includes/Admin/Assets.php:181
 msgid "Link has been reset"
 msgstr "Link is gereset"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:155
 msgid "LLM Optimization"
 msgstr "LLM optimalisatie"
 
-#: includes/Admin/Assets.php:161
+#: includes/Admin/Assets.php:162
 msgid "LLMS.txt"
 msgstr "LLMS.txt"
 
@@ -190,18 +215,17 @@ msgstr "LLMS.txt"
 msgid "Maintenance"
 msgstr "Onderhoud"
 
-#: includes/Admin/Assets.php:167
+#: includes/Admin/Assets.php:168
 msgid "Maintenance mode"
 msgstr "Onderhoudsmodus"
 
-#: includes/Admin/Assets.php:158
-#, fuzzy
+#: includes/Admin/Assets.php:159
 msgid ""
 "Make your website easier for AI tools to understand. Website content updates "
 "will be tracked to keep the AI discovery service up to date."
 msgstr ""
-"Maak je website begrijpelijker voor AI-tools. Updates van website-inhoud "
-"worden bijgehouden om de AI-zoekservice up-to-date te houden."
+"Maak je site makkelijker te begrijpen voor AI gereedschap. Inhoudelijke "
+"updates van sites worden gevolgd om de AI zoekdienst up-to-date te houden."
 
 #: includes/Views/ComingSoon.php:27
 msgid "New WordPress website is being built and will be published soon"
@@ -236,7 +260,7 @@ msgstr "Bekijk mijn site voorvertoning"
 msgid "Preview site"
 msgstr "Voorbeeldsite"
 
-#: includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:176
 msgid "Proceed anyway"
 msgstr "Toch doorgaan"
 
@@ -264,7 +288,7 @@ msgstr "Alle HTTP URL's worden omgeleid naar HTTPS sites"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "Alle WWW URL's worden omgeleid naar niet-WWW URL's"
 
-#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:179
+#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:180
 msgid "Reset link"
 msgstr "Reset link"
 
@@ -285,7 +309,7 @@ msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr ""
 "De Hostinger plugin heeft zich opgesplitst in twee verschillende plugins:"
 
-#: includes/Admin/Assets.php:177
+#: includes/Admin/Assets.php:178
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -293,7 +317,7 @@ msgstr ""
 "Hierdoor wordt de nu gegenereerde link die in gebruik is ongeldig. Deze "
 "actie kan niet ongedaan worden gemaakt, weet je zeker dat je door wilt gaan?"
 
-#: includes/Admin/Assets.php:164
+#: includes/Admin/Assets.php:165
 msgid ""
 "This will replace the existing LLMs.txt file with a new one by Hostinger "
 "Tools. The original file can’t be restored."
@@ -334,12 +358,11 @@ msgstr ""
 "blijft voordoen, neem dan contact op met ons ondersteuningsteam voor "
 "assistentie."
 
-#: includes/Admin/Assets.php:157
-#, fuzzy
+#: includes/Admin/Assets.php:158
 msgid "Web 2 Agent"
 msgstr "Web 2 Agent"
 
-#: includes/Admin/Assets.php:169
+#: includes/Admin/Assets.php:170
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
@@ -378,6 +401,6 @@ msgstr ""
 "site, maar kan de beveiliging van je site blootleggen. Schakel deze functie "
 "uit als je deze niet nodig hebt"
 
-#: includes/Admin/Assets.php:181
+#: includes/Admin/Assets.php:182
 msgid "Your settings have been updated"
 msgstr "Je instellingen zijn geüpdatet"

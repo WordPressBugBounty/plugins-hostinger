@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:19+0000\n"
-"PO-Revision-Date: 2025-07-22 10:46+0000\n"
+"PO-Revision-Date: 2025-08-08 10:35+0000\n"
 "Last-Translator: Mohamed Doukkali\n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Loco-Version: 2.8.0; wp-6.8.1; php-8.0.30\n"
 "X-Domain: hostinger"
 
-#: includes/Admin/Assets.php:172
+#: includes/Admin/Assets.php:173
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr " قد يؤدي تشغيل XML-RPC إلى جعل موقعك أقل أمانًا. هل تريد حقا المتابعة؟"
@@ -25,7 +25,17 @@ msgstr " قد يؤدي تشغيل XML-RPC إلى جعل موقعك أقل أما
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "المعذرة، لقد فشلت المحاولة. حاول مرة أخرى أو اتصل بالدعم."
 
-#: includes/Admin/Assets.php:162
+#: includes/Admin/Assets.php:154
+#, fuzzy
+msgid "AI Tools"
+msgstr "أدوات الذكاء الاصطناعي"
+
+#: includes/Admin/Assets.php:184
+#, fuzzy
+msgid "Allow Kodee to manage your site"
+msgstr "اسمح لكودي بإدارة موقعك"
+
+#: includes/Admin/Assets.php:163
 #, fuzzy
 msgid ""
 "An external LLMs.txt file was found. Switching on the toggle will replace it "
@@ -38,25 +48,25 @@ msgstr ""
 msgid "An unexpected error occurred. Please try again or contact support."
 msgstr "لقد حدث خطأ غير متوقّع. حاول مرة أخرى أو اتصل بالدعم."
 
-#. %s: PHP version
+#. translators: %s: PHP version
 #: hostinger.php:84
 msgid "Attention:"
 msgstr "انتباه:"
 
-#: includes/Admin/Assets.php:168
+#: includes/Admin/Assets.php:169
 msgid "Bypass link"
 msgstr "رابط الوصلة الفرعية"
 
-#: includes/Admin/Assets.php:176
+#: includes/Admin/Assets.php:177
 msgid "Bypass link reset"
 msgstr "إعادة تعيين الوصلة الفرعية"
 
-#: includes/Admin/Assets.php:165 includes/Admin/Assets.php:174
-#: includes/Admin/Assets.php:178
+#: includes/Admin/Assets.php:166 includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:179
 msgid "Cancel"
 msgstr "إلغاء"
 
-#: includes/Admin/Assets.php:160
+#: includes/Admin/Assets.php:161
 #, fuzzy
 msgid "Check validity"
 msgstr "التحقق من الصلاحية"
@@ -65,17 +75,17 @@ msgstr "التحقق من الصلاحية"
 msgid "Coming Soon"
 msgstr "قريباً"
 
-#: includes/Admin/Assets.php:166
+#: includes/Admin/Assets.php:167
 #, fuzzy
 msgid "Create file"
 msgstr "إنشاء ملف"
 
-#: includes/Admin/Assets.php:155
+#: includes/Admin/Assets.php:156
 #, fuzzy
 msgid "Create LLMs.txt file"
 msgstr "إنشاء ملف LLMs.txt"
 
-#: includes/Admin/Assets.php:163
+#: includes/Admin/Assets.php:164
 #, fuzzy
 msgid "Create new LLMs.txt file?"
 msgstr "إنشاء ملف LLMs.txt جديد؟"
@@ -96,7 +106,7 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "تعطيل XML-RPC"
 
-#: includes/Admin/Assets.php:173
+#: includes/Admin/Assets.php:174
 msgid "Disclaimer"
 msgstr "إخلاء المسؤولية"
 
@@ -117,11 +127,12 @@ msgstr "فرض HTTPs"
 msgid "Force WWW"
 msgstr "فرض WWW"
 
-#: includes/Admin/Assets.php:171 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:172 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "حصلت عليه"
 
 #. Author of the plugin
+#: hostinger.php
 msgid "Hostinger"
 msgstr "Hostinger"
 
@@ -133,12 +144,12 @@ msgstr "Hostinger Easy Onboarding Easy Onboarding"
 msgid "Hostinger plugin updates"
 msgstr "تحديثات المكوّن الإضافي Hostinger"
 
-#. Name of the plugin
-#: includes/Admin/Hooks.php:54
+#. Plugin Name of the plugin
+#: hostinger.php includes/Admin/Hooks.php:54
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:170
+#: includes/Admin/Assets.php:171
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -148,14 +159,17 @@ msgstr ""
 "Onboarding بإرشادك خلال خطوات إنشاء موقع الويب."
 
 #. Description of the plugin
+#: hostinger.php
 msgid "Hostinger WordPress plugin."
 msgstr "إضافة ووردبريس على Hostinger."
 
-#. URI of the plugin
+#. Plugin URI of the plugin
+#: hostinger.php
 msgid "https://hostinger.com"
 msgstr "https://hostinger.com"
 
 #. Author URI of the plugin
+#: hostinger.php
 msgid "https://www.hostinger.com"
 msgstr "https://www.hostinger.com"
 
@@ -163,31 +177,42 @@ msgstr "https://www.hostinger.com"
 msgid "is recommended"
 msgstr "يوصى به"
 
-#: includes/Admin/Assets.php:182
+#: includes/Admin/Assets.php:183
 #, fuzzy
 msgid "It was an error updating your settings"
 msgstr "كان هناك خطأ في تحديث إعداداتك"
 
-#: includes/Admin/Assets.php:159
+#: includes/Admin/Assets.php:160
 #, fuzzy
 msgid "Learn more"
 msgstr "اعرف المزيد"
 
-#: includes/Admin/Assets.php:156
+#: includes/Admin/Assets.php:157
 #, fuzzy
 msgid "Let AI explore, understand, and interact with your WordPress site"
 msgstr "اسمح للذكاء الاصطناعي باستكشاف موقعك على WordPress وفهمه والتفاعل معه"
 
-#: includes/Admin/Assets.php:180
+#: includes/Admin/Assets.php:185
+#, fuzzy
+msgid ""
+"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"actions like creating pages or updating settings. We will install and pre-"
+"configure the WordPress MCP plugin for you."
+msgstr ""
+"دع Kodee يدير موقعك بالنيابة عنك. يتيح ذلك لكودي تنفيذ إجراءات مثل إنشاء "
+"الصفحات أو تحديث الإعدادات. سنقوم بتثبيت إضافة ووردبريس MCP وتهيئتها مسبقًا "
+"لك."
+
+#: includes/Admin/Assets.php:181
 msgid "Link has been reset"
 msgstr "تمت إعادة تعيين الرابط"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:155
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "تحسين LLM"
 
-#: includes/Admin/Assets.php:161
+#: includes/Admin/Assets.php:162
 #, fuzzy
 msgid "LLMS.txt"
 msgstr "LLMS.txt"
@@ -196,11 +221,11 @@ msgstr "LLMS.txt"
 msgid "Maintenance"
 msgstr "الصيانة"
 
-#: includes/Admin/Assets.php:167
+#: includes/Admin/Assets.php:168
 msgid "Maintenance mode"
 msgstr "وضع الصيانة"
 
-#: includes/Admin/Assets.php:158
+#: includes/Admin/Assets.php:159
 #, fuzzy
 msgid ""
 "Make your website easier for AI tools to understand. Website content updates "
@@ -246,7 +271,7 @@ msgstr "معاينة موقعي الإلكتروني"
 msgid "Preview site"
 msgstr "معاينة الموقع"
 
-#: includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:176
 msgid "Proceed anyway"
 msgstr "تابع على أي حال"
 
@@ -273,7 +298,7 @@ msgstr "إعادة توجيه جميع عناوين URL الخاصة بـ HTTP �
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "إعادة توجيه جميع عناوين URL الخاصة بـ WWW إلى عناوين غير WWW"
 
-#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:179
+#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:180
 msgid "Reset link"
 msgstr "إعادة تعيين الرابط"
 
@@ -293,7 +318,7 @@ msgstr "تخطي الرابط الذي يتجاوز وضع الصيانة"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "تم تقسيم إضافة Hostinger إلى إضافتين مختلفتين:"
 
-#: includes/Admin/Assets.php:177
+#: includes/Admin/Assets.php:178
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -301,7 +326,7 @@ msgstr ""
 "سيؤدي هذا إلى إبطال الرابط الذي تم إنشاؤه حاليًا. لا يمكن التراجع عن هذا "
 "الإجراء، هل أنت متأكد من رغبتك في المتابعة؟"
 
-#: includes/Admin/Assets.php:164
+#: includes/Admin/Assets.php:165
 #, fuzzy
 msgid ""
 "This will replace the existing LLMs.txt file with a new one by Hostinger "
@@ -342,12 +367,12 @@ msgstr ""
 "مستوى الخادم. يرجى المحاولة مرة أخرى لاحقًا، وإذا استمرت المشكلة، فيرجى "
 "الاتصال بفريق الدعم للحصول على المساعدة."
 
-#: includes/Admin/Assets.php:157
+#: includes/Admin/Assets.php:158
 #, fuzzy
 msgid "Web 2 Agent"
 msgstr "وكيل الويب 2"
 
-#: includes/Admin/Assets.php:169
+#: includes/Admin/Assets.php:170
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
@@ -383,7 +408,7 @@ msgstr ""
 "يسمح XML-RPC للتطبيقات بالاتصال بموقع WordPress الخاص بك، لكنه قد يعرّض أمان "
 "موقعك للخطر. عطّل هذه الميزة إذا لم تكن بحاجة إليها."
 
-#: includes/Admin/Assets.php:181
+#: includes/Admin/Assets.php:182
 #, fuzzy
 msgid "Your settings have been updated"
 msgstr "تم تحديث إعداداتك"

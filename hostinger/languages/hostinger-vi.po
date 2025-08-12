@@ -10,14 +10,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-07-22 10:47+0000\n"
+"PO-Revision-Date: 2025-08-08 10:36+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Loco-Version: 2.7.2; wp-6.8"
 
-#: includes/Admin/Assets.php:172
+#: includes/Admin/Assets.php:173
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -27,7 +27,17 @@ msgstr ""
 msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "Hành động thất bại. Vui lòng thử lại hoặc liên hệ hỗ trợ. Xin lỗi."
 
-#: includes/Admin/Assets.php:162
+#: includes/Admin/Assets.php:154
+#, fuzzy
+msgid "AI Tools"
+msgstr "Công cụ Trí tuệ Nhân tạo"
+
+#: includes/Admin/Assets.php:184
+#, fuzzy
+msgid "Allow Kodee to manage your site"
+msgstr "Cho phép Kodee quản lý trang web của bạn"
+
+#: includes/Admin/Assets.php:163
 #, fuzzy
 msgid ""
 "An external LLMs.txt file was found. Switching on the toggle will replace it "
@@ -41,25 +51,25 @@ msgid "An unexpected error occurred. Please try again or contact support."
 msgstr ""
 "Đã xảy ra lỗi không xác định. Xin vui lòng thử lại hoặc liên hệ hỗ trợ."
 
-#. %s: PHP version
+#. translators: %s: PHP version
 #: hostinger.php:84
 msgid "Attention:"
 msgstr "Lưu ý:"
 
-#: includes/Admin/Assets.php:168
+#: includes/Admin/Assets.php:169
 msgid "Bypass link"
 msgstr "Đường dẫn bỏ qua"
 
-#: includes/Admin/Assets.php:176
+#: includes/Admin/Assets.php:177
 msgid "Bypass link reset"
 msgstr "Thiết lập lại đường dẫn bỏ qua"
 
-#: includes/Admin/Assets.php:165 includes/Admin/Assets.php:174
-#: includes/Admin/Assets.php:178
+#: includes/Admin/Assets.php:166 includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:179
 msgid "Cancel"
 msgstr "Hủy"
 
-#: includes/Admin/Assets.php:160
+#: includes/Admin/Assets.php:161
 #, fuzzy
 msgid "Check validity"
 msgstr "Kiểm tra tính hợp lệ"
@@ -68,17 +78,17 @@ msgstr "Kiểm tra tính hợp lệ"
 msgid "Coming Soon"
 msgstr "Sắp ra mắt"
 
-#: includes/Admin/Assets.php:166
+#: includes/Admin/Assets.php:167
 #, fuzzy
 msgid "Create file"
 msgstr "Tạo tệp"
 
-#: includes/Admin/Assets.php:155
+#: includes/Admin/Assets.php:156
 #, fuzzy
 msgid "Create LLMs.txt file"
 msgstr "Tạo tệp LLMs.txt"
 
-#: includes/Admin/Assets.php:163
+#: includes/Admin/Assets.php:164
 #, fuzzy
 msgid "Create new LLMs.txt file?"
 msgstr "Tạo tệp LLMs.txt mới?"
@@ -98,7 +108,7 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "Tắt XML-RPC"
 
-#: includes/Admin/Assets.php:173
+#: includes/Admin/Assets.php:174
 msgid "Disclaimer"
 msgstr "Từ chối trách nhiệm"
 
@@ -119,11 +129,12 @@ msgstr "HTTPS bắt buộc"
 msgid "Force WWW"
 msgstr "WWW bắt buộc"
 
-#: includes/Admin/Assets.php:171 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:172 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "Đã hiểu"
 
 #. Author of the plugin
+#: hostinger.php
 msgid "Hostinger"
 msgstr "Hostinger"
 
@@ -135,12 +146,12 @@ msgstr "Nhập môn Hostinger Dễ dàng"
 msgid "Hostinger plugin updates"
 msgstr "Cập nhật plugin Hostinger"
 
-#. Name of the plugin
-#: includes/Admin/Hooks.php:54
+#. Plugin Name of the plugin
+#: hostinger.php includes/Admin/Hooks.php:54
 msgid "Hostinger Tools"
 msgstr "Công cụ Hostinger"
 
-#: includes/Admin/Assets.php:170
+#: includes/Admin/Assets.php:171
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -151,14 +162,17 @@ msgstr ""
 "trang web."
 
 #. Description of the plugin
+#: hostinger.php
 msgid "Hostinger WordPress plugin."
 msgstr "Plugin WordPress Hostinger."
 
-#. URI of the plugin
+#. Plugin URI of the plugin
+#: hostinger.php
 msgid "https://hostinger.com"
 msgstr "https://hostinger.vn"
 
 #. Author URI of the plugin
+#: hostinger.php
 msgid "https://www.hostinger.com"
 msgstr "https://www.hostinger.vn"
 
@@ -166,33 +180,44 @@ msgstr "https://www.hostinger.vn"
 msgid "is recommended"
 msgstr "được đề xuất"
 
-#: includes/Admin/Assets.php:182
+#: includes/Admin/Assets.php:183
 #, fuzzy
 msgid "It was an error updating your settings"
 msgstr "Đã xảy ra lỗi khi cập nhật cài đặt của bạn"
 
-#: includes/Admin/Assets.php:159
+#: includes/Admin/Assets.php:160
 #, fuzzy
 msgid "Learn more"
 msgstr "Tìm hiểu thêm"
 
-#: includes/Admin/Assets.php:156
+#: includes/Admin/Assets.php:157
 #, fuzzy
 msgid "Let AI explore, understand, and interact with your WordPress site"
 msgstr ""
 "Hãy để Trí tuệ nhân tạo (AI) khám phá, hiểu và tương tác với trang web "
 "WordPress của bạn"
 
-#: includes/Admin/Assets.php:180
+#: includes/Admin/Assets.php:185
+#, fuzzy
+msgid ""
+"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"actions like creating pages or updating settings. We will install and pre-"
+"configure the WordPress MCP plugin for you."
+msgstr ""
+"Hãy để Kodee quản lý trang web của bạn thay cho bạn. Điều này cho phép Kodee "
+"thực hiện các tác vụ như tạo trang hoặc cập nhật cài đặt. Chúng tôi sẽ cài "
+"đặt và cấu hình sẵn plugin WordPress MCP cho bạn."
+
+#: includes/Admin/Assets.php:181
 msgid "Link has been reset"
 msgstr "Đường dẫn đã được thiết lập lại"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:155
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "Tối ưu hóa LLM"
 
-#: includes/Admin/Assets.php:161
+#: includes/Admin/Assets.php:162
 #, fuzzy
 msgid "LLMS.txt"
 msgstr "LLMS.txt"
@@ -201,11 +226,11 @@ msgstr "LLMS.txt"
 msgid "Maintenance"
 msgstr "Bảo trì"
 
-#: includes/Admin/Assets.php:167
+#: includes/Admin/Assets.php:168
 msgid "Maintenance mode"
 msgstr "Chế độ bảo trì"
 
-#: includes/Admin/Assets.php:158
+#: includes/Admin/Assets.php:159
 #, fuzzy
 msgid ""
 "Make your website easier for AI tools to understand. Website content updates "
@@ -247,7 +272,7 @@ msgstr "Xem trước trang web"
 msgid "Preview site"
 msgstr "Xem trước trang"
 
-#: includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:176
 msgid "Proceed anyway"
 msgstr "Thực hiện bất chấp"
 
@@ -275,7 +300,7 @@ msgstr "Chuyển hướng tất cả URL HTTP đến trang HTTPS"
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "Chuyển hướng tất cả URL WWW đến URL không WWW"
 
-#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:179
+#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:180
 msgid "Reset link"
 msgstr "Thiết lập lại đường dẫn"
 
@@ -295,7 +320,7 @@ msgstr "Đường dẫn bỏ qua để bỏ qua chế độ bảo trì"
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Plugin Hostinger đã được chia thành 2 plugin khác nhau:"
 
-#: includes/Admin/Assets.php:177
+#: includes/Admin/Assets.php:178
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -303,7 +328,7 @@ msgstr ""
 "Điều này sẽ vô hiệu quá đường dẫn hiện tại đã tạo. Hành động này không thể "
 "hoàn tác, bạn có chắc muốn thực hiện?"
 
-#: includes/Admin/Assets.php:164
+#: includes/Admin/Assets.php:165
 #, fuzzy
 msgid ""
 "This will replace the existing LLMs.txt file with a new one by Hostinger "
@@ -344,12 +369,12 @@ msgstr ""
 "đã gặp lỗi máy chủ. Xin vui lòng thử lại sau và nếu vấn đề vẫn tiếp tục xảy "
 "ra, vui lòng liên hệ đội ngũ hổ trợ để được giúp đỡ."
 
-#: includes/Admin/Assets.php:157
+#: includes/Admin/Assets.php:158
 #, fuzzy
 msgid "Web 2 Agent"
 msgstr "Trợ lý Web 2.0"
 
-#: includes/Admin/Assets.php:169
+#: includes/Admin/Assets.php:170
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
@@ -387,7 +412,7 @@ msgstr ""
 "XML-RPC cho phép ứng dụng kết nối với trang WordPress nhưng có thể làm giảm "
 "bảo mật trang web. Tắt tính năng này nếu bạn không cần dùng nó."
 
-#: includes/Admin/Assets.php:181
+#: includes/Admin/Assets.php:182
 #, fuzzy
 msgid "Your settings have been updated"
 msgstr "Cài đặt của bạn đã được cập nhật"
