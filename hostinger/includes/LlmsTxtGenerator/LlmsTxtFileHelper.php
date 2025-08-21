@@ -13,15 +13,19 @@ class LlmsTxtFileHelper {
             return false;
         }
 
-        global $wp_filesystem;
-        $this->init_wp_filesystem();
-        $content = $wp_filesystem->get_contents( $this->get_llmstxt_file_path() );
+        $content = $this->get_content();
 
         if ( $content === false ) {
             return false;
         }
 
         return ! str_contains( $content, LlmsTxtGenerator::HOSTINGER_LLMSTXT_SIGNATURE );
+    }
+
+    public function get_content(): string {
+        global $wp_filesystem;
+        $this->init_wp_filesystem();
+        return $wp_filesystem->get_contents( $this->get_llmstxt_file_path() );
     }
 
     public function create( string $content ): void {

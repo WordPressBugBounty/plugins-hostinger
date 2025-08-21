@@ -112,6 +112,7 @@ const llmsSection = computed(() => [
 		description: translate("hostinger_tools_llms_txt_description"),
 		isVisible: true,
 		toggleValue: settingsData.value?.enableLlmsTxt,
+		learn_more_link: "https://llmstxt.org/",
 	},
 	{
 		id: "optin-mcp",
@@ -119,6 +120,7 @@ const llmsSection = computed(() => [
 		description: translate("hostinger_tools_optin_mcp_description"),
 		isVisible: isHostingerPlatform.value && ! isFreeDomain.value,
 		toggleValue: settingsData.value?.optinMcp,
+		learn_more_link: "https://support.hostinger.com/en/articles/11729400-ai-agent-access-smart-ai-discovery",
 	},
 ]);
 
@@ -356,7 +358,6 @@ const onUpdateSettings = async (value: boolean, item: SectionItem) => {
         :section-items="llmsSection.filter((section) => section.isVisible)"
         :header-buttons="llmsSectionHeaderButtons"
         :warning="llmstxtFileUserGenerated ? translate('hostinger_tools_llms_txt_external_file_found') : ''"
-        optin-mcp-link="https://support.hostinger.com/en/articles/11729400-ai-agent-access-smart-ai-discovery"
       />
 		<SectionCard
 			v-if="aiPluginCompatibility"

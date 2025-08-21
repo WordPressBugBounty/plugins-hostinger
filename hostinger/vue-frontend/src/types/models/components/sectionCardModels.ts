@@ -9,4 +9,5 @@ export type SectionItem = {
     onClick: () => void;
   };
   copyLink?: string;
+  learn_more_link?: string
 };

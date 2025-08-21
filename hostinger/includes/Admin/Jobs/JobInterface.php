@@ -10,4 +10,5 @@ interface JobInterface {
     public function get_start_hook(): string;
     public function can_schedule( array $args = array() ): bool;
     public function schedule( array $args = array() );
+    public function init();
 }

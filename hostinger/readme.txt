@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc, llms
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 8.0
-Stable tag: 3.0.47
+Stable tag: 3.0.48
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -557,3 +557,8 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 3.0.47 (2025-08-08)
 - Add MCP choice
 - Updated translations
+
+3.0.48 (2025-08-21)
+- Support for MCP optional entry in llms.txt
+- Add Learn More in MCP section
+- Generate llms.txt entries in the background

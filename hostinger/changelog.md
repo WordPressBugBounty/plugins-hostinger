@@ -462,3 +462,8 @@ Changelog
 3.0.47 (2025-08-08)
 - Add MCP choice
 - Updated translations
+
+3.0.48 (2025-08-21)
+- Support for MCP optional entry in llms.txt
+- Add Learn More in MCP section
+- Generate llms.txt entries in the background

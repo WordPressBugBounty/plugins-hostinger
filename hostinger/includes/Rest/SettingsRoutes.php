@@ -141,6 +141,8 @@ class SettingsRoutes {
             do_action( 'litespeed_purge_all' );
         }
 
+        do_action( 'hostinger_tools_settings_saved', $new_settings );
+
         return $response;
     }
     /** PHPCS:enable */

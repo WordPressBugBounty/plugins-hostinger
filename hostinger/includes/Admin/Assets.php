@@ -154,7 +154,7 @@ class Assets {
                     'hostinger_tools_ai'                                      => __( 'AI Tools', 'hostinger' ),
                     'hostinger_tools_llms'                                    => __( 'LLM Optimization', 'hostinger' ),
                     'hostinger_tools_enable_llms_txt'                         => __( 'Create LLMs.txt file', 'hostinger' ),
-                    'hostinger_tools_llms_txt_description'                    => __( 'Let AI explore, understand, and interact with your WordPress site', 'hostinger' ),
+                    'hostinger_tools_llms_txt_description'                    => __( 'Let AI explore, understand, and interact with your WordPress site.', 'hostinger' ),
                     'hostinger_tools_optin_mcp'                               => __( 'Web 2 Agent', 'hostinger' ),
                     'hostinger_tools_optin_mcp_description'                   => __( 'Make your website easier for AI tools to understand. Website content updates will be tracked to keep the AI discovery service up to date.', 'hostinger' ),
                     'hostinger_tools_llms_txt_learn_more'                     => __( 'Learn more', 'hostinger' ),

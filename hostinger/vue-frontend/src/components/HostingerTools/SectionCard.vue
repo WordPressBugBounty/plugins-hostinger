@@ -6,6 +6,7 @@ import {SectionHeaderButton, SectionItem} from "@/types";
 import Button from "@/components/Button/Button.vue";
 import SkeletonLoader from "@/components/Loaders/SkeletonLoader.vue";
 import Notice from "@/components/Notice.vue";
+import { translate } from "@/utils/helpers";
 
 type Props = {
   title: string;
@@ -19,7 +20,7 @@ type Emits = {
   "save-section": [value: boolean, item: SectionItem];
 };
 
-const props = defineProps<Props & { optinMcpLink?: string }>();
+const props = defineProps<Props>();
 const emit = defineEmits<Emits>();
 </script>
 
@@ -69,11 +70,12 @@ const emit = defineEmits<Emits>();
               <h3 class="h-m-0">{{ item.title }}</h3>
               <p class="h-m-0 text-body-2">
                 {{ item.description }}
-                <template v-if="item.id === 'optin-mcp' && optinMcpLink">
-                  <a :href="optinMcpLink" target="_blank" rel="noopener" class="text-link-2 additional-link">
-                    Learn more
+                <template v-if="item.learn_more_link">
+                  <a :href="item.learn_more_link" target="_blank" rel="noopener" class="text-link-2 additional-link">
+					  {{ translate('hostinger_tools_llms_txt_learn_more') }}
                   </a>
                 </template>
+
               </p>
             </div>
             <Button

@@ -13,6 +13,9 @@ abstract class AbstractJob implements JobInterface {
 
     public function __construct( ActionScheduler $action_scheduler ) {
         $this->action_scheduler = $action_scheduler;
+    }
+
+    public function init(): void {
         add_action( $this->get_process_item_hook(), array( $this, 'handle_process_items_action' ) );
         add_action(
             $this->get_start_hook(),

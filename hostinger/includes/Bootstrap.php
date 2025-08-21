@@ -7,6 +7,7 @@ use Hostinger\Admin\PluginSettings;
 use Hostinger\Admin\Jobs\JobInitializer;
 use Hostinger\Admin\Proxy;
 use Hostinger\LlmsTxtGenerator\LlmsTxtFileHelper;
+use Hostinger\LlmsTxtGenerator\LlmsTxtParser;
 use Hostinger\Rest\Routes;
 use Hostinger\Rest\SettingsRoutes;
 use Hostinger\Admin\Assets as AdminAssets;
@@ -86,7 +87,7 @@ class Bootstrap {
 
         $plugin_settings = new PluginSettings();
 
-        new LlmsTxtGenerator( $plugin_settings, new LlmsTxtFileHelper() );
+        new LlmsTxtGenerator( $plugin_settings, new LlmsTxtFileHelper(), new LlmsTxtParser() );
 
         $settings_routes = new SettingsRoutes( $plugin_settings );
         $routes          = new Routes( $settings_routes );
