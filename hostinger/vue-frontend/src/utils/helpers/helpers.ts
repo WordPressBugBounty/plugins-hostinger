@@ -1,8 +1,10 @@
 import { toUnicode as punyUnicode } from "punycode";
+
 import { AxiosResponse } from "axios";
 import { toast } from "vue3-toastify";
-import { ResponseError, BaseResponse } from "@/types";
+
 import { useGeneralStoreData } from "@/stores";
+import { ResponseError } from "@/types";
 
 /**
  * Converts a string to Unicode using Punycode encoding.
@@ -21,7 +23,7 @@ export const toUnicode = (str: string) => (str ? punyUnicode(str) : str);
  * @returns The word with the first character in uppercase.
  */
 export const toTitleCase = (word: string = "") =>
-  word.charAt(0).toUpperCase() + word.slice(1);
+	word.charAt(0).toUpperCase() + word.slice(1);
 
 /**
  * Delays the execution for the specified number of milliseconds.
@@ -29,7 +31,7 @@ export const toTitleCase = (word: string = "") =>
  * @returns A Promise that resolves after the specified delay.
  */
 export const timeout = (ms: number) =>
-  new Promise((resolve) => setTimeout(resolve, ms));
+	new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
  * Copies the given string to the clipboard.
@@ -39,72 +41,82 @@ export const timeout = (ms: number) =>
  * @param toastrParams - Additional parameters for the toast notification.
  */
 export const copyString = (
-  copiedString: string,
-  message = "Copied successfully",
-  toastrParams = {}
+	copiedString: string,
+	message = translate("hostinger_tools_copied_successfully"),
+	toastrParams = {}
 ) => {
-  const el = document.createElement("textarea");
-  el.value = copiedString;
+	const el = document.createElement("textarea");
+	el.value = copiedString;
 
-  el.setAttribute("readonly", "");
-  document.body.appendChild(el);
-  el.select();
+	el.setAttribute("readonly", "");
+	document.body.appendChild(el);
+	el.select();
 
-  document.execCommand("copy");
-  document.body.removeChild(el);
+	document.execCommand("copy");
+	document.body.removeChild(el);
 
-  const copyString = "Text has been copied successfully";
+	const copyString = translate("hostinger_tools_text_copied_successfully");
 
-  if (!message) return;
-  toast.success(copyString, toastrParams);
+	if (!message) return;
+	toast.success(copyString, toastrParams);
 };
+
 /**
  * Wraps the given value in a CSS variable.
  * @param value - The value to be wrapped.
  * @returns The wrapped value as a CSS variable.
  */
 export const wrapInCssVar = (value: string | number) => `var(--${value})`;
+
 /**
  * Capitalizes the first letter of a string.
  * @param str - The input string.
  * @returns The input string with the first letter capitalized.
  */
 export const capitalize = (str: string) =>
-  str.charAt(0).toUpperCase() + str.substring(1);
+	str.charAt(0).toUpperCase() + str.substring(1);
 
-// eslint-disable-next-line func-style
 /**
  * Calls an asynchronous function and handles the response.
  * @param promise - The promise to be resolved.
  * @returns A tuple containing the response data and any error that occurred.
  */
-export async function asyncCall<T>(
-  promise: Promise<AxiosResponse<T>>
-): BaseResponse<T> {
-  try {
-    const response: any = await promise;
+export const asyncCall = async <T>(
+	promise: Promise<AxiosResponse<T>>
+): Promise<[T, ResponseError | null]> => {
+	try {
+		const response = await promise;
 
-    if (
-      !response.error ||
-      (Array.isArray(response.error) && !response.error.length)
-    ) {
-      return [response.data.data, null];
-    }
+		if (
+			response.data &&
+			typeof response.data === "object" &&
+			"error" in response.data
+		) {
+			const apiResponse = response.data as { error?: unknown; data?: T };
 
-    return [{} as any, response];
-  } catch (er) {
-    return [{} as any, er as ResponseError];
-  }
-}
+			if (
+				!apiResponse.error ||
+				(Array.isArray(apiResponse.error) && !apiResponse.error.length)
+			) {
+				return [apiResponse.data as T, null];
+			}
+		}
+
+		return [response.data as T, null];
+	} catch (er) {
+		return [{} as T, er as ResponseError];
+	}
+};
+
 /**
  * Retrieves the URL of an asset based on the provided path.
  * @param path - The path of the asset.
  * @returns The URL of the asset.
  */
 export const getAssetSource = (path: string) => {
-  const { assetUrl } = useGeneralStoreData();
-  // @ts-ignore
-  return `${assetUrl}vue-frontend/src/assets/${path}`;
+	const { assetUrl } = useGeneralStoreData();
+
+	return `${assetUrl}vue-frontend/src/assets/${path}`;
 };
 
 /**
@@ -112,9 +124,8 @@ export const getAssetSource = (path: string) => {
  * @param string - The kebab-case string to convert.
  * @returns The camelCase version of the input string.
  */
-export const kebabToCamel = (string: string) => {
-  return string.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
-};
+export const kebabToCamel = (string: string) =>
+	string.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
 
 /**
  * Compares two version numbers and returns a comparison result.
@@ -123,28 +134,28 @@ export const kebabToCamel = (string: string) => {
  * @returns -1 if currentVersion is greater than newVersion, 1 if currentVersion is less than newVersion, 0 if they are equal.
  */
 export const isNewerVerison = ({
-  newVersion,
-  currentVersion,
+	newVersion,
+	currentVersion
 }: {
-  newVersion: string;
-  currentVersion: string;
+	newVersion: string;
+	currentVersion: string;
 }) => {
-  if (!newVersion || !currentVersion) return false;
+	if (!newVersion || !currentVersion) return false;
 
-  const newVersionParts = newVersion.split(".");
-  const currentVersionParts = currentVersion.split(".");
-  for (
-    let i = 0;
-    i < Math.max(currentVersionParts.length, newVersionParts.length);
-    i++
-  ) {
-    const newPart = parseInt(currentVersionParts[i]) || 0;
-    const oldPart = parseInt(newVersionParts[i]) || 0;
-    if (newPart > oldPart) return false;
-    if (newPart < oldPart) return true;
-  }
+	const newVersionParts = newVersion.split(".");
+	const currentVersionParts = currentVersion.split(".");
+	for (
+		let i = 0;
+		i < Math.max(currentVersionParts.length, newVersionParts.length);
+		i++
+	) {
+		const newPart = parseInt(currentVersionParts[i]) || 0;
+		const oldPart = parseInt(newVersionParts[i]) || 0;
+		if (newPart > oldPart) return false;
+		if (newPart < oldPart) return true;
+	}
 
-  return false;
+	return false;
 };
 
 /**
@@ -153,11 +164,10 @@ export const isNewerVerison = ({
  * @returns The base URL of the input URL.
  */
 export const getBaseUrl = (url: string) => {
-  const parsedUrl = new URL(url);
-  return `${parsedUrl.protocol}//${parsedUrl.host}${parsedUrl.pathname.split("/").slice(0, -1).join("/")}/`;
+	const parsedUrl = new URL(url);
+
+	return `${parsedUrl.protocol}//${parsedUrl.host}${parsedUrl.pathname.split("/").slice(0, -1).join("/")}/`;
 };
 
-export const translate = (key: string) => {
-  // @ts-ignore
-  return hostinger_tools_data.translations[key] || key;
-};
+export const translate = (key: string) =>
+	hostinger_tools_data.translations[key] || key;

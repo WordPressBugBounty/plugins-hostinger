@@ -1,73 +1,81 @@
 import { defineStore } from "pinia";
-import { generalDataRepo } from "@/repositories";
 import { ref } from "vue";
-import { SettingsData } from "@/types/models";
-import { STORE_PERSISTENT_KEYS } from "@/types/enums";
 import { toast } from "vue3-toastify";
+
+import { generalDataRepo } from "@/repositories";
+import { STORE_PERSISTENT_KEYS } from "@/types/enums";
+import { SettingsData } from "@/types/models";
 import { translate } from "@/utils/helpers";
 
 export const useSettingsStore = defineStore(
-  "settingsStore",
-  () => {
-    const settingsData = ref<SettingsData | null>(null);
+	"settingsStore",
+	() => {
+		const settingsData = ref<SettingsData | null>(null);
 
-    const fetchSettingsData = async () => {
-      const [data, err] = await generalDataRepo.getSettings();
+		const fetchSettingsData = async () => {
+			const [{ data }, err] = await generalDataRepo.getSettings();
 
-      if (err) return;
+			if (err) return;
 
-      settingsData.value = data;
-    };
+			settingsData.value = data;
+		};
 
+		const regenerateByPassCode = async () => {
+			const [{ data }, err] =
+				await generalDataRepo.getRegenerateByPassCode();
 
-    const regenerateByPassCode = async () => {
-      const [data, err] = await generalDataRepo.getRegenerateByPassCode();
+			if (err) return;
 
-      if (err) return;
+			toast.success(translate("bypass_link_reset_success"));
 
-      toast.success(translate("bypass_link_reset_success"));
+			const tempSettingsData = settingsData.value;
 
-      const tempSettingsData = settingsData.value;
+			settingsData.value = {
+				...data,
+				currentWpVersion: tempSettingsData?.currentWpVersion || "",
+				phpVersion: tempSettingsData?.phpVersion || "",
+				newestWpVersion: tempSettingsData?.newestWpVersion || "",
+				isEligibleWwwRedirect:
+					tempSettingsData?.isEligibleWwwRedirect || false
+			};
+		};
 
-      settingsData.value = {
-		  ...data,
-		  currentWpVersion: tempSettingsData?.currentWpVersion || "",
-		  phpVersion: tempSettingsData?.phpVersion || "",
-		  newestWpVersion: tempSettingsData?.newestWpVersion || "",
-		  isEligibleWwwRedirect: tempSettingsData?.isEligibleWwwRedirect || false
-	  };
-    };
+		const updateSettingsData = async (
+			settings: SettingsData
+		): Promise<boolean> => {
+			const [{ data }, err] =
+				await generalDataRepo.postSettings(settings);
 
-    const updateSettingsData = async (settings: SettingsData): Promise<boolean> => {
-      const [data, err] = await generalDataRepo.postSettings(settings);
+			if (err) {
+				toast.error(translate("hostinger_tools_settings_error"));
 
-      if (err) {
-		  toast.error(translate("hostinger_tools_settings_error"));
-		  return false;
-	  }
+				return false;
+			}
 
-      const tempSettingsData = settingsData.value;
+			const tempSettingsData = settingsData.value;
 
-      settingsData.value = {
-        ...data,
-        currentWpVersion: tempSettingsData?.currentWpVersion || "",
-        phpVersion: tempSettingsData?.phpVersion || "",
-        newestWpVersion: tempSettingsData?.newestWpVersion || "",
-        isEligibleWwwRedirect: tempSettingsData?.isEligibleWwwRedirect || false
-	  };
+			settingsData.value = {
+				...data,
+				currentWpVersion: tempSettingsData?.currentWpVersion || "",
+				phpVersion: tempSettingsData?.phpVersion || "",
+				newestWpVersion: tempSettingsData?.newestWpVersion || "",
+				isEligibleWwwRedirect:
+					tempSettingsData?.isEligibleWwwRedirect || false
+			};
 
-	  toast.success(translate("hostinger_tools_settings_updated"));
-	  return true;
-	};
+			toast.success(translate("hostinger_tools_settings_updated"));
 
-    return {
-      fetchSettingsData,
-      updateSettingsData,
-      regenerateByPassCode,
-      settingsData,
-    };
-  },
-  {
-    persist: { key: STORE_PERSISTENT_KEYS.SETTINGS_STORE },
-  }
+			return true;
+		};
+
+		return {
+			fetchSettingsData,
+			updateSettingsData,
+			regenerateByPassCode,
+			settingsData
+		};
+	},
+	{
+		persist: { key: STORE_PERSISTENT_KEYS.SETTINGS_STORE }
+	}
 );

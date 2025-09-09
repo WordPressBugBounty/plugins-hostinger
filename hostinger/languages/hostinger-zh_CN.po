@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:27+0000\n"
-"PO-Revision-Date: 2025-08-08 10:35+0000\n"
+"PO-Revision-Date: 2025-09-02 11:36+0000\n"
 "Last-Translator: Zhou Yu\n"
 "Language-Team: Chinese (China)\n"
 "Language: zh_CN\n"
@@ -75,6 +75,14 @@ msgstr "检查有效性"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "即将推出"
+
+#: includes/Admin/Assets.php:189
+msgid "Connect domain"
+msgstr ""
+
+#: includes/Admin/Assets.php:186
+msgid "Copied successfully"
+msgstr ""
 
 #: includes/Admin/Assets.php:167
 #, fuzzy
@@ -186,7 +194,8 @@ msgstr "了解更多"
 
 #: includes/Admin/Assets.php:157
 #, fuzzy
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr "让人工智能探索、理解您的 WordPress 网站并与之互动"
 
 #: includes/Admin/Assets.php:185
@@ -206,6 +215,12 @@ msgstr "已重置链接"
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "LLM 优化"
+
+#: includes/Admin/Assets.php:188
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
 
 #: includes/Admin/Assets.php:162
 #, fuzzy
@@ -301,6 +316,10 @@ msgstr "安全 "
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "跳过维护模式的Skip-link"
 
+#: includes/Admin/Assets.php:187
+msgid "Text has been copied successfully"
+msgstr ""
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Hostinger 插件已被拆分为两个不同的插件： "
@@ -348,9 +367,9 @@ msgid ""
 msgstr "给您带来不便，我们深表歉意。人工智能内容生成过程遇到服务器错误。请稍后重试，如果问题仍然存在，请联系我们的客户支持团队寻求帮助。"
 
 #: includes/Admin/Assets.php:158
-#, fuzzy
-msgid "Web 2 Agent"
-msgstr "网络 2 代理"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "网络2代理"
 
 #: includes/Admin/Assets.php:170
 msgid ""

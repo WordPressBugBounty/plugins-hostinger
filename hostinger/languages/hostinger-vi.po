@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-08-08 10:36+0000\n"
+"PO-Revision-Date: 2025-09-02 11:44+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: vi\n"
@@ -77,6 +77,16 @@ msgstr "Kiểm tra tính hợp lệ"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "Sắp ra mắt"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "Kết nối tên miền"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "Đã sao chép thành công"
 
 #: includes/Admin/Assets.php:167
 #, fuzzy
@@ -192,7 +202,8 @@ msgstr "Tìm hiểu thêm"
 
 #: includes/Admin/Assets.php:157
 #, fuzzy
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr ""
 "Hãy để Trí tuệ nhân tạo (AI) khám phá, hiểu và tương tác với trang web "
 "WordPress của bạn"
@@ -216,6 +227,15 @@ msgstr "Đường dẫn đã được thiết lập lại"
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "Tối ưu hóa LLM"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+"Các tính năng tối ưu hóa LLM không khả dụng cho các tên miền con tạm thời. "
+"Kết nối tên miền để kích hoạt các tính năng này."
 
 #: includes/Admin/Assets.php:162
 #, fuzzy
@@ -316,6 +336,11 @@ msgstr "Bảo mật"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "Đường dẫn bỏ qua để bỏ qua chế độ bảo trì"
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "Văn bản đã được sao chép thành công"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Plugin Hostinger đã được chia thành 2 plugin khác nhau:"
@@ -370,9 +395,9 @@ msgstr ""
 "ra, vui lòng liên hệ đội ngũ hổ trợ để được giúp đỡ."
 
 #: includes/Admin/Assets.php:158
-#, fuzzy
-msgid "Web 2 Agent"
-msgstr "Trợ lý Web 2.0"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "Web2Trợ lý"
 
 #: includes/Admin/Assets.php:170
 msgid ""

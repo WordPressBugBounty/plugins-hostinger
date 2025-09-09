@@ -1,5 +1,3 @@
-export namespace Route {
-  export enum Base {
-    HOSTINGER_TOOLS = 'hostinger-tools',
-  }
+export enum RouteBase {
+	HOSTINGER_TOOLS = "hostinger-tools",
 }

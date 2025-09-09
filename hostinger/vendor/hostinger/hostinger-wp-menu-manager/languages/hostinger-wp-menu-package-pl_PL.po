@@ -8,13 +8,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-02-21T05:56:52+00:00\n"
-"PO-Revision-Date: 2025-07-03 08:05+0000\n"
+"PO-Revision-Date: 2025-08-18 12:11+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger-wp-menu-package\n"
 "Language: pl_PL\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
 "&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
-"X-Loco-Version: 2.7.1; wp-6.7.2"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.2.27"
 
 #: src/Menus.php:224
 msgid "Action Required:"
@@ -29,7 +29,6 @@ msgid "Attention! Outdated Plugins Detected"
 msgstr "Uwaga! Wykryto nieaktualne wtyczki"
 
 #: src/templates/menu.php:73
-#, fuzzy
 msgid "Go to hPanel"
 msgstr "Przejdź do hPanel"
 

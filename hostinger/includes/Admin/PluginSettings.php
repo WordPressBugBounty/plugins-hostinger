@@ -17,15 +17,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 class PluginSettings {
 
     /**
-     * @var PluginOptions
+     * @var PluginOptions|null
      */
     private ?PluginOptions $plugin_options = null;
 
     /**
      * @param PluginOptions|null $plugin_options
      */
-    public function __construct( PluginOptions $plugin_options = null ) {
-        if ( ! empty( $plugin_options ) ) {
+    public function __construct( ?PluginOptions $plugin_options = null ) {
+        if ( ! is_null( $plugin_options ) ) {
             $this->plugin_options = $plugin_options;
         }
     }

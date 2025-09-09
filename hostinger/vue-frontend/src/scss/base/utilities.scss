@@ -1,8 +1,8 @@
 @mixin padding-margin($mode) {
   @if $mode == general {
-    $mode: "";
+    $mode: '';
   } @else {
-    $mode: "-" + $mode;
+    $mode: '-' + $mode;
   }
 
   @for $i from 0 through 50 {

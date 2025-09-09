@@ -1,26 +1,27 @@
 <script setup lang="ts">
 interface Props {
-  stepsCount: number;
-  isClickable?: boolean;
-  wide?: boolean;
-  step?: number;
+	stepsCount?: number;
+	isClickable?: boolean;
+	wide?: boolean;
+	step?: number;
 }
 
 type Emits = {
-  (eventName: 'on-click', index: number): void;
+	"on-click": [index: number];
 };
 
 const props = withDefaults(defineProps<Props>(), {
-  stepsCount: 0,
-  isClickable: false,
-  wide: false,
-  step: 0
+	stepsCount: 0,
+	isClickable: false,
+	wide: false,
+	step: 0
 });
 
 const emit = defineEmits<Emits>();
 
 const getIsActive = (index: number, step: number) =>
-  (!props.isClickable && index <= step) || (props.isClickable && index === step);
+	(!props.isClickable && index <= step) ||
+	(props.isClickable && index === step);
 </script>
 
 <template>
@@ -32,7 +33,7 @@ const getIsActive = (index: number, step: number) =>
       :class="{
         'stepper__indicator--active': getIsActive(index, step),
         'stepper__indicator--clickable': isClickable,
-        'stepper__indicator--wide': wide
+        'stepper__indicator--wide': wide,
       }"
       @click="emit('on-click', index)"
     />
@@ -41,26 +42,26 @@ const getIsActive = (index: number, step: number) =>
 
 <style lang="scss" scoped>
 .stepper {
-  display: flex;
-  justify-content: center;
-  margin-top: 24px;
+	display: flex;
+	justify-content: center;
+	margin-top: 24px;
 
-  &__indicator {
-    width: 8px;
-    height: 8px;
-    margin-left: 4px;
-    border-radius: 50%;
-    background-color: rgba(114, 117, 134, 0.3);
+	&__indicator {
+		width: 8px;
+		height: 8px;
+		margin-left: 4px;
+		border-radius: 50%;
+		background-color: rgba(114, 117, 134, 0.3);
 
-    &--wide {
-      margin: 0 8px;
-    }
-    &--active {
-      background-color: var(--primary);
-    }
-    &--clickable {
-      cursor: pointer;
-    }
-  }
+		&--wide {
+			margin: 0 8px;
+		}
+		&--active {
+			background-color: var(--primary);
+		}
+		&--clickable {
+			cursor: pointer;
+		}
+	}
 }
 </style>

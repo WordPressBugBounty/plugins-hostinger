@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-08-08 10:35+0000\n"
+"PO-Revision-Date: 2025-09-02 11:39+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: ko_KR\n"
@@ -73,6 +73,16 @@ msgstr "유효성 확인"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "곧 출시 예정"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "도메인 연결"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "성공적으로 복사되었습니다"
 
 #: includes/Admin/Assets.php:167
 #, fuzzy
@@ -183,7 +193,8 @@ msgstr "자세히 알아보기"
 
 #: includes/Admin/Assets.php:157
 #, fuzzy
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr "인공지능이 워드프레스 사이트를 탐색하고 이해하고 상호 작용하게 하세요"
 
 #: includes/Admin/Assets.php:185
@@ -204,6 +215,13 @@ msgstr "링크가 재설정되었습니다"
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "LLM 최적화"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr "임시 하위 도메인에는 LLM 최적화 기능을 사용할 수 없습니다. 이러한 기능을 잠금 해제하려면 도메인을 연결하세요."
 
 #: includes/Admin/Assets.php:162
 #, fuzzy
@@ -301,6 +319,11 @@ msgstr "보안"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "유지 관리 모드 우회용 스킵 링크"
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "텍스트가 성공적으로 복사되었습니다"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "호스팅어 플러그인은 두 개의 다른 플러그인으로 분리되었습니다:"
@@ -351,7 +374,8 @@ msgstr ""
 
 #: includes/Admin/Assets.php:158
 #, fuzzy
-msgid "Web 2 Agent"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
 msgstr "웹 2.0 에이전트"
 
 #: includes/Admin/Assets.php:170

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-08 10:35+0000\n"
+"PO-Revision-Date: 2025-09-02 11:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -75,6 +75,16 @@ msgstr "Sprawdź poprawność"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "Już wkrótce"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "Podłącz domenę"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "Skopiowano pomyślnie"
 
 #: includes/Admin/Assets.php:167
 msgid "Create file"
@@ -186,7 +196,9 @@ msgid "Learn more"
 msgstr "Dowiedz się więcej"
 
 #: includes/Admin/Assets.php:157
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#, fuzzy
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr ""
 "Pozwól AI eksplorować, rozumieć i wchodzić w interakcje z Twoją witryną "
 "WordPress"
@@ -209,6 +221,15 @@ msgstr "Odnośnik został zresetowany"
 #: includes/Admin/Assets.php:155
 msgid "LLM Optimization"
 msgstr "Optymalizacja LLM"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+"Funkcje optymalizacji LLM nie są dostępne dla tymczasowych subdomen. Podłącz "
+"domenę, aby odblokować te funkcje."
 
 #: includes/Admin/Assets.php:162
 msgid "LLMS.txt"
@@ -310,6 +331,11 @@ msgstr "Zabezpieczenia"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "Odnośnik pomijający tryb konserwacji"
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "Tekst został pomyślnie skopiowany"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Wtyczka Hostinger została podzielona na dwie różne wtyczki:"
@@ -362,9 +388,9 @@ msgstr ""
 "skontaktuj się z naszym zespołem wsparcia, aby uzyskać pomoc."
 
 #: includes/Admin/Assets.php:158
-#, fuzzy
-msgid "Web 2 Agent"
-msgstr "Web 2 Agent"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "Web2Agent"
 
 #: includes/Admin/Assets.php:170
 msgid ""

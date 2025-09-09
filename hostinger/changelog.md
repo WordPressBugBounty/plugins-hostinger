@@ -467,3 +467,9 @@ Changelog
 - Support for MCP optional entry in llms.txt
 - Add Learn More in MCP section
 - Generate llms.txt entries in the background
+
+3.0.49 (2025-09-05)
+- Removed warnings
+- UI improvements
+- Assets optimization
+

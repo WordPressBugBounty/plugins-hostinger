@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:27+0000\n"
-"PO-Revision-Date: 2025-08-08 10:36+0000\n"
+"PO-Revision-Date: 2025-09-02 11:43+0000\n"
 "Last-Translator: Merve Özcan - mrvzcn(@)outlook.com\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -79,6 +79,16 @@ msgstr "Geçerliliği kontrol edin"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "Yakında Geliyor"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "Etki alanını bağlayın"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "Başarıyla kopyalandı"
 
 #: includes/Admin/Assets.php:167
 #, fuzzy
@@ -198,7 +208,8 @@ msgstr "Daha fazla bilgi edinin"
 
 #: includes/Admin/Assets.php:157
 #, fuzzy
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr ""
 "Yapay zekanın WordPress sitenizi keşfetmesine, anlamasına ve sitenizle "
 "etkileşime girmesine izin verin"
@@ -223,6 +234,15 @@ msgstr "Bağlantı sıfırlandı"
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "LLM Optimizasyonu"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+"LLM optimizasyon özellikleri geçici alt alan adları için kullanılamaz. Bu "
+"özelliklerin kilidini açmak için bir etki alanı bağlayın."
 
 #: includes/Admin/Assets.php:162
 #, fuzzy
@@ -329,6 +349,11 @@ msgstr "Güvenlik "
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "Bakım modunu atlayan bağlantıyı geç"
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "Metin başarıyla kopyalandı"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Hostinger eklentisi iki farklı eklentiye bölündü:"
@@ -383,9 +408,9 @@ msgstr ""
 "ederse yardım için lütfen destek ekibimizle iletişime geçin."
 
 #: includes/Admin/Assets.php:158
-#, fuzzy
-msgid "Web 2 Agent"
-msgstr "Web 2 Temsilcisi"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "Web2Temsilcisi"
 
 #: includes/Admin/Assets.php:170
 msgid ""

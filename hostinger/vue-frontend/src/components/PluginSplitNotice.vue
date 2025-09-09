@@ -1,44 +1,49 @@
 <script setup lang="ts">
-import Card from "@/components/Card.vue";
-import Button from "@/components/Button/Button.vue";
-import { translate } from "@/utils/helpers";
 import { computed, ref } from "vue";
+
+import Button from "@/components/Button/Button.vue";
+import Card from "@/components/Card.vue";
+import { translate } from "@/utils/helpers";
 
 const showNotice = ref(true);
 
 const dismissNotice = () => {
-  showNotice.value = false;
+	showNotice.value = false;
 
-  fetch(ajaxurl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-    body: new URLSearchParams({
-      action: "hostinger_dismiss_plugin_split_notice",
-      nonce: hostinger_tools_data.hts_close_plugin_split_nonce,
-    }),
-  })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok " + response.statusText);
-      }
-      return response.json();
-    })
-    .then((data) => {
-      showNotice.value = false;
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-    });
+	fetch(ajaxurl, {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/x-www-form-urlencoded"
+		},
+		body: new URLSearchParams({
+			action: "hostinger_dismiss_plugin_split_notice",
+			nonce: hostinger_tools_data.hts_close_plugin_split_nonce
+		})
+	})
+		.then((response) => {
+			if (!response.ok) {
+				throw new Error(
+					"Network response was not ok " + response.statusText
+				);
+			}
+
+			return response.json();
+		})
+		.then(() => {
+			showNotice.value = false;
+		})
+		.catch((error) => {
+			console.error("Error:", error);
+		});
 };
 
-const isNoticeShown = computed(() => {
-  return (
-    showNotice.value && parseInt(hostinger_tools_data.plugin_split_notice) > 0
-  );
-});
+const isNoticeShown = computed(
+	() =>
+		showNotice.value &&
+		parseInt(hostinger_tools_data.plugin_split_notice) > 0
+);
 </script>
+
 <template>
   <Card v-if="isNoticeShown">
     <template #header>
@@ -53,7 +58,10 @@ const isNoticeShown = computed(() => {
     <p class="text-body-2">
       {{ translate("hostinger_tools_split_body") }}
     </p>
-    <Button class="h-mt-20" @click="dismissNotice">
+    <Button
+      class="h-mt-20"
+      @click="dismissNotice"
+    >
       {{ translate("hostinger_tools_split_got_it") }}
     </Button>
   </Card>

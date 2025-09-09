@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-08 10:36+0000\n"
+"PO-Revision-Date: 2025-09-02 11:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,9 +27,8 @@ msgstr ""
 " Вибачте."
 
 #: includes/Admin/Assets.php:154
-#, fuzzy
 msgid "AI Tools"
-msgstr "Інструменти штучного інтелекту"
+msgstr "Інструменти AI"
 
 #: includes/Admin/Assets.php:184
 #, fuzzy
@@ -75,6 +74,16 @@ msgstr "Перевірте дійсність"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "Незабаром"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "Підключити домен"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "Успішно скопійовано"
 
 #: includes/Admin/Assets.php:167
 msgid "Create file"
@@ -186,7 +195,9 @@ msgid "Learn more"
 msgstr "Детальніше"
 
 #: includes/Admin/Assets.php:157
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#, fuzzy
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr ""
 "Дозвольте ШІ досліджувати, розуміти та взаємодіяти з вашим сайтом WordPress"
 
@@ -208,6 +219,15 @@ msgstr "Зв'язок було скинуто"
 #: includes/Admin/Assets.php:155
 msgid "LLM Optimization"
 msgstr "Оптимізація LLM"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+"Функції оптимізації LLM недоступні для тимчасових піддоменів. Підключіть "
+"домен, щоб розблокувати ці функції."
 
 #: includes/Admin/Assets.php:162
 msgid "LLMS.txt"
@@ -306,6 +326,11 @@ msgstr "Безпека"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "Перехід в обхід режиму технічного обслуговування"
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "Текст успішно скопійовано"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Плагін Hostinger було розділено на два різних плагіни:"
@@ -359,8 +384,8 @@ msgstr ""
 
 #: includes/Admin/Assets.php:158
 #, fuzzy
-msgid "Web 2 Agent"
-msgstr "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "Web2Agent"
 
 #: includes/Admin/Assets.php:170
 msgid ""

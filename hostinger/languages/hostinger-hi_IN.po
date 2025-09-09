@@ -11,14 +11,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-03-20T07:03:00+00:00\n"
-"PO-Revision-Date: 2025-06-17 10:12+0000\n"
+"PO-Revision-Date: 2025-09-02 11:38+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: hi_IN\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.8.0; wp-6.8.1; php-8.0.30"
 
-#: includes/Admin/Assets.php:170
+#: includes/Admin/Assets.php:173
 msgid ""
 " Turning on XML-RPC might make your site less secure. Do you want to proceed?"
 msgstr ""
@@ -31,7 +31,15 @@ msgstr ""
 "क्षमा करें, यह क्रिया विफल रही। कृपया दोबारा प्रयास करें या सपोर्ट से संपर्क "
 "करें।"
 
-#: includes/Admin/Assets.php:160
+#: includes/Admin/Assets.php:154
+msgid "AI Tools"
+msgstr ""
+
+#: includes/Admin/Assets.php:184
+msgid "Allow Kodee to manage your site"
+msgstr ""
+
+#: includes/Admin/Assets.php:163
 msgid ""
 "An external LLMs.txt file was found. Switching on the toggle will replace it "
 "with a new one."
@@ -48,20 +56,20 @@ msgstr ""
 msgid "Attention:"
 msgstr "कृपया ध्यान दें:"
 
-#: includes/Admin/Assets.php:166
+#: includes/Admin/Assets.php:169
 msgid "Bypass link"
 msgstr "बायपास लिंक"
 
-#: includes/Admin/Assets.php:174
+#: includes/Admin/Assets.php:177
 msgid "Bypass link reset"
 msgstr "बायपास लिंक रीसेट"
 
-#: includes/Admin/Assets.php:163 includes/Admin/Assets.php:172
-#: includes/Admin/Assets.php:176
+#: includes/Admin/Assets.php:166 includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:179
 msgid "Cancel"
 msgstr "रद्द करें"
 
-#: includes/Admin/Assets.php:158
+#: includes/Admin/Assets.php:161
 msgid "Check validity"
 msgstr ""
 
@@ -69,15 +77,23 @@ msgstr ""
 msgid "Coming Soon"
 msgstr "जल्द आ रहा है"
 
-#: includes/Admin/Assets.php:164
+#: includes/Admin/Assets.php:189
+msgid "Connect domain"
+msgstr ""
+
+#: includes/Admin/Assets.php:186
+msgid "Copied successfully"
+msgstr ""
+
+#: includes/Admin/Assets.php:167
 msgid "Create file"
 msgstr ""
 
-#: includes/Admin/Assets.php:155
+#: includes/Admin/Assets.php:156
 msgid "Create LLMs.txt file"
 msgstr ""
 
-#: includes/Admin/Assets.php:161
+#: includes/Admin/Assets.php:164
 msgid "Create new LLMs.txt file?"
 msgstr ""
 
@@ -96,7 +112,7 @@ msgstr ""
 msgid "Disable XML-RPC"
 msgstr "XML-RPC अक्षम करें"
 
-#: includes/Admin/Assets.php:171
+#: includes/Admin/Assets.php:174
 msgid "Disclaimer"
 msgstr "डिस्क्लेमर"
 
@@ -117,7 +133,7 @@ msgstr "HTTPs को बाध्य करें"
 msgid "Force WWW"
 msgstr "WWW को बाध्य करें"
 
-#: includes/Admin/Assets.php:169 includes/Admin/Hooks.php:57
+#: includes/Admin/Assets.php:172 includes/Admin/Hooks.php:57
 msgid "Got it"
 msgstr "समझ गए"
 
@@ -139,7 +155,7 @@ msgstr "Hostinger प्लगइन अपडेट्स"
 msgid "Hostinger Tools"
 msgstr "Hostinger Tools"
 
-#: includes/Admin/Assets.php:168
+#: includes/Admin/Assets.php:171
 msgid ""
 "Hostinger Tools will offer new tools to simplify your site management. And "
 "Hostinger Easy Onboarding will guide you through the steps of building a "
@@ -168,27 +184,40 @@ msgstr "https://www.hostinger.in"
 msgid "is recommended"
 msgstr "सुझाया गया है"
 
-#: includes/Admin/Assets.php:180
+#: includes/Admin/Assets.php:183
 msgid "It was an error updating your settings"
 msgstr ""
 
-#: includes/Admin/Assets.php:157
+#: includes/Admin/Assets.php:160
 msgid "Learn more"
 msgstr ""
 
-#: includes/Admin/Assets.php:156
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#: includes/Admin/Assets.php:157
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr ""
 
-#: includes/Admin/Assets.php:178
+#: includes/Admin/Assets.php:185
+msgid ""
+"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"actions like creating pages or updating settings. We will install and pre-"
+"configure the WordPress MCP plugin for you."
+msgstr ""
+
+#: includes/Admin/Assets.php:181
 msgid "Link has been reset"
 msgstr "लिंक रीसेट की जा चुकी है"
 
-#: includes/Admin/Assets.php:154
+#: includes/Admin/Assets.php:155
 msgid "LLM Optimization"
 msgstr ""
 
-#: includes/Admin/Assets.php:159
+#: includes/Admin/Assets.php:188
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+
+#: includes/Admin/Assets.php:162
 msgid "LLMS.txt"
 msgstr ""
 
@@ -196,9 +225,15 @@ msgstr ""
 msgid "Maintenance"
 msgstr "रखरखाव"
 
-#: includes/Admin/Assets.php:165
+#: includes/Admin/Assets.php:168
 msgid "Maintenance mode"
 msgstr "मेंटेनेंस मोड"
+
+#: includes/Admin/Assets.php:159
+msgid ""
+"Make your website easier for AI tools to understand. Website content updates "
+"will be tracked to keep the AI discovery service up to date."
+msgstr ""
 
 #: includes/Views/ComingSoon.php:27
 msgid "New WordPress website is being built and will be published soon"
@@ -232,7 +267,7 @@ msgstr "मेरी वेबसाइट का प्रीव्यू द�
 msgid "Preview site"
 msgstr "साइट का प्रीव्यू देखें"
 
-#: includes/Admin/Assets.php:173
+#: includes/Admin/Assets.php:176
 msgid "Proceed anyway"
 msgstr "आगे बढ़ें"
 
@@ -260,7 +295,7 @@ msgstr "सभी HTTP URLs को HTTPS साइट्स पर रीडा�
 msgid "Redirects all WWW URLs to non-WWW ones"
 msgstr "सभी WWW URLs को गैर-WWW URLs पर रीडायरेक्ट करता है"
 
-#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:177
+#: includes/Admin/Assets.php:131 includes/Admin/Assets.php:180
 msgid "Reset link"
 msgstr "लिंक रीसेट करें"
 
@@ -276,11 +311,15 @@ msgstr "सुरक्षा"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "स्किप-लिंक जो मेंटेनेंस मोड को बायपास करती है"
 
+#: includes/Admin/Assets.php:187
+msgid "Text has been copied successfully"
+msgstr ""
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Hostinger प्लगइन को दो अलग-अलग प्लगइन्स में बांटा गया है:"
 
-#: includes/Admin/Assets.php:175
+#: includes/Admin/Assets.php:178
 msgid ""
 "This will invalidate the currently generated link in use. This action cannot "
 "be undone, are you sure you want to proceed?"
@@ -288,7 +327,7 @@ msgstr ""
 "इससे वर्तमान में उपयोग की जाने वाली जनरेटेड लिंक अमान्य हो जाएगी। इस क्रिया "
 "को पूर्ववत नहीं किया जा सकता है। क्या आप आगे बढ़ना चाहते हैं?"
 
-#: includes/Admin/Assets.php:162
+#: includes/Admin/Assets.php:165
 msgid ""
 "This will replace the existing LLMs.txt file with a new one by Hostinger "
 "Tools. The original file can’t be restored."
@@ -325,7 +364,11 @@ msgstr ""
 "है। कृपया थोड़ी देर बाद दोबारा प्रयास करें। और यदि समस्या बनी रहती है, तो "
 "हमारी सहायता टीम से संपर्क करें।"
 
-#: includes/Admin/Assets.php:167
+#: includes/Admin/Assets.php:158
+msgid "Web2Agent"
+msgstr ""
+
+#: includes/Admin/Assets.php:170
 msgid ""
 "We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger "
 "Easy Onboarding"
@@ -364,6 +407,6 @@ msgstr ""
 "इससे आपकी साइट की सुरक्षा जोखिम में आ सकती है। यदि आपको इस सुविधा की ज़रूरत "
 "नहीं है, तो इसे अक्षम करें।"
 
-#: includes/Admin/Assets.php:179
+#: includes/Admin/Assets.php:182
 msgid "Your settings have been updated"
 msgstr ""

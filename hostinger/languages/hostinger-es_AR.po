@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-08 10:35+0000\n"
+"PO-Revision-Date: 2025-09-02 11:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-03 21:29+0000\n"
 "Last-Translator: Mariel Grandin\n"
-"X-Loco-Version: 2.8.0; wp-6.8.1; php-8.0.30"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.2.27"
 
 #: includes/Admin/Assets.php:173
 msgid ""
@@ -35,17 +35,16 @@ msgid "AI Tools"
 msgstr "Herramientas de IA"
 
 #: includes/Admin/Assets.php:184
-#, fuzzy
 msgid "Allow Kodee to manage your site"
-msgstr "Permita que Kodee gestione su sitio"
+msgstr "Pemití que Kodee gestione tu sitio"
 
 #: includes/Admin/Assets.php:163
 msgid ""
 "An external LLMs.txt file was found. Switching on the toggle will replace it "
 "with a new one."
 msgstr ""
-"Se encontró un archivo LLMs.txt externo. Al activarlo, se sustituirá por uno "
-"nuevo."
+"Se encontró un archivo LLMs.txt externo. Al activarlo, se va a sustituir por "
+"uno nuevo."
 
 #: includes/Errors.php:19
 msgid "An unexpected error occurred. Please try again or contact support."
@@ -72,13 +71,22 @@ msgid "Cancel"
 msgstr "Cancelar"
 
 #: includes/Admin/Assets.php:161
-#, fuzzy
 msgid "Check validity"
-msgstr "Comprobar validez"
+msgstr "Chequear validez"
 
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "Muy pronto"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "Conectar dominio"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "Copiado correctamente"
 
 #: includes/Admin/Assets.php:167
 #, fuzzy
@@ -194,19 +202,20 @@ msgid "Learn more"
 msgstr "Más información"
 
 #: includes/Admin/Assets.php:157
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#, fuzzy
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr "La IA explora, comprende e interactúa con tu sitio web de WordPress"
 
 #: includes/Admin/Assets.php:185
-#, fuzzy
 msgid ""
 "Let Kodee manage your site on your behalf. This allows Kodee to perform "
 "actions like creating pages or updating settings. We will install and pre-"
 "configure the WordPress MCP plugin for you."
 msgstr ""
-"Deje que Kodee gestione su sitio en su nombre. Esto permite a Kodee realizar "
-"acciones como crear páginas o actualizar la configuración. Instalaremos y "
-"preconfiguraremos el plugin WordPress MCP por ti."
+"Hacé que Kodee administre tu sitio por vos. Esto le permite realizar "
+"acciones como crear páginas o actualizar configuraciones. Vamos a instalar y "
+"preconfigurar el plugin de WordPress MCP por vos.\n"
 
 #: includes/Admin/Assets.php:181
 msgid "Link has been reset"
@@ -216,6 +225,15 @@ msgstr "Se reseteó el link"
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "Optimización LLM"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+"Las funciones de optimización de LLM no están disponibles para los "
+"subdominios temporales. Conecte un dominio para desbloquear estas funciones."
 
 #: includes/Admin/Assets.php:162
 #, fuzzy
@@ -231,14 +249,13 @@ msgid "Maintenance mode"
 msgstr "Modo de mantenimiento"
 
 #: includes/Admin/Assets.php:159
-#, fuzzy
 msgid ""
 "Make your website easier for AI tools to understand. Website content updates "
 "will be tracked to keep the AI discovery service up to date."
 msgstr ""
-"Facilite la comprensión de su sitio web a las herramientas de IA. Las "
-"actualizaciones del contenido del sitio web se rastrearán para mantener "
-"actualizado el servicio de descubrimiento de IA."
+"Hacé que tu sitio web sea más fácil de entender para las herramientas con IA."
+" Las actualizaciones de contenido se van a registrar para mantener el "
+"servicio de AI discovery actualizado."
 
 #: includes/Views/ComingSoon.php:27
 msgid "New WordPress website is being built and will be published soon"
@@ -315,7 +332,12 @@ msgstr "Seguridad"
 
 #: includes/Admin/Assets.php:130
 msgid "Skip-link that bypasses the maintenance mode"
-msgstr "Enlace de derivación que omite el modo de mantenimiento"
+msgstr "Link de derivación que omite el modo de mantenimiento"
+
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "El texto se ha copiado correctamente"
 
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
@@ -365,15 +387,14 @@ msgid ""
 "encountered a server error. Please try again later, and if the issue "
 "persists, kindly contact our support team for assistance."
 msgstr ""
-"Nos disculpamos por el inconveniente. Todo el proceso de generación de "
-"contenido con IA se encontró con un error de servidor. Por favor, intentalo "
-"de nuevo más tarde y, si el problema continúa, contactate con el equipo de "
-"soporte para obtener ayuda."
+"Lamentamos las molestias. El proceso de generación de contenido con IA tuvo "
+"un error en el servidor. Probá de nuevo más tarde y, si el problema continúa,"
+" contactate con nuestro equipo de soporte para recibir ayuda."
 
 #: includes/Admin/Assets.php:158
-#, fuzzy
-msgid "Web 2 Agent"
-msgstr "Agente Web 2"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "Web2Agent"
 
 #: includes/Admin/Assets.php:170
 msgid ""
@@ -390,8 +411,8 @@ msgid ""
 "integrations."
 msgstr ""
 "Las contraseñas de aplicación de WordPress permiten a los usuarios "
-"autenticar las solicitudes de API sin usar sus credenciales de inicio de "
-"sesión principales, lo cual permite integraciones de terceros."
+"autenticar solicitudes de API sin usar sus credenciales principales de "
+"inicio de sesión, lo cual posibilita integraciones de terceros."
 
 #: includes/Admin/Assets.php:143
 msgid "WordPress version"

@@ -2,16 +2,16 @@
 # This file is distributed under the GPL v3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Hostinger Tools 3.0.46\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hostinger\n"
+"Project-Id-Version: Hostinger Tools 3.0.48\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hostinger-wordpress-plugin\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-08-08T10:29:30+00:00\n"
+"POT-Creation-Date: 2025-09-02T11:28:25+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: hostinger\n"
 
 #. Plugin Name of the plugin
@@ -174,11 +174,11 @@ msgid "Create LLMs.txt file"
 msgstr ""
 
 #: includes/Admin/Assets.php:157
-msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr ""
 
 #: includes/Admin/Assets.php:158
-msgid "Web 2 Agent"
+msgid "Web2Agent"
 msgstr ""
 
 #: includes/Admin/Assets.php:159
@@ -278,6 +278,22 @@ msgstr ""
 
 #: includes/Admin/Assets.php:185
 msgid "Let Kodee manage your site on your behalf. This allows Kodee to perform actions like creating pages or updating settings. We will install and pre-configure the WordPress MCP plugin for you."
+msgstr ""
+
+#: includes/Admin/Assets.php:186
+msgid "Copied successfully"
+msgstr ""
+
+#: includes/Admin/Assets.php:187
+msgid "Text has been copied successfully"
+msgstr ""
+
+#: includes/Admin/Assets.php:188
+msgid "LLM optimization features are not available for temporary subdomains. Connect a domain to unlock these features."
+msgstr ""
+
+#: includes/Admin/Assets.php:189
+msgid "Connect domain"
 msgstr ""
 
 #: includes/Admin/Hooks.php:51

@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-08-08 10:35+0000\n"
+"PO-Revision-Date: 2025-09-02 11:41+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: ro_RO\n"
@@ -82,6 +82,16 @@ msgstr "Verificarea validității"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "În curând"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "Conectați domeniul"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "Copiat cu succes"
 
 #: includes/Admin/Assets.php:167
 #, fuzzy
@@ -198,7 +208,8 @@ msgstr "Aflați mai multe"
 
 #: includes/Admin/Assets.php:157
 #, fuzzy
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr ""
 "Permiteți AI să exploreze, să înțeleagă și să interacționeze cu site-ul dvs. "
 "WordPress"
@@ -223,6 +234,15 @@ msgstr "Link-ul a fost resetat"
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "LLM Optimizare"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+"Funcțiile de optimizare LLM nu sunt disponibile pentru subdomeniile "
+"temporare. Conectați un domeniu pentru a debloca aceste caracteristici."
 
 #: includes/Admin/Assets.php:162
 #, fuzzy
@@ -322,6 +342,11 @@ msgstr "Securitate"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "Link de bypass care ocolește modul Întreținere."
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "Textul a fost copiat cu succes"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Plugin-ul Hostinger a fost împărțit în două plugin-uri diferite:"
@@ -377,9 +402,9 @@ msgstr ""
 "asistență."
 
 #: includes/Admin/Assets.php:158
-#, fuzzy
-msgid "Web 2 Agent"
-msgstr "Agentul Web 2"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "Web2Agentul"
 
 #: includes/Admin/Assets.php:170
 msgid ""

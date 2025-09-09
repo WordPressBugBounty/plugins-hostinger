@@ -1,22 +1,27 @@
-import { defineStore } from 'pinia';
-import { ref } from 'vue';
-import { ModalContent, ModalSettings } from '@/types';
-import { ModalName } from '@/types/enums';
+import { defineStore } from "pinia";
+import { ref } from "vue";
 
-export const useModalStore = defineStore('modalStore', () => {
-  interface Modal {
-    name: ModalName;
-    data?: ModalContent;
-    settings?: ModalSettings;
-  }
+import { ModalContent, ModalSettings } from "@/types";
+import { ModalName } from "@/types/enums";
 
-  const activeModal = ref<Modal | null>(null);
+export const useModalStore = defineStore("modalStore", () => {
+	interface Modal {
+		name: ModalName;
+		data?: ModalContent;
+		settings?: ModalSettings;
+	}
 
-  const openModal = (name: ModalName, data?: ModalContent, settings?: ModalSettings) => {
-    activeModal.value = { name, data, settings };
-  };
+	const activeModal = ref<Modal | null>(null);
 
-  const closeModal = () => (activeModal.value = null);
+	const openModal = (
+		name: ModalName,
+		data?: ModalContent,
+		settings?: ModalSettings
+	) => {
+		activeModal.value = { name, data, settings };
+	};
 
-  return { activeModal, openModal, closeModal };
+	const closeModal = () => (activeModal.value = null);
+
+	return { activeModal, openModal, closeModal };
 });

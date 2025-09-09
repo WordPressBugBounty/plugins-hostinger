@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-08-08 10:36+0000\n"
+"PO-Revision-Date: 2025-09-02 11:43+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: th\n"
@@ -75,6 +75,16 @@ msgstr "ตรวจสอบความถูกต้อง"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "เร็วๆ นี้"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "เชื่อมต่อโดเมน"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "คัดลอกสำเร็จ"
 
 #: includes/Admin/Assets.php:167
 #, fuzzy
@@ -190,7 +200,8 @@ msgstr "เรียนรู้เพิ่มเติม"
 
 #: includes/Admin/Assets.php:157
 #, fuzzy
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr "ให้ AI สำรวจ ทำความเข้าใจ และโต้ตอบกับเว็บไซต์ WordPress ของคุณ"
 
 #: includes/Admin/Assets.php:185
@@ -212,6 +223,15 @@ msgstr "ลิงก์ถูกรีเซ็ตแล้ว"
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "การเพิ่มประสิทธิภาพ LLM"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+"คุณสมบัติการเพิ่มประสิทธิภาพ LLM ไม่สามารถใช้ได้กับโดเมนย่อยชั่วคราว "
+"กรุณาเชื่อมต่อโดเมนเพื่อปลดล็อกคุณสมบัติเหล่านี้"
 
 #: includes/Admin/Assets.php:162
 #, fuzzy
@@ -311,6 +331,11 @@ msgstr "ความปลอดภัย"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "ข้ามลิงค์ที่เลี่ยงผ่านโหมดการบำรุงรักษา"
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "ข้อความถูกคัดลอกสำเร็จแล้ว"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "ปลั๊กอิน Hostinger ถูกแบ่งออกเป็นสองปลั๊กอินที่แตกต่างกัน:"
@@ -365,9 +390,9 @@ msgstr ""
 "โปรดติดต่อทีมสนับสนุนของเราเพื่อขอความช่วยเหลือ"
 
 #: includes/Admin/Assets.php:158
-#, fuzzy
-msgid "Web 2 Agent"
-msgstr "เว็บ 2 เอเจนต์"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "เว็บ2เอเจนต์"
 
 #: includes/Admin/Assets.php:170
 msgid ""

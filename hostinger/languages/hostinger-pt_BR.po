@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-08 10:35+0000\n"
+"PO-Revision-Date: 2025-09-02 11:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,12 +23,10 @@ msgid "Action Failed. Try again or contact support. Apologies."
 msgstr "Falha na ação. Tente novamente, ou fale com o suporte. Sentimos muito."
 
 #: includes/Admin/Assets.php:154
-#, fuzzy
 msgid "AI Tools"
 msgstr "Ferramentas de IA"
 
 #: includes/Admin/Assets.php:184
-#, fuzzy
 msgid "Allow Kodee to manage your site"
 msgstr "Permitir que o Kodee gerencie seu site"
 
@@ -69,6 +67,16 @@ msgstr "Verificar validade"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "Em breve"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "Conectar domínio"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "Copiado com sucesso"
 
 #: includes/Admin/Assets.php:167
 msgid "Create file"
@@ -180,19 +188,19 @@ msgid "Learn more"
 msgstr "Saiba mais"
 
 #: includes/Admin/Assets.php:157
-msgid "Let AI explore, understand, and interact with your WordPress site"
-msgstr "Permita que a IA explore, compreenda e interaja com seu site WordPress"
+msgid "Let AI explore, understand, and interact with your WordPress site."
+msgstr ""
+"Permita que a IA explore, compreenda e interaja com seu site WordPress."
 
 #: includes/Admin/Assets.php:185
-#, fuzzy
 msgid ""
 "Let Kodee manage your site on your behalf. This allows Kodee to perform "
 "actions like creating pages or updating settings. We will install and pre-"
 "configure the WordPress MCP plugin for you."
 msgstr ""
-"Permita que a Kodee gerencie seu site em seu nome. Isso permite que a Kodee "
+"Permita que o Kodee gerencie seu site em seu nome. Isso permite que o Kodee "
 "execute ações como a criação de páginas ou a atualização de configurações. "
-"Nós instalaremos e pré-configuraremos o plug-in MCP do WordPress para você."
+"Iremos instalar e pré-configurar o plugin de MCP do WordPress para você."
 
 #: includes/Admin/Assets.php:181
 msgid "Link has been reset"
@@ -201,6 +209,15 @@ msgstr "O link foi redefinido"
 #: includes/Admin/Assets.php:155
 msgid "LLM Optimization"
 msgstr "Otimização do LLM"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+"Os recursos de otimização do LLM não estão disponíveis para subdomínios "
+"temporários. Conecte um domínio para desbloquear esses recursos."
 
 #: includes/Admin/Assets.php:162
 msgid "LLMS.txt"
@@ -300,6 +317,11 @@ msgstr "Segurança"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "A opão “Ignorar link” contorna o modo de manutenção"
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "O texto foi copiado com sucesso"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "O plugin Hostinger foi dividido em dois plugins diferentes:"
@@ -352,8 +374,9 @@ msgstr ""
 "continuar, fale com nossa equipe de suporte para receber assistência."
 
 #: includes/Admin/Assets.php:158
-msgid "Web 2 Agent"
-msgstr "Agente Web 2"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "Web2Agente"
 
 #: includes/Admin/Assets.php:170
 msgid ""

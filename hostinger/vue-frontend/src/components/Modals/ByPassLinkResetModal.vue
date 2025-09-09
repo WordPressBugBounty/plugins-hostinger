@@ -1,13 +1,13 @@
 <script lang="ts" setup>
+import Button from "@/components/Button/Button.vue";
 import BaseModal from "@/components/Modals/Base/BaseModal.vue";
 import { useModal } from "@/composables";
 import { translate } from "@/utils/helpers";
-import Button from "@/components/Button/Button.vue";
 
 interface Props {
-  data: {
-    onConfirm: () => void;
-  };
+	data: {
+		onConfirm: () => void;
+	};
 }
 
 const props = defineProps<Props>();
@@ -15,15 +15,15 @@ const props = defineProps<Props>();
 const { closeModal } = useModal();
 
 const onProceed = () => {
-  if (props.data.onConfirm) props.data.onConfirm();
+	if (props.data.onConfirm) props.data.onConfirm();
 
-  closeModal();
+	closeModal();
 };
 </script>
 
 <template>
   <BaseModal
-    :titleIcon="{
+    :title-icon="{
       name: 'icon-info',
       color: 'danger',
     }"
@@ -38,9 +38,13 @@ const onProceed = () => {
         variant="text"
         class="h-mr-16"
         @click="closeModal"
-        >{{ translate("bypass_link_reset_modal_cancel") }}</Button
       >
-      <Button color="danger" @click="onProceed">
+        {{ translate("bypass_link_reset_modal_cancel") }}
+      </Button>
+      <Button
+        color="danger"
+        @click="onProceed"
+      >
         {{ translate("bypass_link_reset_modal_reset_link") }}
       </Button>
     </div>

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hostinger Tools - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-08 10:35+0000\n"
+"PO-Revision-Date: 2025-09-02 11:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,14 +26,12 @@ msgstr ""
 "Excuses."
 
 #: includes/Admin/Assets.php:154
-#, fuzzy
 msgid "AI Tools"
-msgstr "AI-tools"
+msgstr "AI gereedschappen"
 
 #: includes/Admin/Assets.php:184
-#, fuzzy
 msgid "Allow Kodee to manage your site"
-msgstr "Laat Kodee je site beheren"
+msgstr "Sta Kodee toe je site te beheren"
 
 #: includes/Admin/Assets.php:163
 msgid ""
@@ -74,6 +72,14 @@ msgstr "Geldigheid controleren"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "Komt binnenkort"
+
+#: includes/Admin/Assets.php:189
+msgid "Connect domain"
+msgstr ""
+
+#: includes/Admin/Assets.php:186
+msgid "Copied successfully"
+msgstr ""
 
 #: includes/Admin/Assets.php:167
 msgid "Create file"
@@ -185,19 +191,18 @@ msgid "Learn more"
 msgstr "Lees verder"
 
 #: includes/Admin/Assets.php:157
-msgid "Let AI explore, understand, and interact with your WordPress site"
-msgstr "Laat AI je WordPress site verkennen, begrijpen en ermee communiceren"
+msgid "Let AI explore, understand, and interact with your WordPress site."
+msgstr "Laat AI je WordPress site verkennen, begrijpen en ermee communiceren."
 
 #: includes/Admin/Assets.php:185
-#, fuzzy
 msgid ""
 "Let Kodee manage your site on your behalf. This allows Kodee to perform "
 "actions like creating pages or updating settings. We will install and pre-"
 "configure the WordPress MCP plugin for you."
 msgstr ""
-"Laat Kodee je site namens jou beheren. Hierdoor kan Kodee acties uitvoeren "
-"zoals pagina's aanmaken of instellingen bijwerken. We installeren en "
-"configureren de WordPress MCP plugin voor je."
+"Laat Kodee je site namens je beheren. Hierdoor kan Kodee acties uitvoeren "
+"zoals het maken van pagina's of het updaten van instellingen. We zullen de "
+"WordPress MCP plugin voor je installeren en vooraf configureren."
 
 #: includes/Admin/Assets.php:181
 msgid "Link has been reset"
@@ -206,6 +211,12 @@ msgstr "Link is gereset"
 #: includes/Admin/Assets.php:155
 msgid "LLM Optimization"
 msgstr "LLM optimalisatie"
+
+#: includes/Admin/Assets.php:188
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
 
 #: includes/Admin/Assets.php:162
 msgid "LLMS.txt"
@@ -304,6 +315,10 @@ msgstr "Beveiliging"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "Skip-link die de onderhoud modus omzeilt"
 
+#: includes/Admin/Assets.php:187
+msgid "Text has been copied successfully"
+msgstr ""
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr ""
@@ -359,8 +374,9 @@ msgstr ""
 "assistentie."
 
 #: includes/Admin/Assets.php:158
-msgid "Web 2 Agent"
-msgstr "Web 2 Agent"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "Web2Agent"
 
 #: includes/Admin/Assets.php:170
 msgid ""

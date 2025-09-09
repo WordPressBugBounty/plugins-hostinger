@@ -55,7 +55,7 @@ class Assets {
         // Vue frontend styles.
         wp_enqueue_style(
             'hostinger_tools_styles',
-            HOSTINGER_VUE_ASSETS_URL . '/main.min.css',
+            HOSTINGER_VUE_ASSETS_URL . '/main.css',
             array(),
             HOSTINGER_VERSION
         );
@@ -98,7 +98,7 @@ class Assets {
 
         wp_enqueue_script(
             'hostinger_tools_main_scripts',
-            HOSTINGER_VUE_ASSETS_URL . '/main.min.js',
+            HOSTINGER_VUE_ASSETS_URL . '/main.js',
             array(
                 'jquery',
                 'wp-i18n',
@@ -155,7 +155,7 @@ class Assets {
                     'hostinger_tools_llms'                                    => __( 'LLM Optimization', 'hostinger' ),
                     'hostinger_tools_enable_llms_txt'                         => __( 'Create LLMs.txt file', 'hostinger' ),
                     'hostinger_tools_llms_txt_description'                    => __( 'Let AI explore, understand, and interact with your WordPress site.', 'hostinger' ),
-                    'hostinger_tools_optin_mcp'                               => __( 'Web 2 Agent', 'hostinger' ),
+                    'hostinger_tools_optin_mcp'                               => __( 'Web2Agent', 'hostinger' ),
                     'hostinger_tools_optin_mcp_description'                   => __( 'Make your website easier for AI tools to understand. Website content updates will be tracked to keep the AI discovery service up to date.', 'hostinger' ),
                     'hostinger_tools_llms_txt_learn_more'                     => __( 'Learn more', 'hostinger' ),
                     'hostinger_tools_llms_txt_check_validity'                 => __( 'Check validity', 'hostinger' ),
@@ -183,6 +183,10 @@ class Assets {
                     'hostinger_tools_settings_error'                          => __( 'It was an error updating your settings', 'hostinger' ),
                     'hostinger_tools_mcp_choice'                              => __( 'Allow Kodee to manage your site', 'hostinger' ),
                     'hostinger_tools_mcp_description'                         => __( 'Let Kodee manage your site on your behalf. This allows Kodee to perform actions like creating pages or updating settings. We will install and pre-configure the WordPress MCP plugin for you.', 'hostinger' ),
+                    'hostinger_tools_copied_successfully'                     => __( 'Copied successfully', 'hostinger' ),
+                    'hostinger_tools_text_copied_successfully'                => __( 'Text has been copied successfully', 'hostinger' ),
+                    'hostinger_tools_free_domain_llm_unavailable'             => __( 'LLM optimization features are not available for temporary subdomains. Connect a domain to unlock these features.', 'hostinger' ),
+                    'hostinger_tools_connect_domain_cta'                      => __( 'Connect domain', 'hostinger' ),
                 ),
                 'rest_base_url'                => esc_url_raw( rest_url() ),
                 'nonce'                        => wp_create_nonce( 'wp_rest' ),

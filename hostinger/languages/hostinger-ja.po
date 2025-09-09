@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-08-08 10:35+0000\n"
+"PO-Revision-Date: 2025-09-02 11:39+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: ja\n"
@@ -73,6 +73,16 @@ msgstr "有効性の確認"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "近日公開"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "接続ドメイン"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "コピー成功"
 
 #: includes/Admin/Assets.php:167
 #, fuzzy
@@ -185,7 +195,8 @@ msgstr "さらに詳しく"
 
 #: includes/Admin/Assets.php:157
 #, fuzzy
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr "AIにWordPressサイトを探索、理解、対話させる"
 
 #: includes/Admin/Assets.php:185
@@ -205,6 +216,13 @@ msgstr "リンクがリセットされました"
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "LLM最適化"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr "LLM最適化機能は、一時的なサブドメインでは使用できません。これらの機能を解除するには、ドメインを接続してください。"
 
 #: includes/Admin/Assets.php:162
 #, fuzzy
@@ -301,6 +319,11 @@ msgstr "セキュリティ"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "メンテナンスモードを回避するスキップリンク"
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "テキストは正常にコピーされました"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Hostingerプラグインは以下の2つのプラグインに分割されました："
@@ -350,7 +373,8 @@ msgstr ""
 
 #: includes/Admin/Assets.php:158
 #, fuzzy
-msgid "Web 2 Agent"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
 msgstr "ウェブ2エージェント"
 
 #: includes/Admin/Assets.php:170

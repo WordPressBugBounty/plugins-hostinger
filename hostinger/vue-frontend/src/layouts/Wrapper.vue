@@ -1,19 +1,19 @@
 <script lang="ts" setup>
-import PluginSplitNotice from "@/components/PluginSplitNotice.vue";
-import { HeaderButton, PreviewSiteButton, EditSiteButton } from "@/types";
 import Button from "@/components/Button/Button.vue";
+import PluginSplitNotice from "@/components/PluginSplitNotice.vue";
 import { useGeneralStoreData } from "@/stores";
+import { EditSiteButton, HeaderButton, PreviewSiteButton } from "@/types";
+
+const props = defineProps<Props>();
 
 const { siteUrl, editSiteUrl } = useGeneralStoreData();
 
 type Props = {
-  title?: string;
-  headerButton?: HeaderButton;
-  previewSiteButton?: PreviewSiteButton;
-  editSiteButton?: EditSiteButton;
+	title?: string;
+	headerButton?: HeaderButton;
+	previewSiteButton?: PreviewSiteButton;
+	editSiteButton?: EditSiteButton;
 };
-
-const props = defineProps<Props>();
 </script>
 
 <template>
@@ -21,42 +21,50 @@ const props = defineProps<Props>();
     <div class="wrapper__content">
       <PluginSplitNotice class="h-mb-20" />
       <div class="wrapper__header">
-        <h1 v-if="props.title" class="text-heading-1">{{ props.title }}</h1>
-          <div class="wrapper__buttons-wrapper">
-        <Button
-          class="wrapper__button"
-          v-if="headerButton"
-          @click="headerButton?.onClick"
-          :to="headerButton?.href"
-          size="small"
-          variant="outline"
-          :target="headerButton.href ? '_blank' : undefined"
-          icon-append="icon-launch"
-          >{{ headerButton.text }}</Button
+        <h1
+          v-if="props.title"
+          class="text-heading-1"
         >
+          {{ props.title }}
+        </h1>
+        <div class="wrapper__buttons-wrapper">
           <Button
-              class="wrapper__button"
-              v-if="previewSiteButton && siteUrl"
-              @click="previewSiteButton?.onClick"
-              :to="siteUrl"
-              size="small"
-              variant="outline"
-              :target="siteUrl ? '_blank' : undefined"
-              icon-prepend="icon-visibility"
-          >{{ previewSiteButton.text }}</Button
+            v-if="headerButton"
+            class="wrapper__button"
+            :to="headerButton?.href"
+            size="small"
+            variant="outline"
+            :target="headerButton.href ? '_blank' : undefined"
+            icon-append="icon-launch"
+            @click="headerButton?.onClick"
           >
+            {{ headerButton.text }}
+          </Button>
           <Button
-              class="wrapper__button"
-              v-if="editSiteButton && editSiteUrl"
-              @click="headerButton?.onClick"
-              :to="editSiteUrl"
-              size="small"
-              variant="outline"
-              :target="editSiteUrl ? '_blank' : undefined"
-              icon-prepend="icon-launch"
-          >{{ editSiteButton.text }}</Button
+            v-if="previewSiteButton && siteUrl"
+            class="wrapper__button"
+            :to="siteUrl"
+            size="small"
+            variant="outline"
+            :target="siteUrl ? '_blank' : undefined"
+            icon-prepend="icon-visibility"
+            @click="previewSiteButton?.onClick"
           >
-          </div>
+            {{ previewSiteButton.text }}
+          </Button>
+          <Button
+            v-if="editSiteButton && editSiteUrl"
+            class="wrapper__button"
+            :to="editSiteUrl"
+            size="small"
+            variant="outline"
+            :target="editSiteUrl ? '_blank' : undefined"
+            icon-prepend="icon-launch"
+            @click="editSiteButton?.onClick"
+          >
+            {{ editSiteButton.text }}
+          </Button>
+        </div>
       </div>
       <slot />
     </div>
@@ -65,49 +73,49 @@ const props = defineProps<Props>();
 
 <style lang="scss" scoped>
 .wrapper {
-  padding: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  min-height: calc(100vh - var(--header-height));
+	padding: 48px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	min-height: calc(100vh - var(--header-height));
 
-  @media (max-width: 768px) {
-    padding-right: 10px;
-    padding-left: 0px;
-  }
+	@media (max-width: 768px) {
+		padding-right: 10px;
+		padding-left: 0px;
+	}
 
-  &__buttons-wrapper {
-    display: flex;
+	&__buttons-wrapper {
+		display: flex;
 
-    @media (max-width: 500px) {
-      width: 100%;
-      flex-wrap: wrap;
-    }
-  }
+		@media (max-width: 500px) {
+			width: 100%;
+			flex-wrap: wrap;
+		}
+	}
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
 
-  &__button {
-    background-color: var(--white);
-    margin-left: 10px;
-    display: flex;
-    flex-wrap: nowrap;
+	&__button {
+		background-color: var(--white);
+		margin-left: 10px;
+		display: flex;
+		flex-wrap: nowrap;
 
-    @media (max-width: 500px) {
-      margin: 5px 0;
-    }
-  }
+		@media (max-width: 500px) {
+			margin: 5px 0;
+		}
+	}
 
-  &__content {
-    max-width: 740px;
-    width: 100%;
-  }
+	&__content {
+		max-width: 740px;
+		width: 100%;
+	}
 }
 </style>

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:27+0000\n"
-"PO-Revision-Date: 2025-08-08 10:35+0000\n"
+"PO-Revision-Date: 2025-09-02 11:41+0000\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese (Portugal)\n"
 "Language: pt_PT\n"
@@ -75,6 +75,16 @@ msgstr "Verificar a validade"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "Brevemente"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "Ligar o domínio"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "Copiado com sucesso"
 
 #: includes/Admin/Assets.php:167
 #, fuzzy
@@ -193,7 +203,8 @@ msgstr "Saiba mais"
 
 #: includes/Admin/Assets.php:157
 #, fuzzy
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr "Deixe a IA explorar, compreender e interagir com o seu sítio WordPress"
 
 #: includes/Admin/Assets.php:185
@@ -215,6 +226,16 @@ msgstr "O link for reposto"
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "Otimização LLM"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+"As funcionalidades de otimização do LLM não estão disponíveis para "
+"subdomínios temporários. Ligue um domínio para desbloquear estas "
+"funcionalidades."
 
 #: includes/Admin/Assets.php:162
 #, fuzzy
@@ -319,6 +340,11 @@ msgstr "Segurança"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "Skip-link que contorna o modo de manutenção"
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "O texto foi copiado com êxito"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "O plugin Hostinger foi dividido em dois plugins diferentes:"
@@ -373,9 +399,9 @@ msgstr ""
 "persistir, contacte a nossa equipa de apoio para obter assistência."
 
 #: includes/Admin/Assets.php:158
-#, fuzzy
-msgid "Web 2 Agent"
-msgstr "Agente Web 2"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "Web2Agente"
 
 #: includes/Admin/Assets.php:170
 msgid ""

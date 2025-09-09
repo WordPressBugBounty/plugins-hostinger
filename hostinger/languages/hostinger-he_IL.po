@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-07-30T12:00:12+00:00\n"
-"PO-Revision-Date: 2025-08-08 10:35+0000\n"
+"PO-Revision-Date: 2025-09-02 11:38+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Language: he_IL\n"
@@ -74,6 +74,16 @@ msgstr "בדוק תוקף"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "בקרוב"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "חבר דומיין"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "הועתק בהצלחה"
 
 #: includes/Admin/Assets.php:167
 #, fuzzy
@@ -186,7 +196,8 @@ msgstr "למידע נוסף"
 
 #: includes/Admin/Assets.php:157
 #, fuzzy
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr "תן ל-AI לחקור, להבין ולתקשר עם אתר הוורדפרס שלך"
 
 #: includes/Admin/Assets.php:185
@@ -207,6 +218,15 @@ msgstr "הקישור אופס"
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "אופטימיזציה LLM"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+"תכונות האופטימיזציה של LLM אינן זמינות עבור תת-דומיינים זמניים. חבר דומיין "
+"כדי לפתוח את התכונות הללו."
 
 #: includes/Admin/Assets.php:162
 #, fuzzy
@@ -305,6 +325,11 @@ msgstr "אבטחה"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "קישור-דילוג שעוקף את מצב התחזוקה"
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "הטקסט הועתק בהצלחה"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "התוסף של Hostinger פוצל לשני תוספים נפרדים:"
@@ -359,9 +384,9 @@ msgstr ""
 "לכם."
 
 #: includes/Admin/Assets.php:158
-#, fuzzy
-msgid "Web 2 Agent"
-msgstr "סוכן Web 2"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "סוכןWeb2"
 
 #: includes/Admin/Assets.php:170
 msgid ""

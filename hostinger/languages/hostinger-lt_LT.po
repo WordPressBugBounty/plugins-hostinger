@@ -3,19 +3,19 @@ msgstr ""
 "Project-Id-Version: Hostinger 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hostinger-"
 "wordpress-plugin\n"
-"Last-Translator: Linas\n"
+"Last-Translator: \n"
 "Language-Team: Lithuanian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-03-02T12:10:37+00:00\n"
-"PO-Revision-Date: 2025-08-08 10:35+0000\n"
+"PO-Revision-Date: 2025-09-02 11:39+0000\n"
 "Language: lt_LT\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hostinger\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 "
 "&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
-"X-Loco-Version: 2.8.0; wp-6.8.1; php-8.0.30"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.2.27"
 
 #: includes/Admin/Assets.php:173
 msgid ""
@@ -75,6 +75,16 @@ msgstr "Patikrinkite galiojimą"
 #: includes/Views/ComingSoon.php:6 includes/Views/ComingSoon.php:24
 msgid "Coming Soon"
 msgstr "Netrukus"
+
+#: includes/Admin/Assets.php:189
+#, fuzzy
+msgid "Connect domain"
+msgstr "Prijungti domeną"
+
+#: includes/Admin/Assets.php:186
+#, fuzzy
+msgid "Copied successfully"
+msgstr "Sėkmingai nukopijuota"
 
 #: includes/Admin/Assets.php:167
 #, fuzzy
@@ -191,7 +201,8 @@ msgstr "Sužinokite daugiau"
 
 #: includes/Admin/Assets.php:157
 #, fuzzy
-msgid "Let AI explore, understand, and interact with your WordPress site"
+#| msgid "Let AI explore, understand, and interact with your WordPress site"
+msgid "Let AI explore, understand, and interact with your WordPress site."
 msgstr ""
 "Leiskite dirbtiniam intelektui tyrinėti, suprasti ir sąveikauti su jūsų "
 "\"WordPress\" svetaine"
@@ -215,6 +226,15 @@ msgstr "Nuoroda nustatyta iš naujo"
 #, fuzzy
 msgid "LLM Optimization"
 msgstr "LLM optimizavimas"
+
+#: includes/Admin/Assets.php:188
+#, fuzzy
+msgid ""
+"LLM optimization features are not available for temporary subdomains. "
+"Connect a domain to unlock these features."
+msgstr ""
+"LLM optimizavimo funkcijos laikiniems subdomenams neprieinamos. Norėdami "
+"atrakinti šias funkcijas, prijunkite domeną."
 
 #: includes/Admin/Assets.php:162
 #, fuzzy
@@ -320,6 +340,11 @@ msgstr "Saugumas"
 msgid "Skip-link that bypasses the maintenance mode"
 msgstr "Praleisti nuorodą, kuri apeina priežiūros režimą"
 
+#: includes/Admin/Assets.php:187
+#, fuzzy
+msgid "Text has been copied successfully"
+msgstr "Tekstas sėkmingai nukopijuotas"
+
 #: includes/Admin/Hooks.php:52
 msgid "The Hostinger plugin has been split into two different plugins:"
 msgstr "Hostinger įskiepis buvo padalintas į du atskirus įskiepius:"
@@ -374,9 +399,9 @@ msgstr ""
 "prašome susisiekti su mūsų palaikymo komanda dėl pagalbos."
 
 #: includes/Admin/Assets.php:158
-#, fuzzy
-msgid "Web 2 Agent"
-msgstr "\"Web 2\" agentas"
+#| msgid "Web 2 Agent"
+msgid "Web2Agent"
+msgstr "Web2Agentas"
 
 #: includes/Admin/Assets.php:170
 msgid ""
