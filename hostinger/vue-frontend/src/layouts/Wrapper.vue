@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import Button from "@/components/Button/Button.vue";
-import PluginSplitNotice from "@/components/PluginSplitNotice.vue";
 import { useGeneralStoreData } from "@/stores";
 import { EditSiteButton, HeaderButton, PreviewSiteButton } from "@/types";
 
@@ -19,7 +18,6 @@ type Props = {
 <template>
   <div class="wrapper">
     <div class="wrapper__content">
-      <PluginSplitNotice class="h-mb-20" />
       <div class="wrapper__header">
         <h1
           v-if="props.title"

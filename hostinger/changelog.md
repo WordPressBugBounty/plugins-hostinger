@@ -473,3 +473,6 @@ Changelog
 - UI improvements
 - Assets optimization
 
+
+3.0.50 (2025-09-15)
+- Remove plugin split banner

@@ -23,7 +23,7 @@ return array(
 		'path'    => array( $baseDir . '/includes' )
 	),
 	'Automattic\\Jetpack\\Autoloader\\' => array(
-		'version' => '5.0.9',
+		'version' => '5.0.10-alpha',
 		'path'    => array( $vendorDir . '/automattic/jetpack-autoloader/src' )
 	),
 );

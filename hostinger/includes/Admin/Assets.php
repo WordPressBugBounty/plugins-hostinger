@@ -44,7 +44,7 @@ class Assets {
         }
         if ( is_admin() ) {
             add_action( 'admin_enqueue_scripts', array( $this, 'global_styles' ) );
-            add_action( 'admin_enqueue_scripts', array( $this, 'global_scripts' ) );
+
         }
     }
 
@@ -78,17 +78,7 @@ class Assets {
         );
     }
 
-    public function global_scripts(): void {
-        wp_enqueue_script(
-            'hostinger_tools_global_scripts',
-            HOSTINGER_ASSETS_URL . 'js/hostinger-global-scripts.min.js',
-            array(),
-            HOSTINGER_VERSION,
-            array(
-                'in_footer' => true,
-            )
-        );
-    }
+
 
     /**
      * Enqueues scripts for the Hostinger admin pages.
@@ -111,17 +101,15 @@ class Assets {
             'hostinger_tools_main_scripts',
             'hostinger_tools_data',
             array(
-                'home_url'                     => home_url(),
-                'site_url'                     => get_site_url(),
-                'plugin_url'                   => $this->helper->get_hostinger_plugin_url(),
-                'asset_url'                    => HOSTINGER_PLUGIN_URL,
-                'hplatform'                    => ! empty( $_SERVER['H_PLATFORM'] ) ? 1 : 0,
-                'plugin_split_notice'          => $this->helper->should_plugin_split_notice_shown() ? 1 : 0,
-                'hts_close_plugin_split_nonce' => wp_create_nonce( 'hts_close_plugin_split' ),
-                'edit_site_url'                => $this->helper->get_edit_site_url(),
-                'llmstxt_file_url'             => $this->llms_txt_file_helper->get_llmstxt_file_url(),
-                'llmstxt_file_user_generated'  => $this->llms_txt_file_helper->is_user_generated_file(),
-                'translations'                 => array(
+                'home_url'                    => home_url(),
+                'site_url'                    => get_site_url(),
+                'plugin_url'                  => $this->helper->get_hostinger_plugin_url(),
+                'asset_url'                   => HOSTINGER_PLUGIN_URL,
+                'hplatform'                   => ! empty( $_SERVER['H_PLATFORM'] ) ? 1 : 0,
+                'edit_site_url'               => $this->helper->get_edit_site_url(),
+                'llmstxt_file_url'            => $this->llms_txt_file_helper->get_llmstxt_file_url(),
+                'llmstxt_file_user_generated' => $this->llms_txt_file_helper->is_user_generated_file(),
+                'translations'                => array(
                     'routes_tools'                                            => __( 'Tools', 'hostinger' ),
                     'hostinger_tools_open_guide'                              => __( 'Open guide', 'hostinger' ),
                     'hostinger_tools_preview_site'                            => __( 'Preview site', 'hostinger' ),
@@ -167,9 +155,6 @@ class Assets {
                     'hostinger_tools_llms_txt_modal_create_file'              => __( 'Create file', 'hostinger' ),
                     'hostinger_tools_maintenance_mode'                        => __( 'Maintenance mode', 'hostinger' ),
                     'hostinger_tools_bypass_link'                             => __( 'Bypass link', 'hostinger' ),
-                    'hostinger_tools_split_title'                             => __( 'We’re splitting Hostinger plugin into two: Hostinger Tools and Hostinger Easy Onboarding', 'hostinger' ),
-                    'hostinger_tools_split_body'                              => __( 'Hostinger Tools will offer new tools to simplify your site management. And Hostinger Easy Onboarding will guide you through the steps of building a website.', 'hostinger' ),
-                    'hostinger_tools_split_got_it'                            => __( 'Got it', 'hostinger' ),
                     'xml_security_modal_description'                          => __( ' Turning on XML-RPC might make your site less secure. Do you want to proceed?', 'hostinger' ),
                     'xml_security_modal_title'                                => __( 'Disclaimer', 'hostinger' ),
                     'xml_security_modal_cancel'                               => __( 'Cancel', 'hostinger' ),
@@ -188,13 +173,13 @@ class Assets {
                     'hostinger_tools_free_domain_llm_unavailable'             => __( 'LLM optimization features are not available for temporary subdomains. Connect a domain to unlock these features.', 'hostinger' ),
                     'hostinger_tools_connect_domain_cta'                      => __( 'Connect domain', 'hostinger' ),
                 ),
-                'rest_base_url'                => esc_url_raw( rest_url() ),
-                'nonce'                        => wp_create_nonce( 'wp_rest' ),
-                'wp_version'                   => $wp_version,
-                'php_version'                  => phpversion(),
-                'recommended_php_version'      => $this->helper->get_recommended_php_version(),
-                'mcp_choice'                   => get_option( 'hostinger_mcp_choice', 0 ),
-                'ai_plugin_compatibility'      => $this->check_ai_mcp_compatibility(),
+                'rest_base_url'               => esc_url_raw( rest_url() ),
+                'nonce'                       => wp_create_nonce( 'wp_rest' ),
+                'wp_version'                  => $wp_version,
+                'php_version'                 => phpversion(),
+                'recommended_php_version'     => $this->helper->get_recommended_php_version(),
+                'mcp_choice'                  => get_option( 'hostinger_mcp_choice', 0 ),
+                'ai_plugin_compatibility'     => $this->check_ai_mcp_compatibility(),
             )
         );
     }

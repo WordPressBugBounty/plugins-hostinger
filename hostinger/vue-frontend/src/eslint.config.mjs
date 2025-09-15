@@ -160,7 +160,7 @@ export default [
 				},
 			],
 			"@typescript-eslint/no-explicit-any": "warn",
-			"camelcase": ["error", { 
+			"camelcase": ["error", {
 				properties: 'always',
 				allow: ['^[A-Z][a-zA-Z0-9]*$', '^[A-Z_][A-Z0-9_]*$', '^hostinger_tools_data$', '^hst_affiliate_data$'],
 				ignoreDestructuring: false,

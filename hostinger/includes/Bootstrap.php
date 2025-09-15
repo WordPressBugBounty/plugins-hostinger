@@ -2,7 +2,7 @@
 
 namespace Hostinger;
 
-use Hostinger\Admin\Ajax as AdminAjax;
+
 use Hostinger\Admin\PluginSettings;
 use Hostinger\Admin\Jobs\JobInitializer;
 use Hostinger\Admin\Proxy;
@@ -69,7 +69,6 @@ class Bootstrap {
         new AdminMenu();
         new AdminRedirects();
         new AdminRedirects();
-        new AdminAjax();
     }
 
     private function load_public_dependencies(): void {
