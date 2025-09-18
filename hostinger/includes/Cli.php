@@ -21,8 +21,16 @@ class Cli {
      */
     private function hooks(): void {
 
-        if ( class_exists( '\WP_CLI' ) && class_exists( '\Hostinger\Cli\Commands\Maintenance' ) ) {
+        if ( ! class_exists( '\WP_CLI' ) ) {
+            return;
+        }
+
+        if ( class_exists( '\Hostinger\Cli\Commands\Maintenance' ) ) {
             WP_CLI::add_hook( 'after_wp_load', array( 'Hostinger\Cli\Commands\Maintenance', 'define_command' ) );
+        }
+
+        if ( class_exists( '\Hostinger\Cli\Commands\AI' ) ) {
+            WP_CLI::add_hook( 'after_wp_load', array( 'Hostinger\Cli\Commands\AI', 'define_command' ) );
         }
     }
 }

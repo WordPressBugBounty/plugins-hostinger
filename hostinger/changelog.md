@@ -476,3 +476,6 @@ Changelog
 
 3.0.50 (2025-09-15)
 - Remove plugin split banner
+
+3.0.51 (2025-09-18)
+- Feature: Added Cli command for AI discovery features

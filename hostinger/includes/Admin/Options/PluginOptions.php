@@ -163,6 +163,10 @@ class PluginOptions {
         return $this->enable_llms_txt;
     }
 
+    public function set_enable_llms_txt( bool $llmstxt_enabled ): void {
+        $this->enable_llms_txt = $llmstxt_enabled;
+    }
+
     public function get_optin_mcp(): bool {
         return $this->optin_mcp;
     }

@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc, llms
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 8.0
-Stable tag: 3.0.50
+Stable tag: 3.0.51
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -570,3 +570,6 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 
 3.0.50 (2025-09-15)
 - Remove plugin split banner
+
+3.0.51 (2025-09-18)
+- Feature: Added Cli command for AI discovery features
