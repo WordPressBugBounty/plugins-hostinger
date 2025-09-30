@@ -24,6 +24,7 @@ import {
 	translate
 } from "@/utils/helpers";
 import http from "@/utils/services/httpService";
+import {toast} from "vue3-toastify";
 
 const { fetchSettingsData, updateSettingsData, regenerateByPassCode } =
 	useSettingsStore();
@@ -351,13 +352,20 @@ const onSaveLLmsSection = async (isEnabled: boolean, item: SectionItem) => {
 
 const onSaveAiSection = async (isEnabled: boolean) => {
 	try {
-		await http.post<SettingsData>(
+		const response = await http.post<SettingsData>(
 			`${restBaseUrl}hostinger-ai-assistant/v1/toggle-mcp-plugin`,
 			{ action: isEnabled ? "setup" : "deny" },
 			{
 				headers: { [Header.WP_NONCE]: nonce }
 			}
 		);
+
+		const error = response[1];
+
+		if (error) {
+			toast.error(translate("hostinger_tools_settings_error"));
+			return false;
+		}
 
 		initialMcpChoice.value = isEnabled;
 
@@ -368,8 +376,12 @@ const onSaveAiSection = async (isEnabled: boolean) => {
 				}
 			})
 		);
+
+		toast.success(translate("hostinger_tools_settings_updated"));
+
 	} catch (error) {
 		console.error("Failed to save MCP choice: ", error);
+		toast.error(translate("hostinger_tools_settings_error"));
 	}
 };
 

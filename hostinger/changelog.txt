@@ -477,3 +477,9 @@ Changelog
 
 3.0.51 (2025-09-18)
 - Feature: Added Cli command for AI discovery features
+
+3.0.52 (2025-09-30)
+
+- Fix:  Settings route
+- Dev: Fix release updater
+- Tweak: Bump dependencies
