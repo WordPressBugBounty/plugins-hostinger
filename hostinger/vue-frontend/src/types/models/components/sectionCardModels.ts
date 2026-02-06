@@ -36,6 +36,5 @@ export const SECTION_ID = {
 	FORCE_HTTPS: "force-https",
 	FORCE_WWW: "force-www",
 	ENABLE_LLMS_TXT: "enable-llms-txt",
-	OPTIN_MCP: "optin-mcp",
-	SWITCH_MCP_CHOICE: "switch-mcp-choice"
+	OPTIN_MCP: "optin-mcp"
 } as const;

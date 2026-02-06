@@ -7,37 +7,37 @@ namespace Composer\Autoload;
 class ComposerStaticInit5eb612593a2ef67b85ad25c07c19e821
 {
     public static $prefixLengthsPsr4 = array (
-        'H' => 
+        'H' =>
         array (
             'Hostinger\\WpMenuManager\\' => 24,
             'Hostinger\\WpHelper\\' => 19,
             'Hostinger\\Tests\\' => 16,
             'Hostinger\\' => 10,
         ),
-        'A' => 
+        'A' =>
         array (
             'Automattic\\Jetpack\\Autoloader\\' => 30,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Hostinger\\WpMenuManager\\' => 
+        'Hostinger\\WpMenuManager\\' =>
         array (
             0 => __DIR__ . '/..' . '/hostinger/hostinger-wp-menu-manager/src',
         ),
-        'Hostinger\\WpHelper\\' => 
+        'Hostinger\\WpHelper\\' =>
         array (
             0 => __DIR__ . '/..' . '/hostinger/hostinger-wp-helper/src',
         ),
-        'Hostinger\\Tests\\' => 
+        'Hostinger\\Tests\\' =>
         array (
             0 => __DIR__ . '/..' . '/hostinger/hostinger-wp-helper/tests/phpunit',
         ),
-        'Hostinger\\' => 
+        'Hostinger\\' =>
         array (
             0 => __DIR__ . '/../..' . '/includes',
         ),
-        'Automattic\\Jetpack\\Autoloader\\' => 
+        'Automattic\\Jetpack\\Autoloader\\' =>
         array (
             0 => __DIR__ . '/..' . '/automattic/jetpack-autoloader/src',
         ),

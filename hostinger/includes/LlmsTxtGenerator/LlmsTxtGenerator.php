@@ -116,6 +116,15 @@ class LlmsTxtGenerator {
     }
 
     public function generate(): void {
+        $settings = $this->plugin_settings->get_plugin_settings();
+        if ( ! $settings->get_enable_llms_txt() ) {
+            return;
+        }
+
+        if ( $this->file_helper->is_user_generated_file() ) {
+            return;
+        }
+
         $this->file_helper->create( $this->get_content() );
         do_action( LlmsTxtInjectContentJob::JOB_NAME, array( 'post_type' => 'post' ) );
         do_action( LlmsTxtInjectContentJob::JOB_NAME, array( 'post_type' => 'page' ) );

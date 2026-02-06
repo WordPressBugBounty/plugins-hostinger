@@ -11,8 +11,6 @@ declare global {
 		edit_site_url: string;
 		llmstxt_file_url: string;
 		llmstxt_file_user_generated: boolean;
-		mcp_choice: boolean;
-		ai_plugin_compatibility: boolean;
 		wp_version: string;
 		php_version: string;
 		recommended_php_version: string;

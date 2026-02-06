@@ -30,8 +30,6 @@ export type HostingerToolsData = {
 	phpVersion: string;
 	llmstxtFileUrl: string;
 	llmstxtFileUserGenerated: boolean;
-	mcpChoice: boolean;
-	aiPluginCompatibility: boolean;
 };
 
 export type SettingsData = NonToggleableSettingsData & ToggleableSettingsData;

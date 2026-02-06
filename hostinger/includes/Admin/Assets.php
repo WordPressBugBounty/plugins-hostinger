@@ -166,44 +166,19 @@ class Assets {
                     'bypass_link_reset_success'                               => __( 'Link has been reset', 'hostinger' ),
                     'hostinger_tools_settings_updated'                        => __( 'Your settings have been updated', 'hostinger' ),
                     'hostinger_tools_settings_error'                          => __( 'It was an error updating your settings', 'hostinger' ),
-                    'hostinger_tools_mcp_choice'                              => __( 'Allow Kodee to manage your site', 'hostinger' ),
                     'hostinger_tools_mcp_description'                         => __( 'Let Kodee manage your site on your behalf. This allows Kodee to perform actions like creating pages or updating settings. We will install and pre-configure the WordPress MCP plugin for you.', 'hostinger' ),
                     'hostinger_tools_copied_successfully'                     => __( 'Copied successfully', 'hostinger' ),
                     'hostinger_tools_text_copied_successfully'                => __( 'Text has been copied successfully', 'hostinger' ),
                     'hostinger_tools_free_domain_llm_unavailable'             => __( 'LLM optimization features are not available for temporary subdomains. Connect a domain to unlock these features.', 'hostinger' ),
                     'hostinger_tools_connect_domain_cta'                      => __( 'Connect domain', 'hostinger' ),
+                    'hostinger_tools_copy_agent_url'                          => __( 'Copy agent url', 'hostinger' ),
                 ),
                 'rest_base_url'               => esc_url_raw( rest_url() ),
                 'nonce'                       => wp_create_nonce( 'wp_rest' ),
                 'wp_version'                  => $wp_version,
                 'php_version'                 => phpversion(),
                 'recommended_php_version'     => $this->helper->get_recommended_php_version(),
-                'mcp_choice'                  => get_option( 'hostinger_mcp_choice', 0 ),
-                'ai_plugin_compatibility'     => $this->check_ai_mcp_compatibility(),
             )
         );
-    }
-
-    public function check_ai_mcp_compatibility(): bool {
-        if ( ! function_exists( 'is_plugin_active' ) ) {
-            require_once ABSPATH . 'wp-admin/includes/plugin.php';
-        }
-
-        $plugin_path      = 'hostinger-ai-assistant/hostinger-ai-assistant.php';
-        $required_version = '3.0.0';
-
-        if ( is_plugin_active( $plugin_path ) ) {
-            $plugin_file = WP_PLUGIN_DIR . '/' . $plugin_path;
-            if ( file_exists( $plugin_file ) ) {
-                $plugin_data    = get_plugin_data( $plugin_file, false, false );
-                $active_version = isset( $plugin_data['Version'] ) ? $plugin_data['Version'] : '';
-
-                if ( $active_version && version_compare( $active_version, $required_version, '>=' ) ) {
-                    return true;
-                }
-            }
-        }
-
-        return false;
     }
 }

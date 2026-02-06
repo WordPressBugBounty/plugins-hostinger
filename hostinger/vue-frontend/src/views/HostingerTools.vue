@@ -9,10 +9,8 @@ import Icon from "@/components/Icon/Icon.vue";
 import { useModal } from "@/composables";
 import { useGeneralStoreData, useSettingsStore } from "@/stores";
 import {
-	Header,
 	ModalName,
 	SectionItem,
-	SettingsData,
 	ToggleableSettingsData
 } from "@/types";
 import { SECTION_ID } from "@/types/models/components/sectionCardModels";
@@ -23,7 +21,6 @@ import {
 	kebabToCamel,
 	translate
 } from "@/utils/helpers";
-import http from "@/utils/services/httpService";
 import {toast} from "vue3-toastify";
 
 const { fetchSettingsData, updateSettingsData, regenerateByPassCode } =
@@ -33,11 +30,7 @@ const { settingsData } = storeToRefs(useSettingsStore());
 const {
 	siteUrl,
 	llmstxtFileUrl,
-	llmstxtFileUserGenerated,
-	mcpChoice,
-	aiPluginCompatibility,
-	nonce,
-	restBaseUrl
+	llmstxtFileUserGenerated
 } = useGeneralStoreData();
 
 const WORDPRESS_UPDATE_LINK = getBaseUrl(location.href) + "update-core.php";
@@ -45,8 +38,6 @@ const WORDPRESS_UPDATE_LINK = getBaseUrl(location.href) + "update-core.php";
 const isPageLoading = ref(false);
 
 const HOSTINGER_FREE_DOMAINS = /hostingersite\.com|hostinger\.dev/;
-
-const initialMcpChoice = ref(false);
 
 const llmMasterToggle = ref(false);
 
@@ -141,7 +132,7 @@ const llmsSection = computed(() => {
 			description: translate("hostinger_tools_llms_txt_description"),
 			isVisible: true,
 			toggleValue: settingsData.value?.enableLlmsTxt,
-			learnMoreLink: "https://llmstxt.org/",
+			learnMoreLink: "https://www.hostinger.com/support/how-to-enable-llms-txt-on-your-website/",
 			sideButtons: [
 				{
 					id: "hostinger_tools_llms_txt_llmstxt",
@@ -174,22 +165,19 @@ const llmsSection = computed(() => {
 			isVisible: true,
 			toggleValue: settingsData.value?.optinMcp,
 			learnMoreLink:
-				"https://support.hostinger.com/en/articles/11729400-ai-agent-access-smart-ai-discovery"
+				"https://support.hostinger.com/en/articles/11729400-ai-agent-access-smart-ai-discovery",
+			sideButtons: [{
+				id: "hostinger_tools_optin_mcp_copy_agent_url",
+				text: translate("hostinger_tools_copy_agent_url"),
+				isDisabled: !settingsData.value?.optinMcp,
+				onClick: copyAgentUrl,
+				variant: "outline" as const
+			}],
 		}
 	];
 
 	return allItems.filter((item) => item.isVisible);
 });
-
-const aiSection = computed(() => [
-	{
-		id: SECTION_ID.SWITCH_MCP_CHOICE,
-		title: translate("hostinger_tools_mcp_choice"),
-		description: translate("hostinger_tools_mcp_description"),
-		isVisible: true,
-		toggleValue: initialMcpChoice.value
-	}
-]);
 
 const llmsSectionHeaderToggle = computed(() => {
 	const visibleItems = llmsSection.value.filter((item) => item.isVisible);
@@ -350,41 +338,6 @@ const onSaveLLmsSection = async (isEnabled: boolean, item: SectionItem) => {
 	await updateSetting();
 };
 
-const onSaveAiSection = async (isEnabled: boolean) => {
-	try {
-		const response = await http.post<SettingsData>(
-			`${restBaseUrl}hostinger-ai-assistant/v1/toggle-mcp-plugin`,
-			{ action: isEnabled ? "setup" : "deny" },
-			{
-				headers: { [Header.WP_NONCE]: nonce }
-			}
-		);
-
-		const error = response[1];
-
-		if (error) {
-			toast.error(translate("hostinger_tools_settings_error"));
-			return false;
-		}
-
-		initialMcpChoice.value = isEnabled;
-
-		window.dispatchEvent(
-			new CustomEvent("mcp-choice-changed", {
-				detail: {
-					choice: initialMcpChoice.value
-				}
-			})
-		);
-
-		toast.success(translate("hostinger_tools_settings_updated"));
-
-	} catch (error) {
-		console.error("Failed to save MCP choice: ", error);
-		toast.error(translate("hostinger_tools_settings_error"));
-	}
-};
-
 const onUpdateSettings = async (value: boolean, item: SectionItem) => {
 	if (!settingsData.value) return;
 
@@ -402,14 +355,17 @@ const onUpdateSettings = async (value: boolean, item: SectionItem) => {
 	}
 };
 
+const copyAgentUrl = () => {
+	const domain = location.host;
+	const agentUrl = `websites-agents.hostinger.com/${domain}/mcp`;
+	navigator.clipboard.writeText(agentUrl);
+	toast.success(translate("hostinger_tools_copied_successfully"));
+};
+
 (async () => {
 	isPageLoading.value = true;
 	await fetchSettingsData();
 	isPageLoading.value = false;
-
-	if (parseInt(String(mcpChoice)) === 1) {
-		initialMcpChoice.value = true;
-	}
 
 	llmMasterToggle.value = !!(
 		settingsData.value?.enableLlmsTxt || settingsData.value?.optinMcp
@@ -480,14 +436,6 @@ const onUpdateSettings = async (value: boolean, item: SectionItem) => {
           </div>
         </template>
       </SectionCard>
-
-      <SectionCard
-        v-if="aiPluginCompatibility"
-        :is-loading="isPageLoading"
-        :title="translate('hostinger_tools_ai')"
-        :section-items="aiSection"
-        @save-section="onSaveAiSection"
-      />
 
       <SectionCard
         :is-loading="isPageLoading"

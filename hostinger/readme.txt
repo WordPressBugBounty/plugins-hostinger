@@ -1,11 +1,12 @@
 === Hostinger Tools ===
-Tags: hostinger, tools, maintenance, security, redirects, https, xml-rpc, llms
+Tags: hostinger, tools, maintenance, security, https
 Requires at least: 5.5
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 8.0
-Stable tag: 3.0.52
+Stable tag: 3.0.57
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Simplified WordPress management. Manage site info, maintenance, security, & redirects.
 
 == Description ==
 
@@ -591,3 +592,28 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 - Fix:  Settings route
 - Dev: Fix release updater
 - Tweak: Bump dependencies
+
+3.0.53 (2025-10-09)
+
+- Feature: Learn more destination link changed in LLMS section
+
+3.0.54 (2025-11-20)
+
+- Feature: Update readme
+- Fix: Security issue
+
+3.0.55 (2025-12-02)
+
+- Feature: Bump up WP Tested up to Flag
+- Dev: Add code automation workflow
+- Dev: Bump up package versions
+
+3.0.56 (2025-12-09)
+
+- Feature: Add CTA to copy Web2Agent URL to clipboard
+
+3.0.57 (2026-01-06)
+
+- Tweak: Implement PHP Compat WP
+- Feature: Remove MCP settings
+- Fix: LLMS file overwrite
