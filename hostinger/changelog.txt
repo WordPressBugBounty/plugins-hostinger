@@ -508,3 +508,7 @@ Changelog
 - Tweak: Implement PHP Compat WP
 - Feature: Remove MCP settings
 - Fix: LLMS file overwrite
+
+3.0.58 (2026-02-10)
+
+- Fix: Minimum php version notice

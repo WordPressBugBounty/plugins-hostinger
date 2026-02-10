@@ -6,20 +6,21 @@
     "auth:gcp": "gcloud auth application-default login",
     "auth:gca": "npx google-artifactregistry-auth",
     "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "development": "npm run sync:cursor-skills && cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "watch": "npm run development -- --watch",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "dev:vue-frontend": "webpack --mode development --watch",
-    "build:vue-frontend": "webpack --mode production",
-    "prepare": "husky",
+    "production": "npm run sync:cursor-skills && cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev:vue-frontend": "npm run sync:cursor-skills && webpack --mode development --watch",
+    "build:vue-frontend": "npm run sync:cursor-skills && webpack --mode production",
+    "prepare": "npm run sync:cursor-skills && husky",
     "lint:php": "vendor/bin/phpcs",
     "lint:frontend": "eslint vue-frontend/src --config vue-frontend/src/eslint.config.mjs",
     "lint:frontend:fix": "eslint vue-frontend/src --config vue-frontend/src/eslint.config.mjs --fix",
     "test:vue": "vitest --run",
     "test:vue:watch": "vitest --watch",
     "test:vue:ui": "vitest --ui",
-    "test:coverage": "vitest --run --coverage"
+    "test:coverage": "vitest --run --coverage",
+    "sync:cursor-skills": "npx @hostinger/wp-plugin-toolkit sync-cursor-skills"
   },
   "lint-staged": {
     "*.php": [
@@ -30,6 +31,7 @@
     ]
   },
   "devDependencies": {
+    "@hostinger/wp-plugin-toolkit": "^1.1.0",
     "@babel/core": "^7.23.6",
     "@babel/preset-env": "^7.23.6",
     "@eslint/js": "^9.32.0",
