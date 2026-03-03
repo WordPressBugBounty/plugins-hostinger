@@ -394,7 +394,7 @@ const copyAgentUrl = () => {
         :is-disabled="isLLMSSectionDisabled"
         :header-toggle="llmsSectionHeaderToggle"
         :warning="
-          llmstxtFileUserGenerated
+          !isLLMSSectionDisabled && llmstxtFileUserGenerated
             ? translate(
               'hostinger_tools_llms_txt_external_file_found',
             )

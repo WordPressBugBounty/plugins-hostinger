@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, https
 Requires at least: 5.5
 Tested up to: 6.9
 Requires PHP: 8.1
-Stable tag: 3.0.58
+Stable tag: 3.0.59
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Simplified WordPress management. Manage site info, maintenance, security, & redirects.
@@ -621,3 +621,9 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 3.0.58 (2026-02-10)
 
 - Fix: Minimum php version notice
+
+3.0.59 (2026-03-03)
+
+- Fix: XML RPC disable settings not working
+- Fix: Prevent LLMS warning when LLMS is disabled
+- Tweak: Bumps up required php version in readme.txt

@@ -514,3 +514,9 @@ Changelog
 3.0.58 (2026-02-10)
 
 - Fix: Minimum php version notice
+
+3.0.59 (2026-03-03)
+
+- Fix: XML RPC disable settings not working
+- Fix: Prevent LLMS warning when LLMS is disabled
+- Tweak: Bumps up required php version in readme.txt

@@ -14,7 +14,7 @@ class Hooks {
         add_filter( 'xmlrpc_enabled', array( $this, 'check_xmlrpc_enabled' ) );
         add_filter( 'wp_is_application_passwords_available', array( $this, 'check_authentication_password_enabled' ) );
         add_filter( 'wp_headers', array( $this, 'check_pingback' ) );
-        add_filter( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
+        add_action( 'init', array( $this, 'plugins_loaded' ) );
         add_action( 'update_option_woocommerce_coming_soon', array( $this, 'litespeed_flush_cache' ) );
         add_action( 'update_option_woocommerce_store_pages_only', array( $this, 'litespeed_flush_cache' ) );
         add_action( 'upgrader_process_complete', array( $this, 'disable_auth_passwords_on_update' ), 10, 2 );
@@ -136,9 +136,11 @@ class Hooks {
     }
 
     /**
+     * @param bool $enabled
+     *
      * @return bool
      */
-    public function check_xmlrpc_enabled(): bool {
+    public function check_xmlrpc_enabled( bool $enabled ): bool {
         $plugin_settings = new PluginSettings();
         $settings        = $plugin_settings->get_plugin_settings();
 
@@ -146,7 +148,7 @@ class Hooks {
             return false;
         }
 
-        return true;
+        return $enabled;
     }
 
     /**
