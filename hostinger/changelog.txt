@@ -518,3 +518,7 @@ Changelog
 - Fix: XML RPC disable settings not working
 - Fix: Prevent LLMS warning when LLMS is disabled
 - Tweak: Bumps up required php version in readme.txt
+
+3.0.60 (2026-03-10)
+
+- Tweak: Update dependencies
