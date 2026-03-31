@@ -524,3 +524,8 @@ Changelog
 3.0.60 (2026-03-10)
 
 - Tweak: Update dependencies
+
+3.0.61 (2026-03-31)
+
+- Tweak: Update dependencies
+- Dev: Release Workflow Automation
