@@ -71,17 +71,17 @@
         },
         {
             "name": "hostinger/hostinger-wp-helper",
-            "version": "1.0.12",
-            "version_normalized": "1.0.12.0",
+            "version": "1.0.13",
+            "version_normalized": "1.0.13.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:hostinger/hostinger-wp-helper.git",
-                "reference": "f943461ffdd9df60c84e4d808ff1dd967dfa790d"
+                "reference": "0f8c2eb4d9516a0bfe985f09770b66aa6d974136"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/f943461ffdd9df60c84e4d808ff1dd967dfa790d",
-                "reference": "f943461ffdd9df60c84e4d808ff1dd967dfa790d",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/0f8c2eb4d9516a0bfe985f09770b66aa6d974136",
+                "reference": "0f8c2eb4d9516a0bfe985f09770b66aa6d974136",
                 "shasum": ""
             },
             "require": {
@@ -89,10 +89,10 @@
                 "php": ">=8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.6",
+                "phpunit/phpunit": "^9.6.33",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2025-07-28T09:51:26+00:00",
+            "time": "2026-04-02T13:20:06+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -103,7 +103,7 @@
             },
             "description": "A PHP package with core functions for Hostinger WordPress plugins.",
             "support": {
-                "source": "https://github.com/hostinger/hostinger-wp-helper/tree/1.0.12",
+                "source": "https://github.com/hostinger/hostinger-wp-helper/tree/1.0.13",
                 "issues": "https://github.com/hostinger/hostinger-wp-helper/issues"
             },
             "install-path": "../hostinger/hostinger-wp-helper"

@@ -97,7 +97,7 @@ class Utils {
 		$site_url = get_site_url();
 		$site_url = preg_replace( '#^https?://#', '', $site_url );
 		$site_url = preg_replace( '/^www\./', '', $site_url );
-		
+
 		if ( ! empty( $site_url ) && ! empty( $host ) && strpos( $site_url, $host ) === 0 ) {
 			if ( $site_url === $host ) {
 				return $host;
@@ -111,16 +111,28 @@ class Utils {
 
 	// Check if the current domain is a preview domain
 	public function isPreviewDomain(): bool {
-		if ( function_exists( 'getallheaders' ) ) {
-			$headers = getallheaders();
-		}
-
-		if ( isset( $headers['X-Preview-Indicator'] ) && $headers['X-Preview-Indicator'] ) {
+		if ( isset( $_SERVER['HTTP_X_PREVIEW_INDICATOR'] ) && filter_var( $_SERVER['HTTP_X_PREVIEW_INDICATOR'],FILTER_VALIDATE_BOOLEAN ) === true ) {
 			return true;
 		}
 
 		return false;
 	}
+
+    public function getSiteUrlFromDb() {
+        global $wpdb;
+
+        $site_url = $wpdb->get_var(
+            $wpdb->prepare(
+                "SELECT REPLACE(REPLACE(option_value, 'https://', ''), 'http://', '') 
+                    FROM {$wpdb->options} 
+                    WHERE option_name = %s 
+                    LIMIT 1",
+                'siteurl'
+            )
+        );
+
+        return $site_url;
+    }
 
 	// Check if the current page is the specified page
 	public function isThisPage( string $page ): bool {
