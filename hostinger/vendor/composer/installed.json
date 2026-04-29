@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-autoloader.git",
-                "reference": "540e86b3f828e8307ee8ac7a29c00d559a9e0d6f"
+                "reference": "eb6d2fb7544e249df6cfa59cb9b9e88e6cb75263"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/540e86b3f828e8307ee8ac7a29c00d559a9e0d6f",
-                "reference": "540e86b3f828e8307ee8ac7a29c00d559a9e0d6f",
+                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/eb6d2fb7544e249df6cfa59cb9b9e88e6cb75263",
+                "reference": "eb6d2fb7544e249df6cfa59cb9b9e88e6cb75263",
                 "shasum": ""
             },
             "require": {
@@ -20,12 +20,11 @@
                 "php": ">=7.2"
             },
             "require-dev": {
-                "automattic/jetpack-changelogger": "^6.0.14",
-                "automattic/phpunit-select-config": "^1.0.4",
+                "automattic/phpunit-select-config": "^1.0.5-alpha",
                 "composer/composer": "^2.2",
                 "yoast/phpunit-polyfills": "^4.0.0"
             },
-            "time": "2026-03-30T17:53:21+00:00",
+            "time": "2026-04-27T20:58:22+00:00",
             "default-branch": true,
             "type": "composer-plugin",
             "extra": {
@@ -102,10 +101,6 @@
                 }
             },
             "description": "A PHP package with core functions for Hostinger WordPress plugins.",
-            "support": {
-                "source": "https://github.com/hostinger/hostinger-wp-helper/tree/1.0.13",
-                "issues": "https://github.com/hostinger/hostinger-wp-helper/issues"
-            },
             "install-path": "../hostinger/hostinger-wp-helper"
         },
         {
@@ -148,10 +143,6 @@
                 "proprietary"
             ],
             "description": "Package for managing Hostinger WordPress menus and pages.",
-            "support": {
-                "source": "https://github.com/hostinger/hostinger-wp-menu-manager/tree/1.2.20",
-                "issues": "https://github.com/hostinger/hostinger-wp-menu-manager/issues"
-            },
             "install-path": "../hostinger/hostinger-wp-menu-manager"
         },
         {

@@ -3,11 +3,11 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:hostinger/hostinger-wp-menu-manager.git"
+      "url": "https://github.com/hostinger/hostinger-wp-menu-manager.git"
     },
     {
       "type": "vcs",
-      "url": "git@github.com:hostinger/hostinger-wp-helper.git"
+      "url": "https://github.com/hostinger/hostinger-wp-helper.git"
     }
   ],
   "require": {
@@ -41,6 +41,9 @@
   },
   "config": {
     "platform-check": false,
+    "preferred-install": {
+      "*": "dist"
+    },
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "alleyinteractive/composer-wordpress-autoloader": true,
