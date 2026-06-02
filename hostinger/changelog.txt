@@ -465,3 +465,7 @@ Changelog
 - Feature: Enable application passwords
 - Dev: Update Deployment Workflow Automations
 - Tweak: Update dependencies
+
+3.0.67 (2026-06-02)
+
+- Tweak: Update dependencies

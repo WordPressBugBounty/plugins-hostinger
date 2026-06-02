@@ -17,6 +17,28 @@ class Utils {
 		}
 	}
 
+	private static function get_override_site_url(): string {
+		if ( defined( Constants::SITE_URL_OVERRIDE_CONST ) ) {
+			$value = constant( Constants::SITE_URL_OVERRIDE_CONST );
+			if ( is_string( $value ) ) {
+				return $value;
+			}
+		}
+
+		return '';
+	}
+
+	private static function get_override_api_token(): string {
+		if ( defined( Constants::API_TOKEN_OVERRIDE_CONST ) ) {
+			$value = constant( Constants::API_TOKEN_OVERRIDE_CONST );
+			if ( is_string( $value ) ) {
+				return $value;
+			}
+		}
+
+		return '';
+	}
+
     /**
      * @param string $pluginSlug
      *
@@ -79,6 +101,11 @@ class Utils {
 
 	// Get the content of the API token file
 	public static function getApiToken(): string {
+		$override = self::get_override_api_token();
+		if ( ! empty( $override ) ) {
+			return $override;
+		}
+
 		self::getApiTokenPath();
 
 		if ( file_exists( self::$apiTokenFile ) ) {
@@ -94,7 +121,8 @@ class Utils {
 	// Get the host info (domain, subdomain, subdirectory)
 	public function getHostInfo(): string {
 		$host     = $_SERVER['HTTP_HOST'] ?? '';
-		$site_url = get_site_url();
+		$override = self::get_override_site_url();
+		$site_url = ! empty( $override ) ? $override : get_site_url();
 		$site_url = preg_replace( '#^https?://#', '', $site_url );
 		$site_url = preg_replace( '/^www\./', '', $site_url );
 
@@ -119,6 +147,11 @@ class Utils {
 	}
 
     public function getSiteUrlFromDb() {
+        $override = self::get_override_site_url();
+        if ( ! empty( $override ) ) {
+            return preg_replace( '#^https?://#', '', $override );
+        }
+
         global $wpdb;
 
         $site_url = $wpdb->get_var(
@@ -160,7 +193,9 @@ class Utils {
 
 	// Get hPanel domain URL
     public function getHpanelDomainUrl() : string {
-        $parsed_url = parse_url( get_site_url() );
+        $override   = self::get_override_site_url();
+        $source_url = ! empty( $override ) ? $override : get_site_url();
+        $parsed_url = parse_url( $source_url );
         $host       = $parsed_url['host'];
         $directory  = __DIR__;
 

@@ -11,11 +11,11 @@ return array(
 		'path'    => array( $vendorDir . '/hostinger/hostinger-wp-menu-manager/src' )
 	),
 	'Hostinger\\WpHelper\\' => array(
-		'version' => '1.0.13.0',
+		'version' => '1.0.14.0',
 		'path'    => array( $vendorDir . '/hostinger/hostinger-wp-helper/src' )
 	),
 	'Hostinger\\Tests\\' => array(
-		'version' => '1.0.13.0',
+		'version' => '1.0.14.0',
 		'path'    => array( $baseDir . '/tests/phpunit', $vendorDir . '/hostinger/hostinger-wp-helper/tests/phpunit' )
 	),
 	'Hostinger\\' => array(
@@ -23,7 +23,7 @@ return array(
 		'path'    => array( $baseDir . '/includes' )
 	),
 	'Automattic\\Jetpack\\Autoloader\\' => array(
-		'version' => '5.0.17-alpha',
+		'version' => '5.0.18',
 		'path'    => array( $vendorDir . '/automattic/jetpack-autoloader/src' )
 	),
 );

@@ -1,5 +1,5 @@
 PLUGIN_FILE_NAME := "hostinger-wp-helper.zip"
-VERSION := 1.0.12
+VERSION := 1.0.14
 BUILD_DIR := hostinger-wp-helper-$(VERSION)
 ZIP_FILE := $(BUILD_DIR).zip
 
