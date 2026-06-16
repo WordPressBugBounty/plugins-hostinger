@@ -469,3 +469,7 @@ Changelog
 3.0.67 (2026-06-02)
 
 - Tweak: Update dependencies
+
+3.0.68 (2026-06-16)
+
+- Fix: Llms.txt generation from hPanel
