@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, https
 Requires at least: 5.5
 Tested up to: 6.9
 Requires PHP: 8.1
-Stable tag: 3.0.68
+Stable tag: 3.0.69
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Simplified WordPress management. Manage site info, maintenance, security, & redirects.
@@ -667,3 +667,7 @@ Automatic updates should work smoothly, but we still recommend you back up your 
 3.0.68 (2026-06-16)
 
 - Fix: Llms.txt generation from hPanel
+
+3.0.69 (2026-06-23)
+
+- Version bump: PATCH
