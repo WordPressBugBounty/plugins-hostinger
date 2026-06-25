@@ -477,3 +477,7 @@ Changelog
 3.0.69 (2026-06-23)
 
 - Version bump: PATCH
+
+3.0.70 (2026-06-25)
+
+- Fix: Update dependencies
