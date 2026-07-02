@@ -38,10 +38,11 @@ class Assets
     /**
      * @return void
      */
-    public function enqueueAdminAssets(): void {
+    public function enqueueAdminAssets(): void
+    {
         $defaultVersion = '1.0.0';
 
-        if ( $this->isHostingerMenuPage() ) {
+        if ($this->isHostingerMenuPage()) {
             $pluginInfo   = $this->manager->getPluginInfo();
             $jsScriptPath = __DIR__ . '/../assets/js/menus.min.js';
             $cssStylePath = __DIR__ . '/../assets/css/style.min.css';
@@ -51,7 +52,8 @@ class Assets
                 $jsVersion = filemtime($jsScriptPath) ?: $jsVersion;
             }
 
-            wp_enqueue_script( 'hostinger_menu_scripts',
+            wp_enqueue_script(
+                'hostinger_menu_scripts',
                 $pluginInfo . $this->assetsPath . '/js/menus.min.js',
                 [ 'jquery' ],
                 $jsVersion,
@@ -63,7 +65,8 @@ class Assets
                 $cssVersion = filemtime($cssStylePath) ?: $cssVersion;
             }
 
-            wp_enqueue_style( 'hostinger_menu_styles',
+            wp_enqueue_style(
+                'hostinger_menu_styles',
                 $pluginInfo . $this->assetsPath . '/css/style.min.css',
                 [],
                 $cssVersion
@@ -71,15 +74,15 @@ class Assets
 
             // Hide notices and badges in Hostinger menu pages.
             $hide_notices = '.notice { display: none !important; } .hostinger-notice { display: block !important; }';
-            wp_add_inline_style( 'hostinger_menu_styles', $hide_notices );
+            wp_add_inline_style('hostinger_menu_styles', $hide_notices);
 
-            if ( Utils::isPluginActive( 'wpforms' ) ) {
+            if (Utils::isPluginActive('wpforms')) {
                 $hide_wp_forms_counter = '.wp-admin #wpadminbar .wpforms-menu-notification-counter { display: none !important; }';
-                wp_add_inline_style( 'hostinger_menu_styles', $hide_wp_forms_counter );
+                wp_add_inline_style('hostinger_menu_styles', $hide_wp_forms_counter);
             }
-            if ( Utils::isPluginActive( 'googleanalytics' ) ) {
+            if (Utils::isPluginActive('googleanalytics')) {
                 $hide_monsterinsights_notification = '.wp-admin .monsterinsights-menu-notification-indicator { display: none !important; }';
-                wp_add_inline_style( 'hostinger_menu_styles', $hide_monsterinsights_notification );
+                wp_add_inline_style('hostinger_menu_styles', $hide_monsterinsights_notification);
             }
         }
     }

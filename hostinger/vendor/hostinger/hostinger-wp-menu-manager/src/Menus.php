@@ -45,7 +45,7 @@ class Menus
      */
     public function modifyAdminBar(WP_Admin_Bar $bar): void
     {
-        if (!is_user_logged_in()){
+        if (!is_user_logged_in()) {
             return;
         }
 
@@ -63,21 +63,21 @@ class Menus
                 'title'  => $hostinger_icon . esc_html__('Hostinger', 'hostinger-wp-menu-package'),
             ]);
 
-	        foreach ($menu_items as $menu_item) {
-		        $menu_item_data = [
-			        'id'     => $menu_item['id'],
-			        'parent' => 'hostinger_admin_bar',
-			        'group'  => null,
-			        'title'  => $menu_item['title'],
-			        'href'   => $menu_item['href'],
-		        ];
+            foreach ($menu_items as $menu_item) {
+                $menu_item_data = [
+                    'id'     => $menu_item['id'],
+                    'parent' => 'hostinger_admin_bar',
+                    'group'  => null,
+                    'title'  => $menu_item['title'],
+                    'href'   => $menu_item['href'],
+                ];
 
-		        if( isset( $menu_item['meta'] ) ){
-			        $menu_item_data['meta'] = $menu_item['meta'];
-		        }
+                if (isset($menu_item['meta'])) {
+                    $menu_item_data['meta'] = $menu_item['meta'];
+                }
 
-		        $bar->add_menu($menu_item_data);
-	        }
+                $bar->add_menu($menu_item_data);
+            }
         }
     }
 
@@ -89,7 +89,9 @@ class Menus
     public function addMenuClass(mixed $classes): mixed
     {
 
-        if (!is_string( $classes)) return $classes;
+        if (!is_string($classes)) {
+            return $classes;
+        }
 
         $classes .= ' hostinger-hide-main-menu-item';
 

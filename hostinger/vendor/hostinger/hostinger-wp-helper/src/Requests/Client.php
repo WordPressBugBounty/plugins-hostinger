@@ -2,60 +2,68 @@
 
 namespace Hostinger\WpHelper\Requests;
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-class Client {
+class Client
+{
     private string $api_url;
     private array $default_headers;
 
-    public function __construct( $api_url, $default_headers = array() ) {
+    public function __construct($api_url, $default_headers = array())
+    {
         $this->api_url         = $api_url;
         $this->default_headers = $default_headers;
     }
 
-    public function get_api_url(): string {
+    public function get_api_url(): string
+    {
         return $this->api_url;
     }
 
-    public function set_api_url( string $api_url ): void {
+    public function set_api_url(string $api_url): void
+    {
         $this->api_url = $api_url;
     }
 
-    public function get_default_headers(): array {
+    public function get_default_headers(): array
+    {
         return $this->default_headers;
     }
 
-    public function set_default_headers( array $default_headers ): void {
+    public function set_default_headers(array $default_headers): void
+    {
         $this->default_headers = $default_headers;
     }
 
-    public function get( $endpoint, $params = array(), $headers = array(), $timeout = 120 ) {
+    public function get($endpoint, $params = array(), $headers = array(), $timeout = 120)
+    {
         $url          = $this->api_url . $endpoint;
         $request_args = array(
             'method'  => 'GET',
-            'headers' => array_merge( $this->default_headers, $headers ),
+            'headers' => array_merge($this->default_headers, $headers),
             'timeout' => $timeout,
         );
 
-        if ( ! empty( $params ) ) {
-            $url = add_query_arg( $params, $url );
+        if (! empty($params)) {
+            $url = add_query_arg($params, $url);
         }
 
-        $response = wp_remote_get( $url, $request_args );
+        $response = wp_remote_get($url, $request_args);
 
         return $response;
     }
 
-    public function post( $endpoint, $params = array(), $headers = array(), $timeout = 120 ) {
+    public function post($endpoint, $params = array(), $headers = array(), $timeout = 120)
+    {
         $url          = $this->api_url . $endpoint;
         $request_args = array(
             'method'  => 'POST',
             'timeout' => $timeout,
-            'headers' => array_merge( $this->default_headers, $headers ),
+            'headers' => array_merge($this->default_headers, $headers),
             'body'    => $params,
         );
 
-        $response = wp_remote_post( $url, $request_args );
+        $response = wp_remote_post($url, $request_args);
 
         return $response;
     }

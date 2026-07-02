@@ -70,17 +70,17 @@
         },
         {
             "name": "hostinger/hostinger-wp-helper",
-            "version": "1.0.14",
-            "version_normalized": "1.0.14.0",
+            "version": "1.0.15",
+            "version_normalized": "1.0.15.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:hostinger/hostinger-wp-helper.git",
-                "reference": "ad885039a7fd2e7b555a8ebe32b3c6e02cb35494"
+                "url": "https://github.com/hostinger/hostinger-wp-helper.git",
+                "reference": "4ed53bfa1c2ad4e8d0662a416e760428a93a994b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/ad885039a7fd2e7b555a8ebe32b3c6e02cb35494",
-                "reference": "ad885039a7fd2e7b555a8ebe32b3c6e02cb35494",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/4ed53bfa1c2ad4e8d0662a416e760428a93a994b",
+                "reference": "4ed53bfa1c2ad4e8d0662a416e760428a93a994b",
                 "shasum": ""
             },
             "require": {
@@ -88,10 +88,12 @@
                 "php": ">=8.0"
             },
             "require-dev": {
+                "10up/wp_mock": "^1.1",
                 "phpunit/phpunit": "^9.6.33",
+                "squizlabs/php_codesniffer": "^4.0",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2026-05-07T07:07:58+00:00",
+            "time": "2026-07-01T09:43:05+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -100,26 +102,25 @@
                     "Hostinger\\Tests\\": "tests/phpunit"
                 }
             },
+            "license": [
+                "proprietary"
+            ],
             "description": "A PHP package with core functions for Hostinger WordPress plugins.",
-            "support": {
-                "source": "https://github.com/hostinger/hostinger-wp-helper/tree/1.0.14",
-                "issues": "https://github.com/hostinger/hostinger-wp-helper/issues"
-            },
             "install-path": "../hostinger/hostinger-wp-helper"
         },
         {
             "name": "hostinger/hostinger-wp-menu-manager",
-            "version": "1.2.20",
-            "version_normalized": "1.2.20.0",
+            "version": "1.2.23",
+            "version_normalized": "1.2.23.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:hostinger/hostinger-wp-menu-manager.git",
-                "reference": "937e866a6c7db2ae9e9549a8f57c1ff922117ed2"
+                "url": "https://github.com/hostinger/hostinger-wp-menu-manager.git",
+                "reference": "c97a06dc717769541b6fc2524474eb06103aefc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/937e866a6c7db2ae9e9549a8f57c1ff922117ed2",
-                "reference": "937e866a6c7db2ae9e9549a8f57c1ff922117ed2",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/c97a06dc717769541b6fc2524474eb06103aefc9",
+                "reference": "c97a06dc717769541b6fc2524474eb06103aefc9",
                 "shasum": ""
             },
             "require": {
@@ -130,7 +131,7 @@
                 "squizlabs/php_codesniffer": "^3.0",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2025-08-18T12:17:45+00:00",
+            "time": "2026-07-02T06:49:20+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {

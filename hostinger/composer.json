@@ -37,7 +37,9 @@
     "phpunit/php-code-coverage": "^9.2"
   },
   "scripts": {
-    "phpunit": "phpunit"
+    "phpunit": "phpunit",
+    "post-install-cmd": "bash bin/cleanup-hostinger-vendor.sh",
+    "post-update-cmd": "bash bin/cleanup-hostinger-vendor.sh"
   },
   "config": {
     "platform-check": false,
