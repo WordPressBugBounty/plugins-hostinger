@@ -1,6 +1,10 @@
 Changelog
 =========
 
+3.0.72 (2026-07-07)
+
+- Fix: Update dependencies
+
 3.0.71 (2026-07-02)
 
 - Fix: Update dependencies
@@ -11,7 +15,7 @@ Changelog
 
 3.0.69 (2026-06-23)
 
-- Version bump: PATCH
+- Fix: Update dependencies
 
 3.0.68 (2026-06-16)
 
