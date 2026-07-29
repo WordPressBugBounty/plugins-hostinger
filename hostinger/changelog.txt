@@ -1,6 +1,10 @@
 Changelog
 =========
 
+3.0.73 (2026-07-29)
+
+- Fix: Security dependencies
+
 3.0.72 (2026-07-07)
 
 - Fix: Update dependencies

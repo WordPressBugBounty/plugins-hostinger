@@ -3,7 +3,7 @@
         'name' => 'hostinger/hostinger',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '3b2e518a50eda6380fa016af27ddb310e6a5b55d',
+        'reference' => '780cd997ac22a34fe205136b46ec9b77f6780e01',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'automattic/jetpack-autoloader' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '2fb6eba161b990cfb1fe92486ed6c12508a33598',
+            'reference' => '4330f07be52c218d067ba1793964533c68250029',
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../automattic/jetpack-autoloader',
             'aliases' => array(
@@ -24,7 +24,7 @@
         'hostinger/hostinger' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '3b2e518a50eda6380fa016af27ddb310e6a5b55d',
+            'reference' => '780cd997ac22a34fe205136b46ec9b77f6780e01',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -40,9 +40,9 @@
             'dev_requirement' => false,
         ),
         'hostinger/hostinger-wp-menu-manager' => array(
-            'pretty_version' => '1.2.24',
-            'version' => '1.2.24.0',
-            'reference' => 'a8af8373c2714338124ea33abc7785c64f482fe8',
+            'pretty_version' => '1.2.27',
+            'version' => '1.2.27.0',
+            'reference' => '2b3c89e95a62f1123a9ed95e0356ec2446776cb5',
             'type' => 'library',
             'install_path' => __DIR__ . '/../hostinger/hostinger-wp-menu-manager',
             'aliases' => array(),

@@ -7,7 +7,7 @@ $baseDir   = dirname($vendorDir);
 
 return array(
 	'Hostinger\\WpMenuManager\\' => array(
-		'version' => '1.2.24.0',
+		'version' => '1.2.27.0',
 		'path'    => array( $vendorDir . '/hostinger/hostinger-wp-menu-manager/src' )
 	),
 	'Hostinger\\WpHelper\\' => array(
@@ -23,7 +23,7 @@ return array(
 		'path'    => array( $baseDir . '/includes' )
 	),
 	'Automattic\\Jetpack\\Autoloader\\' => array(
-		'version' => '5.0.20',
+		'version' => '5.0.21',
 		'path'    => array( $vendorDir . '/automattic/jetpack-autoloader/src' )
 	),
 );
