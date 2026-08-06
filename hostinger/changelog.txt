@@ -1,6 +1,10 @@
 Changelog
 =========
 
+3.0.74 (2026-08-06)
+
+- Feature: Add custom application password message
+
 3.0.73 (2026-07-29)
 
 - Fix: Security dependencies
