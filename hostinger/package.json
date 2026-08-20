@@ -91,6 +91,8 @@
     "last 2 versions"
   ],
   "overrides": {
-    "serialize-javascript": "^7.0.3"
+    "serialize-javascript": "^7.0.3",
+    "brace-expansion@1": "^1.1.12",
+    "brace-expansion@2": "^2.0.2"
   }
 }
