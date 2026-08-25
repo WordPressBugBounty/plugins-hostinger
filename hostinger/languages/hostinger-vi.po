@@ -34,8 +34,8 @@ msgstr "Công cụ Trí tuệ Nhân tạo"
 
 #: includes/Admin/Assets.php:184
 #, fuzzy
-msgid "Allow Kodee to manage your site"
-msgstr "Cho phép Kodee quản lý trang web của bạn"
+msgid "Allow Hostinger Agent to manage your site"
+msgstr "Cho phép Hostinger Agent quản lý trang web của bạn"
 
 #: includes/Admin/Assets.php:163
 #, fuzzy
@@ -211,11 +211,11 @@ msgstr ""
 #: includes/Admin/Assets.php:185
 #, fuzzy
 msgid ""
-"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"Let Hostinger Agent manage your site on your behalf. This allows Hostinger Agent to perform "
 "actions like creating pages or updating settings. We will install and pre-"
 "configure the WordPress MCP plugin for you."
 msgstr ""
-"Hãy để Kodee quản lý trang web của bạn thay cho bạn. Điều này cho phép Kodee "
+"Hãy để Hostinger Agent quản lý trang web của bạn thay cho bạn. Điều này cho phép Hostinger Agent "
 "thực hiện các tác vụ như tạo trang hoặc cập nhật cài đặt. Chúng tôi sẽ cài "
 "đặt và cấu hình sẵn plugin WordPress MCP cho bạn."
 

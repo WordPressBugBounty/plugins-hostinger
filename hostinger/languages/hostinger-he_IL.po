@@ -34,8 +34,8 @@ msgstr "כלים מבוססי בינה מלאכותית"
 
 #: includes/Admin/Assets.php:184
 #, fuzzy
-msgid "Allow Kodee to manage your site"
-msgstr "אפשר ל-Kodee לנהל את האתר שלך"
+msgid "Allow Hostinger Agent to manage your site"
+msgstr "אפשר ל-Hostinger Agent לנהל את האתר שלך"
 
 #: includes/Admin/Assets.php:163
 #, fuzzy
@@ -203,11 +203,11 @@ msgstr "תן ל-AI לחקור, להבין ולתקשר עם אתר הוורדפ�
 #: includes/Admin/Assets.php:185
 #, fuzzy
 msgid ""
-"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"Let Hostinger Agent manage your site on your behalf. This allows Hostinger Agent to perform "
 "actions like creating pages or updating settings. We will install and pre-"
 "configure the WordPress MCP plugin for you."
 msgstr ""
-"תן ל-Kodee לנהל את האתר שלך בשמך. זה יאפשר ל-Kodee לבצע פעולות כמו יצירת "
+"תן ל-Hostinger Agent לנהל את האתר שלך בשמך. זה יאפשר ל-Hostinger Agent לבצע פעולות כמו יצירת "
 "דפים או עדכון הגדרות. אנו נתקין ונקבע מראש את תוסף WordPress MCP עבורך."
 
 #: includes/Admin/Assets.php:181

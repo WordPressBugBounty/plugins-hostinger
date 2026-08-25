@@ -32,8 +32,8 @@ msgstr "KI-Tools"
 
 #: includes/Admin/Assets.php:184
 #, fuzzy
-msgid "Allow Kodee to manage your site"
-msgstr "Erlaube Kodee, deine Website zu verwalten"
+msgid "Allow Hostinger Agent to manage your site"
+msgstr "Erlaube Hostinger Agent, deine Website zu verwalten"
 
 #: includes/Admin/Assets.php:163
 #, fuzzy
@@ -209,11 +209,11 @@ msgstr ""
 #: includes/Admin/Assets.php:185
 #, fuzzy
 msgid ""
-"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"Let Hostinger Agent manage your site on your behalf. This allows Hostinger Agent to perform "
 "actions like creating pages or updating settings. We will install and pre-"
 "configure the WordPress MCP plugin for you."
 msgstr ""
-"Lass Kodee deine Website in deinem Namen verwalten. Dadurch kann Kodee "
+"Lass Hostinger Agent deine Website in deinem Namen verwalten. Dadurch kann Hostinger Agent "
 "Aktionen wie das Erstellen von Seiten oder das Aktualisieren von "
 "Einstellungen durchführen. Wir werden das WordPress MCP-Plugin für dich "
 "installieren und vorkonfigurieren."

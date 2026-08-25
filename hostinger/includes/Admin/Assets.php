@@ -166,7 +166,7 @@ class Assets {
                     'bypass_link_reset_success'                               => __( 'Link has been reset', 'hostinger' ),
                     'hostinger_tools_settings_updated'                        => __( 'Your settings have been updated', 'hostinger' ),
                     'hostinger_tools_settings_error'                          => __( 'It was an error updating your settings', 'hostinger' ),
-                    'hostinger_tools_mcp_description'                         => __( 'Let Kodee manage your site on your behalf. This allows Kodee to perform actions like creating pages or updating settings. We will install and pre-configure the WordPress MCP plugin for you.', 'hostinger' ),
+                    'hostinger_tools_mcp_description'                         => __( 'Let Hostinger Agent manage your site on your behalf. This allows Hostinger Agent to perform actions like creating pages or updating settings. We will install and pre-configure the WordPress MCP plugin for you.', 'hostinger' ),
                     'hostinger_tools_copied_successfully'                     => __( 'Copied successfully', 'hostinger' ),
                     'hostinger_tools_text_copied_successfully'                => __( 'Text has been copied successfully', 'hostinger' ),
                     'hostinger_tools_free_domain_llm_unavailable'             => __( 'LLM optimization features are not available for temporary subdomains. Connect a domain to unlock these features.', 'hostinger' ),

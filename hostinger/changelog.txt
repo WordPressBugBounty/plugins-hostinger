@@ -1,6 +1,10 @@
 Changelog
 =========
 
+3.0.77 (2026-08-25)
+
+- Tweak: Rename Kodee to Hostinger Agent
+
 3.0.76 (2026-08-20)
 
 - Tweak: Bump Tested Up to 7.1

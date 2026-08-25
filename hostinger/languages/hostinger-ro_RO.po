@@ -38,8 +38,8 @@ msgstr "Instrumente AI"
 
 #: includes/Admin/Assets.php:184
 #, fuzzy
-msgid "Allow Kodee to manage your site"
-msgstr "Permiteți-i lui Kodee să vă administreze site-ul"
+msgid "Allow Hostinger Agent to manage your site"
+msgstr "Permiteți-i lui Hostinger Agent să vă administreze site-ul"
 
 #: includes/Admin/Assets.php:163
 #, fuzzy
@@ -217,12 +217,12 @@ msgstr ""
 #: includes/Admin/Assets.php:185
 #, fuzzy
 msgid ""
-"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"Let Hostinger Agent manage your site on your behalf. This allows Hostinger Agent to perform "
 "actions like creating pages or updating settings. We will install and pre-"
 "configure the WordPress MCP plugin for you."
 msgstr ""
-"Permiteți-i lui Kodee să vă gestioneze site-ul în numele dumneavoastră. "
-"Acest lucru îi permite lui Kodee să efectueze acțiuni precum crearea de "
+"Permiteți-i lui Hostinger Agent să vă gestioneze site-ul în numele dumneavoastră. "
+"Acest lucru îi permite lui Hostinger Agent să efectueze acțiuni precum crearea de "
 "pagini sau actualizarea setărilor. Vom instala și pre-configura pluginul "
 "WordPress MCP pentru dvs."
 

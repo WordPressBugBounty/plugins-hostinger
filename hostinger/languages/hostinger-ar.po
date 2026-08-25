@@ -32,7 +32,7 @@ msgstr "أدوات الذكاء الاصطناعي"
 
 #: includes/Admin/Assets.php:184
 #, fuzzy
-msgid "Allow Kodee to manage your site"
+msgid "Allow Hostinger Agent to manage your site"
 msgstr "اسمح لكودي بإدارة موقعك"
 
 #: includes/Admin/Assets.php:163
@@ -204,11 +204,11 @@ msgstr "اسمح للذكاء الاصطناعي باستكشاف موقعك ع�
 #: includes/Admin/Assets.php:185
 #, fuzzy
 msgid ""
-"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"Let Hostinger Agent manage your site on your behalf. This allows Hostinger Agent to perform "
 "actions like creating pages or updating settings. We will install and pre-"
 "configure the WordPress MCP plugin for you."
 msgstr ""
-"دع Kodee يدير موقعك بالنيابة عنك. يتيح ذلك لكودي تنفيذ إجراءات مثل إنشاء "
+"دع Hostinger Agent يدير موقعك بالنيابة عنك. يتيح ذلك لكودي تنفيذ إجراءات مثل إنشاء "
 "الصفحات أو تحديث الإعدادات. سنقوم بتثبيت إضافة ووردبريس MCP وتهيئتها مسبقًا "
 "لك."
 

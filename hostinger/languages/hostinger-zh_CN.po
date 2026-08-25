@@ -32,8 +32,8 @@ msgstr "人工智能工具"
 
 #: includes/Admin/Assets.php:184
 #, fuzzy
-msgid "Allow Kodee to manage your site"
-msgstr "允许 Kodee 管理您的网站"
+msgid "Allow Hostinger Agent to manage your site"
+msgstr "允许 Hostinger Agent 管理您的网站"
 
 #: includes/Admin/Assets.php:163
 #, fuzzy
@@ -201,11 +201,11 @@ msgstr "让人工智能探索、理解您的 WordPress 网站并与之互动"
 #: includes/Admin/Assets.php:185
 #, fuzzy
 msgid ""
-"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"Let Hostinger Agent manage your site on your behalf. This allows Hostinger Agent to perform "
 "actions like creating pages or updating settings. We will install and pre-"
 "configure the WordPress MCP plugin for you."
 msgstr ""
-"让 Kodee 代表您管理网站。这样，Kodee 就可以执行创建页面或更新设置等操作。我们将为您安装和预配置 WordPress MCP 插件。"
+"让 Hostinger Agent 代表您管理网站。这样，Hostinger Agent 就可以执行创建页面或更新设置等操作。我们将为您安装和预配置 WordPress MCP 插件。"
 
 #: includes/Admin/Assets.php:181
 msgid "Link has been reset"

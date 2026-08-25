@@ -27,8 +27,8 @@ msgid "AI Tools"
 msgstr "Ferramentas de IA"
 
 #: includes/Admin/Assets.php:184
-msgid "Allow Kodee to manage your site"
-msgstr "Permitir que o Kodee gerencie seu site"
+msgid "Allow Hostinger Agent to manage your site"
+msgstr "Permitir que o Hostinger Agent gerencie seu site"
 
 #: includes/Admin/Assets.php:163
 msgid ""
@@ -194,11 +194,11 @@ msgstr ""
 
 #: includes/Admin/Assets.php:185
 msgid ""
-"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"Let Hostinger Agent manage your site on your behalf. This allows Hostinger Agent to perform "
 "actions like creating pages or updating settings. We will install and pre-"
 "configure the WordPress MCP plugin for you."
 msgstr ""
-"Permita que o Kodee gerencie seu site em seu nome. Isso permite que o Kodee "
+"Permita que o Hostinger Agent gerencie seu site em seu nome. Isso permite que o Hostinger Agent "
 "execute ações como a criação de páginas ou a atualização de configurações. "
 "Iremos instalar e pré-configurar o plugin de MCP do WordPress para você."
 

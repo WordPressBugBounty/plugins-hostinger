@@ -35,8 +35,8 @@ msgstr "Yapay Zeka Araçları"
 
 #: includes/Admin/Assets.php:184
 #, fuzzy
-msgid "Allow Kodee to manage your site"
-msgstr "Kodee'nin sitenizi yönetmesine izin verin"
+msgid "Allow Hostinger Agent to manage your site"
+msgstr "Hostinger Agent'nin sitenizi yönetmesine izin verin"
 
 #: includes/Admin/Assets.php:163
 #, fuzzy
@@ -217,11 +217,11 @@ msgstr ""
 #: includes/Admin/Assets.php:185
 #, fuzzy
 msgid ""
-"Let Kodee manage your site on your behalf. This allows Kodee to perform "
+"Let Hostinger Agent manage your site on your behalf. This allows Hostinger Agent to perform "
 "actions like creating pages or updating settings. We will install and pre-"
 "configure the WordPress MCP plugin for you."
 msgstr ""
-"Kodee'nin sitenizi sizin adınıza yönetmesine izin verin. Bu, Kodee'nin sayfa "
+"Hostinger Agent'nin sitenizi sizin adınıza yönetmesine izin verin. Bu, Hostinger Agent'nin sayfa "
 "oluşturma veya ayarları güncelleme gibi eylemleri gerçekleştirmesine olanak "
 "tanır. WordPress MCP eklentisini sizin için kuracak ve önceden "
 "yapılandıracağız."
