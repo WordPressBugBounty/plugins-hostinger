@@ -2,17 +2,17 @@
     "packages": [
         {
             "name": "automattic/jetpack-autoloader",
-            "version": "dev-trunk",
-            "version_normalized": "dev-trunk",
+            "version": "v5.0.23",
+            "version_normalized": "5.0.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-autoloader.git",
-                "reference": "9986e477ab1a3f611a0e07746708ebe4837dbb8b"
+                "reference": "d11b2d621035dcb920abce8ae09bebd5da5f9ff8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/9986e477ab1a3f611a0e07746708ebe4837dbb8b",
-                "reference": "9986e477ab1a3f611a0e07746708ebe4837dbb8b",
+                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/d11b2d621035dcb920abce8ae09bebd5da5f9ff8",
+                "reference": "d11b2d621035dcb920abce8ae09bebd5da5f9ff8",
                 "shasum": ""
             },
             "require": {
@@ -24,8 +24,7 @@
                 "composer/composer": "^2.2",
                 "yoast/phpunit-polyfills": "^4.0.0"
             },
-            "time": "2026-08-11T20:27:44+00:00",
-            "default-branch": true,
+            "time": "2026-08-11T18:32:06+00:00",
             "type": "composer-plugin",
             "extra": {
                 "class": "Automattic\\Jetpack\\Autoloader\\CustomAutoloaderPlugin",
@@ -64,23 +63,23 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/Automattic/jetpack-autoloader/tree/trunk"
+                "source": "https://github.com/Automattic/jetpack-autoloader/tree/v5.0.23"
             },
             "install-path": "../automattic/jetpack-autoloader"
         },
         {
             "name": "hostinger/hostinger-wp-helper",
-            "version": "1.0.15",
-            "version_normalized": "1.0.15.0",
+            "version": "1.0.17",
+            "version_normalized": "1.0.17.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hostinger/hostinger-wp-helper.git",
-                "reference": "4ed53bfa1c2ad4e8d0662a416e760428a93a994b"
+                "url": "git@github.com:hostinger/hostinger-wp-helper.git",
+                "reference": "2e008591625276b76a0113ff442cfcf04e94007f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/4ed53bfa1c2ad4e8d0662a416e760428a93a994b",
-                "reference": "4ed53bfa1c2ad4e8d0662a416e760428a93a994b",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/2e008591625276b76a0113ff442cfcf04e94007f",
+                "reference": "2e008591625276b76a0113ff442cfcf04e94007f",
                 "shasum": ""
             },
             "require": {
@@ -93,7 +92,7 @@
                 "squizlabs/php_codesniffer": "^4.0",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2026-07-01T09:43:05+00:00",
+            "time": "2026-09-16T16:50:27+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -106,21 +105,25 @@
                 "proprietary"
             ],
             "description": "A PHP package with core functions for Hostinger WordPress plugins.",
+            "support": {
+                "source": "https://github.com/hostinger/hostinger-wp-helper/tree/1.0.17",
+                "issues": "https://github.com/hostinger/hostinger-wp-helper/issues"
+            },
             "install-path": "../hostinger/hostinger-wp-helper"
         },
         {
             "name": "hostinger/hostinger-wp-menu-manager",
-            "version": "1.2.29",
-            "version_normalized": "1.2.29.0",
+            "version": "1.2.33",
+            "version_normalized": "1.2.33.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hostinger/hostinger-wp-menu-manager.git",
-                "reference": "caa9b2aa6bf3ebf48788aa6fc4604d557cc99d73"
+                "url": "git@github.com:hostinger/hostinger-wp-menu-manager.git",
+                "reference": "56f440c35c5ee7c0e543159153966705dcf05cb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/caa9b2aa6bf3ebf48788aa6fc4604d557cc99d73",
-                "reference": "caa9b2aa6bf3ebf48788aa6fc4604d557cc99d73",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/56f440c35c5ee7c0e543159153966705dcf05cb4",
+                "reference": "56f440c35c5ee7c0e543159153966705dcf05cb4",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +134,7 @@
                 "squizlabs/php_codesniffer": "^3.0",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2026-08-18T07:18:38+00:00",
+            "time": "2026-09-17T07:03:40+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -148,6 +151,10 @@
                 "proprietary"
             ],
             "description": "Package for managing Hostinger WordPress menus and pages.",
+            "support": {
+                "source": "https://github.com/hostinger/hostinger-wp-menu-manager/tree/1.2.33",
+                "issues": "https://github.com/hostinger/hostinger-wp-menu-manager/issues"
+            },
             "install-path": "../hostinger/hostinger-wp-menu-manager"
         },
         {

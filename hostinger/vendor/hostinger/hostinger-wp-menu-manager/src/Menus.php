@@ -151,15 +151,10 @@ class Menus
      */
     public static function renderMenuNavigation(): string
     {
-        ob_start();
+        // Old menu navigation removed.
+        // Should cleanup this function in later versions.
 
-        require_once __DIR__ . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'menu.php';
-
-        $content = ob_get_contents();
-
-        ob_end_clean();
-
-        return $content;
+        return '';
     }
 
     /**

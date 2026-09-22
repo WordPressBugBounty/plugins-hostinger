@@ -202,7 +202,7 @@ class Utils
         return false;
     }
 
-    // Get hPanel domain URL
+    // Get Hostinger dashboard domain URL
     public function getHpanelDomainUrl(): string
     {
         $override   = self::get_override_site_url();

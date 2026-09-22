@@ -1,6 +1,10 @@
 Changelog
 =========
 
+3.0.78 (2026-09-22)
+
+- Feature: Link to llms.txt from the public site head
+
 3.0.77 (2026-08-25)
 
 - Tweak: Rename Kodee to Hostinger Agent
