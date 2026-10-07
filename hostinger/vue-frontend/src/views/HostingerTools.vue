@@ -23,7 +23,7 @@ import {
 } from "@/utils/helpers";
 import {toast} from "vue3-toastify";
 
-const { fetchSettingsData, updateSettingsData, regenerateByPassCode } =
+const { fetchSettingsData, updateSettingsData, regenerateByPassCode, clearCache } =
 	useSettingsStore();
 
 const { settingsData } = storeToRefs(useSettingsStore());
@@ -40,6 +40,8 @@ const isPageLoading = ref(false);
 const HOSTINGER_FREE_DOMAINS = /hostingersite\.com|hostinger\.dev/;
 
 const llmMasterToggle = ref(false);
+
+const isClearingCache = ref(false);
 
 const isLLMSSectionDisabled = computed(
 	() => isFreeDomain.value || !isHostingerPlatform.value
@@ -75,6 +77,23 @@ const maintenanceSection = computed(() => [
 		copyLink: settingsData.value?.bypassCode
 			? `${siteUrl}/?bypass_code=${settingsData.value.bypassCode}`
 			: undefined
+	}
+]);
+
+const isCacheSectionDisabled = computed(() => !isHostingerPlatform.value);
+
+const performanceSection = computed(() => [
+	{
+		id: SECTION_ID.CLEAR_CACHE,
+		title: translate("hostinger_tools_clear_cache"),
+		description: translate("hostinger_tools_clear_cache_description"),
+		isVisible: true,
+		sideButton: {
+			text: translate("hostinger_tools_clear_cache_cta"),
+			isLoading: isClearingCache.value,
+			isDisabled: isCacheSectionDisabled.value,
+			onClick: onClearCache
+		}
 	}
 ]);
 
@@ -355,6 +374,14 @@ const onUpdateSettings = async (value: boolean, item: SectionItem) => {
 	}
 };
 
+const onClearCache = async () => {
+	if (isClearingCache.value) return;
+
+	isClearingCache.value = true;
+	await clearCache();
+	isClearingCache.value = false;
+};
+
 const copyAgentUrl = () => {
 	const domain = location.host;
 	const agentUrl = `websites-agents.hostinger.com/${domain}/mcp`;
@@ -456,6 +483,13 @@ const copyAgentUrl = () => {
         :title="translate('hostinger_tools_redirects')"
         :section-items="redirectsSection"
         @save-section="onSaveSection"
+      />
+
+      <SectionCard
+        :is-loading="isPageLoading"
+        :title="translate('hostinger_tools_performance')"
+        :section-items="performanceSection"
+        :is-disabled="isCacheSectionDisabled"
       />
     </div>
   </div>

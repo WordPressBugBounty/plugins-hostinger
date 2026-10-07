@@ -68,10 +68,31 @@ export const useSettingsStore = defineStore(
 			return true;
 		};
 
+		const clearCache = async (): Promise<boolean> => {
+			const [{ data }, err] = await generalDataRepo.deleteCache();
+
+			if (err) {
+				toast.error(translate("hostinger_tools_clear_cache_error"));
+
+				return false;
+			}
+
+			if (data?.skipped) {
+				toast.info(data.message);
+
+				return false;
+			}
+
+			toast.success(translate("hostinger_tools_clear_cache_success"));
+
+			return true;
+		};
+
 		return {
 			fetchSettingsData,
 			updateSettingsData,
 			regenerateByPassCode,
+			clearCache,
 			settingsData
 		};
 	},

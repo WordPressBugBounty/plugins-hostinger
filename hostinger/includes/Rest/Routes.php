@@ -15,11 +15,15 @@ class Routes {
      */
     private SettingsRoutes $settings_routes;
 
+    private CacheRoutes $cache_routes;
+
     /**
      * @param SettingsRoutes $settings_routes Settings route class.
+     * @param CacheRoutes    $cache_routes    Cache route class.
      */
-    public function __construct( SettingsRoutes $settings_routes ) {
+    public function __construct( SettingsRoutes $settings_routes, CacheRoutes $cache_routes ) {
         $this->settings_routes = $settings_routes;
+        $this->cache_routes    = $cache_routes;
     }
 
     /**
@@ -37,6 +41,19 @@ class Routes {
     public function register_routes() {
         // Register Settings Rest API Routes.
         $this->register_settings_routes();
+        $this->register_cache_routes();
+    }
+
+    private function register_cache_routes(): void {
+        register_rest_route(
+            HOSTINGER_PLUGIN_REST_API_BASE,
+            'clear-cache',
+            array(
+                'methods'             => \WP_REST_Server::DELETABLE,
+                'callback'            => array( $this->cache_routes, 'clear_cache' ),
+                'permission_callback' => array( $this, 'permission_check' ),
+            )
+        );
     }
 
     /**

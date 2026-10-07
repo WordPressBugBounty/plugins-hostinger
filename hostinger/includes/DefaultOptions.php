@@ -2,35 +2,48 @@
 
 namespace Hostinger;
 
-use Hostinger\Admin\Options\PluginOptions;
+use Hostinger\Admin\PluginSettings;
 use Hostinger\Helper;
 
 defined( 'ABSPATH' ) || exit;
 
 class DefaultOptions {
-    /**
-     * @return void
-     */
+
+    private PluginSettings $plugin_settings;
+
+    public function __construct( PluginSettings $plugin_settings ) {
+        $this->plugin_settings = $plugin_settings;
+    }
+
     public function add_options(): void {
-        $this->configure_security_settings();
+        $this->configure_plugin_settings();
 
         foreach ( $this->options() as $key => $option ) {
             update_option( $key, $option );
         }
     }
 
-    public function configure_security_settings(): void {
-        $hostinger_plugin_settings = get_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, array() );
+    /**
+     * A later activation must never override a choice the site owner has already made.
+     */
+    private function configure_plugin_settings(): void {
+        $is_first_setup    = ! $this->plugin_settings->has_stored_settings();
+        $plugin_options    = $this->plugin_settings->get_plugin_settings();
+        $needs_bypass_code = empty( $plugin_options->get_bypass_code() );
 
-        if ( empty( $hostinger_plugin_settings['bypass_code'] ) ) {
-            $hostinger_plugin_settings['bypass_code'] = Helper::generate_bypass_code( 16 );
-            $this->update_plugin_settings( $hostinger_plugin_settings );
+        if ( ! $is_first_setup && ! $needs_bypass_code ) {
+            return;
         }
-    }
 
-    private function update_plugin_settings( array $settings ): void {
-        $plugin_options = new PluginOptions( $settings );
-        update_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, $plugin_options->to_array(), false );
+        if ( $is_first_setup ) {
+            $plugin_options->set_enable_llms_txt( true );
+        }
+
+        if ( $needs_bypass_code ) {
+            $plugin_options->set_bypass_code( Helper::generate_bypass_code( 16 ) );
+        }
+
+        $this->plugin_settings->save_plugin_settings( $plugin_options );
     }
 
     /**

@@ -186,7 +186,12 @@ const emit = defineEmits<Emits>();
                 "
                 size="small"
                 variant="text"
-                :is-disabled="isDisabled"
+                :is-disabled="
+                  isDisabled ||
+                    item.sideButton?.isDisabled ||
+                    item.sideButton?.isLoading
+                "
+                :is-loading="item.sideButton?.isLoading"
                 @click="item.sideButton?.onClick"
               >
                 {{ item.sideButton?.text }}

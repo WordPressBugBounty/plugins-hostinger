@@ -1,4 +1,4 @@
-import { Header, SettingsData } from "@/types";
+import { ClearCacheData, Header, SettingsData } from "@/types";
 import http from "@/utils/services/httpService";
 
 const URL = `${hostinger_tools_data.rest_base_url}hostinger-tools-plugin/v1`;
@@ -15,6 +15,11 @@ export const generalDataRepo = {
 
 	getRegenerateByPassCode: () =>
 		http.get<{ data: SettingsData }>(`${URL}/regenerate-bypass-code`, {
+			headers: { [Header.WP_NONCE]: hostinger_tools_data.nonce }
+		}),
+
+	deleteCache: () =>
+		http.delete<{ data: ClearCacheData }>(`${URL}/clear-cache`, {
 			headers: { [Header.WP_NONCE]: hostinger_tools_data.nonce }
 		})
 };

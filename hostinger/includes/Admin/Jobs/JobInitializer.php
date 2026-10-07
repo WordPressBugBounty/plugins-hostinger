@@ -12,10 +12,10 @@ defined( 'ABSPATH' ) || exit;
 
 class JobInitializer {
 
-    public function __construct( Proxy $proxy ) {
+    public function __construct( Proxy $proxy, LlmsTxtParser $llms_txt_parser ) {
         $jobs   = array();
         $jobs[] = new NotifyMcpJob( new ActionScheduler(), new EventHandlerFactory( $proxy ) );
-        $jobs[] = new LlmsTxtInjectContentJob( new ActionScheduler(), new LlmsTxtParser(), new LlmsTxtFileHelper(), new PluginSettings() );
+        $jobs[] = new LlmsTxtInjectContentJob( new ActionScheduler(), $llms_txt_parser, new LlmsTxtFileHelper(), new PluginSettings() );
 
         foreach ( $jobs as $job ) {
             $job->init();

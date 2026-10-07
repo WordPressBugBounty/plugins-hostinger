@@ -32,4 +32,10 @@ export type HostingerToolsData = {
 	llmstxtFileUserGenerated: boolean;
 };
 
+export type ClearCacheData = {
+	purged: boolean;
+	skipped: boolean;
+	message: string;
+};
+
 export type SettingsData = NonToggleableSettingsData & ToggleableSettingsData;

@@ -9,6 +9,8 @@ export type SectionItem = {
 	sideButton?: {
 		text: string;
 		onClick: () => void;
+		isDisabled?: boolean;
+		isLoading?: boolean;
 	};
 	sideButtons?: Array<{
 		id: string;
@@ -36,5 +38,6 @@ export const SECTION_ID = {
 	FORCE_HTTPS: "force-https",
 	FORCE_WWW: "force-www",
 	ENABLE_LLMS_TXT: "enable-llms-txt",
-	OPTIN_MCP: "optin-mcp"
+	OPTIN_MCP: "optin-mcp",
+	CLEAR_CACHE: "clear-cache"
 } as const;

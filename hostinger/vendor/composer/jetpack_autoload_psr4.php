@@ -7,7 +7,7 @@ $baseDir   = dirname($vendorDir);
 
 return array(
 	'Hostinger\\WpMenuManager\\' => array(
-		'version' => '1.2.33.0',
+		'version' => '1.2.34.0',
 		'path'    => array( $vendorDir . '/hostinger/hostinger-wp-menu-manager/src' )
 	),
 	'Hostinger\\WpHelper\\' => array(

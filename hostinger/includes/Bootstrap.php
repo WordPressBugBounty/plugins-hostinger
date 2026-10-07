@@ -6,9 +6,15 @@ namespace Hostinger;
 use Hostinger\Admin\PluginSettings;
 use Hostinger\Admin\Jobs\JobInitializer;
 use Hostinger\Admin\Proxy;
+use Hostinger\Cdn\CacheClient;
+use Hostinger\Cdn\CachePurger;
+use Hostinger\Cdn\LiteSpeedHooks;
+use Hostinger\Cdn\SoftwareIdResolver;
 use Hostinger\LlmsTxtGenerator\LlmsTxtFileHelper;
 use Hostinger\LlmsTxtGenerator\LlmsTxtHeadLink;
 use Hostinger\LlmsTxtGenerator\LlmsTxtParser;
+use Hostinger\LlmsTxtGenerator\LlmsTxtSummaryProvider;
+use Hostinger\Rest\CacheRoutes;
 use Hostinger\Rest\Routes;
 use Hostinger\Rest\SettingsRoutes;
 use Hostinger\Admin\Assets as AdminAssets;
@@ -75,26 +81,42 @@ class Bootstrap {
     private function load_public_dependencies(): void {
 
         $client = new Client(
-            'https://wh-wordpress-proxy-api.hostinger.io',
+            'https://' . HOSTINGER_PROXY_API_HOST,
             array(
                 Config::TOKEN_HEADER  => $this->utils->getApiToken(),
                 Config::DOMAIN_HEADER => $this->utils->getHostInfo(),
             )
         );
 
-        new JobInitializer( new Proxy( $client, $this->utils ) );
+        $llms_txt_parser = new LlmsTxtParser( new LlmsTxtSummaryProvider() );
+
+        new JobInitializer( new Proxy( $client, $this->utils ), $llms_txt_parser );
         new Hooks();
 
         $plugin_settings      = new PluginSettings();
         $llms_txt_file_helper = new LlmsTxtFileHelper();
 
-        new LlmsTxtGenerator( $plugin_settings, $llms_txt_file_helper, new LlmsTxtParser() );
+        $llms_txt_generator = new LlmsTxtGenerator( $plugin_settings, $llms_txt_file_helper, $llms_txt_parser );
+        $this->loader->add_action( 'wp_loaded', $llms_txt_generator, 'maybe_regenerate_after_update' );
 
         $llms_txt_head_link = new LlmsTxtHeadLink( $plugin_settings, $llms_txt_file_helper );
         $this->loader->add_action( 'wp_head', $llms_txt_head_link, 'render' );
 
+        $cache_purger = $this->build_cache_purger( $client );
+
+        new LiteSpeedHooks( $cache_purger, $this->utils );
+
         $settings_routes = new SettingsRoutes( $plugin_settings );
-        $routes          = new Routes( $settings_routes );
+        $cache_routes    = new CacheRoutes( $cache_purger );
+        $routes          = new Routes( $settings_routes, $cache_routes );
         $routes->init();
+    }
+
+    private function build_cache_purger( Client $client ): CachePurger {
+        return new CachePurger(
+            new CacheClient( $client ),
+            new SoftwareIdResolver( $client ),
+            $this->utils
+        );
     }
 }

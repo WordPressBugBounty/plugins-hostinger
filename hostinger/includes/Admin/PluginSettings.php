@@ -51,6 +51,10 @@ class PluginSettings {
         return $settings;
     }
 
+    public function has_stored_settings(): bool {
+        return is_array( get_option( HOSTINGER_PLUGIN_SETTINGS_OPTION, false ) );
+    }
+
     /**
      * @param PluginOptions $plugin_options plugin settings.
      *

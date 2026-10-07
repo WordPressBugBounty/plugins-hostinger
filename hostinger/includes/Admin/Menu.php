@@ -42,6 +42,10 @@ class Menu {
     }
 
     public function render_tools_menu_page(): void {
+        if ( ! current_user_can( 'manage_options' ) ) {
+            wp_die( esc_html__( 'Sorry, you are not allowed to access this page.', 'hostinger' ), '', array( 'response' => 403 ) );
+        }
+
         echo wp_kses( Menus::renderMenuNavigation(), 'post' );
         ?>
         <div id="hostinger-tools-vue-app"/>

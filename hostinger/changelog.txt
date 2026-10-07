@@ -1,6 +1,14 @@
 Changelog
 =========
 
+3.0.79 (2026-10-07)
+
+- Feature: Add hCDN cache purge to Hostinger Tools
+- Feature: Enable llms.txt generation by default for new sites
+- Fix: Improve llms.txt summaries using the excerpt, SEO description or page content
+- Fix: Improve permission checks on the Hostinger Tools admin page
+- Fix: Clear cache failing on sites with a stale installation ID
+
 3.0.78 (2026-09-22)
 
 - Feature: Link to llms.txt from the public site head
