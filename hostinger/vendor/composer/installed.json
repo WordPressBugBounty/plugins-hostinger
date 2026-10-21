@@ -73,7 +73,7 @@
             "version_normalized": "1.0.17.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:hostinger/hostinger-wp-helper.git",
+                "url": "https://github.com/hostinger/hostinger-wp-helper.git",
                 "reference": "2e008591625276b76a0113ff442cfcf04e94007f"
             },
             "dist": {
@@ -105,25 +105,21 @@
                 "proprietary"
             ],
             "description": "A PHP package with core functions for Hostinger WordPress plugins.",
-            "support": {
-                "source": "https://github.com/hostinger/hostinger-wp-helper/tree/1.0.17",
-                "issues": "https://github.com/hostinger/hostinger-wp-helper/issues"
-            },
             "install-path": "../hostinger/hostinger-wp-helper"
         },
         {
             "name": "hostinger/hostinger-wp-menu-manager",
-            "version": "1.2.34",
-            "version_normalized": "1.2.34.0",
+            "version": "1.2.42",
+            "version_normalized": "1.2.42.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:hostinger/hostinger-wp-menu-manager.git",
-                "reference": "6e26081b6a4022a1ab39365bdb8c1ef0b2e5fa54"
+                "url": "https://github.com/hostinger/hostinger-wp-menu-manager.git",
+                "reference": "b47e33f231915a50eb200f07713c74c9cd360057"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/6e26081b6a4022a1ab39365bdb8c1ef0b2e5fa54",
-                "reference": "6e26081b6a4022a1ab39365bdb8c1ef0b2e5fa54",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/b47e33f231915a50eb200f07713c74c9cd360057",
+                "reference": "b47e33f231915a50eb200f07713c74c9cd360057",
                 "shasum": ""
             },
             "require": {
@@ -134,7 +130,7 @@
                 "squizlabs/php_codesniffer": "^3.0",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2026-10-06T10:36:59+00:00",
+            "time": "2026-10-21T06:18:49+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -151,10 +147,6 @@
                 "proprietary"
             ],
             "description": "Package for managing Hostinger WordPress menus and pages.",
-            "support": {
-                "source": "https://github.com/hostinger/hostinger-wp-menu-manager/tree/1.2.34",
-                "issues": "https://github.com/hostinger/hostinger-wp-menu-manager/issues"
-            },
             "install-path": "../hostinger/hostinger-wp-menu-manager"
         },
         {

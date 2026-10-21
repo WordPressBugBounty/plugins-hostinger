@@ -23,7 +23,6 @@ const editSiteButton = computed(
 
 <template>
   <div>
-    <div id="overhead-button" />
     <Wrapper
       :title="headerTitle"
       :header-button="headerButton"
@@ -37,21 +36,3 @@ const editSiteButton = computed(
     <Modals />
   </div>
 </template>
-
-<style lang="scss" scoped>
-:deep(.h-button-v2) {
-	&:hover {
-		cursor: pointer;
-	}
-}
-#overhead-button {
-	position: absolute;
-	right: 0;
-	padding: 40px;
-	z-index: 2;
-
-	@media (max-width: 576px) {
-		padding: 16px;
-	}
-}
-</style>

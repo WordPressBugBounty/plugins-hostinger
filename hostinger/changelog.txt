@@ -1,6 +1,11 @@
 Changelog
 =========
 
+3.0.80 (2026-10-21)
+
+- Tweak: Update minimum PHP requirement in readme.txt to 8.1
+- Tweak: Update dependencies
+
 3.0.79 (2026-10-07)
 
 - Feature: Add hCDN cache purge to Hostinger Tools

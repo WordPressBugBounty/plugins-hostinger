@@ -3,7 +3,7 @@ Tags: hostinger, tools, maintenance, security, https
 Requires at least: 5.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 3.0.79
+Stable tag: 3.0.80
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Simplified WordPress management. Manage site info, maintenance, security, & redirects.
@@ -54,7 +54,7 @@ The Hostinger Tools Plugin is available for free. However, the AI Assistant feat
 = Are There Any Specific Hosting Requirements for This Plugin? =
 
 The Hostinger Tools Plugin is designed to work seamlessly on any hosting platform, ensuring wide compatibility and ease of use. However, the plugin requires these minimum requirements:
-* PHP 8.0 or greater
+* PHP 8.1 or greater
 * MySQL 5.6 or greater
 
 = Can I Access Educational Resources Outside This Plugin? =
@@ -65,7 +65,7 @@ Yes, the educational resources you can find in this plugin are available on our 
 
 # **Minimum Requirements**
 
-* PHP 8.0 or greater is recommended
+* PHP 8.1 or greater is recommended
 * MySQL 5.6 or greater is recommended
 
 # **Automatic installation**
@@ -85,6 +85,11 @@ The manual installation method requires downloading the Hostinger plugin and upl
 Automatic updates should work smoothly, but we still recommend you back up your site.
 
 == Changelog ==
+
+3.0.80 (2026-10-21)
+
+- Tweak: Update minimum PHP requirement in readme.txt to 8.1
+- Tweak: Update dependencies
 
 3.0.79 (2026-10-07)
 
