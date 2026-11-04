@@ -1,6 +1,10 @@
 Changelog
 =========
 
+3.0.81 (2026-11-04)
+
+- Tweak: Update dependencies
+
 3.0.80 (2026-10-21)
 
 - Tweak: Update minimum PHP requirement in readme.txt to 8.1
