@@ -4,10 +4,15 @@ namespace Hostinger;
 
 use Hostinger\Admin\Options\PluginOptions;
 use Hostinger\Admin\PluginSettings;
+use WP_Error;
+use WP_REST_Request;
+use WP_REST_Server;
 
 defined( 'ABSPATH' ) || exit;
 
 class ComingSoon {
+    private const RESTRICTED_REST_NAMESPACES = array( 'wp/v2', 'oembed/1.0', 'wc/store' );
+
     /**
      * @var PluginOptions
      */
@@ -18,8 +23,9 @@ class ComingSoon {
         $this->plugin_options = $plugin_settings->get_plugin_settings();
 
         add_action( 'wp_footer', array( $this, 'register_styles' ) );
-        add_action( 'template_redirect', array( $this, 'coming_soon' ) );
+        add_action( 'template_redirect', array( $this, 'coming_soon' ), 0 );
         add_filter( 'wp_headers', array( $this, 'modify_headers' ) );
+        add_filter( 'rest_pre_dispatch', array( $this, 'restrict_rest_api' ), 10, 3 );
 
         // Fix deprecated warning.
         if ( has_action( 'wp_footer', 'the_block_template_skip_link' ) ) {
@@ -65,17 +71,30 @@ class ComingSoon {
         return $headers;
     }
 
-    /**
-     * @return bool
-     */
-    /** PHPCS:disable WordPress.Security.NonceVerification.Recommended */
-    private function can_bypass_coming_soon(): bool {
-        $bypass_code = isset( $_COOKIE['hostinger_bypass_code'] ) ? sanitize_text_field( $_COOKIE['hostinger_bypass_code'] ) : '';
-
-        if ( isset( $_GET['bypass_code'] ) && $this->plugin_options->get_bypass_code() === $_GET['bypass_code'] ) {
-            setcookie( 'hostinger_bypass_code', $this->plugin_options->get_bypass_code() );
-            $bypass_code = $this->plugin_options->get_bypass_code();
+    /** PHPCS:disable Generic.CodeAnalysis.UnusedFunctionParameter.Found */
+    public function restrict_rest_api( mixed $result, WP_REST_Server $server, WP_REST_Request $request ): mixed {
+        if ( $result !== null ) {
+            return $result;
         }
+
+        if ( ! $this->is_restricted_rest_route( $request->get_route() ) ) {
+            return $result;
+        }
+
+        if ( is_user_logged_in() || $this->has_valid_bypass_code() ) {
+            return $result;
+        }
+
+        return new WP_Error(
+            'hostinger_maintenance_mode',
+            __( 'This site is in maintenance mode.', 'hostinger' ),
+            array( 'status' => 503 )
+        );
+    }
+    /** PHPCS:enable */
+
+    private function can_bypass_coming_soon(): bool {
+        $has_valid_bypass_code = $this->has_valid_bypass_code();
 
         if ( is_admin() ) {
             return true;
@@ -85,13 +104,32 @@ class ComingSoon {
             return true;
         }
 
-        if ( ! empty( $bypass_code ) && $bypass_code === $this->plugin_options->get_bypass_code() ) {
-            return true;
+        return $has_valid_bypass_code;
+    }
+
+    /** PHPCS:disable WordPress.Security.NonceVerification.Recommended */
+    private function has_valid_bypass_code(): bool {
+        $expected_code = $this->plugin_options->get_bypass_code();
+        $bypass_code   = isset( $_COOKIE['hostinger_bypass_code'] ) ? sanitize_text_field( $_COOKIE['hostinger_bypass_code'] ) : '';
+
+        if ( isset( $_GET['bypass_code'] ) && $expected_code === $_GET['bypass_code'] ) {
+            setcookie( 'hostinger_bypass_code', $expected_code );
+            $bypass_code = $expected_code;
+        }
+
+        return ! empty( $bypass_code ) && $bypass_code === $expected_code;
+    }
+    /** PHPCS:enable */
+
+    private function is_restricted_rest_route( string $route ): bool {
+        foreach ( self::RESTRICTED_REST_NAMESPACES as $namespace ) {
+            if ( str_starts_with( strtolower( $route ) . '/', '/' . $namespace . '/' ) ) {
+                return true;
+            }
         }
 
         return false;
     }
-    /** PHPCS:enable */
 }
 
 new ComingSoon();

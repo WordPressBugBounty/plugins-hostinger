@@ -38,7 +38,9 @@ class LlmsTxtInjectContentJob extends AbstractBatchedJob {
     }
 
     protected function process_items( array $args = array() ): void {
-        if ( ! $this->is_llms_txt_enabled() ) {
+        $settings = $this->plugin_settings->get_plugin_settings();
+
+        if ( ! $settings->get_enable_llms_txt() || $settings->get_maintenance_mode() ) {
             return;
         }
 

@@ -114,6 +114,7 @@ class LlmsTxtGenerator {
     public function init_hooks(): void {
         add_action( 'transition_post_status', array( $this, 'on_post_status_change' ), 10, 3 );
         add_action( 'hostinger_tools_settings_saved', array( $this, 'on_settings_saved' ) );
+        add_action( 'update_option_' . HOSTINGER_PLUGIN_SETTINGS_OPTION, array( $this, 'on_plugin_settings_update' ), 10, 2 );
         add_action( 'update_option_blogname', array( $this, 'on_blog_change' ), 10, 2 );
         add_action( 'update_option_blogdescription', array( $this, 'on_blog_change' ), 10, 2 );
         add_action( 'activate_woocommerce/woocommerce.php', array( $this, 'on_woocommerce_activation' ) );
@@ -128,9 +129,23 @@ class LlmsTxtGenerator {
         }
     }
 
+    public function on_plugin_settings_update( mixed $old_value, mixed $new_value ): void {
+        $was_in_maintenance = is_array( $old_value ) && ! empty( $old_value['maintenance_mode'] );
+        $is_in_maintenance  = is_array( $new_value ) && ! empty( $new_value['maintenance_mode'] );
+
+        if ( $was_in_maintenance !== $is_in_maintenance ) {
+            $this->generate();
+        }
+    }
+
     public function generate(): void {
         $settings = $this->plugin_settings->get_plugin_settings();
         if ( ! $settings->get_enable_llms_txt() ) {
+            return;
+        }
+
+        if ( $settings->get_maintenance_mode() ) {
+            $this->delete();
             return;
         }
 
