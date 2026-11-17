@@ -1,6 +1,13 @@
 Changelog
 =========
 
+3.0.83 (2026-11-17)
+
+- Fix: Escape post titles and summaries in the generated llms.txt file
+- Fix: Prevent caching of REST API responses while maintenance mode is on
+- Fix: Block REST API content for logged-in users without editing rights while maintenance mode is on
+- Tweak: Update dependencies
+
 3.0.82 (2026-11-10)
 
 - Tweak: Update dependencies

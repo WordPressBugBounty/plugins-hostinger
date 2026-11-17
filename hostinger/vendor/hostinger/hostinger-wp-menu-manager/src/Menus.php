@@ -113,6 +113,10 @@ class Menus
             return false;
         }
 
+        if (!$this->canViewMainPage($submenus)) {
+            return false;
+        }
+
         $icon = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyMSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wLjAwMDE5OTY1MyAxMS4yMzY4VjAuMDAwMzk4MjM1TDUuNjcxMzMgMy4wMjQzNlY4LjA4NjkxTDEzLjE3ODggOC4wOTA1M0wxOC45NDE5IDExLjIzNjhIMC4wMDAxOTk2NTNaTTE0LjcxNCA3LjE2MDQ3VjBMMjAuNTM4IDIuOTQ4NzJWMTAuNTQzN0wxNC43MTQgNy4xNjA0N1pNMTQuNzE0IDIwLjg5NDJWMTUuODc1M0w3LjE0ODYyIDE1Ljg3QzcuMTU1NjggMTUuOTAzNCAxLjI4OTg0IDEyLjY3MzUgMS4yODk4NCAxMi42NzM1TDIwLjUzOCAxMi43NjM4VjI0TDE0LjcxNCAyMC44OTQyWk0wIDIwLjg5NDFMMC4wMDAyMDE3NjkgMTMuNTUxNEw1LjY3MTMzIDE2Ljg1NDZWMjMuODQyN0wwIDIwLjg5NDFaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K';
 
         add_menu_page(
@@ -135,15 +139,78 @@ class Menus
      */
     public function render(): void
     {
-        if ($this->hasLoadedMainContent() && !empty(self::isSubmenuItemsHidden())) {
-            do_action('hostinger_main_menu_content');
-        } else {
-            $submenus = self::getMenuSubpages();
+        if ($this->isMainContentMode()) {
+            if (!current_user_can(self::getMainMenuContentCapability(self::getMenuSubpages()))) {
+                $this->denyAccess();
+                return;
+            }
 
-            if (!empty($submenus)) {
-                call_user_func($submenus[0]['callback']);
+            do_action('hostinger_main_menu_content');
+            return;
+        }
+
+        $submenu = self::getFirstAccessibleSubpage(self::getMenuSubpages());
+
+        if ($submenu === null) {
+            $this->denyAccess();
+            return;
+        }
+
+        call_user_func($submenu['callback']);
+    }
+
+    public static function getFirstAccessibleSubpage(array $submenus): ?array
+    {
+        foreach ($submenus as $submenu) {
+            if (!is_array($submenu) || empty($submenu['callback']) || !is_callable($submenu['callback'])) {
+                continue;
+            }
+
+            if (current_user_can(self::getSubpageCapability($submenu))) {
+                return $submenu;
             }
         }
+
+        return null;
+    }
+
+    public static function getMainMenuContentCapability(array $submenus): string
+    {
+        $first = reset($submenus);
+        $default = is_array($first) ? self::getSubpageCapability($first) : 'manage_options';
+
+        $capability = apply_filters('hostinger_main_menu_content_capability', $default);
+
+        return is_string($capability) && $capability !== '' ? $capability : 'manage_options';
+    }
+
+    private static function getSubpageCapability(array $submenu): string
+    {
+        $capability = $submenu['capability'] ?? '';
+
+        return is_string($capability) && $capability !== '' ? $capability : 'manage_options';
+    }
+
+    private function canViewMainPage(array $submenus): bool
+    {
+        if ($this->isMainContentMode()) {
+            return current_user_can(self::getMainMenuContentCapability($submenus));
+        }
+
+        return self::getFirstAccessibleSubpage($submenus) !== null;
+    }
+
+    private function isMainContentMode(): bool
+    {
+        return $this->hasLoadedMainContent() && self::isSubmenuItemsHidden();
+    }
+
+    private function denyAccess(): void
+    {
+        wp_die(
+            esc_html__('Sorry, you are not allowed to access this page.', 'hostinger-wp-menu-package'),
+            403
+        );
     }
 
     /**

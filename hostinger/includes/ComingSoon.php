@@ -5,6 +5,7 @@ namespace Hostinger;
 use Hostinger\Admin\Options\PluginOptions;
 use Hostinger\Admin\PluginSettings;
 use WP_Error;
+use WP_HTTP_Response;
 use WP_REST_Request;
 use WP_REST_Server;
 
@@ -26,6 +27,7 @@ class ComingSoon {
         add_action( 'template_redirect', array( $this, 'coming_soon' ), 0 );
         add_filter( 'wp_headers', array( $this, 'modify_headers' ) );
         add_filter( 'rest_pre_dispatch', array( $this, 'restrict_rest_api' ), 10, 3 );
+        add_filter( 'rest_post_dispatch', array( $this, 'prevent_rest_caching' ), 10, 3 );
 
         // Fix deprecated warning.
         if ( has_action( 'wp_footer', 'the_block_template_skip_link' ) ) {
@@ -81,7 +83,7 @@ class ComingSoon {
             return $result;
         }
 
-        if ( is_user_logged_in() || $this->has_valid_bypass_code() ) {
+        if ( $this->can_bypass_rest_restriction() ) {
             return $result;
         }
 
@@ -90,6 +92,24 @@ class ComingSoon {
             __( 'This site is in maintenance mode.', 'hostinger' ),
             array( 'status' => 503 )
         );
+    }
+
+    public function prevent_rest_caching( WP_HTTP_Response $response, WP_REST_Server $server, WP_REST_Request $request ): WP_HTTP_Response {
+        if ( ! $this->is_restricted_rest_route( $request->get_route() ) ) {
+            return $response;
+        }
+
+        if ( has_action( 'litespeed_control_set_nocache' ) ) {
+            do_action( 'litespeed_control_set_nocache', 'Hostinger maintenance mode REST response, not cacheable.' );
+        }
+
+        foreach ( wp_get_nocache_headers() as $name => $value ) {
+            if ( ! empty( $value ) ) {
+                $response->header( $name, $value );
+            }
+        }
+
+        return $response;
     }
     /** PHPCS:enable */
 
@@ -105,6 +125,18 @@ class ComingSoon {
         }
 
         return $has_valid_bypass_code;
+    }
+
+    private function can_bypass_rest_restriction(): bool {
+        if ( current_user_can( 'update_plugins' ) ) {
+            return true;
+        }
+
+        if ( current_user_can( 'edit_posts' ) ) {
+            return true;
+        }
+
+        return $this->has_valid_bypass_code();
     }
 
     /** PHPCS:disable WordPress.Security.NonceVerification.Recommended */

@@ -69,17 +69,17 @@
         },
         {
             "name": "hostinger/hostinger-wp-helper",
-            "version": "1.0.17",
-            "version_normalized": "1.0.17.0",
+            "version": "1.0.23",
+            "version_normalized": "1.0.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hostinger/hostinger-wp-helper.git",
-                "reference": "2e008591625276b76a0113ff442cfcf04e94007f"
+                "reference": "3befc2030a6551c55264615b0ddaed2e8d9d2bcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/2e008591625276b76a0113ff442cfcf04e94007f",
-                "reference": "2e008591625276b76a0113ff442cfcf04e94007f",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-helper/zipball/3befc2030a6551c55264615b0ddaed2e8d9d2bcf",
+                "reference": "3befc2030a6551c55264615b0ddaed2e8d9d2bcf",
                 "shasum": ""
             },
             "require": {
@@ -90,9 +90,9 @@
                 "10up/wp_mock": "^1.1",
                 "phpunit/phpunit": "^9.6.33",
                 "squizlabs/php_codesniffer": "^4.0",
-                "yoast/phpunit-polyfills": "^2.0"
+                "yoast/phpunit-polyfills": "^2.0 || ^4.0"
             },
-            "time": "2026-09-16T16:50:27+00:00",
+            "time": "2026-11-16T08:15:31+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -109,17 +109,17 @@
         },
         {
             "name": "hostinger/hostinger-wp-menu-manager",
-            "version": "1.2.42",
-            "version_normalized": "1.2.42.0",
+            "version": "1.2.69",
+            "version_normalized": "1.2.69.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hostinger/hostinger-wp-menu-manager.git",
-                "reference": "b47e33f231915a50eb200f07713c74c9cd360057"
+                "reference": "e9a68e793b976d6da72f251463bfdf055fcaf50d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/b47e33f231915a50eb200f07713c74c9cd360057",
-                "reference": "b47e33f231915a50eb200f07713c74c9cd360057",
+                "url": "https://api.github.com/repos/hostinger/hostinger-wp-menu-manager/zipball/e9a68e793b976d6da72f251463bfdf055fcaf50d",
+                "reference": "e9a68e793b976d6da72f251463bfdf055fcaf50d",
                 "shasum": ""
             },
             "require": {
@@ -130,7 +130,7 @@
                 "squizlabs/php_codesniffer": "^3.0",
                 "yoast/phpunit-polyfills": "^2.0"
             },
-            "time": "2026-10-21T06:18:49+00:00",
+            "time": "2026-11-12T12:53:27+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {

@@ -11,7 +11,7 @@ class Assets
      * @var Manager
      */
     private Manager $manager;
-    private string $assetsPath;
+    private string $assetsPath = '/vendor/hostinger/hostinger-wp-menu-manager/assets';
 
     /**
      * @return void

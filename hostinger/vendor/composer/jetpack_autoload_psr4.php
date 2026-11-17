@@ -7,15 +7,15 @@ $baseDir   = dirname($vendorDir);
 
 return array(
 	'Hostinger\\WpMenuManager\\' => array(
-		'version' => '1.2.42.0',
+		'version' => '1.2.69.0',
 		'path'    => array( $vendorDir . '/hostinger/hostinger-wp-menu-manager/src' )
 	),
 	'Hostinger\\WpHelper\\' => array(
-		'version' => '1.0.17.0',
+		'version' => '1.0.23.0',
 		'path'    => array( $vendorDir . '/hostinger/hostinger-wp-helper/src' )
 	),
 	'Hostinger\\Tests\\' => array(
-		'version' => '1.0.17.0',
+		'version' => '1.0.23.0',
 		'path'    => array( $baseDir . '/tests/phpunit', $vendorDir . '/hostinger/hostinger-wp-helper/tests/phpunit' )
 	),
 	'Hostinger\\' => array(

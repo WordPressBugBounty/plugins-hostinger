@@ -4,18 +4,27 @@ namespace Hostinger\WpHelper;
 
 class Utils
 {
-    private static string $apiTokenFile;
+    private static string $apiTokenFile = '';
 
     private const HPANEL_DOMAIN_URL = 'https://hpanel.hostinger.com/websites/';
     private const HOSTINGER_SITE = '.hostingersite.com';
 
     private static function getApiTokenPath(): void
     {
-        $hostingerDirParts = explode('/', __DIR__);
-        if (count($hostingerDirParts) >= 3) {
-            $hostingerServerRootPath = '/' . $hostingerDirParts[1] . '/' . $hostingerDirParts[2];
-            self::$apiTokenFile      = $hostingerServerRootPath . '/.api_token';
+        self::$apiTokenFile = self::buildApiTokenPath(__DIR__);
+    }
+
+    public static function buildApiTokenPath(string $directory, string $separator = DIRECTORY_SEPARATOR): string
+    {
+        $hostingerDirParts = explode($separator, $directory);
+        if (count($hostingerDirParts) < 3) {
+            return '';
         }
+
+        $hostingerServerRootPath = '/' . $hostingerDirParts[1] . '/' . $hostingerDirParts[2];
+        $apiTokenFile            = $hostingerServerRootPath . '/.api_token';
+
+        return $apiTokenFile;
     }
 
     private static function get_override_site_url(): string
